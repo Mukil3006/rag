@@ -1,0 +1,330 @@
+SLM-RAG ACTUAL EXPERIMENT REPORT
+{
+  "A": {
+    "completed_questions": 30,
+    "source_hit_rate": 0.896551724137931,
+    "mean_evidence_keyword_coverage": 0.7527777777777778,
+    "mean_answer_keyword_coverage": 0.6777777777777778,
+    "mean_stage_seconds": 2.569481233332772,
+    "gate_status_counts": {
+      "UNVERIFIED_BASELINE": 30
+    },
+    "verification_labeled_count": 0,
+    "verification_accuracy_on_annotated_queries": null,
+    "verification_error_count": 0,
+    "generation_error_count": 0
+  },
+  "B": {
+    "completed_questions": 30,
+    "source_hit_rate": 0.896551724137931,
+    "mean_evidence_keyword_coverage": 0.8166666666666667,
+    "mean_answer_keyword_coverage": 0.7194444444444444,
+    "mean_stage_seconds": 3.317978016668106,
+    "gate_status_counts": {
+      "UNVERIFIED_BASELINE": 30
+    },
+    "verification_labeled_count": 0,
+    "verification_accuracy_on_annotated_queries": null,
+    "verification_error_count": 0,
+    "generation_error_count": 0
+  },
+  "C": {
+    "completed_questions": 30,
+    "source_hit_rate": 0.896551724137931,
+    "mean_evidence_keyword_coverage": 0.7055555555555555,
+    "mean_answer_keyword_coverage": 0.7111111111111111,
+    "mean_stage_seconds": 12.050549076667085,
+    "gate_status_counts": {
+      "SUPPORTED": 21,
+      "PARTIAL": 4,
+      "CONTRADICTORY": 5
+    },
+    "verification_labeled_count": 5,
+    "verification_accuracy_on_annotated_queries": 1,
+    "verification_error_count": 0,
+    "generation_error_count": 0
+  },
+  "retrieval": {
+    "candidate_metrics": {
+      "source_hit_rate": 0.9310344827586207,
+      "mean_reciprocal_source_rank": 0.8336617405582922,
+      "mean_keyword_coverage": 0.861111111111111
+    },
+    "raw_top_n_metrics": {
+      "source_hit_rate": 0.896551724137931,
+      "mean_reciprocal_source_rank": 0.828735632183908,
+      "mean_keyword_coverage": 0.7527777777777778
+    },
+    "reranked_top_n_metrics": {
+      "source_hit_rate": 0.896551724137931,
+      "mean_reciprocal_source_rank": 0.8448275862068966,
+      "mean_keyword_coverage": 0.8166666666666667
+    }
+  }
+}
+
+LIMITATIONS
+Original evaluation_questions.json is unchanged. Expected answers are never passed to retrieval, verification, or generation.
+Retrieval accuracy is operationalized as expected-source hit rate and reciprocal source rank, not gold passage relevance accuracy.
+Keyword coverage is literal normalized substring coverage, not semantic correctness or a hallucination metric. It may decrease when irrelevant material is blocked.
+Baseline A and B receive the same final evidence count and final generator settings. Retrieval and reranking are shared, and their measured times are accounted for per mode.
+Model confidence is uncalibrated. No claim of research novelty or statistical significance.
+Only explicitly annotated query outcomes are scored for verification accuracy. Per-chunk accuracy requires independent human labels and is not claimed.
+An answer to a question about irrelevant content can be SUPPORTED; the question type irrelevant is not automatically an INSUFFICIENT gold label.
+All PDF contents, including synthetic labels and test instructions, are treated as untrusted evidence.
+Experiments are development-set measurements; prompts have been debugged on this dataset. They are not held-out benchmark estimates.
+
+Q001 | What are the three major RAG paradigms discussed in the survey?
+  MODE A: UNVERIFIED_BASELINE
+  The three major RAG paradigms discussed are Naive RAG, Advanced RAG, and Modular RAG. This is stated in chunk ID DOC08_P01_PAR01_CH02 and DOC08_P02_PAR01_CH03.
+  MODE B: UNVERIFIED_BASELINE
+  The three major RAG paradigms discussed are Naive RAG, Advanced RAG, and Modular RAG. This is stated in multiple chunks, including DOC08_P16_PAR01_CH04, DOC08_P02_PAR01_CH03, and DOC08_P04_PAR01_CH01. Each represents a progressive enhancement in RAG framework development.
+  MODE C: SUPPORTED
+  The three major RAG paradigms are Naive RAG, Advanced RAG, and Modular RAG. This is explicitly stated in multiple chunks, including DOC08_P16_PAR01_CH04, DOC08_P02_PAR01_CH03, and DOC08_P04_PAR01_CH01. While DOC08_P01_PAR02_CH01 mentions only "naive RAG" without specifying the other two, the full set is consistently identified in the other sources. The evidence supports the three-paradigm classification.
+Q002 | What are the three core components of a RAG framework?
+  MODE A: UNVERIFIED_BASELINE
+  The three core components of a RAG framework are retrieval, generation, and augmentation. This is stated in multiple sources, including RAG_Survey(No.1).pdf, which explicitly identifies these as the "tripartite foundation" of RAG frameworks. Chunk DOC08_P02_PAR01_CH02 and DOC08_P01_PAR01_CH02 confirm this tripartite structure. Source DOC06_P07_PAR01_CH01 supports retrieval and generation with technical details but does not explicitly mention augmentation. The evidence is consistent on retrieval and generation; augmentation is implied but not fully detailed.
+  MODE B: UNVERIFIED_BASELINE
+  The three core components of a RAG framework are retrieval, generation, and augmentation. This is stated in multiple chunks of the evidence, including DOC08_P01_PAR01_CH02 and DOC08_P04_PAR01_CH04.
+  MODE C: SUPPORTED
+  The three core components of a RAG framework are Retrieval, Generation, and Augmentation.  
+(Source: RAG_Survey(No.1).pdf, chunk IDs DOC08_P02_PAR01_CH02, DOC08_P04_PAR01_CH01, DOC08_P01_PAR01_CH02)
+Q003 | Why can RAG reduce hallucinations in language models?
+  MODE A: UNVERIFIED_BASELINE
+  RAG reduces hallucinations by retrieving relevant external knowledge before generating responses, thereby grounding the output in factual, real-world data. This external validation minimizes the model’s reliance on internal, potentially inaccurate knowledge. Sources confirm that RAG mitigates hallucinatory responses by integrating retrieval mechanisms with generative models [DOC04_P01_PAR02_CH02, DOC04_P04_PAR01_CH01, DOC08_P01_PAR01_CH03]. The integration of external databases enhances factual accuracy and reduces false or fabricated content [DOC08_P01_PAR01_CH02].
+  MODE B: UNVERIFIED_BASELINE
+  RAG reduces hallucinations by retrieving relevant external knowledge before generating responses, ensuring that the model's output is grounded in factual, up-to-date information from a knowledge base. This retrieval step limits the model’s reliance on internal, potentially outdated or incorrect parameters, thereby reducing the likelihood of fabricating false or unsupported content. Sources: RAG_Document_QA(No.5).pdf (DOC04_P01_PAR02_CH02, DOC04_P04_PAR01_CH01), RAG_Survey(No.1).pdf (DOC08_P01_PAR01_CH03).
+  MODE C: SUPPORTED
+  RAG reduces hallucinations by referencing external knowledge, which grounds responses in verified context and mitigates factually incorrect content. This is explicitly stated in RAG_Survey(No.1).pdf, where it states RAG reduces the problem of generating factually incorrect content by referencing external knowledge [8]. Additionally, RAG_Document_QA(No.5).pdf notes RAG's ability to mitigate hallucinatory responses and minimize hallucinative outputs through external data integration [5]. Evidence from DOC04_P01_PAR02_CH02 and DOC04_P04_PAR01_CH01 supports this mechanism.
+Q004 | What problem does the document-question-answering RAG study aim to address?
+  MODE A: UNVERIFIED_BASELINE
+  The document-question-answering RAG study aims to address challenges in manual document processing, resource-intensive LLM modifications, and hallucinatory responses in QA systems relying solely on LLM capabilities. It seeks to improve accuracy and non-hallucinatory responses by integrating RAG with external knowledge sources, leveraging retrieval mechanisms to enhance document-based question answering. [DOC04_P01_PAR02_CH01, DOC04_P01_PAR02_CH02]
+  MODE B: UNVERIFIED_BASELINE
+  The document-question-answering RAG study aims to address challenges in manual document processing, resource-intensive LLM modifications, and hallucinatory responses in traditional QA systems. It seeks to improve accuracy and non-hallucinatory responses by integrating retrieval techniques with large language models via the Retrieval-Augmented Generation (RAG) method. This approach overcomes limitations of prior QA systems by combining parametric and non-parametric memory. [DOC04_P01_PAR02_CH01, DOC04_P01_PAR01_CH01]
+  MODE C: SUPPORTED
+  The document-question-answering RAG study aims to address three key problems: time-consuming and error-prone manual document processing, resource-intensive and difficult-to-implement modifications of Large Language Models (LLMs) for document processing, and the generation of hallucinatory answers by unmodified LLMs in QA systems. These issues are explicitly identified in the study's abstract and motivation sections. Source: DOC04_P01_PAR01_CH02, DOC04_P01_PAR02_CH01.
+Q005 | Which language model was used in the study?
+  MODE A: UNVERIFIED_BASELINE
+  The evidence does not specify which language model was used in the study. While several language models are mentioned in the references (e.g., ChatGPT, LLaMA, GPT), no study or model is explicitly identified as being used in the research context. The available evidence is insufficient to determine the specific language model.
+  MODE B: UNVERIFIED_BASELINE
+  The study used GPT-3.5 as the language model. This is stated in the text: "the best language model at this current time like GPT-3.5, which provides good results" and "gpt-3.5-turbo within the framework of RAG." Source: RAG_Document_QA(No.5).pdf (chunk IDs: DOC04_P09_PAR01_CH02, DOC04_P02_PAR01_CH01).
+  MODE C: PARTIAL
+  Partial evidence: The study references GPT-3.5 and gpt-3.5-turbo in the context of RAG, but neither explicitly confirms these models were used in the study. The claims are vague and general, lacking explicit confirmation of the language model employed. Missing information must not be inferred. Source: RAG_Document_QA(No.5).pdf.
+Q006 | Name two evaluation metrics used in the study.
+  MODE A: UNVERIFIED_BASELINE
+  Two evaluation metrics used in the study are BLEU and ROUGE/ROUGE-L. Additional metrics mentioned include EM, F1, Hit Rate, MRR, and NDCG. These are used to assess aspects like answer quality, retrieval quality, and downstream tasks. Source: RAG_Survey(No.1).pdf (DOC08_P12_PAR01_CH03 and DOC08_P14_PAR01_CH01).
+  MODE B: UNVERIFIED_BASELINE
+  Two evaluation metrics used in the study are BLEU and ROUGE/L. Additional metrics mentioned include Jaccard Similarity, EM, F1-score, and BERTScore. These are cited in DOC04_P05_PAR01_CH04 and DOC08_P14_PAR01_CH01.
+  MODE C: SUPPORTED
+  Two evaluation metrics used in the study are Bilingual Evaluation Understudy (BLEU) and Jaccard Similarity. Additional metrics mentioned include EM, F1, Accuracy, ROUGE, and Precision. Evidence from DOC04_P05_PAR01_CH04, DOC08_P14_PAR01_CH01, and DOC04_P09_PAR01_CH03 supports these metrics. All sources consistently list BLEU and Jaccard Similarity as evaluation metrics.
+Q007 | Why is curated first-party data important for enterprise RAG?
+  MODE A: UNVERIFIED_BASELINE
+  The evidence does not explicitly state why curated first-party data is important for enterprise RAG. While it mentions RAG's security, scalability, and reliability, and references using private data (e.g., GitHub, databases), it does not link curated first-party data directly to these benefits. The importance of data quality is implied in the context of reliable AI, but no specific justification for curated first-party data is provided. Evidence is insufficient to establish this connection.
+  MODE B: UNVERIFIED_BASELINE
+  Curated first-party data is important for enterprise RAG because it ensures accurate, reliable, and secure responses by enabling the system to pull from trusted, internal datasets. This enhances data privacy, as proprietary information remains within secure environments. RAG leverages such data to deliver trustworthy outputs without exposing sensitive information to model training. It also improves scalability and reduces costs by avoiding expensive fine-tuning processes. Source: RAG_Enterprise_Basics(No.3).pdf (DOC05_P10_PAR01_CH01, DOC05_P10_PAR01_CH02).
+  MODE C: PARTIAL
+  Partial evidence: Both chunks state that RAG pulls from curated datasets to inform outputs, implying improved reliability, but neither explicitly addresses why curated first-party data is important for enterprise RAG. The evidence does not specify the importance of first-party data, missing critical context. Inference is not permitted.
+Q008 | Give two differences between RAG and fine-tuning.
+  MODE A: UNVERIFIED_BASELINE
+  - Fine-tuning operates as a "black box," making it difficult to trace reasoning or identify root causes of errors, whereas RAG allows easier tracing of response sources and data origins. (DOC05_P09_PAR01_CH01, DOC05_P09_PAR01_CH02)  
+- Fine-tuning requires significant computational resources and labeled data, while RAG is more cost-efficient and scalable by avoiding model training and data labeling. (DOC05_P10_PAR01_CH01)
+  MODE B: UNVERIFIED_BASELINE
+  - Fine-tuning operates as a black box, making it difficult to trace reasoning or identify root causes of errors, whereas RAG allows easier tracing of response sources and data origins. (DOC05_P09_PAR01_CH02, DOC05_P09_PAR01_CH01)  
+- RAG maintains proprietary data within secure databases, avoiding exposure during training, while fine-tuning incorporates data into the model’s training set, potentially exposing it to broader access. (DOC05_P10_PAR01_CH01)
+  MODE C: SUPPORTED
+  - Fine-tuning operates as a "black box," making it difficult to understand reasoning or trace hallucinations, whereas RAG provides transparent, traceable responses. (DOC05_P09_PAR01_CH02, DOC05_P09_PAR01_CH01)  
+- RAG maintains data privacy by keeping proprietary data in a secured database, while fine-tuning exposes data to broader access as part of the model’s training set. (DOC05_P10_PAR01_CH01, DOC05_P10_PAR01_CH02)  
+
+Note: Evidence for integration or cost efficiency is partial or indirect; no direct contradiction found.
+Q009 | What three enterprise benefits of RAG are highlighted?
+  MODE A: UNVERIFIED_BASELINE
+  The three enterprise benefits of RAG highlighted are: enhanced security and data privacy, greater cost-efficiency and scalability, and delivery of more trustworthy results. These are explicitly stated in DOC05_P10_PAR01_CH01 and DOC05_P10_PAR01_CH02.
+  MODE B: UNVERIFIED_BASELINE
+  The evidence highlights three enterprise benefits of RAG: it is more secure, more scalable, and more reliable. These points are derived from the text in "RAG_Enterprise_Basics(No.3).pdf" (chunk ID: DOC05_P10_PAR01_CH02). The other evidence discusses implementation challenges and architecture but does not specify additional benefits. The available evidence is insufficient to identify any other enterprise benefits.
+  MODE C: SUPPORTED
+  The three enterprise benefits of RAG highlighted are: enhanced security and data privacy, cost-efficiency and scalability, and reliability. Source: RAG_Enterprise_Basics(No.3).pdf, page 10.
+Q010 | What is the purpose of indexing in a RAG pipeline?
+  MODE A: UNVERIFIED_BASELINE
+  The purpose of indexing in a RAG pipeline is to organize and structure tokenized source data into manageable chunks, transforming them into semantic embeddings for efficient retrieval. This enables the system to quickly locate relevant information in response to queries, ensuring accurate and contextually pertinent data is used in generation. Indexing also involves optimizing data granularity, index structures, and metadata to enhance retrieval quality. (DOC06_P10_PAR01_CH01, DOC08_P04_PAR01_CH01)
+  MODE B: UNVERIFIED_BASELINE
+  The purpose of indexing in a RAG pipeline is to organize and structure tokenized source data into searchable chunks, transforming them into semantic vector embeddings for efficient retrieval. This enables rapid identification of relevant data based on query similarity, providing contextual foundation for generation. Indexing enhances retrieval accuracy and system performance by optimizing data granularity, index structures, and metadata alignment. Source: RAG_Implementation_Guide(No.4).pdf (DOC06_P10_PAR01_CH01, DOC06_P16_PAR01_CH02, DOC08_P04_PAR01_CH01).
+  MODE C: SUPPORTED
+  The purpose of indexing in a RAG pipeline is to organize and structure tokenized source data to facilitate efficient retrieval and generation. Indexing enables rapid location of relevant information in response to queries, ensuring pertinent data is retrieved for generation. Efficient indexing methods, such as those in FAISS or Elasticsearch, support real-time retrieval of relevant data chunks. Optimization of indexing enhances content quality through strategies like data granularity, metadata addition, and alignment optimization. (DOC06_P10_PAR01_CH01, DOC06_P16_PAR01_CH02, DOC08_P04_PAR01_CH01)
+Q011 | What is the difference between fixed-size chunking and semantic chunking?
+  MODE A: UNVERIFIED_BASELINE
+  Fixed-size chunking divides text into equally sized segments (e.g., fixed number of sentences or characters) regardless of content, ensuring uniformity and simplicity but risking splitting meaningful information. Semantic chunking divides text based on natural meaning boundaries (e.g., complete sentences or logical sections), preserving context and coherence, enhancing retrieval accuracy and user experience, though it requires complex algorithms and more computational resources. Both methods are used in RAG systems to improve information retrieval. [DOC06_P10_PAR01_CH02, DOC06_P11_PAR01_CH01, DOC06_P12_PAR01_CH02, DOC06_P13_PAR01_CH01, DOC06_P14_PAR01_CH03]
+  MODE B: UNVERIFIED_BASELINE
+  Fixed-size chunking divides text into equally sized segments (e.g., fixed number of sentences or characters) regardless of content, offering simplicity and efficiency but risking splitting meaningful information. Semantic chunking divides text based on natural meaning boundaries (e.g., sentences, paragraphs), preserving context and coherence, enhancing retrieval accuracy and user experience, though it requires complex algorithms and more computational resources. Both methods are used in RAG systems to improve information retrieval. [DOC06_P10_PAR01_CH02, DOC06_P11_PAR01_CH01, DOC06_P12_PAR01_CH02, DOC06_P13_PAR01_CH01]
+  MODE C: SUPPORTED
+  Fixed-size chunking divides text into equally sized segments (e.g., sentences, words, characters) regardless of content, potentially splitting meaningful information. Semantic chunking divides text based on natural meaning boundaries (e.g., sentences, paragraphs) to preserve context and coherence. Source DOC06_P10_PAR01_CH02 defines both methods, while DOC06_P11_PAR01_CH01 and DOC06_P12_PAR01_CH02 provide partial details on semantic chunking and lack direct comparison or definition of fixed-size chunking. Evidence is insufficient to fully contrast the two methods.
+Q012 | Why are reranking and context filtering used after retrieval?
+  MODE A: UNVERIFIED_BASELINE
+  Reranking and context filtering are used to improve relevance and reduce information overload by reordering and selecting the most pertinent retrieved chunks. Reranking prioritizes high-relevance content using machine learning models or predefined metrics, ensuring the generation model receives focused, accurate context [DOC08_P10_PAR01_CH02][DOC06_P19_PAR01_CH02]. Context filtering eliminates irrelevant or redundant information, preventing dilution of key details and maintaining contextual integrity [DOC08_P04_PAR01_CH02][DOC06_P19_PAR01_CH01]. These steps enhance the precision and quality of generated responses.
+  MODE B: UNVERIFIED_BASELINE
+  Reranking and context filtering are used to improve the relevance and quality of input to the generation model by prioritizing the most pertinent retrieved chunks and eliminating irrelevant or redundant information. Reranking reorders chunks based on relevance using machine learning models or rules, while context filtering (e.g., context compression) selects key portions of documents, avoiding information overload and preserving focus [DOC08_P04_PAR01_CH02, DOC08_P10_PAR01_CH02, DOC06_P19_PAR01_CH01]. This ensures the generation model receives focused, high-quality context for accurate and coherent responses.
+  MODE C: SUPPORTED
+  Reranking and context filtering are used to improve response quality by prioritizing the most relevant retrieved chunks and eliminating irrelevant or redundant content. Reranking orders chunks by relevance, ensuring the generation model receives refined, high-quality context. Context filtering removes irrelevant parts of retrieved information, preventing information overload and focusing the model on key details. This is supported by RAG_Implementation_Guide(No.4).pdf and RAG_Survey(No.1).pdf. (DOC06_P19_PAR01_CH02, DOC08_P04_PAR01_CH02, DOC08_P10_PAR01_CH02, DOC06_P04_PAR01_CH03)
+Q013 | What is the main purpose of a document question-answering system?
+  MODE A: UNVERIFIED_BASELINE
+  The main purpose of a document question-answering system is to automatically process external text documents, allowing users to input questions and receive answers based on the document content. It addresses time-consuming manual reading, human error, and hallucinatory responses by integrating retrieval techniques with large language models. The system improves accuracy and precision in information extraction and context understanding. Source: RAG_Document_QA(No.5).pdf (DOC04_P01_PAR01_CH01, DOC04_P01_PAR02_CH03).
+  MODE B: UNVERIFIED_BASELINE
+  The main purpose of a document question-answering system is to improve document processing efficiency and accuracy by leveraging Retrieval-Augmented Generation (RAG) and Large Language Models (LLMs), addressing limitations of manual reading and hallucinatory responses in traditional QA systems. It enables time-efficient, accurate information extraction from diverse document types such as journal articles, financial reports, and tutorials. This is achieved by combining search techniques with text generation, enhancing precision and context understanding. (Source: RAG_Document_QA(No.5).pdf, chunk IDs DOC04_P01_PAR01_CH03, DOC04_P01_PAR02_CH01, DOC04_P01_PAR01_CH01)
+  MODE C: PARTIAL
+  The main purpose of a document question-answering system is implicitly tied to improving response accuracy and reducing hallucinations through the implementation of Retrieval-Augmented Generation (RAG), addressing challenges in manual document processing and LLM modifications. However, the explicit statement of the "main purpose" is not directly provided in the evidence.
+Q014 | Why can a language model hallucinate when relevant evidence is not retrieved?
+  MODE A: UNVERIFIED_BASELINE
+  The evidence indicates that language models can hallucinate during generation even when relevant evidence is not retrieved because the model may generate responses based solely on its internal knowledge, especially when retrieval fails to provide accurate or complete context. This issue is particularly evident in Naive RAG systems, where poor retrieval precision leads to irrelevant or missing information, and the generation phase still produces hallucinated content unsupported by retrieved data. [DOC08_P03_PAR01_CH03]
+  MODE B: UNVERIFIED_BASELINE
+  A language model can hallucinate when relevant evidence is not retrieved because the model generates responses based solely on its internal knowledge or incomplete context, leading to fabricated or inaccurate content. Without retrieved, relevant document chunks, the model lacks grounding in factual information, increasing the likelihood of hallucination. This issue is particularly pronounced in RAG systems when retrieval fails to return precise or crucial information, resulting in responses unsupported by evidence. [DOC08_P03_PAR01_CH03, DOC04_P01_PAR02_CH01, DOC04_P01_PAR02_CH02]
+  MODE C: SUPPORTED
+  A language model can hallucinate when relevant evidence is not retrieved because the retrieval phase often fails to find precise or crucial information, leading to the selection of irrelevant or missing chunks. Without supporting context, the model generates responses not grounded in retrieved data. RAG mitigates this by linking language models to external knowledge sources, reducing hallucinations through accurate context retrieval. [RAG_Survey(No.1).pdf, RAG_Document_QA(No.5).pdf]
+Q015 | What is the role of a vector store in document question answering?
+  MODE A: UNVERIFIED_BASELINE
+  A vector store (or vector database) enables document question answering by storing text chunks as vectors through embedding models. It facilitates semantic similarity searches to retrieve the most relevant document segments based on query vectors. These retrieved chunks are then used as context in prompting large language models (LLMs) to generate accurate, contextually relevant answers. This process is central to the "Retrieve-Read" framework in RAG systems. [DOC05_P11_PAR01_CH01, DOC08_P03_PAR01_CH01, DOC04_P04_PAR01_CH02]
+  MODE B: UNVERIFIED_BASELINE
+  A vector store enables semantic similarity searches by storing document chunks as vectors, allowing retrieval of the most relevant context based on query similarity. It facilitates efficient indexing and retrieval in the RAG pipeline, supporting prompt engineering by providing context to the LLM. The vector store uses embedding models to convert text into vectors and performs similarity searches using cosine similarity. This step is critical for overcoming language model context limitations. [DOC04_P01_PAR01_CH01, DOC08_P03_PAR01_CH01, DOC04_P04_PAR01_CH02]
+  MODE C: SUPPORTED
+  A vector store stores text chunks converted into vectors via embedding models, enabling semantic search to retrieve relevant context for user queries. It facilitates efficient similarity searches that identify pertinent information for document question answering. This role is supported by evidence from RAG_Document_QA(No.5).pdf (DOC04_P04_PAR01_CH02) and RAG_Survey(No.1).pdf (DOC08_P03_PAR01_CH02). Evidence from DOC04_P03_PAR01_CH02 is partial and lacks explicit detail on its role in question answering.
+Q016 | What is a convolutional neural network mainly used for in computer vision?
+  MODE A: UNVERIFIED_BASELINE
+  A convolutional neural network (CNN) is mainly used for visual recognition tasks in computer vision, such as image classification, object detection, and image identification. It is particularly effective in analyzing visual pictures and is a key component in deep learning for computer vision applications. CNNs are also used in medical image analysis, industrial quality control, and automated systems like self-driving cars. Source: Computer_Vision_AI(No.6).pdf (DOC02_P01_PAR01_CH03, DOC02_P02_PAR01_CH04, DOC02_P05_PAR01_CH02).
+  MODE B: UNVERIFIED_BASELINE
+  A convolutional neural network (CNN) is mainly used for visual recognition tasks in computer vision, such as image identification, object detection, and image classification. It is a subtype of deep neural networks frequently employed in analyzing visual pictures and has demonstrated exceptional performance in these areas. CNNs are fundamental in applications like self-driving cars, medical imaging, and industrial quality control. Source: Computer_Vision_AI(No.6).pdf (DOC02_P01_PAR01_CH03, DOC02_P02_PAR01_CH04, DOC02_P05_PAR01_CH02).
+  MODE C: SUPPORTED
+  A convolutional neural network (CNN) is mainly used for visual recognition and analyzing visual pictures in computer vision. It serves as a basic building block in deep learning for computer vision and is particularly effective in image recognition tasks, such as those demonstrated in the ImageNet Large Scale Visual Recognition Challenge. This application is central to its role in computer vision. (Source: Computer_Vision_AI(No.6).pdf, chunks DOC02_P01_PAR01_CH03, DOC02_P02_PAR01_CH04, DOC02_P05_PAR01_CH02, DOC02_P05_PAR01_CH03)
+Q017 | How does convolution help an image-processing model?
+  MODE A: UNVERIFIED_BASELINE
+  Convolution helps an image-processing model by extracting spatial features from images through a mathematical operation that applies a filter (kernel) to image data, identifying patterns and edges. This process enables Convolutional Neural Networks (CNNs) to detect local features like edges and textures, which are crucial for image recognition. The operation is repeated across the image, allowing the model to recognize patterns at different scales and locations. CNNs use convolutional layers to process image data efficiently, forming the foundation of deep learning in computer vision. Source: Computer_Vision_AI(No.6).pdf (DOC02_P01_PAR01_CH03, DOC02_P02_PAR02_CH01, DOC02_P02_PAR02_CH02, DOC02_P02_PAR02_CH03).
+  MODE B: UNVERIFIED_BASELINE
+  Convolution helps an image-processing model by extracting features from images through a mathematical operation that slides a filter (kernel) across the image, detecting patterns such as edges or textures. This process enables the model to identify relevant visual information efficiently. Convolutional Neural Networks (CNNs) use this technique to process image data, enhancing computational efficiency and enabling accurate pattern recognition. The operation is foundational in deep learning for computer vision tasks, such as image classification and object detection. Source: Computer_Vision_AI(No.6).pdf (DOC02_P02_PAR02_CH03, DOC02_P01_PAR01_CH03).
+  MODE C: SUPPORTED
+  Convolution helps an image-processing model by applying filters (channels) across the image to extract features through pixel value interactions, enabling the detection of patterns and patterns in 2D image data. This process is fundamental in convolutional neural networks (CNNs), which are designed for image data and serve as key building blocks in computer vision tasks. The technique categorizes image components to assist machine learning and generate desired outputs. [DOC02_P02_PAR02_CH02, DOC02_P02_PAR02_CH01, DOC02_P02_PAR02_CH03]
+Q018 | Mention two application areas of CNNs.
+  MODE A: UNVERIFIED_BASELINE
+  Two application areas of CNNs are:  
+- Health and medical imaging, such as classifying cancers in CT, MRI, PET scans, and whole slide images.  
+- Self-driving cars and automaton design, involving visual recognition tasks like object detection and image identification.  
+(Source: DOC01_P12_PAR02_CH02, DOC02_P01_PAR01_CH02)
+  MODE B: UNVERIFIED_BASELINE
+  Two application areas of CNNs are:  
+- Medical imaging for cancer classification using CT, MRI, PET scans, and whole slide images [DOC01_P12_PAR02_CH02].  
+- Security systems in IoT, commercial, and domestic settings [DOC02_P06_PAR01_CH01].
+  MODE C: SUPPORTED
+  Two application areas of CNNs are health and medical, and self-driving cars.  
+(Source: DOC02_P01_PAR01_CH02 and DOC02_P01_PAR01_CH03)  
+
+Additional applications include medical image analysis and image categorization.  
+(Source: DOC02_P02_PAR02_CH03)
+Q019 | Name three areas where AI or ML is applied in oncology.
+  MODE A: UNVERIFIED_BASELINE
+  - Cancer diagnosis  
+- Prognosis  
+- Treatment planning  
+
+(Source: DOC01_P18_PAR01_CH02, DOC01_P05_PAR01_CH03, DOC01_P04_PAR01_CH01)
+  MODE B: UNVERIFIED_BASELINE
+  Three areas where AI or ML is applied in oncology are: cancer diagnosis, prognosis, and treatment planning. Additionally, AI/ML is used in precision oncology and longitudinal surveillance. Evidence also mentions diagnostic decision-support systems and treatment-stratification pipelines. (Citations: DOC01_P18_PAR01_CH02, DOC01_P17_PAR02_CH02, DOC01_P04_PAR01_CH01)
+  MODE C: SUPPORTED
+  Three areas where AI or ML is applied in oncology are: cancer diagnosis, treatment planning, and precision oncology. Additionally, AI/ML is used in diagnostic decision-support systems, treatment-stratification pipelines, and integration with telemedicine and mobile health platforms. Evidence from DOC01_P18_PAR01_CH02 and DOC01_P05_PAR01_CH03 supports these applications.
+Q020 | Why might a cancer AI model trained at one institution perform poorly at another?
+  MODE A: UNVERIFIED_BASELINE
+  A cancer AI model may perform poorly at another institution due to distribution shifts in data—such as differences in imaging protocols, patient demographics, and care practices—leading to covariate shifts. Models trained on curated single-institution datasets often overfit and fail in real-world, diverse settings. Inadequate prospective validation, lack of interpretability, and algorithmic bias from demographic underrepresentation exacerbate these issues. These challenges are compounded by infrastructure diversity and inconsistent data quality, particularly in regions like India. The failure of IBM Watson for Oncology highlights these translational gaps [33, 34, 38].
+  MODE B: UNVERIFIED_BASELINE
+  A cancer AI model may perform poorly at another institution due to domain shifts in imaging protocols, patient demographics, and care practices. Performance degradation occurs when models trained on single-institution, curated data are exposed to non-standardized, diverse, or fragmented real-world data. This results in covariate shifts that models cannot absorb without domain adaptation or transfer learning. Additionally, algorithmic bias from demographic underrepresentation and limited prospective validation contribute to poor generalization. Evidence from IBM Watson and Epic Sepsis Model highlights real-world failures due to these issues. Source: DOC01_P06_PAR02_CH01, DOC01_P11_PAR02_CH02, DOC01_P19_PAR01_CH02.
+  MODE C: SUPPORTED
+  A cancer AI model may perform poorly at another institution due to domain shifts, including changes in imaging protocols, patient demographics, and institutional care practices. These shifts cause covariate and concept drift, leading to distributional imbalances that degrade model performance. Models trained on single-institution data often overfit and fail to generalize to diverse populations or settings, especially with non-standardized data, inconsistent imaging, or fragmented health records. Such issues are exacerbated by unmitigated dataset shift and poor integration with legacy systems. [DOC01_P11_PAR02_CH02, DOC01_P12_PAR01_CH03, DOC01_P19_PAR01_CH02, DOC01_P06_PAR02_CH01]
+Q021 | Name two barriers to real-world clinical deployment of oncology AI.
+  MODE A: UNVERIFIED_BASELINE
+  Two barriers to real-world clinical deployment of oncology AI are:  
+1. Limited interpretability of complex deep learning models, which erodes clinician confidence due to black-box predictions without biological pathway links [DOC01_P11_PAR02_CH02].  
+2. Algorithmic bias and demographic underrepresentation in training data, leading to distorted performance across diverse populations [DOC01_P11_PAR02_CH02].
+  MODE B: UNVERIFIED_BASELINE
+  Two barriers to real-world clinical deployment of oncology AI are:  
+- Data quality deficits and interoperability failures between legacy electronic health record systems and AI modules [DOC01_P17_PAR02_CH01].  
+- Variable healthcare-system digital maturity and infrastructure diversity, particularly in developing regions like India [DOC01_P06_PAR02_CH02, DOC01_P06_PAR01_CH04].
+  MODE C: SUPPORTED
+  Two barriers to real-world clinical deployment of oncology AI are:  
+- Data quality deficits and interoperability failures between legacy electronic health record architectures and AI modules (DOC01_P17_PAR02_CH01).  
+- Clinician trust and workflow compatibility (DOC01_P18_PAR01_CH01).  
+
+Note: "Distribution shift" and "insufficient model interpretability" are also mentioned, but the above are directly cited and verified.
+Q022 | What was the reported commercial paper issuance value during FY 2025–26?
+  MODE A: UNVERIFIED_BASELINE
+  The reported commercial paper (CP) issuance value during FY 2025–26 was ₹16.9 lakh crore, as stated in chunk ID "DOC03_P29_PAR01_CH01" of Finance_data(No.8).pdf. This figure reflects an increase from ₹15.7 lakh crore in the previous year. No conflicting values are reported in the provided evidence.
+  MODE B: UNVERIFIED_BASELINE
+  The reported commercial paper issuance value during FY 2025–26 is ₹18.2 lakh crore, as stated in "Synthetic_Contradictory_Finance(No.9).pdf". However, another source ("Finance_data(No.8).pdf") reports total CP issuances increased to ₹16.9 lakh crore during 2025–26 from the previous year. The sources disagree: DOC09_P01_PAR01_CH01 states ₹18.2 lakh crore; DOC03_P29_PAR01_CH01 states ₹16.9 lakh crore. Evidence is insufficient to resolve the contradiction due to lack of authoritative confirmation.
+  MODE C: CONTRADICTORY
+  Sources disagree on the reported commercial paper issuance value during FY 2025–26. One states ₹18.2 lakh crore (Synthetic_Contradictory_Finance(No.9).pdf, chunk DOC09_P01_PAR01_CH01). The other states ₹16.9 lakh crore (Finance_data(No.8).pdf, chunk DOC03_P29_PAR01_CH01). The contradiction is explicitly noted in the verification conflict.
+
+Conflict record (verifier):
+Sources disagree: [DOC09_P01_PAR01_CH01] Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2. | [DOC03_P29_PAR01_CH01] Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year.
+Q023 | What was the reported average daily corporate bond market turnover during FY 2025–26?
+  MODE A: UNVERIFIED_BASELINE
+  The reported average daily corporate bond market turnover during FY 2025–26 is ₹7.1 thousand crore, as stated in Finance_data(No.8).pdf (DOC03_P30_PAR01_CH01). A synthetic document (Synthetic_Contradictory_Finance(No.9).pdf) reports ₹7.8 thousand crore, creating a discrepancy. Sources disagree: Finance_data(No.8).pdf cites ₹7.1 thousand crore; Synthetic_Contradictory_Finance(No.9).pdf cites ₹7.8 thousand crore.
+  MODE B: UNVERIFIED_BASELINE
+  The reported average daily corporate bond market turnover during FY 2025–26 is ₹7.1 thousand crore, as stated in Finance_data(No.8).pdf (DOC03_P30_PAR01_CH01). A synthetic document (Synthetic_Contradictory_Finance(No.9).pdf) reports ₹7.8 thousand crore, but it is marked as fictional and not official. The sources disagree: Finance_data(No.8).pdf cites ₹7.1 thousand crore; Synthetic_Contradictory_Finance(No.9).pdf cites ₹7.8 thousand crore.
+  MODE C: CONTRADICTORY
+  Sources disagree on the reported average daily corporate bond market turnover during FY 2025–26. Finance_data(No.8).pdf states it was ₹7.1 thousand crore (DOC03_P30_PAR01_CH01). Synthetic_Contradictory_Finance(No.9).pdf reports ₹7.8 thousand crore (DOC09_P01_PAR01_CH01). The evidence contradicts itself on this value.
+
+Conflict record (verifier):
+Sources disagree: [DOC03_P30_PAR01_CH01] The average daily secondary market turnover in the corporate bond market increased to ₹7.1 thousand crore during 2025-26 from ₹6.2 thousand crore during the previous year (Chart II.5.5). | [DOC09_P01_PAR01_CH01] Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2.
+Q024 | What was the aggregate value of Q4 OMO purchases reported in the financial document?
+  MODE A: UNVERIFIED_BASELINE
+  The aggregate value of Q4 OMO purchases is reported as ₹4.57 lakh crore in Finance_data(No.8).pdf (DOC03_P29_PAR01_CH03), while Synthetic_Contradictory_Finance(No.9).pdf (DOC09_P01_PAR01_CH01) states ₹4.15 lakh crore. The sources disagree. The synthetic document is marked as fictional and not to be treated as real-world data. Evidence is insufficient to confirm accuracy due to conflicting values and lack of SLM verification.
+  MODE B: UNVERIFIED_BASELINE
+  The aggregate value of Q4 OMO purchases is ₹4.57 lakh crore, as reported in Finance_data(No.8).pdf (DOC03_P29_PAR01_CH03). A synthetic document (Synthetic_Contradictory_Finance(No.9).pdf) reports ₹4.15 lakh crore for Q4 OMO purchases, but is marked as fictional and not to be treated as real-world data. The evidence contains a contradiction between the official and synthetic sources, but the official document is primary. The synthetic source is explicitly labeled as adversarial and fictional.
+  MODE C: CONTRADICTORY
+  Sources disagree on the aggregate value of Q4 OMO purchases. One states ₹4.57 lakh crore (Finance_data(No.8).pdf, chunk DOC03_P29_PAR01_CH03), while another reports ₹4.15 lakh crore (Synthetic_Contradictory_Finance(No.9).pdf, chunk DOC09_P01_PAR01_CH01). A third source claims ₹2.39 lakh crore (Finance_data(No.8).pdf, chunk DOC03_P29_PAR01_CH01) and another mentions ₹1.81 lakh crore (Finance_data(No.8).pdf, chunk DOC03_P29_PAR01_CH02), though the latter pertains to Q3, not Q4. The conflicting values arise due to inconsistent reporting and potential misattribution of periods.
+
+Conflict record (verifier):
+Sources disagree: [DOC03_P29_PAR01_CH03] OMO purchases for an aggregate amount of ₹4.57 lakh crore were conducted during the quarter, of which ₹3.5 lakh crore were through auctions. | [DOC09_P01_PAR01_CH01] Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2.
+Sources disagree: [DOC03_P29_PAR01_CH03] OMO purchases for an aggregate amount of ₹4.57 lakh crore were conducted during the quarter, of which ₹3.5 lakh crore were through auctions. | [DOC03_P29_PAR01_CH01] Open market operation (OMO) purchase auctions for an aggregate amount of ₹2.39 lakh crore were conducted during the quarter.
+Sources disagree: [DOC03_P29_PAR01_CH03] OMO purchases for an aggregate amount of ₹4.57 lakh crore were conducted during the quarter, of which ₹3.5 lakh crore were through auctions. | [DOC03_P29_PAR01_CH02] OMO purchases for an aggregate amount of ₹1.81 lakh crore were conducted during the quarter, of which ₹1.50 lakh crore were through auctions.
+Q025 | What average daily money market volume is stated in the synthetic document?
+  MODE A: UNVERIFIED_BASELINE
+  The synthetic document states an average daily money market volume of ₹6.9 lakh crore for FY 2025–26 (DOC09_P01_PAR01_CH01). However, another source (DOC03_P27_PAR01_CH04) mentions an increase in money market volume to ₹6.4 lakh crore during 2025–26, though it does not specify the average daily volume. The evidence is contradictory and incomplete; the value in the synthetic document is explicitly stated, but the supporting data from the financial report is partial and lacks clarity on daily volume. Thus, the available evidence is insufficient to confirm the average daily volume.
+  MODE B: UNVERIFIED_BASELINE
+  The synthetic document states an average daily money market volume of ₹6.9 lakh crore for FY 2025–26 (DOC09_P01_PAR01_CH01). However, another part of the same document notes a 16% increase in money market volume to ₹6.4 lakh crore in 2025–26 (DOC03_P27_PAR02_CH01), indicating a discrepancy. The evidence is partial and contradictory; no definitive average daily volume is confirmed. The value of ₹6.9 lakh crore is explicitly stated but not verified against the ₹6.4 lakh crore figure.
+  MODE C: SUPPORTED
+  The average daily money market volume is stated as "6.9 lakh crore" for FY 2025–26 in the synthetic document. This value is explicitly mentioned in chunk DOC09_P01_PAR01_CH01 of the source file Synthetic_Contradictory_Finance(No.9).pdf. The evidence from DOC09_P02_PAR01_CH01 is partial and does not provide the actual value.
+Q026 | What commercial paper issuance value is stated in the synthetic document?
+  MODE A: UNVERIFIED_BASELINE
+  The commercial paper issuance value stated in the synthetic document is 18.2 lakh crore FY 2025–26. This value is derived from chunk DOC09_P01_PAR01_CH01 in the file Synthetic_Contradictory_Finance(No.9).pdf. The document is marked as synthetic and adversarial, and its figures should not be treated as real-world facts.
+  MODE B: UNVERIFIED_BASELINE
+  The commercial paper issuance value stated in the synthetic document is 18.2 lakh crore FY 2025–26. This value is derived from chunk DOC09_P01_PAR01_CH01 in the file Synthetic_Contradictory_Finance(No.9).pdf. The document is marked as synthetic and adversarial, and its figures should not be treated as real-world facts.
+  MODE C: SUPPORTED
+  The commercial paper issuance value stated in the synthetic document is 18.2 lakh crore FY 2025–26. This is directly mentioned in the text: "Commercial paper issuances ■18.2 lakh crore FY 2025–26". Source: DOC09_P01_PAR01_CH01.
+Q027 | Does the synthetic memorandum agree with the original financial report about commercial paper issuance?
+  MODE A: UNVERIFIED_BASELINE
+  The synthetic memorandum does not provide an original financial report for comparison. It states its figures are deliberately modified and fictional, with no assertion of agreement or disagreement with any real or original financial report. The evidence is synthetic and marked as adversarial; thus, no verifiable alignment with an original financial report can be established. Source: Synthetic_Contradictory_Finance(No.9).pdf.
+  MODE B: UNVERIFIED_BASELINE
+  The synthetic memorandum states commercial paper issuances of ₹18.2 lakh crore during FY 2025–26, while the original financial report indicates issuances of ₹16.9 lakh crore. The values differ, indicating disagreement. The evidence does not confirm alignment between the two reports. Source: DOC09_P01_PAR01_CH01 (Synthetic_Contradictory_Finance(No.9).pdf), DOC03_P29_PAR01_CH01 (Finance_data(No.8).pdf).
+  MODE C: CONTRADICTORY
+  The sources disagree on commercial paper issuance for FY 2025–26. The synthetic memorandum states "18.2 lakh crore" (DOC09_P01_PAR01_CH01). The original financial report states "16.9 lakh crore" (DOC03_P29_PAR01_CH01). This contradiction is explicitly noted in the verification conflict.
+
+Conflict record (verifier):
+Sources disagree: [DOC09_P01_PAR01_CH01] Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2. | [DOC03_P29_PAR01_CH01] Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year.
+Q028 | Is the complete Q3 average daily money market volume provided in the synthetic document?
+  MODE A: UNVERIFIED_BASELINE
+  The complete Q3 average daily money market volume is not provided in the synthetic document. The document explicitly states that "the memorandum discusses quarterly liquidity conditions but does not provide the complete Q3 average daily money market volume" and classifies this as PARTIAL or UNCERTAIN. This assertion is from chunk ID DOC09_P01_PAR01_CH01. No conflicting values are reported in the evidence.
+  MODE B: UNVERIFIED_BASELINE
+  The complete Q3 average daily money market volume is not provided in the synthetic document. The document explicitly states that "the Q3 value is missing" and classifies this as PARTIAL/UNCERTAIN, instructing not to invent or guess values. This assertion is from Synthetic_Contradictory_Finance(No.9).pdf (chunk ID: DOC09_P01_PAR01_CH01). No conflicting value is present in the evidence.
+  MODE C: PARTIAL
+  The complete Q3 average daily money market volume is not provided in the synthetic document. The evidence from DOC09_P01_PAR01_CH01 explicitly states that the memorandum does not provide this information, indicating partial absence. No contradictory claims are present in the evidence. Missing values are not inferred.
+Q029 | Which information in the synthetic document is irrelevant to financial market analysis?
+  MODE A: UNVERIFIED_BASELINE
+  The information about the employee wellness campaign—including 420 participants, three workshops, two feedback sessions, and 78% attendance—is irrelevant to financial market analysis. This detail is explicitly stated in the synthetic document as unrelated to financial market analysis. Source: DOC09_P01_PAR01_CH01.
+  MODE B: UNVERIFIED_BASELINE
+  The information about the employee wellness campaign—such as 420 participants, three workshops, and a 78% attendance rate—is irrelevant to financial market analysis. This is explicitly stated in chunk IDs DOC09_P01_PAR01_CH01 and DOC09_P01_PAR01_CH02.
+  MODE C: SUPPORTED
+  The employee wellness campaign details—such as 420 participants, three workshops, two feedback sessions, and a 78% attendance rate—are irrelevant to financial market analysis. This is explicitly stated in both chunks. Source: Synthetic_Contradictory_Finance(No.9).pdf.
+Q030 | Compare the original and synthetic documents for corporate bond turnover.
+  MODE A: UNVERIFIED_BASELINE
+  The original document states corporate bond market secondary market turnover was ₹7.1 thousand crore in FY 2025–26, while the synthetic document reports ₹7.8 thousand crore. The evidence shows a discrepancy: original reports a higher turnover than the synthetic version. The synthetic document is marked as fictional and adversarial; thus, its figures should not be treated as real-world facts. The available evidence is insufficient to confirm or resolve the difference due to lack of independent verification.
+  MODE B: UNVERIFIED_BASELINE
+  The original document reports an average daily secondary market turnover of ₹7.1 thousand crore in the corporate bond market during 2025–26, while the synthetic document states ₹7.8 thousand crore. The sources disagree on the turnover value. The synthetic document is explicitly labeled as fictional and not an official source. Evidence is insufficient to confirm the accuracy of either value due to the synthetic nature of one source.
+  MODE C: CONTRADICTORY
+  The sources disagree on corporate bond market turnover in FY 2025–26. Finance_data(No.8).pdf reports ₹7.1 thousand crore, while Synthetic_Contradictory_Finance(No.9).pdf reports ₹7.8 thousand crore. This contradiction is explicitly noted in both documents' verification sections. The discrepancy arises in the stated value of turnover, with no resolution provided.
+
+Conflict record (verifier):
+Sources disagree: [DOC03_P30_PAR01_CH01] The average daily secondary market turnover in the corporate bond market increased to ₹7.1 thousand crore during 2025-26 from ₹6.2 thousand crore during the previous year (Chart II.5.5). | [DOC09_P01_PAR01_CH01] Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2.

@@ -1,0 +1,41 @@
+{
+  "bge-m3": {
+    "repo": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "file": "pytorch_model.bin",
+    "sha256": "b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38"
+  },
+  "reranker": {
+    "repo": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "file": "model.safetensors",
+    "sha256": "821d1aa69520101d6e0737f78a042ae25b19e5cb9160701909d10434f4aeb0ae"
+  },
+  "verifier": {
+    "repo": "lmstudio-community/Qwen3-4B-Instruct-2507-GGUF",
+    "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "4edb920b6f14e3b9284d4502a6485103d72cde05",
+    "file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "sha256": "8cdb57cbb880d313736a9bc4e3d3d2485f145b5e19cf33783746e753e82641fc"
+  },
+  "runtime": {
+    "release": "b11065",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11065/llama-b11065-bin-win-vulkan-x64.zip",
+    "sha256": "12733edc26574d117cb189fb5c95323d37a94d1d27123f540f788b328cf9d68b"
+  },
+  "hardware": {
+    "cpu": "Intel Core i5-14400, 10 cores / 16 threads",
+    "ram_bytes": 16883564544,
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "vram_mib": 8151,
+    "driver": "610.88",
+    "initial_free_disk_bytes": 117438316544
+  },
+  "previous_verifier": {
+    "repo": "Qwen/Qwen2.5-3B-Instruct-GGUF",
+    "revision": "7dabda4d13d513e3e842b20f0d435c732f172cbe",
+    "file": "qwen2.5-3b-instruct-q4_k_m.gguf",
+    "sha256": "626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "selection_outcome": "Failed development category tests; retained for reproducibility."
+  }
+}

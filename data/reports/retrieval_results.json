@@ -1,0 +1,448 @@
+{
+  "run_id": "ccfed46e-0825-429f-9d20-9a5da90decc0",
+  "query": "What was the commercial paper issuance value?",
+  "candidates": [
+    {
+      "text": "the average share of triparty repo and market repo at around 67 per cent and 30 per cent, respectively. The share of call money market increased marginally to 3 per cent during the year (Chart II.5.2). II.5.7 In the longer-term segments, the average daily spread of CD rates and CP rates over T-bill rates trended downwards until September 2025, while they increased afterwards (Chart II.5.3). In the primary market, the CD issuances increased to ₹5.3 lakh crore in Q4:2025-26 from ₹2.3 lakh crore in Q1. Total CD issuances aggregated ₹13.5 lakh crore in 2025-26 as against total issuances of ₹11.9 lakh crore in the previous year. II.5.8 As the liquidity remained largely in surplus and interest rates favourable, new issuances of CPs depicted a steady trend during H1:2025-26. However, CP issuances declined in H2:2025- &KDUW\u0003,,\u0011\u0018\u0011\u0014 \u00030RQH\\\u00030DUNHW\u00035DWHV\u00037UDFNHG\u00033ROLF\\\u00035HSR\u00035DWH D\u0011\u00032YHUQLJKW\u00035DWHV\u0003DQG\u00033ROLF\\\u0003&RUULGRU E\u0011\u0003\u0016\u00100RQWK\u00035DWHV\u0003DQG\u00033ROLF\\\u00035HSR\u00035DWH \u00035%,\u000f\u0003)%,/\u000f\u0003&&,/\u0010)WUDF\u0003DQG\u00035%,\u0003VWDII\u0003HVWLPDWHV\u0011 :$&5 7ULSDUW\\\u0003UHSR\u0003UDWH 0DUNHW\u0003UHSR\u0003\u0003UDWH 6')\u0003UDWH 5HSR\u0003UDWH 06)\u0003UDWH \u0016\u0010PRQWK\u0003&'\u0003UDWH \u0014\u0010GD\\\u00037\u0010ELOO\u0003UDWH \u0016\u0010PRQWK\u0003&3\u0003UDWH 5HSR\u0003UDWH \u0017\u0011\u0013\u0013",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 28,
+      "section": "\u0016\u0013\u00100DU\u0010\u0015\u0019",
+      "parent_id": "DOC03_P28_PAR01",
+      "chunk_id": "DOC03_P28_PAR01_CH01",
+      "parent_text": "the average share of triparty repo and market repo at around 67 per cent and 30 per cent, respectively. The share of call money market increased marginally to 3 per cent during the year (Chart II.5.2). II.5.7 In the longer-term segments, the average daily spread of CD rates and CP rates over T-bill rates trended downwards until September 2025, while they increased afterwards (Chart II.5.3). In the primary market, the CD issuances increased to ₹5.3 lakh crore in Q4:2025-26 from ₹2.3 lakh crore in Q1. Total CD issuances aggregated ₹13.5 lakh crore in 2025-26 as against total issuances of ₹11.9 lakh crore in the previous year. II.5.8 As the liquidity remained largely in surplus and interest rates favourable, new issuances of CPs depicted a steady trend during H1:2025-26. However, CP issuances declined in H2:2025- &KDUW\u0003,,\u0011\u0018\u0011\u0014 \u00030RQH\\\u00030DUNHW\u00035DWHV\u00037UDFNHG\u00033ROLF\\\u00035HSR\u00035DWH D\u0011\u00032YHUQLJKW\u00035DWHV\u0003DQG\u00033ROLF\\\u0003&RUULGRU E\u0011\u0003\u0016\u00100RQWK\u00035DWHV\u0003DQG\u00033ROLF\\\u00035HSR\u00035DWH \u00035%,\u000f\u0003)%,/\u000f\u0003&&,/\u0010)WUDF\u0003DQG\u00035%,\u0003VWDII\u0003HVWLPDWHV\u0011 :$&5 7ULSDUW\\\u0003UHSR\u0003UDWH 0DUNHW\u0003UHSR\u0003\u0003UDWH 6')\u0003UDWH 5HSR\u0003UDWH 06)\u0003UDWH \u0016\u0010PRQWK\u0003&'\u0003UDWH \u0014\u0010GD\\\u00037\u0010ELOO\u0003UDWH \u0016\u0010PRQWK\u0003&3\u0003UDWH 5HSR\u0003UDWH \u0017\u0011\u0013\u0013 \u0017\u0011\u0015\u0018 \u0017\u0011\u0018\u0013 \u0017\u0011\u001a\u0018 \u0018\u0011\u0013\u0013 \u0018\u0011\u0015\u0018 \u0018\u0011\u0018\u0013 \u0018\u0011\u001a\u0018 \u0019\u0011\u0013\u0013 \u0019\u0011\u0015\u0018 \u0019\u0011\u0018\u0013 \u0019\u0011\u001a\u0018 \u001a\u0011\u0013\u0013 \u0013\u0017\u0010$SU\u0010\u0015\u0018 \u0010$SU\u0010\u0015\u0018 \u0013\u0017\u00100D\\\u0010\u0015\u0018 \u00100D\\\u0010\u0015\u0018 \u0013\u0016\u0010-XQ\u0010\u0015\u0018 \u0014\u001b\u0010-XQ\u0010\u0015\u0018 \u0013\u0016\u0010-XO\u0010\u0015\u0018 \u0014\u001b\u0010-XO\u0010\u0015\u0018 \u0013\u0015\u0010$XJ\u0010\u0015\u0018 \u0014\u001a\u0010$XJ\u0010\u0015\u0018 \u0013\u0014\u00106HS\u0010\u0015\u0018 \u0014\u0019\u00106HS\u0010\u0015\u0018 \u0013\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0019\u00102FW\u0010\u0015\u0018 \u0016\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0018\u00101RY\u0010\u0015\u0018 \u0016\u0013\u00101RY\u0010\u0015\u0018 \u0014\u0018\u0010'HF\u0010\u0015\u0018 \u0016\u0013\u0010'HF\u0010\u0015\u0018 \u0014\u0017\u0010-DQ\u0010\u0015\u0019 \u0010-DQ\u0010\u0015\u0019 \u0014\u0016\u0010)HE\u0010\u0015\u0019 \u0015\u001b\u0010)HE\u0010\u0015\u0019 \u0014\u0018\u00100DU\u0010\u0015\u0019 \u0016\u0013\u00100DU\u0010\u0015\u0019 \u0017\u0011\u001a\u0018 \u0018\u0011\u0013\u0013 \u0018\u0011\u0015\u0018 \u0018\u0011\u0018\u0013 \u0018\u0011\u001a\u0018 \u0019\u0011\u0013\u0013 \u0019\u0011\u0015\u0018 \u0019\u0011\u0018\u0013 \u0019\u0011\u001a\u0018 \u001a\u0011\u0013\u0013 \u001a\u0011\u0015\u0018 \u001a\u0011\u0018\u0013 \u001a\u0011\u001a\u0018 \u001b\u0011\u0013\u0013 \u0013\u0017\u0010$SU\u0010\u0015\u0018 \u0010$SU\u0010\u0015\u0018 \u0013\u0017\u00100D\\\u0010\u0015\u0018 \u00100D\\\u0010\u0015\u0018 \u0013\u0016\u0010-XQ\u0010\u0015\u0018 \u0014\u001b\u0010-XQ\u0010\u0015\u0018 \u0013\u0016\u0010-XO\u0010\u0015\u0018 \u0014\u001b\u0010-XO\u0010\u0015\u0018 \u0013\u0015\u0010$XJ\u0010\u0015\u0018 \u0014\u001a\u0010$XJ\u0010\u0015\u0018 \u0013\u0014\u00106HS\u0010\u0015\u0018 \u0014\u0019\u00106HS\u0010\u0015\u0018 \u0013\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0019\u00102FW\u0010\u0015\u0018 \u0016\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0018\u00101RY\u0010\u0015\u0018 \u0016\u0013\u00101RY\u0010\u0015\u0018 \u0014\u0018\u0010'HF\u0010\u0015\u0018 \u0016\u0013\u0010'HF\u0010\u0015\u0018 \u0014\u0017\u0010-DQ\u0010\u0015\u0019 \u0010-DQ\u0010\u0015\u0019 \u0014\u0016\u0010)HE\u0010\u0015\u0019 \u0015\u001b\u0010)HE\u0010\u0015\u0019 \u0014\u0018\u00100DU\u0010\u0015\u0019 \u0016\u0013\u00100DU\u0010\u0015\u0019 &KDUW\u0003,,\u0011\u0018\u0011\u0015 \u0003&ROODWHUDOLVHG\u00036HJPHQWV\u0003'RPLQDWH 0RQH\\\u00030DUNHW \u0003&&,/\u0003DQG\u00035%,\u0003VWDII\u0003HVWLPDWHV\u0011 \u0016 \u0016 \u0016 \u0016 \u0016 \u0016 \u0016 \u0016 \u0016 \u0016 \u0015 \u0016 \u0016\u0014 \u0016\u0015 \u0016\u0014 \u0016\u0014 \u0016\u0014 \u0016\u0014 \u0016\u0015 \u0016\u0015 \u0016\u0014 \u0015\u001b \u0015\u0019 \u0015\u001b \u0019\u0019 \u0019\u0019 \u0019\u0019 \u0019\u0019 \u0019\u0019 \u0019\u0019 \u0019\u0018 \u0019\u0018 \u0019\u001a \u0019 \u001a\u0015 \u001a\u0013 &DOO\u00121RWLFH 0DUNHW\u0003UHSR 7ULSDUW\\\u0003UHSR \u0003)%,/\u000f\u0003&RJHQFLV\u0003DQG\u00035%,\u0003VWDII\u0003HVWLPDWHV &KDUW\u0003,,\u0011\u0018\u0011\u0016 \u0003&3\u0003DQG\u0003&'\u00035DWH\u00036SUHDGV\u0003,QFUHDVHG\u0003LQ +\u0015 ȋ\u0005 Ȍ 6SUHDG\u0003RI\u0003&'\u0003UDWH\u0003RYHU\u0003 \u0014\u0010GD\\\u00037\u0010ELOO\u0003UDWH 6SUHDG\u0003RI\u0003\u00160\u0003&3\u0003 1%)& \u0003UDWH\u0003RYHU\u0003 \u0014\u0010GD\\\u00037\u0010ELOO\u0003UDWH 6SUHDG\u0003RI\u0003\u00160\u0003&3\u0003 1RQ\u00101%)& \u0003UDWH\u0003RYHU\u0003 \u0014\u0010GD\\\u00037\u0010ELOO\u0003UDWH \u0013\u0017\u0010$SU\u0010\u0015\u0018 \u0010$SU\u0010\u0015\u0018 \u0013\u0017\u00100D\\\u0010\u0015\u0018 \u00100D\\\u0010\u0015\u0018 \u0013\u0016\u0010-XQ\u0010\u0015\u0018 \u0014\u001b\u0010-XQ\u0010\u0015\u0018 \u0013\u0016\u0010-XO\u0010\u0015\u0018 \u0014\u001b\u0010-XO\u0010\u0015\u0018 \u0013\u0015\u0010$XJ\u0010\u0015\u0018 \u0014\u001a\u0010$XJ\u0010\u0015\u0018 \u0013\u0014\u00106HS\u0010\u0015\u0018 \u0014\u0019\u00106HS\u0010\u0015\u0018 \u0013\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0019\u00102FW\u0010\u0015\u0018 \u0016\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0018\u00101RY\u0010\u0015\u0018 \u0016\u0013\u00101RY\u0010\u0015\u0018 \u0014\u0018\u0010'HF\u0010\u0015\u0018 \u0016\u0013\u0010'HF\u0010\u0015\u0018 \u0014\u0017\u0010-DQ\u0010\u0015\u0019 \u0010-DQ\u0010\u0015\u0019 \u0014\u0016\u0010)HE\u0010\u0015\u0019 \u0015\u001b\u0010)HE\u0010\u0015\u0019 \u0014\u0018\u00100DU\u0010\u0015\u0019 \u0016\u0013\u00100DU\u0010\u0015\u0019",
+      "child_id": "DOC03_P28_PAR01_CH01",
+      "similarity_score": 0.4353860020637512,
+      "retrieval_rank": 1,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 1,
+          "score": 0.4353860020637512
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?"
+    },
+    {
+      "text": "Synthetic Financial Market Test Memorandum IMPORTANT: This is a deliberately modified fictional document for testing RAG + SLM contradiction detection. It is not an official RBI or government document and must not be used for real financial decisions. Document ID: SYN-FIN-TEST-01 Version: 2.0 (adversarial test version) 1. Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2. Deliberately Incomplete Information The memorandum discusses quarterly liquidity conditions but does not provide the complete Q3 average daily money market volume. The system should classify this as PARTIAL or UNCERTAIN and should not invent a value. 3. Irrelevant Information The institution conducted an employee wellness campaign involving 420",
+      "source": "Synthetic_Contradictory_Finance(No.9).pdf",
+      "document_id": "DOC09",
+      "page": 1,
+      "section": "3. Irrelevant Information",
+      "parent_id": "DOC09_P01_PAR01",
+      "chunk_id": "DOC09_P01_PAR01_CH01",
+      "parent_text": "Synthetic Financial Market Test Memorandum IMPORTANT: This is a deliberately modified fictional document for testing RAG + SLM contradiction detection. It is not an official RBI or government document and must not be used for real financial decisions. Document ID: SYN-FIN-TEST-01 Version: 2.0 (adversarial test version) 1. Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2. Deliberately Incomplete Information The memorandum discusses quarterly liquidity conditions but does not provide the complete Q3 average daily money market volume. The system should classify this as PARTIAL or UNCERTAIN and should not invent a value. 3. Irrelevant Information The institution conducted an employee wellness campaign involving 420 participants, three workshops, two feedback sessions, and a 78% attendance rate. These details are unrelated to financial market analysis.",
+      "child_id": "DOC09_P01_PAR01_CH01",
+      "similarity_score": 0.4318479895591736,
+      "retrieval_rank": 2,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 2,
+          "score": 0.4318479895591736
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?"
+    },
+    {
+      "text": "4. Test Questions 1. What was the average daily money market volume during FY 2025–26? 2. What was the total commercial paper issuance during FY 2025–26? 3. How much was spent through Q4 open market operation purchases? 4. Does this memorandum agree with the other financial report in the collection? 5. Which information is irrelevant to financial market analysis? 6. Is the complete Q3 average daily money market volume available? 5. Expected SLM Verification Labels Situation Expected action Values conflict with the original report CONTRADICTION → retrieve independent evidence Q3 value is missing PARTIAL / UNCERTAIN → do not guess Wellness campaign is retrieved for a finance query IRRELEVANT → remove Evidence comes only from this file Mark as synthetic test evidence Evaluation note: Keep this document marked as synthetic/adversarial in your metadata. Do not present its altered figures as real-world facts.",
+      "source": "Synthetic_Contradictory_Finance(No.9).pdf",
+      "document_id": "DOC09",
+      "page": 2,
+      "section": "5. Expected SLM Verification Labels",
+      "parent_id": "DOC09_P02_PAR01",
+      "chunk_id": "DOC09_P02_PAR01_CH01",
+      "parent_text": "4. Test Questions 1. What was the average daily money market volume during FY 2025–26? 2. What was the total commercial paper issuance during FY 2025–26? 3. How much was spent through Q4 open market operation purchases? 4. Does this memorandum agree with the other financial report in the collection? 5. Which information is irrelevant to financial market analysis? 6. Is the complete Q3 average daily money market volume available? 5. Expected SLM Verification Labels Situation Expected action Values conflict with the original report CONTRADICTION → retrieve independent evidence Q3 value is missing PARTIAL / UNCERTAIN → do not guess Wellness campaign is retrieved for a finance query IRRELEVANT → remove Evidence comes only from this file Mark as synthetic test evidence Evaluation note: Keep this document marked as synthetic/adversarial in your metadata. Do not present its altered figures as real-world facts.",
+      "child_id": "DOC09_P02_PAR01_CH01",
+      "similarity_score": 0.41983288526535034,
+      "retrieval_rank": 3,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 3,
+          "score": 0.41983288526535034
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?"
+    },
+    {
+      "text": "4.6 4.6 6.9 5.5 7.8 8.9 II.3.1 Infrastructure 2.8 0.3 -1.3 0.8 3.4 3.5 5.0 4.6 4.3 7.2 6.4 7.9 9.5 II.3.2 Basic Metal & Metal Product 12.8 14.3 10.6 11.0 9.5 8.9 9.1 13.1 11.8 14.2 13.8 15.2 19.4 II.3.3 Chemicals & Chemical Products 7.4 6.0 4.7 6.3 5.5 6.7 8.3 12.2 11.1 14.8 15.1 19.1 14.9 II.3.4 Textiles 8.3 8.5 6.8 8.6 6.0 6.4 7.1 9.1 8.1 11.8 10.0 8.2 8.9 II.3.5 All Engineering 22.0 21.7 20.4 22.1 23.0 19.8 22.4 25.1 22.6 30.4 35.9 36.0 32.2 II.3.6 Food Processing 5.1 6.5 7.8 8.1 5.2 6.1 7.7 10.2 6.5 11.7 9.6 10.2 14.0 III. Services 12.0 10.1 8.4 8.8 10.2 10.3 9.8 13.0 11.7 15.4 15.5 16.3 19.0 III.1. Trade 15.6 13.9 10.4 10.7 12.8 12.3 11.7 13.8 14.2 17.5 16.1 14.4 16.2 III.2. Commercial Real Estate 13.7 17.3 14.8 14.9 15.7 13.2 15.5 14.1 12.6 15.4 16.2",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 24,
+      "section": "Q4:2025-26",
+      "parent_id": "DOC03_P24_PAR01",
+      "chunk_id": "DOC03_P24_PAR01_CH03",
+      "parent_text": "a robust pace since May 2025, on the back of sturdier credit growth in micro, small and medium enterprises (MSMEs). Industrial sub-segments such as ‘infrastructure’, ‘all engineering’, ‘basic metal and metal product’, ‘chemical and chemical products’, and ‘petroleum, coal products and nuclear fuels’ marked resilient y-o-y growth. Services sector credit sustained robust doubledigit growth, largely supported by healthy credit growth in ‘trade’, ‘commercial real estate’, and sharp resumption of credit to NBFCs 38 since October 2025. Personal loans continued to remain the major driver of overall non-food credit growth. Housing loans, which account for nearly half of the personal loans, recorded healthy growth and segments such as vehicle loans and loans against gold jewellery showed buoyant growth (Table II.4.1). Table II.4.1: Sectoral Credit Growth - SCBs Sector 2024-25# 2025-26 Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar 1 2 3 4 5 6 7 8 9 10 11 12 13 14 Non-food Credit 10.9 10.2 8.8 9.3 9.9 9.9 10.2 11.1 11.4 14.4 14.4 14.3 15.9 I. Agriculture & Allied Activities 10.4 9.2 7.5 6.8 7.3 7.6 9.0 8.9 8.7 12.1 11.4 12.3 15.7 II. Industry (Micro & Small, Medium and Large) 8.2 7.0 5.3 6.3 6.5 7.0 7.8 10.0 9.6 12.8 12.1 13.5 15.0 II.1. Micro & Small 8.9 9.2 13.7 19.2 20.9 20.8 22.0 25.9 24.6 30.4 31.2 30.4 33.1 II.2. Medium 18.5 18.1 16.9 13.2 15.0 13.3 14.5 17.6 15.7 20.4 22.3 21.0 21.7 II.3. Large 6.9 5.0 1.5 2.0 1.6 2.4 3.0 4.6 4.6 6.9 5.5 7.8 8.9 II.3.1 Infrastructure 2.8 0.3 -1.3 0.8 3.4 3.5 5.0 4.6 4.3 7.2 6.4 7.9 9.5 II.3.2 Basic Metal & Metal Product 12.8 14.3 10.6 11.0 9.5 8.9 9.1 13.1 11.8 14.2 13.8 15.2 19.4 II.3.3 Chemicals & Chemical Products 7.4 6.0 4.7 6.3 5.5 6.7 8.3 12.2 11.1 14.8 15.1 19.1 14.9 II.3.4 Textiles 8.3 8.5 6.8 8.6 6.0 6.4 7.1 9.1 8.1 11.8 10.0 8.2 8.9 II.3.5 All Engineering 22.0 21.7 20.4 22.1 23.0 19.8 22.4 25.1 22.6 30.4 35.9 36.0 32.2 II.3.6 Food Processing 5.1 6.5 7.8 8.1 5.2 6.1 7.7 10.2 6.5 11.7 9.6 10.2 14.0 III. Services 12.0 10.1 8.4 8.8 10.2 10.3 9.8 13.0 11.7 15.4 15.5 16.3 19.0 III.1. Trade 15.6 13.9 10.4 10.7 12.8 12.3 11.7 13.8 14.2 17.5 16.1 14.4 16.2 III.2. Commercial Real Estate 13.7 17.3 14.8 14.9 15.7 13.2 15.5 14.1 12.6 15.4 16.2 17.4 19.9 III.3. NBFCs 7.4 4.5 1.0 3.1 3.0 3.7 3.9 10.9 9.5 15.1 17.8 20.9 26.3 IV. Personal Loans 11.7 11.9 11.1 11.7 11.9 11.9 11.8 14.0 12.8 14.6 14.9 15.2 16.2 IV.1. Consumer Durables -1.0 -1.0 -3.7 -2.8 -5.8 -5.8 -6.1 1.0 -5.9 -5.1 -4.0 -9.8 -5.3 IV.2.",
+      "child_id": "DOC03_P24_PAR01_CH03",
+      "similarity_score": 0.41890743374824524,
+      "retrieval_rank": 4,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 4,
+          "score": 0.41890743374824524
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?"
+    },
+    {
+      "text": "10.7 12.8 12.3 11.7 13.8 14.2 17.5 16.1 14.4 16.2 III.2. Commercial Real Estate 13.7 17.3 14.8 14.9 15.7 13.2 15.5 14.1 12.6 15.4 16.2 17.4 19.9 III.3. NBFCs 7.4 4.5 1.0 3.1 3.0 3.7 3.9 10.9 9.5 15.1 17.8 20.9 26.3 IV. Personal Loans 11.7 11.9 11.1 11.7 11.9 11.9 11.8 14.0 12.8 14.6 14.9 15.2 16.2 IV.1. Consumer Durables -1.0 -1.0 -3.7 -2.8 -5.8 -5.8 -6.1 1.0 -5.9 -5.1 -4.0 -9.8 -5.3 IV.2.",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 24,
+      "section": "Q4:2025-26",
+      "parent_id": "DOC03_P24_PAR01",
+      "chunk_id": "DOC03_P24_PAR01_CH04",
+      "parent_text": "a robust pace since May 2025, on the back of sturdier credit growth in micro, small and medium enterprises (MSMEs). Industrial sub-segments such as ‘infrastructure’, ‘all engineering’, ‘basic metal and metal product’, ‘chemical and chemical products’, and ‘petroleum, coal products and nuclear fuels’ marked resilient y-o-y growth. Services sector credit sustained robust doubledigit growth, largely supported by healthy credit growth in ‘trade’, ‘commercial real estate’, and sharp resumption of credit to NBFCs 38 since October 2025. Personal loans continued to remain the major driver of overall non-food credit growth. Housing loans, which account for nearly half of the personal loans, recorded healthy growth and segments such as vehicle loans and loans against gold jewellery showed buoyant growth (Table II.4.1). Table II.4.1: Sectoral Credit Growth - SCBs Sector 2024-25# 2025-26 Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar 1 2 3 4 5 6 7 8 9 10 11 12 13 14 Non-food Credit 10.9 10.2 8.8 9.3 9.9 9.9 10.2 11.1 11.4 14.4 14.4 14.3 15.9 I. Agriculture & Allied Activities 10.4 9.2 7.5 6.8 7.3 7.6 9.0 8.9 8.7 12.1 11.4 12.3 15.7 II. Industry (Micro & Small, Medium and Large) 8.2 7.0 5.3 6.3 6.5 7.0 7.8 10.0 9.6 12.8 12.1 13.5 15.0 II.1. Micro & Small 8.9 9.2 13.7 19.2 20.9 20.8 22.0 25.9 24.6 30.4 31.2 30.4 33.1 II.2. Medium 18.5 18.1 16.9 13.2 15.0 13.3 14.5 17.6 15.7 20.4 22.3 21.0 21.7 II.3. Large 6.9 5.0 1.5 2.0 1.6 2.4 3.0 4.6 4.6 6.9 5.5 7.8 8.9 II.3.1 Infrastructure 2.8 0.3 -1.3 0.8 3.4 3.5 5.0 4.6 4.3 7.2 6.4 7.9 9.5 II.3.2 Basic Metal & Metal Product 12.8 14.3 10.6 11.0 9.5 8.9 9.1 13.1 11.8 14.2 13.8 15.2 19.4 II.3.3 Chemicals & Chemical Products 7.4 6.0 4.7 6.3 5.5 6.7 8.3 12.2 11.1 14.8 15.1 19.1 14.9 II.3.4 Textiles 8.3 8.5 6.8 8.6 6.0 6.4 7.1 9.1 8.1 11.8 10.0 8.2 8.9 II.3.5 All Engineering 22.0 21.7 20.4 22.1 23.0 19.8 22.4 25.1 22.6 30.4 35.9 36.0 32.2 II.3.6 Food Processing 5.1 6.5 7.8 8.1 5.2 6.1 7.7 10.2 6.5 11.7 9.6 10.2 14.0 III. Services 12.0 10.1 8.4 8.8 10.2 10.3 9.8 13.0 11.7 15.4 15.5 16.3 19.0 III.1. Trade 15.6 13.9 10.4 10.7 12.8 12.3 11.7 13.8 14.2 17.5 16.1 14.4 16.2 III.2. Commercial Real Estate 13.7 17.3 14.8 14.9 15.7 13.2 15.5 14.1 12.6 15.4 16.2 17.4 19.9 III.3. NBFCs 7.4 4.5 1.0 3.1 3.0 3.7 3.9 10.9 9.5 15.1 17.8 20.9 26.3 IV. Personal Loans 11.7 11.9 11.1 11.7 11.9 11.9 11.8 14.0 12.8 14.6 14.9 15.2 16.2 IV.1. Consumer Durables -1.0 -1.0 -3.7 -2.8 -5.8 -5.8 -6.1 1.0 -5.9 -5.1 -4.0 -9.8 -5.3 IV.2.",
+      "child_id": "DOC03_P24_PAR01_CH04",
+      "similarity_score": 0.4142231345176697,
+      "retrieval_rank": 5,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 5,
+          "score": 0.4142231345176697
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?"
+    },
+    {
+      "text": "1 Food and beverages 36.8 1 Food and beverages 45.9 2 Pan, tobacco and intoxicants 3.0 2 Pan, tobacco and intoxicants 2.4 3 Clothing and footwear 6.4 3 Clothing and footwear 6.5 4 Housing, water, electricity, gas and other fuels 17.7 4 Housing 10.1 5 Furnishings, household equipment and routine household maintenance 4.5 5 Fuel and light 6.8 6 Education services 3.3 6 Miscellaneous 28.3 7 Health 6.1 of which: 8 Information and communication 3.6 6.1 Household goods and services 3.8 9 Transport 8.8 6.2 Health 5.9 10 Recreation, sport and culture 1.5 6.3 Transport and communication 8.6 11 Personal care, social protection and miscellaneous goods and services 5.0 6.4 Recreation and amusement 1.7 12 Restaurants and accommodation services 3.3 6.5 Education 4.5 6.6 Personal care and effects 3.9 Total 100 Total 100 Note: Each CPI series follows the classification that it was published with, and the weighting structure across",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 13,
+      "section": "6.6 Personal care and effects 3.9",
+      "parent_id": "DOC03_P13_PAR01",
+      "chunk_id": "DOC03_P13_PAR01_CH02",
+      "parent_text": "and beverages averaged higher at 3.1 per cent (CPI 2024=100). In October 2025, CPI food and beverages recorded the steepest deflation in the CPI series at 3.7 per cent (y-o-y) before inching up to 1.8 per cent deflation in December. The secular decline in inflation from a peak of 9.7 per cent in October 2024 was primarily driven by muted price pressures in vegetables, pulses and cereals, and a strong favourable base effect (Chart II.3.2). Favourable supply-side factors, i.e., comfortable foodgrain stocks stemming from higher domestic and steady wholesale market arrivals, supportive trade policies, proactive supply management by the government, and largely conducive weather Table II.3.1: Change in CPI Weighting Structure S. No. Divisions CPI 2024 = 100 S. No. Groups CPI 2012 = 100 1 Food and beverages 36.8 1 Food and beverages 45.9 2 Pan, tobacco and intoxicants 3.0 2 Pan, tobacco and intoxicants 2.4 3 Clothing and footwear 6.4 3 Clothing and footwear 6.5 4 Housing, water, electricity, gas and other fuels 17.7 4 Housing 10.1 5 Furnishings, household equipment and routine household maintenance 4.5 5 Fuel and light 6.8 6 Education services 3.3 6 Miscellaneous 28.3 7 Health 6.1 of which: 8 Information and communication 3.6 6.1 Household goods and services 3.8 9 Transport 8.8 6.2 Health 5.9 10 Recreation, sport and culture 1.5 6.3 Transport and communication 8.6 11 Personal care, social protection and miscellaneous goods and services 5.0 6.4 Recreation and amusement 1.7 12 Restaurants and accommodation services 3.3 6.5 Education 4.5 6.6 Personal care and effects 3.9 Total 100 Total 100 Note: Each CPI series follows the classification that it was published with, and the weighting structure across similar categories are not strictly comparable. Table II.3.2: CPI Headline Inflation – Key Summary Statistics 2016-17 2017-18 2018-19 2019-20 2020-21 2021-22 2022-23 2023-24 2024-25 2025-26 Mean 4.5 3.6 3.4 4.8 6.2 5.5 6.7 5.4 4.6 2.1 Standard deviation 1.0 1.2 1.1 1.8 1.1 0.9 0.7 0.9 0.9 1.0 Skewness 0.2 -0.2 0.1 0.5 -0.7 -0.1 -0.1 1.5 0.0 -0.3 Kurtosis -1.6 -1.0 -1.5 -1.4 -0.7 -1.0 -0.6 1.6 -1.2 -1.0 Median 4.3 3.4 3.5 4.3 6.5 5.6 6.7 5.1 4.8 2.1 Maximum 6.1 5.2 4.9 7.6 7.6 7.0 7.8 7.4 6.2 3.4 Minimum 3.2 1.5 2.0 3.0 4.1 4.2 5.7 4.3 3.3 0.3 Notes: 1. Skewness and kurtosis are unit-free. Annual inflation is the average of the monthly inflation rates during the year and therefore, may vary from the annual inflation calculated from the average index for the year. 2. Monthly inflation rates pertain to the old CPI series (base 2012=100) till December 2025, subsequently, to the current series (base 2024=100).",
+      "child_id": "DOC03_P13_PAR01_CH02",
+      "similarity_score": 0.4120975136756897,
+      "retrieval_rank": 6,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 6,
+          "score": 0.4120975136756897
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?"
+    },
+    {
+      "text": "auctions. II.5.12 During Q4:2025-26, yields traded with a hardening bias amidst higher-than-expected gross market borrowings announced in the Union Budget 2026-27 and a sharp increase in crude oil prices following the escalation of the Middle East conflict. On the final trading session of 2025-26, the 10-year generic G-sec yield crossed the 7 per cent mark for the first time since July 2024. OMO purchases for an aggregate amount of ₹4.57 lakh crore were conducted during the quarter, of which ₹3.5 lakh crore were through auctions. II.5.13 With the introduction of the fully accessible route (FAR)44 with effect from April 1, 2020, foreign 43 Details relating to monetary policy operations are covered in Chapter III of this Report. 44 Under FAR, certain categories of central government securities are open fully for non-resident investors without any restrictions, apart from being available to domestic investors as well. &KDUW\u0003,,\u0011\u0018\u0011\u0017 \u0003\u0014\u0013\u0010\\HDU\u0003*HQHULF\u0003*\u00106HF\u0003<LHOG \u001a\u0011\u0013\u0017 \u0019\u0011\u0013 \u0019\u0011\u0015 \u0019\u0011\u0017",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 29,
+      "section": "\u0003\u0014\u0013\u0010\\HDU\u0003*HQHULF\u0003*\u00106HF\u0003<LHOG",
+      "parent_id": "DOC03_P29_PAR01",
+      "chunk_id": "DOC03_P29_PAR01_CH03",
+      "parent_text": "26, as higher rates led to a shift towards bank borrowings. Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year. Government Securities Market II.5.9 During Q1:2025-26, domestic G-sec yield curve steepened as short and medium-term yields traded with a softening bias while long-term yields traded range bound amid monetary policy easing and liquidity infusion measures undertaken by the Reserve Bank. Open market operation (OMO) purchase auctions for an aggregate amount of ₹2.39 lakh crore were conducted during the quarter. However, yields hardened after the monetary policy stance was changed to ‘neutral’ in June 2025, as further rate cut expectations faded (Chart II.5.4). II.5.10 G-sec yields hardened during Q2:2025- 26 after a better-than-expected Q1:2025-26 GDP data amid fiscal concerns emanating from the implementation of higher US tariffs and GST rationalisation. However, the upside in yields was capped as oversupply related concerns ebbed after clarity emerged that revenue loss on account of goods and services tax (GST) rationalisation would be limited and government’s market borrowings for H2:2025-26 remained largely on expected lines. II.5.11 During Q3:2025-26, yields exhibited two-way movements as better-than-expected Q2:2025-26 GDP data and reduced expectations of further easing post 25-bps rate cut in the December 2025 monetary policy committee meeting43 provided an upward bias. However, the Reserve Bank’s liquidity injection measures helped ameliorate this upward pressure on yields. OMO purchases for an aggregate amount of ₹1.81 lakh crore were conducted during the quarter, of which ₹1.50 lakh crore were through auctions. II.5.12 During Q4:2025-26, yields traded with a hardening bias amidst higher-than-expected gross market borrowings announced in the Union Budget 2026-27 and a sharp increase in crude oil prices following the escalation of the Middle East conflict. On the final trading session of 2025-26, the 10-year generic G-sec yield crossed the 7 per cent mark for the first time since July 2024. OMO purchases for an aggregate amount of ₹4.57 lakh crore were conducted during the quarter, of which ₹3.5 lakh crore were through auctions. II.5.13 With the introduction of the fully accessible route (FAR)44 with effect from April 1, 2020, foreign 43 Details relating to monetary policy operations are covered in Chapter III of this Report. 44 Under FAR, certain categories of central government securities are open fully for non-resident investors without any restrictions, apart from being available to domestic investors as well. &KDUW\u0003,,\u0011\u0018\u0011\u0017 \u0003\u0014\u0013\u0010\\HDU\u0003*HQHULF\u0003*\u00106HF\u0003<LHOG \u001a\u0011\u0013\u0017 \u0019\u0011\u0013 \u0019\u0011\u0015 \u0019\u0011\u0017 \u0019\u0011\u0019 \u0019\u0011\u001b \u001a\u0011\u0013",
+      "child_id": "DOC03_P29_PAR01_CH03",
+      "similarity_score": 0.38553866744041443,
+      "retrieval_rank": 7,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 7,
+          "score": 0.38553866744041443
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?"
+    },
+    {
+      "text": "the WACR movements (Chart II.5.1a). II.5.4 For the longer tenor money market instruments, following the overnight trends, yields softened for 3-month treasury bills (T-bills), certificates of deposit (CDs) and commercial papers (CPs) during H1:2025-26. However, in H2, CD rates remained elevated owing to higher issuances by banks to meet funding requirements in the face of higher offtake in credit. CP rates also followed an upward trend in H2 (Chart II.5.1b). II.5.5 The average daily volume",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 27,
+      "section": "II.5 FINANCIAL MARKETS",
+      "parent_id": "DOC03_P27_PAR01",
+      "chunk_id": "DOC03_P27_PAR01_CH04",
+      "parent_text": "40 Coefficient of variation is measured as a ratio of standard deviation to the mean. 41 Call money, triparty repo and market repo of both overnight and term segments, excluding Saturdays. 42 Effective July 1 and August 1, 2025, the trading hours for the call money market, and triparty repo and market repo were extended to 7 pm and 4 pm, respectively. II.5 FINANCIAL MARKETS II.5.1 Global financial markets remained volatile in 2025-26 amidst concerns emanating from surging fiscal deficit, debt repayment, varied growth-inflation outcomes and trade tariff impositions. Notwithstanding global headwinds, After declining in the first quarter, sovereign bond yields hardened amidst oversupply of state government securities, delay in signing of India- US trade deal, and surge in crude oil prices due to tensions in the Middle East. Corporate bond yields exhibited a hardening bias, accompanied by a broadening of spreads, amidst divergent corporate earnings performance. Indian equity markets remained volatile during the year, navigating global uncertainties while buoyed by stronger-than-expected gross domestic product (GDP) growth and supportive fiscal and monetary policies. The Indian Rupee (INR) traded with a depreciating bias amidst escalating geopolitical tensions and portfolio investment outflows. Money Market II.5.2 During 2025-26, money market rates moved in tandem with the policy repo rate and the evolving liquidity conditions. The weighted average call rate (WACR) moved in line with the repo rate, and its average spread over the repo rate was (-) 7 bps during 2025-26 as against 6 bps during 2024-25. Volatility in the WACR measured by coefficient of variation 40 increased to 4.8 per cent in 2025-26 from 2.2 per cent in the previous year. II.5.3 During April to early July 2025, due to large surplus liquidity, the WACR hovered around the standing deposit facility (SDF) rate, floor of the policy corridor. Since mid-July 2025, following Reserve Bank’s absorption of liquidity through variable rate reverse repo (VRRR) auctions, the WACR increased and traded closer to the policy repo rate. However, the WACR moved near marginal standing facility (MSF) rate, ceiling of the policy corridor during mid-December 2025 to January 2026 amidst moderation in liquidity surplus. The WACR eased in February, while remaining elevated at end-March following the seasonal effect. The collateralised market segments – triparty repo and market repo – followed the WACR movements (Chart II.5.1a). II.5.4 For the longer tenor money market instruments, following the overnight trends, yields softened for 3-month treasury bills (T-bills), certificates of deposit (CDs) and commercial papers (CPs) during H1:2025-26. However, in H2, CD rates remained elevated owing to higher issuances by banks to meet funding requirements in the face of higher offtake in credit. CP rates also followed an upward trend in H2 (Chart II.5.1b). II.5.5 The average daily volume",
+      "child_id": "DOC03_P27_PAR01_CH04",
+      "similarity_score": 0.3828512728214264,
+      "retrieval_rank": 8,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 8,
+          "score": 0.3828512728214264
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?"
+    },
+    {
+      "text": "26, as higher rates led to a shift towards bank borrowings. Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year. Government Securities Market II.5.9 During Q1:2025-26, domestic G-sec yield curve steepened as short and medium-term yields traded with a softening bias while long-term yields traded range bound amid monetary policy easing and liquidity infusion measures undertaken by the Reserve Bank. Open market operation (OMO) purchase auctions for an aggregate amount of ₹2.39 lakh crore were conducted during the quarter. However, yields hardened after the monetary policy stance was changed to ‘neutral’ in June 2025, as further rate cut expectations faded (Chart II.5.4). II.5.10 G-sec yields hardened during Q2:2025- 26 after a better-than-expected Q1:2025-26 GDP data amid fiscal concerns emanating from the implementation of higher US tariffs and GST rationalisation. However, the upside in yields was capped as oversupply related concerns",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 29,
+      "section": "\u0003\u0014\u0013\u0010\\HDU\u0003*HQHULF\u0003*\u00106HF\u0003<LHOG",
+      "parent_id": "DOC03_P29_PAR01",
+      "chunk_id": "DOC03_P29_PAR01_CH01",
+      "parent_text": "26, as higher rates led to a shift towards bank borrowings. Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year. Government Securities Market II.5.9 During Q1:2025-26, domestic G-sec yield curve steepened as short and medium-term yields traded with a softening bias while long-term yields traded range bound amid monetary policy easing and liquidity infusion measures undertaken by the Reserve Bank. Open market operation (OMO) purchase auctions for an aggregate amount of ₹2.39 lakh crore were conducted during the quarter. However, yields hardened after the monetary policy stance was changed to ‘neutral’ in June 2025, as further rate cut expectations faded (Chart II.5.4). II.5.10 G-sec yields hardened during Q2:2025- 26 after a better-than-expected Q1:2025-26 GDP data amid fiscal concerns emanating from the implementation of higher US tariffs and GST rationalisation. However, the upside in yields was capped as oversupply related concerns ebbed after clarity emerged that revenue loss on account of goods and services tax (GST) rationalisation would be limited and government’s market borrowings for H2:2025-26 remained largely on expected lines. II.5.11 During Q3:2025-26, yields exhibited two-way movements as better-than-expected Q2:2025-26 GDP data and reduced expectations of further easing post 25-bps rate cut in the December 2025 monetary policy committee meeting43 provided an upward bias. However, the Reserve Bank’s liquidity injection measures helped ameliorate this upward pressure on yields. OMO purchases for an aggregate amount of ₹1.81 lakh crore were conducted during the quarter, of which ₹1.50 lakh crore were through auctions. II.5.12 During Q4:2025-26, yields traded with a hardening bias amidst higher-than-expected gross market borrowings announced in the Union Budget 2026-27 and a sharp increase in crude oil prices following the escalation of the Middle East conflict. On the final trading session of 2025-26, the 10-year generic G-sec yield crossed the 7 per cent mark for the first time since July 2024. OMO purchases for an aggregate amount of ₹4.57 lakh crore were conducted during the quarter, of which ₹3.5 lakh crore were through auctions. II.5.13 With the introduction of the fully accessible route (FAR)44 with effect from April 1, 2020, foreign 43 Details relating to monetary policy operations are covered in Chapter III of this Report. 44 Under FAR, certain categories of central government securities are open fully for non-resident investors without any restrictions, apart from being available to domestic investors as well. &KDUW\u0003,,\u0011\u0018\u0011\u0017 \u0003\u0014\u0013\u0010\\HDU\u0003*HQHULF\u0003*\u00106HF\u0003<LHOG \u001a\u0011\u0013\u0017 \u0019\u0011\u0013 \u0019\u0011\u0015 \u0019\u0011\u0017 \u0019\u0011\u0019 \u0019\u0011\u001b \u001a\u0011\u0013",
+      "child_id": "DOC03_P29_PAR01_CH01",
+      "similarity_score": 0.38046377897262573,
+      "retrieval_rank": 9,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 9,
+          "score": 0.38046377897262573
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?"
+    },
+    {
+      "text": "Housing 10.7 9.8 9.0 9.6 9.6 9.7 10.1 11.0 9.9 11.1 11.1 11.0 11.5 IV.3. Credit Card Outstanding 10.6 10.6 8.5 7.2 5.6 4.4 3.7 7.7 2.4 1.0 1.5 1.7 3.5 IV.4. Vehicle Loans 8.6 8.8 8.7 9.2 8.9 8.7 7.3 12.5 12.4 16.7 17.1 17.1 18.6 IV.5. Loans against Gold Jewellery 121.1 138.0 132.7 140.9 136.4 130.2 125.6 128.5 125.3 126.1 128.8 127.9 123.1 IV.6. Other Personal Loans 7.5 8.5 7.2 7.1 7.6 7.6 7.4 9.9 8.9 11.5 11.6 12.1 13.0 #: March 2025 over March 2024. Note: Data are provisional. 38 Risk weight for bank credit to NBFCs was increased by additional 25 percentage points in November 2023, which was later restored to the earlier position with effect from April 2025.",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 24,
+      "section": "Q4:2025-26",
+      "parent_id": "DOC03_P24_PAR02",
+      "chunk_id": "DOC03_P24_PAR02_CH01",
+      "parent_text": "Housing 10.7 9.8 9.0 9.6 9.6 9.7 10.1 11.0 9.9 11.1 11.1 11.0 11.5 IV.3. Credit Card Outstanding 10.6 10.6 8.5 7.2 5.6 4.4 3.7 7.7 2.4 1.0 1.5 1.7 3.5 IV.4. Vehicle Loans 8.6 8.8 8.7 9.2 8.9 8.7 7.3 12.5 12.4 16.7 17.1 17.1 18.6 IV.5. Loans against Gold Jewellery 121.1 138.0 132.7 140.9 136.4 130.2 125.6 128.5 125.3 126.1 128.8 127.9 123.1 IV.6. Other Personal Loans 7.5 8.5 7.2 7.1 7.6 7.6 7.4 9.9 8.9 11.5 11.6 12.1 13.0 #: March 2025 over March 2024. Note: Data are provisional. 38 Risk weight for bank credit to NBFCs was increased by additional 25 percentage points in November 2023, which was later restored to the earlier position with effect from April 2025.",
+      "child_id": "DOC03_P24_PAR02_CH01",
+      "similarity_score": 0.37818443775177,
+      "retrieval_rank": 10,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 10,
+          "score": 0.37818443775177
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?"
+    }
+  ],
+  "reranked": [
+    {
+      "text": "4. Test Questions 1. What was the average daily money market volume during FY 2025–26? 2. What was the total commercial paper issuance during FY 2025–26? 3. How much was spent through Q4 open market operation purchases? 4. Does this memorandum agree with the other financial report in the collection? 5. Which information is irrelevant to financial market analysis? 6. Is the complete Q3 average daily money market volume available? 5. Expected SLM Verification Labels Situation Expected action Values conflict with the original report CONTRADICTION → retrieve independent evidence Q3 value is missing PARTIAL / UNCERTAIN → do not guess Wellness campaign is retrieved for a finance query IRRELEVANT → remove Evidence comes only from this file Mark as synthetic test evidence Evaluation note: Keep this document marked as synthetic/adversarial in your metadata. Do not present its altered figures as real-world facts.",
+      "source": "Synthetic_Contradictory_Finance(No.9).pdf",
+      "document_id": "DOC09",
+      "page": 2,
+      "section": "5. Expected SLM Verification Labels",
+      "parent_id": "DOC09_P02_PAR01",
+      "chunk_id": "DOC09_P02_PAR01_CH01",
+      "parent_text": "4. Test Questions 1. What was the average daily money market volume during FY 2025–26? 2. What was the total commercial paper issuance during FY 2025–26? 3. How much was spent through Q4 open market operation purchases? 4. Does this memorandum agree with the other financial report in the collection? 5. Which information is irrelevant to financial market analysis? 6. Is the complete Q3 average daily money market volume available? 5. Expected SLM Verification Labels Situation Expected action Values conflict with the original report CONTRADICTION → retrieve independent evidence Q3 value is missing PARTIAL / UNCERTAIN → do not guess Wellness campaign is retrieved for a finance query IRRELEVANT → remove Evidence comes only from this file Mark as synthetic test evidence Evaluation note: Keep this document marked as synthetic/adversarial in your metadata. Do not present its altered figures as real-world facts.",
+      "child_id": "DOC09_P02_PAR01_CH01",
+      "similarity_score": 0.41983288526535034,
+      "retrieval_rank": 3,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 3,
+          "score": 0.41983288526535034
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?",
+      "reranker_score": 1.7462983131408691,
+      "reranker_rank": 1
+    },
+    {
+      "text": "Synthetic Financial Market Test Memorandum IMPORTANT: This is a deliberately modified fictional document for testing RAG + SLM contradiction detection. It is not an official RBI or government document and must not be used for real financial decisions. Document ID: SYN-FIN-TEST-01 Version: 2.0 (adversarial test version) 1. Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2. Deliberately Incomplete Information The memorandum discusses quarterly liquidity conditions but does not provide the complete Q3 average daily money market volume. The system should classify this as PARTIAL or UNCERTAIN and should not invent a value. 3. Irrelevant Information The institution conducted an employee wellness campaign involving 420",
+      "source": "Synthetic_Contradictory_Finance(No.9).pdf",
+      "document_id": "DOC09",
+      "page": 1,
+      "section": "3. Irrelevant Information",
+      "parent_id": "DOC09_P01_PAR01",
+      "chunk_id": "DOC09_P01_PAR01_CH01",
+      "parent_text": "Synthetic Financial Market Test Memorandum IMPORTANT: This is a deliberately modified fictional document for testing RAG + SLM contradiction detection. It is not an official RBI or government document and must not be used for real financial decisions. Document ID: SYN-FIN-TEST-01 Version: 2.0 (adversarial test version) 1. Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2. Deliberately Incomplete Information The memorandum discusses quarterly liquidity conditions but does not provide the complete Q3 average daily money market volume. The system should classify this as PARTIAL or UNCERTAIN and should not invent a value. 3. Irrelevant Information The institution conducted an employee wellness campaign involving 420 participants, three workshops, two feedback sessions, and a 78% attendance rate. These details are unrelated to financial market analysis.",
+      "child_id": "DOC09_P01_PAR01_CH01",
+      "similarity_score": 0.4318479895591736,
+      "retrieval_rank": 2,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 2,
+          "score": 0.4318479895591736
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?",
+      "reranker_score": 0.4174697697162628,
+      "reranker_rank": 2
+    },
+    {
+      "text": "the WACR movements (Chart II.5.1a). II.5.4 For the longer tenor money market instruments, following the overnight trends, yields softened for 3-month treasury bills (T-bills), certificates of deposit (CDs) and commercial papers (CPs) during H1:2025-26. However, in H2, CD rates remained elevated owing to higher issuances by banks to meet funding requirements in the face of higher offtake in credit. CP rates also followed an upward trend in H2 (Chart II.5.1b). II.5.5 The average daily volume",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 27,
+      "section": "II.5 FINANCIAL MARKETS",
+      "parent_id": "DOC03_P27_PAR01",
+      "chunk_id": "DOC03_P27_PAR01_CH04",
+      "parent_text": "40 Coefficient of variation is measured as a ratio of standard deviation to the mean. 41 Call money, triparty repo and market repo of both overnight and term segments, excluding Saturdays. 42 Effective July 1 and August 1, 2025, the trading hours for the call money market, and triparty repo and market repo were extended to 7 pm and 4 pm, respectively. II.5 FINANCIAL MARKETS II.5.1 Global financial markets remained volatile in 2025-26 amidst concerns emanating from surging fiscal deficit, debt repayment, varied growth-inflation outcomes and trade tariff impositions. Notwithstanding global headwinds, After declining in the first quarter, sovereign bond yields hardened amidst oversupply of state government securities, delay in signing of India- US trade deal, and surge in crude oil prices due to tensions in the Middle East. Corporate bond yields exhibited a hardening bias, accompanied by a broadening of spreads, amidst divergent corporate earnings performance. Indian equity markets remained volatile during the year, navigating global uncertainties while buoyed by stronger-than-expected gross domestic product (GDP) growth and supportive fiscal and monetary policies. The Indian Rupee (INR) traded with a depreciating bias amidst escalating geopolitical tensions and portfolio investment outflows. Money Market II.5.2 During 2025-26, money market rates moved in tandem with the policy repo rate and the evolving liquidity conditions. The weighted average call rate (WACR) moved in line with the repo rate, and its average spread over the repo rate was (-) 7 bps during 2025-26 as against 6 bps during 2024-25. Volatility in the WACR measured by coefficient of variation 40 increased to 4.8 per cent in 2025-26 from 2.2 per cent in the previous year. II.5.3 During April to early July 2025, due to large surplus liquidity, the WACR hovered around the standing deposit facility (SDF) rate, floor of the policy corridor. Since mid-July 2025, following Reserve Bank’s absorption of liquidity through variable rate reverse repo (VRRR) auctions, the WACR increased and traded closer to the policy repo rate. However, the WACR moved near marginal standing facility (MSF) rate, ceiling of the policy corridor during mid-December 2025 to January 2026 amidst moderation in liquidity surplus. The WACR eased in February, while remaining elevated at end-March following the seasonal effect. The collateralised market segments – triparty repo and market repo – followed the WACR movements (Chart II.5.1a). II.5.4 For the longer tenor money market instruments, following the overnight trends, yields softened for 3-month treasury bills (T-bills), certificates of deposit (CDs) and commercial papers (CPs) during H1:2025-26. However, in H2, CD rates remained elevated owing to higher issuances by banks to meet funding requirements in the face of higher offtake in credit. CP rates also followed an upward trend in H2 (Chart II.5.1b). II.5.5 The average daily volume",
+      "child_id": "DOC03_P27_PAR01_CH04",
+      "similarity_score": 0.3828512728214264,
+      "retrieval_rank": 8,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 8,
+          "score": 0.3828512728214264
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?",
+      "reranker_score": -2.930950403213501,
+      "reranker_rank": 3
+    },
+    {
+      "text": "26, as higher rates led to a shift towards bank borrowings. Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year. Government Securities Market II.5.9 During Q1:2025-26, domestic G-sec yield curve steepened as short and medium-term yields traded with a softening bias while long-term yields traded range bound amid monetary policy easing and liquidity infusion measures undertaken by the Reserve Bank. Open market operation (OMO) purchase auctions for an aggregate amount of ₹2.39 lakh crore were conducted during the quarter. However, yields hardened after the monetary policy stance was changed to ‘neutral’ in June 2025, as further rate cut expectations faded (Chart II.5.4). II.5.10 G-sec yields hardened during Q2:2025- 26 after a better-than-expected Q1:2025-26 GDP data amid fiscal concerns emanating from the implementation of higher US tariffs and GST rationalisation. However, the upside in yields was capped as oversupply related concerns",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 29,
+      "section": "\u0003\u0014\u0013\u0010\\HDU\u0003*HQHULF\u0003*\u00106HF\u0003<LHOG",
+      "parent_id": "DOC03_P29_PAR01",
+      "chunk_id": "DOC03_P29_PAR01_CH01",
+      "parent_text": "26, as higher rates led to a shift towards bank borrowings. Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year. Government Securities Market II.5.9 During Q1:2025-26, domestic G-sec yield curve steepened as short and medium-term yields traded with a softening bias while long-term yields traded range bound amid monetary policy easing and liquidity infusion measures undertaken by the Reserve Bank. Open market operation (OMO) purchase auctions for an aggregate amount of ₹2.39 lakh crore were conducted during the quarter. However, yields hardened after the monetary policy stance was changed to ‘neutral’ in June 2025, as further rate cut expectations faded (Chart II.5.4). II.5.10 G-sec yields hardened during Q2:2025- 26 after a better-than-expected Q1:2025-26 GDP data amid fiscal concerns emanating from the implementation of higher US tariffs and GST rationalisation. However, the upside in yields was capped as oversupply related concerns ebbed after clarity emerged that revenue loss on account of goods and services tax (GST) rationalisation would be limited and government’s market borrowings for H2:2025-26 remained largely on expected lines. II.5.11 During Q3:2025-26, yields exhibited two-way movements as better-than-expected Q2:2025-26 GDP data and reduced expectations of further easing post 25-bps rate cut in the December 2025 monetary policy committee meeting43 provided an upward bias. However, the Reserve Bank’s liquidity injection measures helped ameliorate this upward pressure on yields. OMO purchases for an aggregate amount of ₹1.81 lakh crore were conducted during the quarter, of which ₹1.50 lakh crore were through auctions. II.5.12 During Q4:2025-26, yields traded with a hardening bias amidst higher-than-expected gross market borrowings announced in the Union Budget 2026-27 and a sharp increase in crude oil prices following the escalation of the Middle East conflict. On the final trading session of 2025-26, the 10-year generic G-sec yield crossed the 7 per cent mark for the first time since July 2024. OMO purchases for an aggregate amount of ₹4.57 lakh crore were conducted during the quarter, of which ₹3.5 lakh crore were through auctions. II.5.13 With the introduction of the fully accessible route (FAR)44 with effect from April 1, 2020, foreign 43 Details relating to monetary policy operations are covered in Chapter III of this Report. 44 Under FAR, certain categories of central government securities are open fully for non-resident investors without any restrictions, apart from being available to domestic investors as well. &KDUW\u0003,,\u0011\u0018\u0011\u0017 \u0003\u0014\u0013\u0010\\HDU\u0003*HQHULF\u0003*\u00106HF\u0003<LHOG \u001a\u0011\u0013\u0017 \u0019\u0011\u0013 \u0019\u0011\u0015 \u0019\u0011\u0017 \u0019\u0011\u0019 \u0019\u0011\u001b \u001a\u0011\u0013",
+      "child_id": "DOC03_P29_PAR01_CH01",
+      "similarity_score": 0.38046377897262573,
+      "retrieval_rank": 9,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 9,
+          "score": 0.38046377897262573
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?",
+      "reranker_score": -6.276118755340576,
+      "reranker_rank": 4
+    },
+    {
+      "text": "the average share of triparty repo and market repo at around 67 per cent and 30 per cent, respectively. The share of call money market increased marginally to 3 per cent during the year (Chart II.5.2). II.5.7 In the longer-term segments, the average daily spread of CD rates and CP rates over T-bill rates trended downwards until September 2025, while they increased afterwards (Chart II.5.3). In the primary market, the CD issuances increased to ₹5.3 lakh crore in Q4:2025-26 from ₹2.3 lakh crore in Q1. Total CD issuances aggregated ₹13.5 lakh crore in 2025-26 as against total issuances of ₹11.9 lakh crore in the previous year. II.5.8 As the liquidity remained largely in surplus and interest rates favourable, new issuances of CPs depicted a steady trend during H1:2025-26. However, CP issuances declined in H2:2025- &KDUW\u0003,,\u0011\u0018\u0011\u0014 \u00030RQH\\\u00030DUNHW\u00035DWHV\u00037UDFNHG\u00033ROLF\\\u00035HSR\u00035DWH D\u0011\u00032YHUQLJKW\u00035DWHV\u0003DQG\u00033ROLF\\\u0003&RUULGRU E\u0011\u0003\u0016\u00100RQWK\u00035DWHV\u0003DQG\u00033ROLF\\\u00035HSR\u00035DWH \u00035%,\u000f\u0003)%,/\u000f\u0003&&,/\u0010)WUDF\u0003DQG\u00035%,\u0003VWDII\u0003HVWLPDWHV\u0011 :$&5 7ULSDUW\\\u0003UHSR\u0003UDWH 0DUNHW\u0003UHSR\u0003\u0003UDWH 6')\u0003UDWH 5HSR\u0003UDWH 06)\u0003UDWH \u0016\u0010PRQWK\u0003&'\u0003UDWH \u0014\u0010GD\\\u00037\u0010ELOO\u0003UDWH \u0016\u0010PRQWK\u0003&3\u0003UDWH 5HSR\u0003UDWH \u0017\u0011\u0013\u0013",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 28,
+      "section": "\u0016\u0013\u00100DU\u0010\u0015\u0019",
+      "parent_id": "DOC03_P28_PAR01",
+      "chunk_id": "DOC03_P28_PAR01_CH01",
+      "parent_text": "the average share of triparty repo and market repo at around 67 per cent and 30 per cent, respectively. The share of call money market increased marginally to 3 per cent during the year (Chart II.5.2). II.5.7 In the longer-term segments, the average daily spread of CD rates and CP rates over T-bill rates trended downwards until September 2025, while they increased afterwards (Chart II.5.3). In the primary market, the CD issuances increased to ₹5.3 lakh crore in Q4:2025-26 from ₹2.3 lakh crore in Q1. Total CD issuances aggregated ₹13.5 lakh crore in 2025-26 as against total issuances of ₹11.9 lakh crore in the previous year. II.5.8 As the liquidity remained largely in surplus and interest rates favourable, new issuances of CPs depicted a steady trend during H1:2025-26. However, CP issuances declined in H2:2025- &KDUW\u0003,,\u0011\u0018\u0011\u0014 \u00030RQH\\\u00030DUNHW\u00035DWHV\u00037UDFNHG\u00033ROLF\\\u00035HSR\u00035DWH D\u0011\u00032YHUQLJKW\u00035DWHV\u0003DQG\u00033ROLF\\\u0003&RUULGRU E\u0011\u0003\u0016\u00100RQWK\u00035DWHV\u0003DQG\u00033ROLF\\\u00035HSR\u00035DWH \u00035%,\u000f\u0003)%,/\u000f\u0003&&,/\u0010)WUDF\u0003DQG\u00035%,\u0003VWDII\u0003HVWLPDWHV\u0011 :$&5 7ULSDUW\\\u0003UHSR\u0003UDWH 0DUNHW\u0003UHSR\u0003\u0003UDWH 6')\u0003UDWH 5HSR\u0003UDWH 06)\u0003UDWH \u0016\u0010PRQWK\u0003&'\u0003UDWH \u0014\u0010GD\\\u00037\u0010ELOO\u0003UDWH \u0016\u0010PRQWK\u0003&3\u0003UDWH 5HSR\u0003UDWH \u0017\u0011\u0013\u0013 \u0017\u0011\u0015\u0018 \u0017\u0011\u0018\u0013 \u0017\u0011\u001a\u0018 \u0018\u0011\u0013\u0013 \u0018\u0011\u0015\u0018 \u0018\u0011\u0018\u0013 \u0018\u0011\u001a\u0018 \u0019\u0011\u0013\u0013 \u0019\u0011\u0015\u0018 \u0019\u0011\u0018\u0013 \u0019\u0011\u001a\u0018 \u001a\u0011\u0013\u0013 \u0013\u0017\u0010$SU\u0010\u0015\u0018 \u0010$SU\u0010\u0015\u0018 \u0013\u0017\u00100D\\\u0010\u0015\u0018 \u00100D\\\u0010\u0015\u0018 \u0013\u0016\u0010-XQ\u0010\u0015\u0018 \u0014\u001b\u0010-XQ\u0010\u0015\u0018 \u0013\u0016\u0010-XO\u0010\u0015\u0018 \u0014\u001b\u0010-XO\u0010\u0015\u0018 \u0013\u0015\u0010$XJ\u0010\u0015\u0018 \u0014\u001a\u0010$XJ\u0010\u0015\u0018 \u0013\u0014\u00106HS\u0010\u0015\u0018 \u0014\u0019\u00106HS\u0010\u0015\u0018 \u0013\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0019\u00102FW\u0010\u0015\u0018 \u0016\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0018\u00101RY\u0010\u0015\u0018 \u0016\u0013\u00101RY\u0010\u0015\u0018 \u0014\u0018\u0010'HF\u0010\u0015\u0018 \u0016\u0013\u0010'HF\u0010\u0015\u0018 \u0014\u0017\u0010-DQ\u0010\u0015\u0019 \u0010-DQ\u0010\u0015\u0019 \u0014\u0016\u0010)HE\u0010\u0015\u0019 \u0015\u001b\u0010)HE\u0010\u0015\u0019 \u0014\u0018\u00100DU\u0010\u0015\u0019 \u0016\u0013\u00100DU\u0010\u0015\u0019 \u0017\u0011\u001a\u0018 \u0018\u0011\u0013\u0013 \u0018\u0011\u0015\u0018 \u0018\u0011\u0018\u0013 \u0018\u0011\u001a\u0018 \u0019\u0011\u0013\u0013 \u0019\u0011\u0015\u0018 \u0019\u0011\u0018\u0013 \u0019\u0011\u001a\u0018 \u001a\u0011\u0013\u0013 \u001a\u0011\u0015\u0018 \u001a\u0011\u0018\u0013 \u001a\u0011\u001a\u0018 \u001b\u0011\u0013\u0013 \u0013\u0017\u0010$SU\u0010\u0015\u0018 \u0010$SU\u0010\u0015\u0018 \u0013\u0017\u00100D\\\u0010\u0015\u0018 \u00100D\\\u0010\u0015\u0018 \u0013\u0016\u0010-XQ\u0010\u0015\u0018 \u0014\u001b\u0010-XQ\u0010\u0015\u0018 \u0013\u0016\u0010-XO\u0010\u0015\u0018 \u0014\u001b\u0010-XO\u0010\u0015\u0018 \u0013\u0015\u0010$XJ\u0010\u0015\u0018 \u0014\u001a\u0010$XJ\u0010\u0015\u0018 \u0013\u0014\u00106HS\u0010\u0015\u0018 \u0014\u0019\u00106HS\u0010\u0015\u0018 \u0013\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0019\u00102FW\u0010\u0015\u0018 \u0016\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0018\u00101RY\u0010\u0015\u0018 \u0016\u0013\u00101RY\u0010\u0015\u0018 \u0014\u0018\u0010'HF\u0010\u0015\u0018 \u0016\u0013\u0010'HF\u0010\u0015\u0018 \u0014\u0017\u0010-DQ\u0010\u0015\u0019 \u0010-DQ\u0010\u0015\u0019 \u0014\u0016\u0010)HE\u0010\u0015\u0019 \u0015\u001b\u0010)HE\u0010\u0015\u0019 \u0014\u0018\u00100DU\u0010\u0015\u0019 \u0016\u0013\u00100DU\u0010\u0015\u0019 &KDUW\u0003,,\u0011\u0018\u0011\u0015 \u0003&ROODWHUDOLVHG\u00036HJPHQWV\u0003'RPLQDWH 0RQH\\\u00030DUNHW \u0003&&,/\u0003DQG\u00035%,\u0003VWDII\u0003HVWLPDWHV\u0011 \u0016 \u0016 \u0016 \u0016 \u0016 \u0016 \u0016 \u0016 \u0016 \u0016 \u0015 \u0016 \u0016\u0014 \u0016\u0015 \u0016\u0014 \u0016\u0014 \u0016\u0014 \u0016\u0014 \u0016\u0015 \u0016\u0015 \u0016\u0014 \u0015\u001b \u0015\u0019 \u0015\u001b \u0019\u0019 \u0019\u0019 \u0019\u0019 \u0019\u0019 \u0019\u0019 \u0019\u0019 \u0019\u0018 \u0019\u0018 \u0019\u001a \u0019 \u001a\u0015 \u001a\u0013 &DOO\u00121RWLFH 0DUNHW\u0003UHSR 7ULSDUW\\\u0003UHSR \u0003)%,/\u000f\u0003&RJHQFLV\u0003DQG\u00035%,\u0003VWDII\u0003HVWLPDWHV &KDUW\u0003,,\u0011\u0018\u0011\u0016 \u0003&3\u0003DQG\u0003&'\u00035DWH\u00036SUHDGV\u0003,QFUHDVHG\u0003LQ +\u0015 ȋ\u0005 Ȍ 6SUHDG\u0003RI\u0003&'\u0003UDWH\u0003RYHU\u0003 \u0014\u0010GD\\\u00037\u0010ELOO\u0003UDWH 6SUHDG\u0003RI\u0003\u00160\u0003&3\u0003 1%)& \u0003UDWH\u0003RYHU\u0003 \u0014\u0010GD\\\u00037\u0010ELOO\u0003UDWH 6SUHDG\u0003RI\u0003\u00160\u0003&3\u0003 1RQ\u00101%)& \u0003UDWH\u0003RYHU\u0003 \u0014\u0010GD\\\u00037\u0010ELOO\u0003UDWH \u0013\u0017\u0010$SU\u0010\u0015\u0018 \u0010$SU\u0010\u0015\u0018 \u0013\u0017\u00100D\\\u0010\u0015\u0018 \u00100D\\\u0010\u0015\u0018 \u0013\u0016\u0010-XQ\u0010\u0015\u0018 \u0014\u001b\u0010-XQ\u0010\u0015\u0018 \u0013\u0016\u0010-XO\u0010\u0015\u0018 \u0014\u001b\u0010-XO\u0010\u0015\u0018 \u0013\u0015\u0010$XJ\u0010\u0015\u0018 \u0014\u001a\u0010$XJ\u0010\u0015\u0018 \u0013\u0014\u00106HS\u0010\u0015\u0018 \u0014\u0019\u00106HS\u0010\u0015\u0018 \u0013\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0019\u00102FW\u0010\u0015\u0018 \u0016\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0018\u00101RY\u0010\u0015\u0018 \u0016\u0013\u00101RY\u0010\u0015\u0018 \u0014\u0018\u0010'HF\u0010\u0015\u0018 \u0016\u0013\u0010'HF\u0010\u0015\u0018 \u0014\u0017\u0010-DQ\u0010\u0015\u0019 \u0010-DQ\u0010\u0015\u0019 \u0014\u0016\u0010)HE\u0010\u0015\u0019 \u0015\u001b\u0010)HE\u0010\u0015\u0019 \u0014\u0018\u00100DU\u0010\u0015\u0019 \u0016\u0013\u00100DU\u0010\u0015\u0019",
+      "child_id": "DOC03_P28_PAR01_CH01",
+      "similarity_score": 0.4353860020637512,
+      "retrieval_rank": 1,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 1,
+          "score": 0.4353860020637512
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?",
+      "reranker_score": -6.956768035888672,
+      "reranker_rank": 5
+    },
+    {
+      "text": "10.7 12.8 12.3 11.7 13.8 14.2 17.5 16.1 14.4 16.2 III.2. Commercial Real Estate 13.7 17.3 14.8 14.9 15.7 13.2 15.5 14.1 12.6 15.4 16.2 17.4 19.9 III.3. NBFCs 7.4 4.5 1.0 3.1 3.0 3.7 3.9 10.9 9.5 15.1 17.8 20.9 26.3 IV. Personal Loans 11.7 11.9 11.1 11.7 11.9 11.9 11.8 14.0 12.8 14.6 14.9 15.2 16.2 IV.1. Consumer Durables -1.0 -1.0 -3.7 -2.8 -5.8 -5.8 -6.1 1.0 -5.9 -5.1 -4.0 -9.8 -5.3 IV.2.",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 24,
+      "section": "Q4:2025-26",
+      "parent_id": "DOC03_P24_PAR01",
+      "chunk_id": "DOC03_P24_PAR01_CH04",
+      "parent_text": "a robust pace since May 2025, on the back of sturdier credit growth in micro, small and medium enterprises (MSMEs). Industrial sub-segments such as ‘infrastructure’, ‘all engineering’, ‘basic metal and metal product’, ‘chemical and chemical products’, and ‘petroleum, coal products and nuclear fuels’ marked resilient y-o-y growth. Services sector credit sustained robust doubledigit growth, largely supported by healthy credit growth in ‘trade’, ‘commercial real estate’, and sharp resumption of credit to NBFCs 38 since October 2025. Personal loans continued to remain the major driver of overall non-food credit growth. Housing loans, which account for nearly half of the personal loans, recorded healthy growth and segments such as vehicle loans and loans against gold jewellery showed buoyant growth (Table II.4.1). Table II.4.1: Sectoral Credit Growth - SCBs Sector 2024-25# 2025-26 Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar 1 2 3 4 5 6 7 8 9 10 11 12 13 14 Non-food Credit 10.9 10.2 8.8 9.3 9.9 9.9 10.2 11.1 11.4 14.4 14.4 14.3 15.9 I. Agriculture & Allied Activities 10.4 9.2 7.5 6.8 7.3 7.6 9.0 8.9 8.7 12.1 11.4 12.3 15.7 II. Industry (Micro & Small, Medium and Large) 8.2 7.0 5.3 6.3 6.5 7.0 7.8 10.0 9.6 12.8 12.1 13.5 15.0 II.1. Micro & Small 8.9 9.2 13.7 19.2 20.9 20.8 22.0 25.9 24.6 30.4 31.2 30.4 33.1 II.2. Medium 18.5 18.1 16.9 13.2 15.0 13.3 14.5 17.6 15.7 20.4 22.3 21.0 21.7 II.3. Large 6.9 5.0 1.5 2.0 1.6 2.4 3.0 4.6 4.6 6.9 5.5 7.8 8.9 II.3.1 Infrastructure 2.8 0.3 -1.3 0.8 3.4 3.5 5.0 4.6 4.3 7.2 6.4 7.9 9.5 II.3.2 Basic Metal & Metal Product 12.8 14.3 10.6 11.0 9.5 8.9 9.1 13.1 11.8 14.2 13.8 15.2 19.4 II.3.3 Chemicals & Chemical Products 7.4 6.0 4.7 6.3 5.5 6.7 8.3 12.2 11.1 14.8 15.1 19.1 14.9 II.3.4 Textiles 8.3 8.5 6.8 8.6 6.0 6.4 7.1 9.1 8.1 11.8 10.0 8.2 8.9 II.3.5 All Engineering 22.0 21.7 20.4 22.1 23.0 19.8 22.4 25.1 22.6 30.4 35.9 36.0 32.2 II.3.6 Food Processing 5.1 6.5 7.8 8.1 5.2 6.1 7.7 10.2 6.5 11.7 9.6 10.2 14.0 III. Services 12.0 10.1 8.4 8.8 10.2 10.3 9.8 13.0 11.7 15.4 15.5 16.3 19.0 III.1. Trade 15.6 13.9 10.4 10.7 12.8 12.3 11.7 13.8 14.2 17.5 16.1 14.4 16.2 III.2. Commercial Real Estate 13.7 17.3 14.8 14.9 15.7 13.2 15.5 14.1 12.6 15.4 16.2 17.4 19.9 III.3. NBFCs 7.4 4.5 1.0 3.1 3.0 3.7 3.9 10.9 9.5 15.1 17.8 20.9 26.3 IV. Personal Loans 11.7 11.9 11.1 11.7 11.9 11.9 11.8 14.0 12.8 14.6 14.9 15.2 16.2 IV.1. Consumer Durables -1.0 -1.0 -3.7 -2.8 -5.8 -5.8 -6.1 1.0 -5.9 -5.1 -4.0 -9.8 -5.3 IV.2.",
+      "child_id": "DOC03_P24_PAR01_CH04",
+      "similarity_score": 0.4142231345176697,
+      "retrieval_rank": 5,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 5,
+          "score": 0.4142231345176697
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?",
+      "reranker_score": -9.914798736572266,
+      "reranker_rank": 6
+    },
+    {
+      "text": "4.6 4.6 6.9 5.5 7.8 8.9 II.3.1 Infrastructure 2.8 0.3 -1.3 0.8 3.4 3.5 5.0 4.6 4.3 7.2 6.4 7.9 9.5 II.3.2 Basic Metal & Metal Product 12.8 14.3 10.6 11.0 9.5 8.9 9.1 13.1 11.8 14.2 13.8 15.2 19.4 II.3.3 Chemicals & Chemical Products 7.4 6.0 4.7 6.3 5.5 6.7 8.3 12.2 11.1 14.8 15.1 19.1 14.9 II.3.4 Textiles 8.3 8.5 6.8 8.6 6.0 6.4 7.1 9.1 8.1 11.8 10.0 8.2 8.9 II.3.5 All Engineering 22.0 21.7 20.4 22.1 23.0 19.8 22.4 25.1 22.6 30.4 35.9 36.0 32.2 II.3.6 Food Processing 5.1 6.5 7.8 8.1 5.2 6.1 7.7 10.2 6.5 11.7 9.6 10.2 14.0 III. Services 12.0 10.1 8.4 8.8 10.2 10.3 9.8 13.0 11.7 15.4 15.5 16.3 19.0 III.1. Trade 15.6 13.9 10.4 10.7 12.8 12.3 11.7 13.8 14.2 17.5 16.1 14.4 16.2 III.2. Commercial Real Estate 13.7 17.3 14.8 14.9 15.7 13.2 15.5 14.1 12.6 15.4 16.2",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 24,
+      "section": "Q4:2025-26",
+      "parent_id": "DOC03_P24_PAR01",
+      "chunk_id": "DOC03_P24_PAR01_CH03",
+      "parent_text": "a robust pace since May 2025, on the back of sturdier credit growth in micro, small and medium enterprises (MSMEs). Industrial sub-segments such as ‘infrastructure’, ‘all engineering’, ‘basic metal and metal product’, ‘chemical and chemical products’, and ‘petroleum, coal products and nuclear fuels’ marked resilient y-o-y growth. Services sector credit sustained robust doubledigit growth, largely supported by healthy credit growth in ‘trade’, ‘commercial real estate’, and sharp resumption of credit to NBFCs 38 since October 2025. Personal loans continued to remain the major driver of overall non-food credit growth. Housing loans, which account for nearly half of the personal loans, recorded healthy growth and segments such as vehicle loans and loans against gold jewellery showed buoyant growth (Table II.4.1). Table II.4.1: Sectoral Credit Growth - SCBs Sector 2024-25# 2025-26 Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar 1 2 3 4 5 6 7 8 9 10 11 12 13 14 Non-food Credit 10.9 10.2 8.8 9.3 9.9 9.9 10.2 11.1 11.4 14.4 14.4 14.3 15.9 I. Agriculture & Allied Activities 10.4 9.2 7.5 6.8 7.3 7.6 9.0 8.9 8.7 12.1 11.4 12.3 15.7 II. Industry (Micro & Small, Medium and Large) 8.2 7.0 5.3 6.3 6.5 7.0 7.8 10.0 9.6 12.8 12.1 13.5 15.0 II.1. Micro & Small 8.9 9.2 13.7 19.2 20.9 20.8 22.0 25.9 24.6 30.4 31.2 30.4 33.1 II.2. Medium 18.5 18.1 16.9 13.2 15.0 13.3 14.5 17.6 15.7 20.4 22.3 21.0 21.7 II.3. Large 6.9 5.0 1.5 2.0 1.6 2.4 3.0 4.6 4.6 6.9 5.5 7.8 8.9 II.3.1 Infrastructure 2.8 0.3 -1.3 0.8 3.4 3.5 5.0 4.6 4.3 7.2 6.4 7.9 9.5 II.3.2 Basic Metal & Metal Product 12.8 14.3 10.6 11.0 9.5 8.9 9.1 13.1 11.8 14.2 13.8 15.2 19.4 II.3.3 Chemicals & Chemical Products 7.4 6.0 4.7 6.3 5.5 6.7 8.3 12.2 11.1 14.8 15.1 19.1 14.9 II.3.4 Textiles 8.3 8.5 6.8 8.6 6.0 6.4 7.1 9.1 8.1 11.8 10.0 8.2 8.9 II.3.5 All Engineering 22.0 21.7 20.4 22.1 23.0 19.8 22.4 25.1 22.6 30.4 35.9 36.0 32.2 II.3.6 Food Processing 5.1 6.5 7.8 8.1 5.2 6.1 7.7 10.2 6.5 11.7 9.6 10.2 14.0 III. Services 12.0 10.1 8.4 8.8 10.2 10.3 9.8 13.0 11.7 15.4 15.5 16.3 19.0 III.1. Trade 15.6 13.9 10.4 10.7 12.8 12.3 11.7 13.8 14.2 17.5 16.1 14.4 16.2 III.2. Commercial Real Estate 13.7 17.3 14.8 14.9 15.7 13.2 15.5 14.1 12.6 15.4 16.2 17.4 19.9 III.3. NBFCs 7.4 4.5 1.0 3.1 3.0 3.7 3.9 10.9 9.5 15.1 17.8 20.9 26.3 IV. Personal Loans 11.7 11.9 11.1 11.7 11.9 11.9 11.8 14.0 12.8 14.6 14.9 15.2 16.2 IV.1. Consumer Durables -1.0 -1.0 -3.7 -2.8 -5.8 -5.8 -6.1 1.0 -5.9 -5.1 -4.0 -9.8 -5.3 IV.2.",
+      "child_id": "DOC03_P24_PAR01_CH03",
+      "similarity_score": 0.41890743374824524,
+      "retrieval_rank": 4,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 4,
+          "score": 0.41890743374824524
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?",
+      "reranker_score": -10.278202056884766,
+      "reranker_rank": 7
+    },
+    {
+      "text": "auctions. II.5.12 During Q4:2025-26, yields traded with a hardening bias amidst higher-than-expected gross market borrowings announced in the Union Budget 2026-27 and a sharp increase in crude oil prices following the escalation of the Middle East conflict. On the final trading session of 2025-26, the 10-year generic G-sec yield crossed the 7 per cent mark for the first time since July 2024. OMO purchases for an aggregate amount of ₹4.57 lakh crore were conducted during the quarter, of which ₹3.5 lakh crore were through auctions. II.5.13 With the introduction of the fully accessible route (FAR)44 with effect from April 1, 2020, foreign 43 Details relating to monetary policy operations are covered in Chapter III of this Report. 44 Under FAR, certain categories of central government securities are open fully for non-resident investors without any restrictions, apart from being available to domestic investors as well. &KDUW\u0003,,\u0011\u0018\u0011\u0017 \u0003\u0014\u0013\u0010\\HDU\u0003*HQHULF\u0003*\u00106HF\u0003<LHOG \u001a\u0011\u0013\u0017 \u0019\u0011\u0013 \u0019\u0011\u0015 \u0019\u0011\u0017",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 29,
+      "section": "\u0003\u0014\u0013\u0010\\HDU\u0003*HQHULF\u0003*\u00106HF\u0003<LHOG",
+      "parent_id": "DOC03_P29_PAR01",
+      "chunk_id": "DOC03_P29_PAR01_CH03",
+      "parent_text": "26, as higher rates led to a shift towards bank borrowings. Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year. Government Securities Market II.5.9 During Q1:2025-26, domestic G-sec yield curve steepened as short and medium-term yields traded with a softening bias while long-term yields traded range bound amid monetary policy easing and liquidity infusion measures undertaken by the Reserve Bank. Open market operation (OMO) purchase auctions for an aggregate amount of ₹2.39 lakh crore were conducted during the quarter. However, yields hardened after the monetary policy stance was changed to ‘neutral’ in June 2025, as further rate cut expectations faded (Chart II.5.4). II.5.10 G-sec yields hardened during Q2:2025- 26 after a better-than-expected Q1:2025-26 GDP data amid fiscal concerns emanating from the implementation of higher US tariffs and GST rationalisation. However, the upside in yields was capped as oversupply related concerns ebbed after clarity emerged that revenue loss on account of goods and services tax (GST) rationalisation would be limited and government’s market borrowings for H2:2025-26 remained largely on expected lines. II.5.11 During Q3:2025-26, yields exhibited two-way movements as better-than-expected Q2:2025-26 GDP data and reduced expectations of further easing post 25-bps rate cut in the December 2025 monetary policy committee meeting43 provided an upward bias. However, the Reserve Bank’s liquidity injection measures helped ameliorate this upward pressure on yields. OMO purchases for an aggregate amount of ₹1.81 lakh crore were conducted during the quarter, of which ₹1.50 lakh crore were through auctions. II.5.12 During Q4:2025-26, yields traded with a hardening bias amidst higher-than-expected gross market borrowings announced in the Union Budget 2026-27 and a sharp increase in crude oil prices following the escalation of the Middle East conflict. On the final trading session of 2025-26, the 10-year generic G-sec yield crossed the 7 per cent mark for the first time since July 2024. OMO purchases for an aggregate amount of ₹4.57 lakh crore were conducted during the quarter, of which ₹3.5 lakh crore were through auctions. II.5.13 With the introduction of the fully accessible route (FAR)44 with effect from April 1, 2020, foreign 43 Details relating to monetary policy operations are covered in Chapter III of this Report. 44 Under FAR, certain categories of central government securities are open fully for non-resident investors without any restrictions, apart from being available to domestic investors as well. &KDUW\u0003,,\u0011\u0018\u0011\u0017 \u0003\u0014\u0013\u0010\\HDU\u0003*HQHULF\u0003*\u00106HF\u0003<LHOG \u001a\u0011\u0013\u0017 \u0019\u0011\u0013 \u0019\u0011\u0015 \u0019\u0011\u0017 \u0019\u0011\u0019 \u0019\u0011\u001b \u001a\u0011\u0013",
+      "child_id": "DOC03_P29_PAR01_CH03",
+      "similarity_score": 0.38553866744041443,
+      "retrieval_rank": 7,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 7,
+          "score": 0.38553866744041443
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?",
+      "reranker_score": -10.523656845092773,
+      "reranker_rank": 8
+    },
+    {
+      "text": "Housing 10.7 9.8 9.0 9.6 9.6 9.7 10.1 11.0 9.9 11.1 11.1 11.0 11.5 IV.3. Credit Card Outstanding 10.6 10.6 8.5 7.2 5.6 4.4 3.7 7.7 2.4 1.0 1.5 1.7 3.5 IV.4. Vehicle Loans 8.6 8.8 8.7 9.2 8.9 8.7 7.3 12.5 12.4 16.7 17.1 17.1 18.6 IV.5. Loans against Gold Jewellery 121.1 138.0 132.7 140.9 136.4 130.2 125.6 128.5 125.3 126.1 128.8 127.9 123.1 IV.6. Other Personal Loans 7.5 8.5 7.2 7.1 7.6 7.6 7.4 9.9 8.9 11.5 11.6 12.1 13.0 #: March 2025 over March 2024. Note: Data are provisional. 38 Risk weight for bank credit to NBFCs was increased by additional 25 percentage points in November 2023, which was later restored to the earlier position with effect from April 2025.",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 24,
+      "section": "Q4:2025-26",
+      "parent_id": "DOC03_P24_PAR02",
+      "chunk_id": "DOC03_P24_PAR02_CH01",
+      "parent_text": "Housing 10.7 9.8 9.0 9.6 9.6 9.7 10.1 11.0 9.9 11.1 11.1 11.0 11.5 IV.3. Credit Card Outstanding 10.6 10.6 8.5 7.2 5.6 4.4 3.7 7.7 2.4 1.0 1.5 1.7 3.5 IV.4. Vehicle Loans 8.6 8.8 8.7 9.2 8.9 8.7 7.3 12.5 12.4 16.7 17.1 17.1 18.6 IV.5. Loans against Gold Jewellery 121.1 138.0 132.7 140.9 136.4 130.2 125.6 128.5 125.3 126.1 128.8 127.9 123.1 IV.6. Other Personal Loans 7.5 8.5 7.2 7.1 7.6 7.6 7.4 9.9 8.9 11.5 11.6 12.1 13.0 #: March 2025 over March 2024. Note: Data are provisional. 38 Risk weight for bank credit to NBFCs was increased by additional 25 percentage points in November 2023, which was later restored to the earlier position with effect from April 2025.",
+      "child_id": "DOC03_P24_PAR02_CH01",
+      "similarity_score": 0.37818443775177,
+      "retrieval_rank": 10,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 10,
+          "score": 0.37818443775177
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?",
+      "reranker_score": -11.075889587402344,
+      "reranker_rank": 9
+    },
+    {
+      "text": "1 Food and beverages 36.8 1 Food and beverages 45.9 2 Pan, tobacco and intoxicants 3.0 2 Pan, tobacco and intoxicants 2.4 3 Clothing and footwear 6.4 3 Clothing and footwear 6.5 4 Housing, water, electricity, gas and other fuels 17.7 4 Housing 10.1 5 Furnishings, household equipment and routine household maintenance 4.5 5 Fuel and light 6.8 6 Education services 3.3 6 Miscellaneous 28.3 7 Health 6.1 of which: 8 Information and communication 3.6 6.1 Household goods and services 3.8 9 Transport 8.8 6.2 Health 5.9 10 Recreation, sport and culture 1.5 6.3 Transport and communication 8.6 11 Personal care, social protection and miscellaneous goods and services 5.0 6.4 Recreation and amusement 1.7 12 Restaurants and accommodation services 3.3 6.5 Education 4.5 6.6 Personal care and effects 3.9 Total 100 Total 100 Note: Each CPI series follows the classification that it was published with, and the weighting structure across",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 13,
+      "section": "6.6 Personal care and effects 3.9",
+      "parent_id": "DOC03_P13_PAR01",
+      "chunk_id": "DOC03_P13_PAR01_CH02",
+      "parent_text": "and beverages averaged higher at 3.1 per cent (CPI 2024=100). In October 2025, CPI food and beverages recorded the steepest deflation in the CPI series at 3.7 per cent (y-o-y) before inching up to 1.8 per cent deflation in December. The secular decline in inflation from a peak of 9.7 per cent in October 2024 was primarily driven by muted price pressures in vegetables, pulses and cereals, and a strong favourable base effect (Chart II.3.2). Favourable supply-side factors, i.e., comfortable foodgrain stocks stemming from higher domestic and steady wholesale market arrivals, supportive trade policies, proactive supply management by the government, and largely conducive weather Table II.3.1: Change in CPI Weighting Structure S. No. Divisions CPI 2024 = 100 S. No. Groups CPI 2012 = 100 1 Food and beverages 36.8 1 Food and beverages 45.9 2 Pan, tobacco and intoxicants 3.0 2 Pan, tobacco and intoxicants 2.4 3 Clothing and footwear 6.4 3 Clothing and footwear 6.5 4 Housing, water, electricity, gas and other fuels 17.7 4 Housing 10.1 5 Furnishings, household equipment and routine household maintenance 4.5 5 Fuel and light 6.8 6 Education services 3.3 6 Miscellaneous 28.3 7 Health 6.1 of which: 8 Information and communication 3.6 6.1 Household goods and services 3.8 9 Transport 8.8 6.2 Health 5.9 10 Recreation, sport and culture 1.5 6.3 Transport and communication 8.6 11 Personal care, social protection and miscellaneous goods and services 5.0 6.4 Recreation and amusement 1.7 12 Restaurants and accommodation services 3.3 6.5 Education 4.5 6.6 Personal care and effects 3.9 Total 100 Total 100 Note: Each CPI series follows the classification that it was published with, and the weighting structure across similar categories are not strictly comparable. Table II.3.2: CPI Headline Inflation – Key Summary Statistics 2016-17 2017-18 2018-19 2019-20 2020-21 2021-22 2022-23 2023-24 2024-25 2025-26 Mean 4.5 3.6 3.4 4.8 6.2 5.5 6.7 5.4 4.6 2.1 Standard deviation 1.0 1.2 1.1 1.8 1.1 0.9 0.7 0.9 0.9 1.0 Skewness 0.2 -0.2 0.1 0.5 -0.7 -0.1 -0.1 1.5 0.0 -0.3 Kurtosis -1.6 -1.0 -1.5 -1.4 -0.7 -1.0 -0.6 1.6 -1.2 -1.0 Median 4.3 3.4 3.5 4.3 6.5 5.6 6.7 5.1 4.8 2.1 Maximum 6.1 5.2 4.9 7.6 7.6 7.0 7.8 7.4 6.2 3.4 Minimum 3.2 1.5 2.0 3.0 4.1 4.2 5.7 4.3 3.3 0.3 Notes: 1. Skewness and kurtosis are unit-free. Annual inflation is the average of the monthly inflation rates during the year and therefore, may vary from the annual inflation calculated from the average index for the year. 2. Monthly inflation rates pertain to the old CPI series (base 2012=100) till December 2025, subsequently, to the current series (base 2024=100).",
+      "child_id": "DOC03_P13_PAR01_CH02",
+      "similarity_score": 0.4120975136756897,
+      "retrieval_rank": 6,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 6,
+          "score": 0.4120975136756897
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?",
+      "reranker_score": -11.339254379272461,
+      "reranker_rank": 10
+    }
+  ]
+}

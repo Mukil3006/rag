@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SLM-RAG · Evidence verification</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><div class="brand"><span class="mark">E</span><div><strong>SLM-RAG</strong><small>Evidence verification workspace</small></div></div><span id="health" class="pill">Checking local model…</span></header>
+<main>
+<section class="intro"><p class="eyebrow">LOCAL RESEARCH DEMONSTRATION</p><h1>See the evidence before the answer.</h1><p>Ask your documents a question. Follow retrieval, verification, and the final response in one place.</p></section>
+<div class="flow" aria-label="Proposed system architecture"><span>01 Retrieval</span><b>→</b><span>02 Reranking</span><b>→</b><span class="accent">03 SLM verification</span><b>→</b><span>04 Evidence gate</span><b>→</b><span>05 Final answer</span></div>
+<div class="workspace">
+<aside class="card controls"><p class="eyebrow">NEW EXPERIMENT</p><h2>Ask a question</h2>
+<form id="queryForm"><label for="query">Your question</label><textarea id="query" rows="5" maxlength="2000" required>What was the commercial paper issuance value?</textarea>
+<label for="mode">Experiment mode</label><select id="mode"><option value="C">C · Proposed verified RAG</option><option value="B">B · Reranked RAG</option><option value="A">A · Basic RAG</option></select>
+<p id="modeNote" class="hint">Evidence is checked by the local SLM before final generation.</p><button class="primary" id="run" type="submit">Run verification <span>↗</span></button></form>
+<div id="progress" role="status" aria-live="polite" hidden><span class="spinner"></span><span id="progressText">Running…</span></div><p id="error" role="alert" hidden></p>
+<div class="examples"><label>Try an example</label><button type="button" data-example="What are the components of a RAG system?">RAG components <span>↗</span></button><button type="button" data-example="What was the commercial paper issuance value?">Commercial paper issuance <span>↗</span></button><button type="button" data-example="Does the synthetic memorandum agree with the original financial report about commercial paper issuance?">Compare conflicting sources <span>↗</span></button><button type="button" data-example="What is the measured atmospheric pressure on the fictional planet Zorblax?">Unsupported question <span>↗</span></button></div>
+<label for="history">Previous web runs</label><select id="history"><option value="">Choose a saved run…</option></select><p id="model" class="hint model"></p>
+</aside>
+<section class="results" aria-live="polite">
+<div id="empty" class="card empty"><span class="empty-icon">✓</span><h2>Your evidence trail starts here</h2><p>Run a question to see the actual model output.<br>No sample answers are substituted.</p></div>
+<div id="result" hidden>
+<div class="card answer"><div class="result-top"><p class="eyebrow" id="runLabel">ACTUAL PIPELINE OUTPUT</p><span class="pill" id="verdict"></span></div><h2 id="question"></h2><div id="stats" class="stats"></div><h3>Final answer</h3><div id="answer" class="answer-text"></div><div id="warnings" class="warnings" hidden></div><p id="provenance" class="hint"></p><div class="download-row"><button id="downloadTrace" type="button">Download exact trace ↓</button><button id="downloadJson" type="button">Download run JSON ↓</button></div></div>
+<div class="card evidence"><div class="section-title"><h2>Evidence decisions</h2><span class="hint">Model confidence is uncalibrated</span></div><div id="evidenceList"></div></div>
+</div>
+</section></div>
+<details id="tracePanel" class="card trace" open hidden><summary><span>Complete terminal output</span><small>Exact text from the existing pipeline</small></summary><pre id="trace" tabindex="0"></pre></details>
+<footer><span>Local inference · Existing BGE-M3 + FAISS index</span><span>Research prototype · Verification does not establish real-world truth</span></footer>
+</main></body></html>

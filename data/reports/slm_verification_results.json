@@ -1,0 +1,349 @@
+{
+  "run_id": "ccfed46e-0825-429f-9d20-9a5da90decc0",
+  "query": "What was the commercial paper issuance value?",
+  "verification": [
+    {
+      "text": "4. Test Questions 1. What was the average daily money market volume during FY 2025–26? 2. What was the total commercial paper issuance during FY 2025–26? 3. How much was spent through Q4 open market operation purchases? 4. Does this memorandum agree with the other financial report in the collection? 5. Which information is irrelevant to financial market analysis? 6. Is the complete Q3 average daily money market volume available? 5. Expected SLM Verification Labels Situation Expected action Values conflict with the original report CONTRADICTION → retrieve independent evidence Q3 value is missing PARTIAL / UNCERTAIN → do not guess Wellness campaign is retrieved for a finance query IRRELEVANT → remove Evidence comes only from this file Mark as synthetic test evidence Evaluation note: Keep this document marked as synthetic/adversarial in your metadata. Do not present its altered figures as real-world facts.",
+      "source": "Synthetic_Contradictory_Finance(No.9).pdf",
+      "document_id": "DOC09",
+      "page": 2,
+      "section": "5. Expected SLM Verification Labels",
+      "parent_id": "DOC09_P02_PAR01",
+      "chunk_id": "DOC09_P02_PAR01_CH01",
+      "parent_text": "4. Test Questions 1. What was the average daily money market volume during FY 2025–26? 2. What was the total commercial paper issuance during FY 2025–26? 3. How much was spent through Q4 open market operation purchases? 4. Does this memorandum agree with the other financial report in the collection? 5. Which information is irrelevant to financial market analysis? 6. Is the complete Q3 average daily money market volume available? 5. Expected SLM Verification Labels Situation Expected action Values conflict with the original report CONTRADICTION → retrieve independent evidence Q3 value is missing PARTIAL / UNCERTAIN → do not guess Wellness campaign is retrieved for a finance query IRRELEVANT → remove Evidence comes only from this file Mark as synthetic test evidence Evaluation note: Keep this document marked as synthetic/adversarial in your metadata. Do not present its altered figures as real-world facts.",
+      "child_id": "DOC09_P02_PAR01_CH01",
+      "similarity_score": 0.41983288526535034,
+      "retrieval_rank": 3,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 3,
+          "score": 0.41983288526535034
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?",
+      "reranker_score": 1.7462983131408691,
+      "reranker_rank": 1,
+      "verification_question": "What was the commercial paper issuance value?",
+      "child_verification": {
+        "verdict": "INSUFFICIENT",
+        "confidence": 0.95,
+        "reason": "No sentence provides the commercial paper issuance value; the source only mentions total commercial paper issuance during FY 2025–26 as a question, not the value.",
+        "contradictions": [],
+        "needs_parent_context": false,
+        "supporting_claims": [],
+        "excluded_instruction_sentence_ids": [
+          "S14"
+        ]
+      },
+      "verification": {
+        "verdict": "INSUFFICIENT",
+        "confidence": 0.95,
+        "reason": "No sentence provides the commercial paper issuance value; the source only mentions total commercial paper issuance during FY 2025–26 as a question, not the value.",
+        "contradictions": [],
+        "needs_parent_context": false,
+        "supporting_claims": [],
+        "excluded_instruction_sentence_ids": [
+          "S14"
+        ]
+      },
+      "evidence_text": "4. Test Questions 1. What was the average daily money market volume during FY 2025–26? 2. What was the total commercial paper issuance during FY 2025–26? 3. How much was spent through Q4 open market operation purchases? 4. Does this memorandum agree with the other financial report in the collection? 5. Which information is irrelevant to financial market analysis? 6. Is the complete Q3 average daily money market volume available? 5. Expected SLM Verification Labels Situation Expected action Values conflict with the original report CONTRADICTION → retrieve independent evidence Q3 value is missing PARTIAL / UNCERTAIN → do not guess Wellness campaign is retrieved for a finance query IRRELEVANT → remove Evidence comes only from this file Mark as synthetic test evidence Evaluation note: Keep this document marked as synthetic/adversarial in your metadata. Do not present its altered figures as real-world facts.",
+      "parent_expansion": false
+    },
+    {
+      "text": "Synthetic Financial Market Test Memorandum IMPORTANT: This is a deliberately modified fictional document for testing RAG + SLM contradiction detection. It is not an official RBI or government document and must not be used for real financial decisions. Document ID: SYN-FIN-TEST-01 Version: 2.0 (adversarial test version) 1. Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2. Deliberately Incomplete Information The memorandum discusses quarterly liquidity conditions but does not provide the complete Q3 average daily money market volume. The system should classify this as PARTIAL or UNCERTAIN and should not invent a value. 3. Irrelevant Information The institution conducted an employee wellness campaign involving 420",
+      "source": "Synthetic_Contradictory_Finance(No.9).pdf",
+      "document_id": "DOC09",
+      "page": 1,
+      "section": "3. Irrelevant Information",
+      "parent_id": "DOC09_P01_PAR01",
+      "chunk_id": "DOC09_P01_PAR01_CH01",
+      "parent_text": "Synthetic Financial Market Test Memorandum IMPORTANT: This is a deliberately modified fictional document for testing RAG + SLM contradiction detection. It is not an official RBI or government document and must not be used for real financial decisions. Document ID: SYN-FIN-TEST-01 Version: 2.0 (adversarial test version) 1. Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2. Deliberately Incomplete Information The memorandum discusses quarterly liquidity conditions but does not provide the complete Q3 average daily money market volume. The system should classify this as PARTIAL or UNCERTAIN and should not invent a value. 3. Irrelevant Information The institution conducted an employee wellness campaign involving 420 participants, three workshops, two feedback sessions, and a 78% attendance rate. These details are unrelated to financial market analysis.",
+      "child_id": "DOC09_P01_PAR01_CH01",
+      "similarity_score": 0.4318479895591736,
+      "retrieval_rank": 2,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 2,
+          "score": 0.4318479895591736
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?",
+      "reranker_score": 0.4174697697162628,
+      "reranker_rank": 2,
+      "verification_question": "What was the commercial paper issuance value?",
+      "child_verification": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.95,
+        "reason": "The sentence explicitly states that commercial paper issuances were ■18.2 lakh crore FY 2025–26, directly answering the question.",
+        "contradictions": [],
+        "needs_parent_context": false,
+        "supporting_claims": [
+          "Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2."
+        ],
+        "excluded_instruction_sentence_ids": [
+          "S5"
+        ]
+      },
+      "verification": {
+        "verdict": "CONTRADICTORY",
+        "confidence": 0.95,
+        "reason": "The sentence explicitly states that commercial paper issuances were ■18.2 lakh crore FY 2025–26, directly answering the question.",
+        "contradictions": [
+          "One states commercial paper issuance as ₹18.2 lakh crore, the other as ₹16.9 lakh crore for FY 2025–26."
+        ],
+        "needs_parent_context": false,
+        "supporting_claims": [
+          "Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2."
+        ],
+        "excluded_instruction_sentence_ids": [
+          "S5"
+        ]
+      },
+      "evidence_text": "Synthetic Financial Market Test Memorandum IMPORTANT: This is a deliberately modified fictional document for testing RAG + SLM contradiction detection. It is not an official RBI or government document and must not be used for real financial decisions. Document ID: SYN-FIN-TEST-01 Version: 2.0 (adversarial test version) 1. Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2. Deliberately Incomplete Information The memorandum discusses quarterly liquidity conditions but does not provide the complete Q3 average daily money market volume. The system should classify this as PARTIAL or UNCERTAIN and should not invent a value. 3. Irrelevant Information The institution conducted an employee wellness campaign involving 420",
+      "parent_expansion": false,
+      "pre_conflict_verification": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.95,
+        "reason": "The sentence explicitly states that commercial paper issuances were ■18.2 lakh crore FY 2025–26, directly answering the question.",
+        "contradictions": [],
+        "needs_parent_context": false,
+        "supporting_claims": [
+          "Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2."
+        ],
+        "excluded_instruction_sentence_ids": [
+          "S5"
+        ]
+      }
+    },
+    {
+      "text": "the WACR movements (Chart II.5.1a). II.5.4 For the longer tenor money market instruments, following the overnight trends, yields softened for 3-month treasury bills (T-bills), certificates of deposit (CDs) and commercial papers (CPs) during H1:2025-26. However, in H2, CD rates remained elevated owing to higher issuances by banks to meet funding requirements in the face of higher offtake in credit. CP rates also followed an upward trend in H2 (Chart II.5.1b). II.5.5 The average daily volume",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 27,
+      "section": "II.5 FINANCIAL MARKETS",
+      "parent_id": "DOC03_P27_PAR01",
+      "chunk_id": "DOC03_P27_PAR01_CH04",
+      "parent_text": "40 Coefficient of variation is measured as a ratio of standard deviation to the mean. 41 Call money, triparty repo and market repo of both overnight and term segments, excluding Saturdays. 42 Effective July 1 and August 1, 2025, the trading hours for the call money market, and triparty repo and market repo were extended to 7 pm and 4 pm, respectively. II.5 FINANCIAL MARKETS II.5.1 Global financial markets remained volatile in 2025-26 amidst concerns emanating from surging fiscal deficit, debt repayment, varied growth-inflation outcomes and trade tariff impositions. Notwithstanding global headwinds, After declining in the first quarter, sovereign bond yields hardened amidst oversupply of state government securities, delay in signing of India- US trade deal, and surge in crude oil prices due to tensions in the Middle East. Corporate bond yields exhibited a hardening bias, accompanied by a broadening of spreads, amidst divergent corporate earnings performance. Indian equity markets remained volatile during the year, navigating global uncertainties while buoyed by stronger-than-expected gross domestic product (GDP) growth and supportive fiscal and monetary policies. The Indian Rupee (INR) traded with a depreciating bias amidst escalating geopolitical tensions and portfolio investment outflows. Money Market II.5.2 During 2025-26, money market rates moved in tandem with the policy repo rate and the evolving liquidity conditions. The weighted average call rate (WACR) moved in line with the repo rate, and its average spread over the repo rate was (-) 7 bps during 2025-26 as against 6 bps during 2024-25. Volatility in the WACR measured by coefficient of variation 40 increased to 4.8 per cent in 2025-26 from 2.2 per cent in the previous year. II.5.3 During April to early July 2025, due to large surplus liquidity, the WACR hovered around the standing deposit facility (SDF) rate, floor of the policy corridor. Since mid-July 2025, following Reserve Bank’s absorption of liquidity through variable rate reverse repo (VRRR) auctions, the WACR increased and traded closer to the policy repo rate. However, the WACR moved near marginal standing facility (MSF) rate, ceiling of the policy corridor during mid-December 2025 to January 2026 amidst moderation in liquidity surplus. The WACR eased in February, while remaining elevated at end-March following the seasonal effect. The collateralised market segments – triparty repo and market repo – followed the WACR movements (Chart II.5.1a). II.5.4 For the longer tenor money market instruments, following the overnight trends, yields softened for 3-month treasury bills (T-bills), certificates of deposit (CDs) and commercial papers (CPs) during H1:2025-26. However, in H2, CD rates remained elevated owing to higher issuances by banks to meet funding requirements in the face of higher offtake in credit. CP rates also followed an upward trend in H2 (Chart II.5.1b). II.5.5 The average daily volume",
+      "child_id": "DOC03_P27_PAR01_CH04",
+      "similarity_score": 0.3828512728214264,
+      "retrieval_rank": 8,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 8,
+          "score": 0.3828512728214264
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?",
+      "reranker_score": -2.930950403213501,
+      "reranker_rank": 3,
+      "verification_question": "What was the commercial paper issuance value?",
+      "child_verification": {
+        "verdict": "INSUFFICIENT",
+        "confidence": 0.95,
+        "reason": "No sentence provides the commercial paper issuance value directly or indirectly.",
+        "contradictions": [],
+        "needs_parent_context": false,
+        "supporting_claims": []
+      },
+      "verification": {
+        "verdict": "INSUFFICIENT",
+        "confidence": 0.95,
+        "reason": "No sentence provides the commercial paper issuance value directly or indirectly.",
+        "contradictions": [],
+        "needs_parent_context": false,
+        "supporting_claims": []
+      },
+      "evidence_text": "the WACR movements (Chart II.5.1a). II.5.4 For the longer tenor money market instruments, following the overnight trends, yields softened for 3-month treasury bills (T-bills), certificates of deposit (CDs) and commercial papers (CPs) during H1:2025-26. However, in H2, CD rates remained elevated owing to higher issuances by banks to meet funding requirements in the face of higher offtake in credit. CP rates also followed an upward trend in H2 (Chart II.5.1b). II.5.5 The average daily volume",
+      "parent_expansion": false
+    },
+    {
+      "text": "26, as higher rates led to a shift towards bank borrowings. Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year. Government Securities Market II.5.9 During Q1:2025-26, domestic G-sec yield curve steepened as short and medium-term yields traded with a softening bias while long-term yields traded range bound amid monetary policy easing and liquidity infusion measures undertaken by the Reserve Bank. Open market operation (OMO) purchase auctions for an aggregate amount of ₹2.39 lakh crore were conducted during the quarter. However, yields hardened after the monetary policy stance was changed to ‘neutral’ in June 2025, as further rate cut expectations faded (Chart II.5.4). II.5.10 G-sec yields hardened during Q2:2025- 26 after a better-than-expected Q1:2025-26 GDP data amid fiscal concerns emanating from the implementation of higher US tariffs and GST rationalisation. However, the upside in yields was capped as oversupply related concerns",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 29,
+      "section": "\u0003\u0014\u0013\u0010\\HDU\u0003*HQHULF\u0003*\u00106HF\u0003<LHOG",
+      "parent_id": "DOC03_P29_PAR01",
+      "chunk_id": "DOC03_P29_PAR01_CH01",
+      "parent_text": "26, as higher rates led to a shift towards bank borrowings. Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year. Government Securities Market II.5.9 During Q1:2025-26, domestic G-sec yield curve steepened as short and medium-term yields traded with a softening bias while long-term yields traded range bound amid monetary policy easing and liquidity infusion measures undertaken by the Reserve Bank. Open market operation (OMO) purchase auctions for an aggregate amount of ₹2.39 lakh crore were conducted during the quarter. However, yields hardened after the monetary policy stance was changed to ‘neutral’ in June 2025, as further rate cut expectations faded (Chart II.5.4). II.5.10 G-sec yields hardened during Q2:2025- 26 after a better-than-expected Q1:2025-26 GDP data amid fiscal concerns emanating from the implementation of higher US tariffs and GST rationalisation. However, the upside in yields was capped as oversupply related concerns ebbed after clarity emerged that revenue loss on account of goods and services tax (GST) rationalisation would be limited and government’s market borrowings for H2:2025-26 remained largely on expected lines. II.5.11 During Q3:2025-26, yields exhibited two-way movements as better-than-expected Q2:2025-26 GDP data and reduced expectations of further easing post 25-bps rate cut in the December 2025 monetary policy committee meeting43 provided an upward bias. However, the Reserve Bank’s liquidity injection measures helped ameliorate this upward pressure on yields. OMO purchases for an aggregate amount of ₹1.81 lakh crore were conducted during the quarter, of which ₹1.50 lakh crore were through auctions. II.5.12 During Q4:2025-26, yields traded with a hardening bias amidst higher-than-expected gross market borrowings announced in the Union Budget 2026-27 and a sharp increase in crude oil prices following the escalation of the Middle East conflict. On the final trading session of 2025-26, the 10-year generic G-sec yield crossed the 7 per cent mark for the first time since July 2024. OMO purchases for an aggregate amount of ₹4.57 lakh crore were conducted during the quarter, of which ₹3.5 lakh crore were through auctions. II.5.13 With the introduction of the fully accessible route (FAR)44 with effect from April 1, 2020, foreign 43 Details relating to monetary policy operations are covered in Chapter III of this Report. 44 Under FAR, certain categories of central government securities are open fully for non-resident investors without any restrictions, apart from being available to domestic investors as well. &KDUW\u0003,,\u0011\u0018\u0011\u0017 \u0003\u0014\u0013\u0010\\HDU\u0003*HQHULF\u0003*\u00106HF\u0003<LHOG \u001a\u0011\u0013\u0017 \u0019\u0011\u0013 \u0019\u0011\u0015 \u0019\u0011\u0017 \u0019\u0011\u0019 \u0019\u0011\u001b \u001a\u0011\u0013",
+      "child_id": "DOC03_P29_PAR01_CH01",
+      "similarity_score": 0.38046377897262573,
+      "retrieval_rank": 9,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 9,
+          "score": 0.38046377897262573
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?",
+      "reranker_score": -6.276118755340576,
+      "reranker_rank": 4,
+      "verification_question": "What was the commercial paper issuance value?",
+      "child_verification": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.95,
+        "reason": "Sentence S1 explicitly states the total issuances of commercial paper (CPs) during 2025-26 were ₹16.9 lakh crore, which directly answers the question about commercial paper issuance value.",
+        "contradictions": [],
+        "needs_parent_context": false,
+        "supporting_claims": [
+          "Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year."
+        ]
+      },
+      "verification": {
+        "verdict": "CONTRADICTORY",
+        "confidence": 0.95,
+        "reason": "Sentence S1 explicitly states the total issuances of commercial paper (CPs) during 2025-26 were ₹16.9 lakh crore, which directly answers the question about commercial paper issuance value.",
+        "contradictions": [
+          "One states commercial paper issuance as ₹18.2 lakh crore, the other as ₹16.9 lakh crore for FY 2025–26."
+        ],
+        "needs_parent_context": false,
+        "supporting_claims": [
+          "Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year."
+        ]
+      },
+      "evidence_text": "26, as higher rates led to a shift towards bank borrowings. Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year. Government Securities Market II.5.9 During Q1:2025-26, domestic G-sec yield curve steepened as short and medium-term yields traded with a softening bias while long-term yields traded range bound amid monetary policy easing and liquidity infusion measures undertaken by the Reserve Bank. Open market operation (OMO) purchase auctions for an aggregate amount of ₹2.39 lakh crore were conducted during the quarter. However, yields hardened after the monetary policy stance was changed to ‘neutral’ in June 2025, as further rate cut expectations faded (Chart II.5.4). II.5.10 G-sec yields hardened during Q2:2025- 26 after a better-than-expected Q1:2025-26 GDP data amid fiscal concerns emanating from the implementation of higher US tariffs and GST rationalisation. However, the upside in yields was capped as oversupply related concerns",
+      "parent_expansion": false,
+      "pre_conflict_verification": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.95,
+        "reason": "Sentence S1 explicitly states the total issuances of commercial paper (CPs) during 2025-26 were ₹16.9 lakh crore, which directly answers the question about commercial paper issuance value.",
+        "contradictions": [],
+        "needs_parent_context": false,
+        "supporting_claims": [
+          "Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year."
+        ]
+      }
+    },
+    {
+      "text": "the average share of triparty repo and market repo at around 67 per cent and 30 per cent, respectively. The share of call money market increased marginally to 3 per cent during the year (Chart II.5.2). II.5.7 In the longer-term segments, the average daily spread of CD rates and CP rates over T-bill rates trended downwards until September 2025, while they increased afterwards (Chart II.5.3). In the primary market, the CD issuances increased to ₹5.3 lakh crore in Q4:2025-26 from ₹2.3 lakh crore in Q1. Total CD issuances aggregated ₹13.5 lakh crore in 2025-26 as against total issuances of ₹11.9 lakh crore in the previous year. II.5.8 As the liquidity remained largely in surplus and interest rates favourable, new issuances of CPs depicted a steady trend during H1:2025-26. However, CP issuances declined in H2:2025- &KDUW\u0003,,\u0011\u0018\u0011\u0014 \u00030RQH\\\u00030DUNHW\u00035DWHV\u00037UDFNHG\u00033ROLF\\\u00035HSR\u00035DWH D\u0011\u00032YHUQLJKW\u00035DWHV\u0003DQG\u00033ROLF\\\u0003&RUULGRU E\u0011\u0003\u0016\u00100RQWK\u00035DWHV\u0003DQG\u00033ROLF\\\u00035HSR\u00035DWH \u00035%,\u000f\u0003)%,/\u000f\u0003&&,/\u0010)WUDF\u0003DQG\u00035%,\u0003VWDII\u0003HVWLPDWHV\u0011 :$&5 7ULSDUW\\\u0003UHSR\u0003UDWH 0DUNHW\u0003UHSR\u0003\u0003UDWH 6')\u0003UDWH 5HSR\u0003UDWH 06)\u0003UDWH \u0016\u0010PRQWK\u0003&'\u0003UDWH \u0014\u0010GD\\\u00037\u0010ELOO\u0003UDWH \u0016\u0010PRQWK\u0003&3\u0003UDWH 5HSR\u0003UDWH \u0017\u0011\u0013\u0013",
+      "source": "Finance_data(No.8).pdf",
+      "document_id": "DOC03",
+      "page": 28,
+      "section": "\u0016\u0013\u00100DU\u0010\u0015\u0019",
+      "parent_id": "DOC03_P28_PAR01",
+      "chunk_id": "DOC03_P28_PAR01_CH01",
+      "parent_text": "the average share of triparty repo and market repo at around 67 per cent and 30 per cent, respectively. The share of call money market increased marginally to 3 per cent during the year (Chart II.5.2). II.5.7 In the longer-term segments, the average daily spread of CD rates and CP rates over T-bill rates trended downwards until September 2025, while they increased afterwards (Chart II.5.3). In the primary market, the CD issuances increased to ₹5.3 lakh crore in Q4:2025-26 from ₹2.3 lakh crore in Q1. Total CD issuances aggregated ₹13.5 lakh crore in 2025-26 as against total issuances of ₹11.9 lakh crore in the previous year. II.5.8 As the liquidity remained largely in surplus and interest rates favourable, new issuances of CPs depicted a steady trend during H1:2025-26. However, CP issuances declined in H2:2025- &KDUW\u0003,,\u0011\u0018\u0011\u0014 \u00030RQH\\\u00030DUNHW\u00035DWHV\u00037UDFNHG\u00033ROLF\\\u00035HSR\u00035DWH D\u0011\u00032YHUQLJKW\u00035DWHV\u0003DQG\u00033ROLF\\\u0003&RUULGRU E\u0011\u0003\u0016\u00100RQWK\u00035DWHV\u0003DQG\u00033ROLF\\\u00035HSR\u00035DWH \u00035%,\u000f\u0003)%,/\u000f\u0003&&,/\u0010)WUDF\u0003DQG\u00035%,\u0003VWDII\u0003HVWLPDWHV\u0011 :$&5 7ULSDUW\\\u0003UHSR\u0003UDWH 0DUNHW\u0003UHSR\u0003\u0003UDWH 6')\u0003UDWH 5HSR\u0003UDWH 06)\u0003UDWH \u0016\u0010PRQWK\u0003&'\u0003UDWH \u0014\u0010GD\\\u00037\u0010ELOO\u0003UDWH \u0016\u0010PRQWK\u0003&3\u0003UDWH 5HSR\u0003UDWH \u0017\u0011\u0013\u0013 \u0017\u0011\u0015\u0018 \u0017\u0011\u0018\u0013 \u0017\u0011\u001a\u0018 \u0018\u0011\u0013\u0013 \u0018\u0011\u0015\u0018 \u0018\u0011\u0018\u0013 \u0018\u0011\u001a\u0018 \u0019\u0011\u0013\u0013 \u0019\u0011\u0015\u0018 \u0019\u0011\u0018\u0013 \u0019\u0011\u001a\u0018 \u001a\u0011\u0013\u0013 \u0013\u0017\u0010$SU\u0010\u0015\u0018 \u0010$SU\u0010\u0015\u0018 \u0013\u0017\u00100D\\\u0010\u0015\u0018 \u00100D\\\u0010\u0015\u0018 \u0013\u0016\u0010-XQ\u0010\u0015\u0018 \u0014\u001b\u0010-XQ\u0010\u0015\u0018 \u0013\u0016\u0010-XO\u0010\u0015\u0018 \u0014\u001b\u0010-XO\u0010\u0015\u0018 \u0013\u0015\u0010$XJ\u0010\u0015\u0018 \u0014\u001a\u0010$XJ\u0010\u0015\u0018 \u0013\u0014\u00106HS\u0010\u0015\u0018 \u0014\u0019\u00106HS\u0010\u0015\u0018 \u0013\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0019\u00102FW\u0010\u0015\u0018 \u0016\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0018\u00101RY\u0010\u0015\u0018 \u0016\u0013\u00101RY\u0010\u0015\u0018 \u0014\u0018\u0010'HF\u0010\u0015\u0018 \u0016\u0013\u0010'HF\u0010\u0015\u0018 \u0014\u0017\u0010-DQ\u0010\u0015\u0019 \u0010-DQ\u0010\u0015\u0019 \u0014\u0016\u0010)HE\u0010\u0015\u0019 \u0015\u001b\u0010)HE\u0010\u0015\u0019 \u0014\u0018\u00100DU\u0010\u0015\u0019 \u0016\u0013\u00100DU\u0010\u0015\u0019 \u0017\u0011\u001a\u0018 \u0018\u0011\u0013\u0013 \u0018\u0011\u0015\u0018 \u0018\u0011\u0018\u0013 \u0018\u0011\u001a\u0018 \u0019\u0011\u0013\u0013 \u0019\u0011\u0015\u0018 \u0019\u0011\u0018\u0013 \u0019\u0011\u001a\u0018 \u001a\u0011\u0013\u0013 \u001a\u0011\u0015\u0018 \u001a\u0011\u0018\u0013 \u001a\u0011\u001a\u0018 \u001b\u0011\u0013\u0013 \u0013\u0017\u0010$SU\u0010\u0015\u0018 \u0010$SU\u0010\u0015\u0018 \u0013\u0017\u00100D\\\u0010\u0015\u0018 \u00100D\\\u0010\u0015\u0018 \u0013\u0016\u0010-XQ\u0010\u0015\u0018 \u0014\u001b\u0010-XQ\u0010\u0015\u0018 \u0013\u0016\u0010-XO\u0010\u0015\u0018 \u0014\u001b\u0010-XO\u0010\u0015\u0018 \u0013\u0015\u0010$XJ\u0010\u0015\u0018 \u0014\u001a\u0010$XJ\u0010\u0015\u0018 \u0013\u0014\u00106HS\u0010\u0015\u0018 \u0014\u0019\u00106HS\u0010\u0015\u0018 \u0013\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0019\u00102FW\u0010\u0015\u0018 \u0016\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0018\u00101RY\u0010\u0015\u0018 \u0016\u0013\u00101RY\u0010\u0015\u0018 \u0014\u0018\u0010'HF\u0010\u0015\u0018 \u0016\u0013\u0010'HF\u0010\u0015\u0018 \u0014\u0017\u0010-DQ\u0010\u0015\u0019 \u0010-DQ\u0010\u0015\u0019 \u0014\u0016\u0010)HE\u0010\u0015\u0019 \u0015\u001b\u0010)HE\u0010\u0015\u0019 \u0014\u0018\u00100DU\u0010\u0015\u0019 \u0016\u0013\u00100DU\u0010\u0015\u0019 &KDUW\u0003,,\u0011\u0018\u0011\u0015 \u0003&ROODWHUDOLVHG\u00036HJPHQWV\u0003'RPLQDWH 0RQH\\\u00030DUNHW \u0003&&,/\u0003DQG\u00035%,\u0003VWDII\u0003HVWLPDWHV\u0011 \u0016 \u0016 \u0016 \u0016 \u0016 \u0016 \u0016 \u0016 \u0016 \u0016 \u0015 \u0016 \u0016\u0014 \u0016\u0015 \u0016\u0014 \u0016\u0014 \u0016\u0014 \u0016\u0014 \u0016\u0015 \u0016\u0015 \u0016\u0014 \u0015\u001b \u0015\u0019 \u0015\u001b \u0019\u0019 \u0019\u0019 \u0019\u0019 \u0019\u0019 \u0019\u0019 \u0019\u0019 \u0019\u0018 \u0019\u0018 \u0019\u001a \u0019 \u001a\u0015 \u001a\u0013 &DOO\u00121RWLFH 0DUNHW\u0003UHSR 7ULSDUW\\\u0003UHSR \u0003)%,/\u000f\u0003&RJHQFLV\u0003DQG\u00035%,\u0003VWDII\u0003HVWLPDWHV &KDUW\u0003,,\u0011\u0018\u0011\u0016 \u0003&3\u0003DQG\u0003&'\u00035DWH\u00036SUHDGV\u0003,QFUHDVHG\u0003LQ +\u0015 ȋ\u0005 Ȍ 6SUHDG\u0003RI\u0003&'\u0003UDWH\u0003RYHU\u0003 \u0014\u0010GD\\\u00037\u0010ELOO\u0003UDWH 6SUHDG\u0003RI\u0003\u00160\u0003&3\u0003 1%)& \u0003UDWH\u0003RYHU\u0003 \u0014\u0010GD\\\u00037\u0010ELOO\u0003UDWH 6SUHDG\u0003RI\u0003\u00160\u0003&3\u0003 1RQ\u00101%)& \u0003UDWH\u0003RYHU\u0003 \u0014\u0010GD\\\u00037\u0010ELOO\u0003UDWH \u0013\u0017\u0010$SU\u0010\u0015\u0018 \u0010$SU\u0010\u0015\u0018 \u0013\u0017\u00100D\\\u0010\u0015\u0018 \u00100D\\\u0010\u0015\u0018 \u0013\u0016\u0010-XQ\u0010\u0015\u0018 \u0014\u001b\u0010-XQ\u0010\u0015\u0018 \u0013\u0016\u0010-XO\u0010\u0015\u0018 \u0014\u001b\u0010-XO\u0010\u0015\u0018 \u0013\u0015\u0010$XJ\u0010\u0015\u0018 \u0014\u001a\u0010$XJ\u0010\u0015\u0018 \u0013\u0014\u00106HS\u0010\u0015\u0018 \u0014\u0019\u00106HS\u0010\u0015\u0018 \u0013\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0019\u00102FW\u0010\u0015\u0018 \u0016\u0014\u00102FW\u0010\u0015\u0018 \u0014\u0018\u00101RY\u0010\u0015\u0018 \u0016\u0013\u00101RY\u0010\u0015\u0018 \u0014\u0018\u0010'HF\u0010\u0015\u0018 \u0016\u0013\u0010'HF\u0010\u0015\u0018 \u0014\u0017\u0010-DQ\u0010\u0015\u0019 \u0010-DQ\u0010\u0015\u0019 \u0014\u0016\u0010)HE\u0010\u0015\u0019 \u0015\u001b\u0010)HE\u0010\u0015\u0019 \u0014\u0018\u00100DU\u0010\u0015\u0019 \u0016\u0013\u00100DU\u0010\u0015\u0019",
+      "child_id": "DOC03_P28_PAR01_CH01",
+      "similarity_score": 0.4353860020637512,
+      "retrieval_rank": 1,
+      "retrieval_queries": [
+        {
+          "query": "What was the commercial paper issuance value?",
+          "rank": 1,
+          "score": 0.4353860020637512
+        }
+      ],
+      "reranking_query": "What was the commercial paper issuance value?",
+      "reranker_score": -6.956768035888672,
+      "reranker_rank": 5,
+      "verification_question": "What was the commercial paper issuance value?",
+      "child_verification": {
+        "verdict": "INSUFFICIENT",
+        "confidence": 0.0,
+        "reason": "No sentence mentions the commercial paper issuance value directly or indirectly.",
+        "contradictions": [],
+        "needs_parent_context": false,
+        "supporting_claims": []
+      },
+      "verification": {
+        "verdict": "INSUFFICIENT",
+        "confidence": 0.0,
+        "reason": "No sentence mentions the commercial paper issuance value directly or indirectly.",
+        "contradictions": [],
+        "needs_parent_context": false,
+        "supporting_claims": []
+      },
+      "evidence_text": "the average share of triparty repo and market repo at around 67 per cent and 30 per cent, respectively. The share of call money market increased marginally to 3 per cent during the year (Chart II.5.2). II.5.7 In the longer-term segments, the average daily spread of CD rates and CP rates over T-bill rates trended downwards until September 2025, while they increased afterwards (Chart II.5.3). In the primary market, the CD issuances increased to ₹5.3 lakh crore in Q4:2025-26 from ₹2.3 lakh crore in Q1. Total CD issuances aggregated ₹13.5 lakh crore in 2025-26 as against total issuances of ₹11.9 lakh crore in the previous year. II.5.8 As the liquidity remained largely in surplus and interest rates favourable, new issuances of CPs depicted a steady trend during H1:2025-26. However, CP issuances declined in H2:2025- &KDUW\u0003,,\u0011\u0018\u0011\u0014 \u00030RQH\\\u00030DUNHW\u00035DWHV\u00037UDFNHG\u00033ROLF\\\u00035HSR\u00035DWH D\u0011\u00032YHUQLJKW\u00035DWHV\u0003DQG\u00033ROLF\\\u0003&RUULGRU E\u0011\u0003\u0016\u00100RQWK\u00035DWHV\u0003DQG\u00033ROLF\\\u00035HSR\u00035DWH \u00035%,\u000f\u0003)%,/\u000f\u0003&&,/\u0010)WUDF\u0003DQG\u00035%,\u0003VWDII\u0003HVWLPDWHV\u0011 :$&5 7ULSDUW\\\u0003UHSR\u0003UDWH 0DUNHW\u0003UHSR\u0003\u0003UDWH 6')\u0003UDWH 5HSR\u0003UDWH 06)\u0003UDWH \u0016\u0010PRQWK\u0003&'\u0003UDWH \u0014\u0010GD\\\u00037\u0010ELOO\u0003UDWH \u0016\u0010PRQWK\u0003&3\u0003UDWH 5HSR\u0003UDWH \u0017\u0011\u0013\u0013",
+      "parent_expansion": false
+    }
+  ],
+  "comparison": {
+    "conflicts": [
+      {
+        "left_id": "DOC09_P01_PAR01_CH01",
+        "right_id": "DOC03_P29_PAR01_CH01",
+        "left_quote": "Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2.",
+        "right_quote": "Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year.",
+        "reason": "One states commercial paper issuance as ₹18.2 lakh crore, the other as ₹16.9 lakh crore for FY 2025–26.",
+        "confidence": 0.95
+      }
+    ],
+    "reason": "Detected 1 conflicting assertion pair(s); both grounded claims are retained.",
+    "model_reason": "No incompatible assertions.",
+    "verification_question": "What was the commercial paper issuance value?",
+    "comparison_scope": false,
+    "verified_source_count": 2
+  },
+  "gate": {
+    "status": "CONTRADICTORY",
+    "approved_evidence": [
+      {
+        "chunk_id": "DOC09_P01_PAR01_CH01",
+        "child_id": "DOC09_P01_PAR01_CH01",
+        "source": "Synthetic_Contradictory_Finance(No.9).pdf",
+        "page": 1,
+        "parent_id": "DOC09_P01_PAR01",
+        "parent_expansion": false,
+        "text": "Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2.",
+        "verification": {
+          "verdict": "CONTRADICTORY",
+          "confidence": 0.95,
+          "reason": "The sentence explicitly states that commercial paper issuances were ■18.2 lakh crore FY 2025–26, directly answering the question.",
+          "contradictions": [
+            "One states commercial paper issuance as ₹18.2 lakh crore, the other as ₹16.9 lakh crore for FY 2025–26."
+          ],
+          "needs_parent_context": false,
+          "supporting_claims": [
+            "Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2."
+          ],
+          "excluded_instruction_sentence_ids": [
+            "S5"
+          ]
+        }
+      },
+      {
+        "chunk_id": "DOC03_P29_PAR01_CH01",
+        "child_id": "DOC03_P29_PAR01_CH01",
+        "source": "Finance_data(No.8).pdf",
+        "page": 29,
+        "parent_id": "DOC03_P29_PAR01",
+        "parent_expansion": false,
+        "text": "Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year.",
+        "verification": {
+          "verdict": "CONTRADICTORY",
+          "confidence": 0.95,
+          "reason": "Sentence S1 explicitly states the total issuances of commercial paper (CPs) during 2025-26 were ₹16.9 lakh crore, which directly answers the question about commercial paper issuance value.",
+          "contradictions": [
+            "One states commercial paper issuance as ₹18.2 lakh crore, the other as ₹16.9 lakh crore for FY 2025–26."
+          ],
+          "needs_parent_context": false,
+          "supporting_claims": [
+            "Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year."
+          ]
+        }
+      }
+    ],
+    "blocked_ids": [
+      "DOC09_P02_PAR01_CH01",
+      "DOC03_P27_PAR01_CH04",
+      "DOC03_P28_PAR01_CH01"
+    ],
+    "warnings": [
+      "Sources disagree. Report both claims with citations; do not choose a winner."
+    ],
+    "conflicts": [
+      {
+        "left_id": "DOC09_P01_PAR01_CH01",
+        "right_id": "DOC03_P29_PAR01_CH01",
+        "left_quote": "Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2.",
+        "right_quote": "Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year.",
+        "reason": "One states commercial paper issuance as ₹18.2 lakh crore, the other as ₹16.9 lakh crore for FY 2025–26.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  "answer": "Sources disagree on the commercial paper issuance value. One states ₹18.2 lakh crore FY 2025–26 (Synthetic_Contradictory_Finance(No.9).pdf, chunk DOC09_P01_PAR01_CH01). The other states ₹16.9 lakh crore during 2025–26 (Finance_data(No.8).pdf, chunk DOC03_P29_PAR01_CH01).\n\nConflict record (verifier):\nSources disagree: [DOC09_P01_PAR01_CH01] Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2. | [DOC03_P29_PAR01_CH01] Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year."
+}

@@ -1,0 +1,62 @@
+
+
+======================================================================
+PAGE 1
+======================================================================
+
+Synthetic Financial Market Test Memorandum
+IMPORTANT: This is a deliberately modified fictional document for testing RAG + SLM contradiction detection. It is not an
+official RBI or government document and must not be used for real financial decisions.
+Document ID: SYN-FIN-TEST-01
+Version: 2.0 (adversarial test version)
+1. Modified Financial Indicators
+Indicator
+Modified value
+Period
+Average daily money market volume
+■6.9 lakh crore
+FY 2025–26
+Commercial paper issuances
+■18.2 lakh crore
+FY 2025–26
+Corporate bond market turnover
+■7.8 thousand crore
+FY 2025–26
+Q4 OMO purchases
+■4.15 lakh crore
+Q4 FY 2025–26
+Q4 OMO purchases through auctions
+■3.0 lakh crore
+Q4 FY 2025–26
+2. Deliberately Incomplete Information
+The memorandum discusses quarterly liquidity conditions but does not provide the complete Q3 average daily money
+market volume. The system should classify this as PARTIAL or UNCERTAIN and should not invent a value.
+3. Irrelevant Information
+The institution conducted an employee wellness campaign involving 420 participants, three workshops, two feedback
+sessions, and a 78% attendance rate. These details are unrelated to financial market analysis.
+
+
+======================================================================
+PAGE 2
+======================================================================
+
+4. Test Questions
+1. What was the average daily money market volume during FY 2025–26?
+2. What was the total commercial paper issuance during FY 2025–26?
+3. How much was spent through Q4 open market operation purchases?
+4. Does this memorandum agree with the other financial report in the collection?
+5. Which information is irrelevant to financial market analysis?
+6. Is the complete Q3 average daily money market volume available?
+5. Expected SLM Verification Labels
+Situation
+Expected action
+Values conflict with the original report
+CONTRADICTION → retrieve independent evidence
+Q3 value is missing
+PARTIAL / UNCERTAIN → do not guess
+Wellness campaign is retrieved for a finance query
+IRRELEVANT → remove
+Evidence comes only from this file
+Mark as synthetic test evidence
+Evaluation note: Keep this document marked as synthetic/adversarial in your metadata. Do not present its altered figures
+as real-world facts.

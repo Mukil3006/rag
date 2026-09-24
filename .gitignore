@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+models/**/.cache/
+models/**/*.bin
+models/**/*.safetensors
+models/**/*.gguf
+runtime/
+data/logs/
+data/reports/runs/
+data/reports/experiments/
+backups/
+
+# Downloadable dependencies and local session artifacts
+models/*/
+.env.*
+!.env.example
+*.pem
+*.key
+data/reports/web_ui_runs.json

@@ -1,0 +1,368 @@
+{
+  "dataset_name": "SLM_RAG_Evaluation_Set",
+  "version": "1.0",
+  "total_questions": 30,
+  "description": "Initial questions for retrieval testing and future SLM evidence verification.",
+  "notes": [
+    "Expected answers are reference answers for initial evaluation.",
+    "The synthetic finance document is fictional/adversarial and must not be treated as real financial evidence.",
+    "For retrieval-only evaluation, compare retrieved sources and keywords before evaluating generated answers."
+  ],
+  "questions": [
+    {
+      "id": "Q001",
+      "document": "RAG_Survey(No.1)",
+      "type": "direct",
+      "question": "What are the three major RAG paradigms discussed in the survey?",
+      "expected_answer": "Naive RAG, Advanced RAG, and Modular RAG.",
+      "keywords": [
+        "naive",
+        "advanced",
+        "modular"
+      ]
+    },
+    {
+      "id": "Q002",
+      "document": "RAG_Survey(No.1)",
+      "type": "direct",
+      "question": "What are the three core components of a RAG framework?",
+      "expected_answer": "Retrieval, generation, and augmentation.",
+      "keywords": [
+        "retrieval",
+        "generation",
+        "augmentation"
+      ]
+    },
+    {
+      "id": "Q003",
+      "document": "RAG_Survey(No.1)",
+      "type": "reasoning",
+      "question": "Why can RAG reduce hallucinations in language models?",
+      "expected_answer": "RAG supplies external evidence from a knowledge base, grounding the generated response.",
+      "keywords": [
+        "external knowledge",
+        "grounding",
+        "hallucination"
+      ]
+    },
+    {
+      "id": "Q004",
+      "document": "RAG_Research_Overview(No.2)",
+      "type": "direct",
+      "question": "What problem does the document-question-answering RAG study aim to address?",
+      "expected_answer": "It aims to improve document question answering by retrieving relevant document information and generating answers with a language model.",
+      "keywords": [
+        "document",
+        "question answering",
+        "retrieval"
+      ]
+    },
+    {
+      "id": "Q005",
+      "document": "RAG_Research_Overview(No.2)",
+      "type": "direct",
+      "question": "Which language model was used in the study?",
+      "expected_answer": "GPT-3.5-turbo from ChatGPT.",
+      "keywords": [
+        "GPT-3.5",
+        "ChatGPT"
+      ]
+    },
+    {
+      "id": "Q006",
+      "document": "RAG_Research_Overview(No.2)",
+      "type": "direct",
+      "question": "Name two evaluation metrics used in the study.",
+      "expected_answer": "Examples include Accuracy, ROUGE, BLEU, BERTScore, and Jaccard Similarity.",
+      "keywords": [
+        "ROUGE",
+        "BLEU",
+        "BERTScore",
+        "Jaccard"
+      ]
+    },
+    {
+      "id": "Q007",
+      "document": "RAG_Enterprise_Basics(No.3)",
+      "type": "direct",
+      "question": "Why is curated first-party data important for enterprise RAG?",
+      "expected_answer": "It provides reliable, domain-specific information for useful and context-aware responses.",
+      "keywords": [
+        "curated data",
+        "first-party",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "Q008",
+      "document": "RAG_Enterprise_Basics(No.3)",
+      "type": "comparison",
+      "question": "Give two differences between RAG and fine-tuning.",
+      "expected_answer": "RAG connects a model to an external knowledge base during inference, while fine-tuning changes model parameters using specialized training data. RAG is generally easier to update and trace.",
+      "keywords": [
+        "external database",
+        "model parameters",
+        "fine-tuning"
+      ]
+    },
+    {
+      "id": "Q009",
+      "document": "RAG_Enterprise_Basics(No.3)",
+      "type": "direct",
+      "question": "What three enterprise benefits of RAG are highlighted?",
+      "expected_answer": "Security and data privacy, cost efficiency and scalability, and trustworthy results.",
+      "keywords": [
+        "security",
+        "scalability",
+        "trustworthy"
+      ]
+    },
+    {
+      "id": "Q010",
+      "document": "RAG_Implementation_Guide(No.4)",
+      "type": "direct",
+      "question": "What is the purpose of indexing in a RAG pipeline?",
+      "expected_answer": "To organize source data into searchable representations for efficient retrieval.",
+      "keywords": [
+        "indexing",
+        "searchable",
+        "data"
+      ]
+    },
+    {
+      "id": "Q011",
+      "document": "RAG_Implementation_Guide(No.4)",
+      "type": "comparison",
+      "question": "What is the difference between fixed-size chunking and semantic chunking?",
+      "expected_answer": "Fixed-size chunking splits text using a fixed length, while semantic chunking attempts to preserve meaningful topic or sentence boundaries.",
+      "keywords": [
+        "fixed-size",
+        "semantic chunking"
+      ]
+    },
+    {
+      "id": "Q012",
+      "document": "RAG_Implementation_Guide(No.4)",
+      "type": "direct",
+      "question": "Why are reranking and context filtering used after retrieval?",
+      "expected_answer": "They prioritize relevant chunks and remove unnecessary information before generation.",
+      "keywords": [
+        "reranking",
+        "filtering",
+        "relevance"
+      ]
+    },
+    {
+      "id": "Q013",
+      "document": "RAG_Document_QA(No.5)",
+      "type": "direct",
+      "question": "What is the main purpose of a document question-answering system?",
+      "expected_answer": "To answer user questions using information extracted from uploaded or indexed documents.",
+      "keywords": [
+        "document",
+        "question answering"
+      ]
+    },
+    {
+      "id": "Q014",
+      "document": "RAG_Document_QA(No.5)",
+      "type": "reasoning",
+      "question": "Why can a language model hallucinate when relevant evidence is not retrieved?",
+      "expected_answer": "It may generate a plausible response from learned patterns without supporting information from the target document.",
+      "keywords": [
+        "hallucination",
+        "retrieved evidence"
+      ]
+    },
+    {
+      "id": "Q015",
+      "document": "RAG_Document_QA(No.5)",
+      "type": "direct",
+      "question": "What is the role of a vector store in document question answering?",
+      "expected_answer": "It stores vector representations of document chunks and supports similarity-based retrieval.",
+      "keywords": [
+        "vector store",
+        "embeddings",
+        "similarity"
+      ]
+    },
+    {
+      "id": "Q016",
+      "document": "Computer_Vision_AI(No.6)",
+      "type": "direct",
+      "question": "What is a convolutional neural network mainly used for in computer vision?",
+      "expected_answer": "CNNs learn visual patterns and features from images for tasks such as classification and recognition.",
+      "keywords": [
+        "CNN",
+        "visual patterns",
+        "images"
+      ]
+    },
+    {
+      "id": "Q017",
+      "document": "Computer_Vision_AI(No.6)",
+      "type": "direct",
+      "question": "How does convolution help an image-processing model?",
+      "expected_answer": "Learnable filters scan an image to detect local features such as edges, textures, and patterns.",
+      "keywords": [
+        "convolution",
+        "filters",
+        "features"
+      ]
+    },
+    {
+      "id": "Q018",
+      "document": "Computer_Vision_AI(No.6)",
+      "type": "application",
+      "question": "Mention two application areas of CNNs.",
+      "expected_answer": "Examples include image recognition, security systems, IoT, commercial applications, and domestic monitoring.",
+      "keywords": [
+        "security",
+        "IoT",
+        "image recognition"
+      ]
+    },
+    {
+      "id": "Q019",
+      "document": "Cancer_AI_ML(No.7)",
+      "type": "direct",
+      "question": "Name three areas where AI or ML is applied in oncology.",
+      "expected_answer": "Examples include diagnosis, prognosis, treatment planning, medical imaging, biomarker discovery, genomics, and precision oncology.",
+      "keywords": [
+        "diagnosis",
+        "prognosis",
+        "treatment planning"
+      ]
+    },
+    {
+      "id": "Q020",
+      "document": "Cancer_AI_ML(No.7)",
+      "type": "reasoning",
+      "question": "Why might a cancer AI model trained at one institution perform poorly at another?",
+      "expected_answer": "Differences in patient populations, imaging formats, workflows, data quality, and infrastructure can cause distribution shift.",
+      "keywords": [
+        "single institution",
+        "distribution shift",
+        "generalization"
+      ]
+    },
+    {
+      "id": "Q021",
+      "document": "Cancer_AI_ML(No.7)",
+      "type": "direct",
+      "question": "Name two barriers to real-world clinical deployment of oncology AI.",
+      "expected_answer": "Examples include limited external validation, model drift, interoperability problems, regulation, clinician trust, and infrastructure limitations.",
+      "keywords": [
+        "external validation",
+        "model drift",
+        "regulation"
+      ]
+    },
+    {
+      "id": "Q022",
+      "document": "Finance_data(No.8)",
+      "type": "numeric",
+      "question": "What was the reported commercial paper issuance value during FY 2025–26?",
+      "expected_answer": "₹16.9 lakh crore.",
+      "keywords": [
+        "commercial paper",
+        "16.9 lakh crore"
+      ]
+    },
+    {
+      "id": "Q023",
+      "document": "Finance_data(No.8)",
+      "type": "numeric",
+      "question": "What was the reported average daily corporate bond market turnover during FY 2025–26?",
+      "expected_answer": "₹7.1 thousand crore.",
+      "keywords": [
+        "corporate bond",
+        "7.1 thousand crore"
+      ]
+    },
+    {
+      "id": "Q024",
+      "document": "Finance_data(No.8)",
+      "type": "numeric",
+      "question": "What was the aggregate value of Q4 OMO purchases reported in the financial document?",
+      "expected_answer": "₹4.57 lakh crore, including ₹3.5 lakh crore through auctions.",
+      "keywords": [
+        "OMO",
+        "4.57 lakh crore",
+        "3.5 lakh crore"
+      ]
+    },
+    {
+      "id": "Q025",
+      "document": "Synthetic_Contradictory_Finance(No.9)",
+      "type": "numeric",
+      "question": "What average daily money market volume is stated in the synthetic document?",
+      "expected_answer": "₹6.9 lakh crore.",
+      "keywords": [
+        "money market",
+        "6.9 lakh crore"
+      ]
+    },
+    {
+      "id": "Q026",
+      "document": "Synthetic_Contradictory_Finance(No.9)",
+      "type": "numeric",
+      "question": "What commercial paper issuance value is stated in the synthetic document?",
+      "expected_answer": "₹18.2 lakh crore.",
+      "keywords": [
+        "commercial paper",
+        "18.2 lakh crore"
+      ]
+    },
+    {
+      "id": "Q027",
+      "document": "Synthetic_Contradictory_Finance(No.9)",
+      "type": "contradiction",
+      "question": "Does the synthetic memorandum agree with the original financial report about commercial paper issuance?",
+      "expected_answer": "No. The synthetic document states ₹18.2 lakh crore, while the original report states ₹16.9 lakh crore. Label the evidence CONTRADICTION.",
+      "keywords": [
+        "18.2",
+        "16.9",
+        "contradiction"
+      ]
+    },
+    {
+      "id": "Q028",
+      "document": "Synthetic_Contradictory_Finance(No.9)",
+      "type": "partial",
+      "question": "Is the complete Q3 average daily money market volume provided in the synthetic document?",
+      "expected_answer": "No. The information is incomplete and should be labelled PARTIAL or UNCERTAIN. The system must not invent a value.",
+      "keywords": [
+        "Q3",
+        "missing",
+        "partial",
+        "uncertain"
+      ]
+    },
+    {
+      "id": "Q029",
+      "document": "Synthetic_Contradictory_Finance(No.9)",
+      "type": "irrelevant",
+      "question": "Which information in the synthetic document is irrelevant to financial market analysis?",
+      "expected_answer": "The employee wellness campaign details: 420 participants, three workshops, two feedback sessions, and 78% attendance.",
+      "keywords": [
+        "wellness campaign",
+        "420",
+        "irrelevant"
+      ]
+    },
+    {
+      "id": "Q030",
+      "document": "cross_document",
+      "type": "cross_document",
+      "question": "Compare the original and synthetic documents for corporate bond turnover.",
+      "expected_answer": "The original reports ₹7.1 thousand crore, while the synthetic document reports ₹7.8 thousand crore. This mismatch should be labelled CONTRADICTION and independently verified.",
+      "keywords": [
+        "7.1",
+        "7.8",
+        "corporate bond",
+        "contradiction"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+
+============================================================
+INGESTION VALIDATION
+============================================================
+Total metadata records: 715
+
+All metadata and hierarchy checks passed.
+
+CLEANED TEXT INSPECTION
+Cleaned text files found: 9
+
+File: Cancer_AI_ML(No.7)_cleaned.txt
+Characters: 134472
+Words: 19604
+Possible extraction noise (\b[A-Za-z]{2,}-\s+[a-z]{2,}\b): ['survival- and', 'low- and', 'dataset- and']
+Possible extraction noise (\b[A-Z]\s+[a-z]{3,}\b): ['D uncensored', 'D and', 'A model', 'A schematic', 'X for', 'A model', 'A model', 'A model', 'G predefined', 'P and']
+
+File: Computer_Vision_AI(No.6)_cleaned.txt
+Characters: 24604
+Words: 3670
+Possible extraction noise (\b[A-Z]\s+[a-z]{3,}\b): ['N eural', 'A distinguishing', 'A convolutional', 'G oogle', 'A network']
+
+File: Finance_data(No.8)_cleaned.txt
+Characters: 122117
+Words: 17752
+Possible extraction noise (\b[A-Z]\s+[a-z]{3,}\b): ['A modest', 'M change', 'A low', 'A deflation', 'A slower', 'A positive', 'E xport', 'I mport']
+
+File: RAG_Document_QA(No.5)_cleaned.txt
+Characters: 42310
+Words: 6203
+Possible extraction noise (\b[A-Z]\s+[a-z]{3,}\b): ['A rtificial', 'I presents', 'A highly', 'L variant', 'A\nand', 'A\nand', 'L score', 'L result', 'L scores', 'L evalu']
+
+File: RAG_Enterprise_Basics(No.3)_cleaned.txt
+Characters: 17251
+Words: 2478
+Possible extraction noise (\b[A-Za-z]{2,}-\s+[a-z]{2,}\b): ['weeks- or']
+Possible extraction noise (\b[A-Z]\s+[a-z]{3,}\b): ['A chatbot', 'I can', 'A vector']
+
+File: RAG_Implementation_Guide(No.4)_cleaned.txt
+Characters: 60277
+Words: 8101
+Possible extraction noise (\b[A-Z]\s+[a-z]{3,}\b): ['T able', 'A field', 'T echniques', 'A branch', 'A repository', 'T echnologies', 'T oolkit', 'T ools', 'T ools', 'T okenization']
+
+File: RAG_Research_Overview(No.2)_cleaned.txt
+Characters: 17430
+Words: 1663
+
+File: RAG_Survey(No.1)_cleaned.txt
+Characters: 112232
+Words: 15655
+Possible extraction noise (\b[A-Z]\s+[a-z]{3,}\b): ['V\nanalyzes', 'A typical', 'A representative', 'K chunks', 'V oyage', 'A common', 'A typical', 'A series', 'A survey', 'A simple']
+
+File: Synthetic_Contradictory_Finance(No.9)_cleaned.txt
+Characters: 2386
+Words: 319
+
+Validation completed.

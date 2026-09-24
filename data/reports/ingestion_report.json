@@ -1,0 +1,74 @@
+[
+  {
+    "document_id": "DOC01",
+    "source": "Cancer_AI_ML(No.7).pdf",
+    "total_extracted_pages": 25,
+    "cleaned_pages": 25,
+    "cleaned_word_count": 19504,
+    "repeated_lines_detected": 14
+  },
+  {
+    "document_id": "DOC02",
+    "source": "Computer_Vision_AI(No.6).pdf",
+    "total_extracted_pages": 6,
+    "cleaned_pages": 6,
+    "cleaned_word_count": 3646,
+    "repeated_lines_detected": 4
+  },
+  {
+    "document_id": "DOC03",
+    "source": "Finance_data(No.8).pdf",
+    "total_extracted_pages": 46,
+    "cleaned_pages": 46,
+    "cleaned_word_count": 17568,
+    "repeated_lines_detected": 275
+  },
+  {
+    "document_id": "DOC04",
+    "source": "RAG_Document_QA(No.5).pdf",
+    "total_extracted_pages": 10,
+    "cleaned_pages": 10,
+    "cleaned_word_count": 6163,
+    "repeated_lines_detected": 8
+  },
+  {
+    "document_id": "DOC05",
+    "source": "RAG_Enterprise_Basics(No.3).pdf",
+    "total_extracted_pages": 14,
+    "cleaned_pages": 14,
+    "cleaned_word_count": 2422,
+    "repeated_lines_detected": 10
+  },
+  {
+    "document_id": "DOC06",
+    "source": "RAG_Implementation_Guide(No.4).pdf",
+    "total_extracted_pages": 28,
+    "cleaned_pages": 28,
+    "cleaned_word_count": 7989,
+    "repeated_lines_detected": 20
+  },
+  {
+    "document_id": "DOC07",
+    "source": "RAG_Research_Overview(No.2).pdf",
+    "total_extracted_pages": 18,
+    "cleaned_pages": 18,
+    "cleaned_word_count": 1591,
+    "repeated_lines_detected": 756
+  },
+  {
+    "document_id": "DOC08",
+    "source": "RAG_Survey(No.1).pdf",
+    "total_extracted_pages": 21,
+    "cleaned_pages": 21,
+    "cleaned_word_count": 15571,
+    "repeated_lines_detected": 7
+  },
+  {
+    "document_id": "DOC09",
+    "source": "Synthetic_Contradictory_Finance(No.9).pdf",
+    "total_extracted_pages": 2,
+    "cleaned_pages": 2,
+    "cleaned_word_count": 311,
+    "repeated_lines_detected": 0
+  }
+]

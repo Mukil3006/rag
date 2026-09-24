@@ -1,0 +1,6 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "files.exclude": {"**/__pycache__": true},
+  "files.watcherExclude": {"**/.venv/**": true, "**/models/**": true, "**/runtime/**": true},
+  "search.exclude": {"**/.venv/**": true, "**/models/**": true, "**/runtime/**": true, "**/data/reports/runs/**": true}
+}

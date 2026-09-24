@@ -1,0 +1,3996 @@
+{
+  "timestamp": "2026-09-21T10:48:14.844481+00:00",
+  "question_count": 30,
+  "config": {
+    "retrieval_top_k": 10,
+    "rerank_top_k": 5,
+    "comparison_query_focus": true,
+    "embedding_model": "C:\\SLM\\_RAG\\_Project\\models\\bge-m3",
+    "reranker_model": "C:\\SLM\\_RAG\\_Project\\models\\reranker",
+    "embedding_device": "cpu",
+    "cpu_threads": 6,
+    "slm_provider": "local",
+    "slm_model": "qwen3-4b-instruct-2507-q4_k_m",
+    "slm_url": "http://127.0.0.1:8089/v1",
+    "local_gguf_path": "C:\\SLM\\_RAG\\_Project\\models\\verifier\\Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "local_context_tokens": 8192,
+    "local_gpu_layers": 99,
+    "llm_provider": "local",
+    "llm_model": "qwen3-4b-instruct-2507-q4_k_m",
+    "llm_url": "http://127.0.0.1:8089/v1",
+    "request_timeout": 180,
+    "max_tokens": 700,
+    "seed": 42,
+    "max_parent_expansions": 5,
+    "verification_retries": 1,
+    "web_ui_port": 8501,
+    "local_startup_timeout": 120,
+    "open_browser": true
+  },
+  "fingerprints": {
+    "vectorstore/index.faiss": "02c757bae29a277cf2d65bc738c2a00a86e5414688b41617d8a0b713546a9c58",
+    "vectorstore/metadata.json": "aff809fc082fb2896384d6300c58b646c5b0fcda0cc53bcda7985c64ab7efc72",
+    "evaluation_questions.json": "c448daa898102cf03ef40ee01e1cb2baef3cedd7b0db63eb33061ed0adea4549",
+    "src/config.py": "7631531b846a1d5b998a3695ffd912894e2001e5c00f4b8c6f1ee22e9f11895b",
+    "src/demo.py": "6303a1e070acf316d6e37787235e980b73f95789ecfc528a391273b1c938fea8",
+    "src/evaluation.py": "c456f4b84efe33808c16151528a09cef2994985040d06850f5ff1c5d0fa8a04f",
+    "src/evidence_gate.py": "feae167d0de56f4e51c2081f5e294ac8b9105c9384048c6e16d304dfc455f1a5",
+    "src/generation.py": "9a30ce5ff2ad4771bee9cf072a2b0ca83bfda03db99068005cf798ddb916a907",
+    "src/ingestion.py": "fd7cacc95ec1e955aa88e9d53dc6225cbb06a4504086d6c83f1311b70ab7f80b",
+    "src/integration_tests.py": "d4d22cb9e1c897c93c7d14aad45d7198d5db9dd063ba70edf1be559f1c91228d",
+    "src/local_runtime.py": "1645e24d2ab0dc1579f52e601b3615543154451507cf51785cb129147d9121c4",
+    "src/model_client.py": "82eb017d10d9d58efb017b6fcd017464a098a48f873215fd2d9101f2496e1281",
+    "src/pipeline.py": "01e9de43743bd1f72469d10b96bcf7472e00d2a9101866c4a3af36f9429f5fcc",
+    "src/reranking.py": "82f9ea04f30745032c6cbce852177275bd6383ee66770000b733f8daa31acfa4",
+    "src/retrieval.py": "67a4a6ee8a780358a24cabf5b97a64ce58c89dbbf91ddd126460b1cb49c0a915",
+    "src/validate_ingestion.py": "553614b3c93fd3e53d834acdf4808f43b06693928d805b819e78896413bae9d8",
+    "src/verifier.py": "60fe5b08e1dd5fc0e965416e30d71627619a86efef813dd4d800ed30a3b4644b"
+  },
+  "model_manifest": {
+    "bge-m3": {
+      "repo": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "file": "pytorch_model.bin",
+      "sha256": "b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38"
+    },
+    "reranker": {
+      "repo": "cross-encoder/ms-marco-MiniLM-L6-v2",
+      "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+      "file": "model.safetensors",
+      "sha256": "821d1aa69520101d6e0737f78a042ae25b19e5cb9160701909d10434f4aeb0ae"
+    },
+    "verifier": {
+      "repo": "lmstudio-community/Qwen3-4B-Instruct-2507-GGUF",
+      "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "4edb920b6f14e3b9284d4502a6485103d72cde05",
+      "file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "sha256": "8cdb57cbb880d313736a9bc4e3d3d2485f145b5e19cf33783746e753e82641fc"
+    },
+    "runtime": {
+      "release": "b11065",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11065/llama-b11065-bin-win-vulkan-x64.zip",
+      "sha256": "12733edc26574d117cb189fb5c95323d37a94d1d27123f540f788b328cf9d68b"
+    },
+    "hardware": {
+      "cpu": "Intel Core i5-14400, 10 cores / 16 threads",
+      "ram_bytes": 16883564544,
+      "gpu": "NVIDIA GeForce RTX 5060 Ti",
+      "vram_mib": 8151,
+      "driver": "610.88",
+      "initial_free_disk_bytes": 117438316544
+    },
+    "previous_verifier": {
+      "repo": "Qwen/Qwen2.5-3B-Instruct-GGUF",
+      "revision": "7dabda4d13d513e3e842b20f0d435c732f172cbe",
+      "file": "qwen2.5-3b-instruct-q4_k_m.gguf",
+      "sha256": "626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+      "selection_outcome": "Failed development category tests; retained for reproducibility."
+    }
+  },
+  "summary": {
+    "A": {
+      "completed_questions": 30,
+      "source_hit_rate": 0.896551724137931,
+      "mean_evidence_keyword_coverage": 0.7527777777777778,
+      "mean_answer_keyword_coverage": 0.6777777777777778,
+      "mean_stage_seconds": 2.569481233332772,
+      "gate_status_counts": {
+        "UNVERIFIED_BASELINE": 30
+      },
+      "verification_labeled_count": 0,
+      "verification_accuracy_on_annotated_queries": null,
+      "verification_error_count": 0,
+      "generation_error_count": 0
+    },
+    "B": {
+      "completed_questions": 30,
+      "source_hit_rate": 0.896551724137931,
+      "mean_evidence_keyword_coverage": 0.8166666666666667,
+      "mean_answer_keyword_coverage": 0.7194444444444444,
+      "mean_stage_seconds": 3.317978016668106,
+      "gate_status_counts": {
+        "UNVERIFIED_BASELINE": 30
+      },
+      "verification_labeled_count": 0,
+      "verification_accuracy_on_annotated_queries": null,
+      "verification_error_count": 0,
+      "generation_error_count": 0
+    },
+    "C": {
+      "completed_questions": 30,
+      "source_hit_rate": 0.896551724137931,
+      "mean_evidence_keyword_coverage": 0.7055555555555555,
+      "mean_answer_keyword_coverage": 0.7111111111111111,
+      "mean_stage_seconds": 12.050549076667085,
+      "gate_status_counts": {
+        "SUPPORTED": 21,
+        "PARTIAL": 4,
+        "CONTRADICTORY": 5
+      },
+      "verification_labeled_count": 5,
+      "verification_accuracy_on_annotated_queries": 1,
+      "verification_error_count": 0,
+      "generation_error_count": 0
+    },
+    "retrieval": {
+      "candidate_metrics": {
+        "source_hit_rate": 0.9310344827586207,
+        "mean_reciprocal_source_rank": 0.8336617405582922,
+        "mean_keyword_coverage": 0.861111111111111
+      },
+      "raw_top_n_metrics": {
+        "source_hit_rate": 0.896551724137931,
+        "mean_reciprocal_source_rank": 0.828735632183908,
+        "mean_keyword_coverage": 0.7527777777777778
+      },
+      "reranked_top_n_metrics": {
+        "source_hit_rate": 0.896551724137931,
+        "mean_reciprocal_source_rank": 0.8448275862068966,
+        "mean_keyword_coverage": 0.8166666666666667
+      }
+    }
+  },
+  "limitations": [
+    "Original evaluation_questions.json is unchanged. Expected answers are never passed to retrieval, verification, or generation.",
+    "Retrieval accuracy is operationalized as expected-source hit rate and reciprocal source rank, not gold passage relevance accuracy.",
+    "Keyword coverage is literal normalized substring coverage, not semantic correctness or a hallucination metric. It may decrease when irrelevant material is blocked.",
+    "Baseline A and B receive the same final evidence count and final generator settings. Retrieval and reranking are shared, and their measured times are accounted for per mode.",
+    "Model confidence is uncalibrated. No claim of research novelty or statistical significance.",
+    "Only explicitly annotated query outcomes are scored for verification accuracy. Per-chunk accuracy requires independent human labels and is not claimed.",
+    "An answer to a question about irrelevant content can be SUPPORTED; the question type irrelevant is not automatically an INSUFFICIENT gold label.",
+    "All PDF contents, including synthetic labels and test instructions, are treated as untrusted evidence.",
+    "Experiments are development-set measurements; prompts have been debugged on this dataset. They are not held-out benchmark estimates."
+  ],
+  "results": [
+    {
+      "id": "Q001",
+      "question": "What are the three major RAG paradigms discussed in the survey?",
+      "type": "direct",
+      "expected_document": "RAG_Survey(No.1)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "naive",
+          "advanced",
+          "modular"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "naive",
+          "advanced",
+          "modular"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "naive",
+          "advanced",
+          "modular"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q001_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "naive",
+              "advanced",
+              "modular"
+            ]
+          },
+          "final_answer": "The three major RAG paradigms discussed are Naive RAG, Advanced RAG, and Modular RAG. This is stated in chunk ID DOC08_P01_PAR01_CH02 and DOC08_P02_PAR01_CH03.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 17.889572599997337,
+            "reranking_seconds": 0.8644353000054252,
+            "verification_seconds": 7.90000194683671e-06,
+            "generation_seconds": 1.2047514000005322,
+            "total_stage_seconds": 19.094331899999816
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q001_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "naive",
+              "advanced",
+              "modular"
+            ]
+          },
+          "final_answer": "The three major RAG paradigms discussed are Naive RAG, Advanced RAG, and Modular RAG. This is stated in multiple chunks, including DOC08_P16_PAR01_CH04, DOC08_P02_PAR01_CH03, and DOC08_P04_PAR01_CH01. Each represents a progressive enhancement in RAG framework development.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 17.889572599997337,
+            "reranking_seconds": 0.8644353000054252,
+            "verification_seconds": 6.300004315562546e-06,
+            "generation_seconds": 1.3779712000032305,
+            "total_stage_seconds": 20.131985400010308
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q001_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "naive",
+              "advanced",
+              "modular"
+            ]
+          },
+          "final_answer": "The three major RAG paradigms are Naive RAG, Advanced RAG, and Modular RAG. This is explicitly stated in multiple chunks, including DOC08_P16_PAR01_CH04, DOC08_P02_PAR01_CH03, and DOC08_P04_PAR01_CH01. While DOC08_P01_PAR02_CH01 mentions only \"naive RAG\" without specifying the other two, the full set is consistently identified in the other sources. The evidence supports the three-paradigm classification.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 4,
+          "verdict_counts": {
+            "SUPPORTED": 4,
+            "PARTIAL": 1
+          },
+          "timings": {
+            "retrieval_seconds": 17.889572599997337,
+            "reranking_seconds": 0.8644353000054252,
+            "verification_seconds": 10.556890800005931,
+            "generation_seconds": 1.7508645999987493,
+            "total_stage_seconds": 31.061763300007442
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q002",
+      "question": "What are the three core components of a RAG framework?",
+      "type": "direct",
+      "expected_document": "RAG_Survey(No.1)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "retrieval",
+          "generation",
+          "augmentation"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "retrieval",
+          "generation",
+          "augmentation"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "retrieval",
+          "generation",
+          "augmentation"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q002_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "retrieval",
+              "generation",
+              "augmentation"
+            ]
+          },
+          "final_answer": "The three core components of a RAG framework are retrieval, generation, and augmentation. This is stated in multiple sources, including RAG_Survey(No.1).pdf, which explicitly identifies these as the \"tripartite foundation\" of RAG frameworks. Chunk DOC08_P02_PAR01_CH02 and DOC08_P01_PAR01_CH02 confirm this tripartite structure. Source DOC06_P07_PAR01_CH01 supports retrieval and generation with technical details but does not explicitly mention augmentation. The evidence is consistent on retrieval and generation; augmentation is implied but not fully detailed.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.3434946999987005,
+            "reranking_seconds": 0.6479602999970666,
+            "verification_seconds": 1.1100004485342652e-05,
+            "generation_seconds": 1.9971420000001672,
+            "total_stage_seconds": 2.340647800003353
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q002_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "retrieval",
+              "generation",
+              "augmentation"
+            ]
+          },
+          "final_answer": "The three core components of a RAG framework are retrieval, generation, and augmentation. This is stated in multiple chunks of the evidence, including DOC08_P01_PAR01_CH02 and DOC08_P04_PAR01_CH04.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.3434946999987005,
+            "reranking_seconds": 0.6479602999970666,
+            "verification_seconds": 5.299996701069176e-06,
+            "generation_seconds": 1.0906518999981927,
+            "total_stage_seconds": 2.082112199990661
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q002_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "retrieval",
+              "generation",
+              "augmentation"
+            ]
+          },
+          "final_answer": "The three core components of a RAG framework are Retrieval, Generation, and Augmentation.  \n(Source: RAG_Survey(No.1).pdf, chunk IDs DOC08_P02_PAR01_CH02, DOC08_P04_PAR01_CH01, DOC08_P01_PAR01_CH02)",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {
+            "SUPPORTED": 3,
+            "INSUFFICIENT": 2
+          },
+          "timings": {
+            "retrieval_seconds": 0.3434946999987005,
+            "reranking_seconds": 0.6479602999970666,
+            "verification_seconds": 5.512822500000766,
+            "generation_seconds": 1.092013899993617,
+            "total_stage_seconds": 7.59629139999015
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q003",
+      "question": "Why can RAG reduce hallucinations in language models?",
+      "type": "reasoning",
+      "expected_document": "RAG_Survey(No.1)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 0.5,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "external knowledge",
+          "hallucination"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 0.5,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "external knowledge",
+          "hallucination"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 0.5,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "external knowledge",
+          "hallucination"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q003_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 0.5,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "external knowledge",
+              "hallucination"
+            ]
+          },
+          "final_answer": "RAG reduces hallucinations by retrieving relevant external knowledge before generating responses, thereby grounding the output in factual, real-world data. This external validation minimizes the model’s reliance on internal, potentially inaccurate knowledge. Sources confirm that RAG mitigates hallucinatory responses by integrating retrieval mechanisms with generative models [DOC04_P01_PAR02_CH02, DOC04_P04_PAR01_CH01, DOC08_P01_PAR01_CH03]. The integration of external databases enhances factual accuracy and reduces false or fabricated content [DOC08_P01_PAR01_CH02].",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.2728263000026345,
+            "reranking_seconds": 0.8685636000009254,
+            "verification_seconds": 5.400004738476127e-06,
+            "generation_seconds": 1.8691053000002285,
+            "total_stage_seconds": 2.1419370000076015
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q003_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 0.5,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "external knowledge",
+              "hallucination"
+            ]
+          },
+          "final_answer": "RAG reduces hallucinations by retrieving relevant external knowledge before generating responses, ensuring that the model's output is grounded in factual, up-to-date information from a knowledge base. This retrieval step limits the model’s reliance on internal, potentially outdated or incorrect parameters, thereby reducing the likelihood of fabricating false or unsupported content. Sources: RAG_Document_QA(No.5).pdf (DOC04_P01_PAR02_CH02, DOC04_P04_PAR01_CH01), RAG_Survey(No.1).pdf (DOC08_P01_PAR01_CH03).",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.2728263000026345,
+            "reranking_seconds": 0.8685636000009254,
+            "verification_seconds": 5.299996701069176e-06,
+            "generation_seconds": 1.4450913000036962,
+            "total_stage_seconds": 2.586486500003957
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q003_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 0.5,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "external knowledge",
+              "hallucination"
+            ]
+          },
+          "final_answer": "RAG reduces hallucinations by referencing external knowledge, which grounds responses in verified context and mitigates factually incorrect content. This is explicitly stated in RAG_Survey(No.1).pdf, where it states RAG reduces the problem of generating factually incorrect content by referencing external knowledge [8]. Additionally, RAG_Document_QA(No.5).pdf notes RAG's ability to mitigate hallucinatory responses and minimize hallucinative outputs through external data integration [5]. Evidence from DOC04_P01_PAR02_CH02 and DOC04_P04_PAR01_CH01 supports this mechanism.",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 2,
+          "verdict_counts": {
+            "SUPPORTED": 3,
+            "PARTIAL": 2
+          },
+          "timings": {
+            "retrieval_seconds": 0.2728263000026345,
+            "reranking_seconds": 0.8685636000009254,
+            "verification_seconds": 9.916862199999741,
+            "generation_seconds": 1.8715044999989914,
+            "total_stage_seconds": 12.929756600002293
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q004",
+      "question": "What problem does the document-question-answering RAG study aim to address?",
+      "type": "direct",
+      "expected_document": "RAG_Research_Overview(No.2)",
+      "candidate_metrics": {
+        "source_hit": false,
+        "reciprocal_source_rank": 0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "document",
+          "question answering",
+          "retrieval"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": false,
+        "reciprocal_source_rank": 0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "document",
+          "question answering",
+          "retrieval"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": false,
+        "reciprocal_source_rank": 0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "document",
+          "question answering",
+          "retrieval"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q004_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": false,
+            "reciprocal_source_rank": 0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "document",
+              "question answering",
+              "retrieval"
+            ]
+          },
+          "final_answer": "The document-question-answering RAG study aims to address challenges in manual document processing, resource-intensive LLM modifications, and hallucinatory responses in QA systems relying solely on LLM capabilities. It seeks to improve accuracy and non-hallucinatory responses by integrating RAG with external knowledge sources, leveraging retrieval mechanisms to enhance document-based question answering. [DOC04_P01_PAR02_CH01, DOC04_P01_PAR02_CH02]",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.2628891999993357,
+            "reranking_seconds": 0.6940814999979921,
+            "verification_seconds": 8.800001523923129e-06,
+            "generation_seconds": 1.5809876999992412,
+            "total_stage_seconds": 1.8438857000001008
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q004_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": false,
+            "reciprocal_source_rank": 0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "document",
+              "question answering",
+              "retrieval"
+            ]
+          },
+          "final_answer": "The document-question-answering RAG study aims to address challenges in manual document processing, resource-intensive LLM modifications, and hallucinatory responses in traditional QA systems. It seeks to improve accuracy and non-hallucinatory responses by integrating retrieval techniques with large language models via the Retrieval-Augmented Generation (RAG) method. This approach overcomes limitations of prior QA systems by combining parametric and non-parametric memory. [DOC04_P01_PAR02_CH01, DOC04_P01_PAR01_CH01]",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.2628891999993357,
+            "reranking_seconds": 0.6940814999979921,
+            "verification_seconds": 5.200003215577453e-06,
+            "generation_seconds": 1.7412144000045373,
+            "total_stage_seconds": 2.6981903000050806
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q004_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": false,
+            "reciprocal_source_rank": 0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "document",
+              "question answering",
+              "retrieval"
+            ]
+          },
+          "final_answer": "The document-question-answering RAG study aims to address three key problems: time-consuming and error-prone manual document processing, resource-intensive and difficult-to-implement modifications of Large Language Models (LLMs) for document processing, and the generation of hallucinatory answers by unmodified LLMs in QA systems. These issues are explicitly identified in the study's abstract and motivation sections. Source: DOC04_P01_PAR01_CH02, DOC04_P01_PAR02_CH01.",
+          "answer_keyword_coverage": 0.3333333333333333,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 3,
+          "verdict_counts": {
+            "SUPPORTED": 3,
+            "INSUFFICIENT": 1,
+            "PARTIAL": 1
+          },
+          "timings": {
+            "retrieval_seconds": 0.2628891999993357,
+            "reranking_seconds": 0.6940814999979921,
+            "verification_seconds": 11.06878670000151,
+            "generation_seconds": 1.5601375000042026,
+            "total_stage_seconds": 13.58589490000304
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q005",
+      "question": "Which language model was used in the study?",
+      "type": "direct",
+      "expected_document": "RAG_Research_Overview(No.2)",
+      "candidate_metrics": {
+        "source_hit": false,
+        "reciprocal_source_rank": 0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "GPT-3.5",
+          "ChatGPT"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": false,
+        "reciprocal_source_rank": 0,
+        "keyword_coverage": 0.5,
+        "matched_keywords": [
+          "ChatGPT"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": false,
+        "reciprocal_source_rank": 0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "GPT-3.5",
+          "ChatGPT"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q005_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": false,
+            "reciprocal_source_rank": 0,
+            "keyword_coverage": 0.5,
+            "matched_keywords": [
+              "ChatGPT"
+            ]
+          },
+          "final_answer": "The evidence does not specify which language model was used in the study. While several language models are mentioned in the references (e.g., ChatGPT, LLaMA, GPT), no study or model is explicitly identified as being used in the research context. The available evidence is insufficient to determine the specific language model.",
+          "answer_keyword_coverage": 0.5,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.1022921999974642,
+            "reranking_seconds": 0.38140800000110175,
+            "verification_seconds": 3.4000040614046156e-06,
+            "generation_seconds": 1.4949459000054048,
+            "total_stage_seconds": 1.5972415000069304
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q005_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": false,
+            "reciprocal_source_rank": 0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "GPT-3.5",
+              "ChatGPT"
+            ]
+          },
+          "final_answer": "The study used GPT-3.5 as the language model. This is stated in the text: \"the best language model at this current time like GPT-3.5, which provides good results\" and \"gpt-3.5-turbo within the framework of RAG.\" Source: RAG_Document_QA(No.5).pdf (chunk IDs: DOC04_P09_PAR01_CH02, DOC04_P02_PAR01_CH01).",
+          "answer_keyword_coverage": 0.5,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.1022921999974642,
+            "reranking_seconds": 0.38140800000110175,
+            "verification_seconds": 3.0000010156072676e-06,
+            "generation_seconds": 1.7338662999973167,
+            "total_stage_seconds": 2.2175694999968982
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q005_C.json",
+          "gate_status": "PARTIAL",
+          "evidence_metrics": {
+            "source_hit": false,
+            "reciprocal_source_rank": 0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "GPT-3.5",
+              "ChatGPT"
+            ]
+          },
+          "final_answer": "Partial evidence: The study references GPT-3.5 and gpt-3.5-turbo in the context of RAG, but neither explicitly confirms these models were used in the study. The claims are vague and general, lacking explicit confirmation of the language model employed. Missing information must not be inferred. Source: RAG_Document_QA(No.5).pdf.",
+          "answer_keyword_coverage": 0.5,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 3,
+          "verdict_counts": {
+            "INSUFFICIENT": 3,
+            "PARTIAL": 2
+          },
+          "timings": {
+            "retrieval_seconds": 0.1022921999974642,
+            "reranking_seconds": 0.38140800000110175,
+            "verification_seconds": 10.489423900005932,
+            "generation_seconds": 1.0291571999987355,
+            "total_stage_seconds": 12.002281300003233
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q006",
+      "question": "Name two evaluation metrics used in the study.",
+      "type": "direct",
+      "expected_document": "RAG_Research_Overview(No.2)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 0.14285714285714285,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "ROUGE",
+          "BLEU",
+          "BERTScore",
+          "Jaccard"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": false,
+        "reciprocal_source_rank": 0,
+        "keyword_coverage": 0.75,
+        "matched_keywords": [
+          "ROUGE",
+          "BLEU",
+          "Jaccard"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": false,
+        "reciprocal_source_rank": 0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "ROUGE",
+          "BLEU",
+          "BERTScore",
+          "Jaccard"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q006_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": false,
+            "reciprocal_source_rank": 0,
+            "keyword_coverage": 0.75,
+            "matched_keywords": [
+              "ROUGE",
+              "BLEU",
+              "Jaccard"
+            ]
+          },
+          "final_answer": "Two evaluation metrics used in the study are BLEU and ROUGE/ROUGE-L. Additional metrics mentioned include EM, F1, Hit Rate, MRR, and NDCG. These are used to assess aspects like answer quality, retrieval quality, and downstream tasks. Source: RAG_Survey(No.1).pdf (DOC08_P12_PAR01_CH03 and DOC08_P14_PAR01_CH01).",
+          "answer_keyword_coverage": 0.5,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.21395320000010543,
+            "reranking_seconds": 0.30330680000042776,
+            "verification_seconds": 5.299996701069176e-06,
+            "generation_seconds": 1.3536117000039667,
+            "total_stage_seconds": 1.5675702000007732
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q006_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": false,
+            "reciprocal_source_rank": 0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "ROUGE",
+              "BLEU",
+              "BERTScore",
+              "Jaccard"
+            ]
+          },
+          "final_answer": "Two evaluation metrics used in the study are BLEU and ROUGE/L. Additional metrics mentioned include Jaccard Similarity, EM, F1-score, and BERTScore. These are cited in DOC04_P05_PAR01_CH04 and DOC08_P14_PAR01_CH01.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.21395320000010543,
+            "reranking_seconds": 0.30330680000042776,
+            "verification_seconds": 5.599998985417187e-06,
+            "generation_seconds": 1.0804660999929183,
+            "total_stage_seconds": 1.597731699992437
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q006_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": false,
+            "reciprocal_source_rank": 0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "ROUGE",
+              "BLEU",
+              "BERTScore",
+              "Jaccard"
+            ]
+          },
+          "final_answer": "Two evaluation metrics used in the study are Bilingual Evaluation Understudy (BLEU) and Jaccard Similarity. Additional metrics mentioned include EM, F1, Accuracy, ROUGE, and Precision. Evidence from DOC04_P05_PAR01_CH04, DOC08_P14_PAR01_CH01, and DOC04_P09_PAR01_CH03 supports these metrics. All sources consistently list BLEU and Jaccard Similarity as evaluation metrics.",
+          "answer_keyword_coverage": 0.75,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {
+            "SUPPORTED": 5
+          },
+          "timings": {
+            "retrieval_seconds": 0.21395320000010543,
+            "reranking_seconds": 0.30330680000042776,
+            "verification_seconds": 6.866279800000484,
+            "generation_seconds": 1.5586847999948077,
+            "total_stage_seconds": 8.942224599995825
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q007",
+      "question": "Why is curated first-party data important for enterprise RAG?",
+      "type": "direct",
+      "expected_document": "RAG_Enterprise_Basics(No.3)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "curated data",
+          "first-party",
+          "enterprise"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "curated data",
+          "first-party",
+          "enterprise"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "curated data",
+          "first-party",
+          "enterprise"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q007_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "curated data",
+              "first-party",
+              "enterprise"
+            ]
+          },
+          "final_answer": "The evidence does not explicitly state why curated first-party data is important for enterprise RAG. While it mentions RAG's security, scalability, and reliability, and references using private data (e.g., GitHub, databases), it does not link curated first-party data directly to these benefits. The importance of data quality is implied in the context of reliable AI, but no specific justification for curated first-party data is provided. Evidence is insufficient to establish this connection.",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.43369040000106907,
+            "reranking_seconds": 0.5012674000026891,
+            "verification_seconds": 4.29999636253342e-06,
+            "generation_seconds": 1.5162368000019342,
+            "total_stage_seconds": 1.9499314999993658
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q007_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "curated data",
+              "first-party",
+              "enterprise"
+            ]
+          },
+          "final_answer": "Curated first-party data is important for enterprise RAG because it ensures accurate, reliable, and secure responses by enabling the system to pull from trusted, internal datasets. This enhances data privacy, as proprietary information remains within secure environments. RAG leverages such data to deliver trustworthy outputs without exposing sensitive information to model training. It also improves scalability and reduces costs by avoiding expensive fine-tuning processes. Source: RAG_Enterprise_Basics(No.3).pdf (DOC05_P10_PAR01_CH01, DOC05_P10_PAR01_CH02).",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.43369040000106907,
+            "reranking_seconds": 0.5012674000026891,
+            "verification_seconds": 5.299996701069176e-06,
+            "generation_seconds": 1.624002999997174,
+            "total_stage_seconds": 2.558966099997633
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q007_C.json",
+          "gate_status": "PARTIAL",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.3333333333333333,
+            "matched_keywords": [
+              "curated data"
+            ]
+          },
+          "final_answer": "Partial evidence: Both chunks state that RAG pulls from curated datasets to inform outputs, implying improved reliability, but neither explicitly addresses why curated first-party data is important for enterprise RAG. The evidence does not specify the importance of first-party data, missing critical context. Inference is not permitted.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 3,
+          "verdict_counts": {
+            "PARTIAL": 2,
+            "INSUFFICIENT": 3
+          },
+          "timings": {
+            "retrieval_seconds": 0.43369040000106907,
+            "reranking_seconds": 0.5012674000026891,
+            "verification_seconds": 6.86733169999934,
+            "generation_seconds": 0.8230905000018538,
+            "total_stage_seconds": 8.625380000004952
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q008",
+      "question": "Give two differences between RAG and fine-tuning.",
+      "type": "comparison",
+      "expected_document": "RAG_Enterprise_Basics(No.3)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "model parameters",
+          "fine-tuning"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "model parameters",
+          "fine-tuning"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "model parameters",
+          "fine-tuning"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q008_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "model parameters",
+              "fine-tuning"
+            ]
+          },
+          "final_answer": "- Fine-tuning operates as a \"black box,\" making it difficult to trace reasoning or identify root causes of errors, whereas RAG allows easier tracing of response sources and data origins. (DOC05_P09_PAR01_CH01, DOC05_P09_PAR01_CH02)  \n- Fine-tuning requires significant computational resources and labeled data, while RAG is more cost-efficient and scalable by avoiding model training and data labeling. (DOC05_P10_PAR01_CH01)",
+          "answer_keyword_coverage": 0.3333333333333333,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.2545500999985961,
+            "reranking_seconds": 0.7924557000005734,
+            "verification_seconds": 6.100002792663872e-06,
+            "generation_seconds": 1.53620399999636,
+            "total_stage_seconds": 1.7907601999977487
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q008_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "model parameters",
+              "fine-tuning"
+            ]
+          },
+          "final_answer": "- Fine-tuning operates as a black box, making it difficult to trace reasoning or identify root causes of errors, whereas RAG allows easier tracing of response sources and data origins. (DOC05_P09_PAR01_CH02, DOC05_P09_PAR01_CH01)  \n- RAG maintains proprietary data within secure databases, avoiding exposure during training, while fine-tuning incorporates data into the model’s training set, potentially exposing it to broader access. (DOC05_P10_PAR01_CH01)",
+          "answer_keyword_coverage": 0.3333333333333333,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.2545500999985961,
+            "reranking_seconds": 0.7924557000005734,
+            "verification_seconds": 5.30000397702679e-06,
+            "generation_seconds": 1.6614917000042624,
+            "total_stage_seconds": 2.708502800007409
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q008_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.3333333333333333,
+            "matched_keywords": [
+              "fine-tuning"
+            ]
+          },
+          "final_answer": "- Fine-tuning operates as a \"black box,\" making it difficult to understand reasoning or trace hallucinations, whereas RAG provides transparent, traceable responses. (DOC05_P09_PAR01_CH02, DOC05_P09_PAR01_CH01)  \n- RAG maintains data privacy by keeping proprietary data in a secured database, while fine-tuning exposes data to broader access as part of the model’s training set. (DOC05_P10_PAR01_CH01, DOC05_P10_PAR01_CH02)  \n\nNote: Evidence for integration or cost efficiency is partial or indirect; no direct contradiction found.",
+          "answer_keyword_coverage": 0.3333333333333333,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 2,
+          "verdict_counts": {
+            "PARTIAL": 3,
+            "SUPPORTED": 2
+          },
+          "timings": {
+            "retrieval_seconds": 0.2545500999985961,
+            "reranking_seconds": 0.7924557000005734,
+            "verification_seconds": 11.476572799998394,
+            "generation_seconds": 2.157478099994478,
+            "total_stage_seconds": 14.681056699992041
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q009",
+      "question": "What three enterprise benefits of RAG are highlighted?",
+      "type": "direct",
+      "expected_document": "RAG_Enterprise_Basics(No.3)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "security",
+          "trustworthy"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "security",
+          "trustworthy"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.0,
+        "matched_keywords": []
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q009_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "security",
+              "trustworthy"
+            ]
+          },
+          "final_answer": "The three enterprise benefits of RAG highlighted are: enhanced security and data privacy, greater cost-efficiency and scalability, and delivery of more trustworthy results. These are explicitly stated in DOC05_P10_PAR01_CH01 and DOC05_P10_PAR01_CH02.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.23454510000010487,
+            "reranking_seconds": 0.47318100000120467,
+            "verification_seconds": 4.599998646881431e-06,
+            "generation_seconds": 1.1619242999950075,
+            "total_stage_seconds": 1.3964739999937592
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q009_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.0,
+            "matched_keywords": []
+          },
+          "final_answer": "The evidence highlights three enterprise benefits of RAG: it is more secure, more scalable, and more reliable. These points are derived from the text in \"RAG_Enterprise_Basics(No.3).pdf\" (chunk ID: DOC05_P10_PAR01_CH02). The other evidence discusses implementation challenges and architecture but does not specify additional benefits. The available evidence is insufficient to identify any other enterprise benefits.",
+          "answer_keyword_coverage": 0.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.23454510000010487,
+            "reranking_seconds": 0.47318100000120467,
+            "verification_seconds": 4.800000169780105e-06,
+            "generation_seconds": 1.2757325999991735,
+            "total_stage_seconds": 1.9834635000006529
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q009_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.3333333333333333,
+            "matched_keywords": [
+              "security"
+            ]
+          },
+          "final_answer": "The three enterprise benefits of RAG highlighted are: enhanced security and data privacy, cost-efficiency and scalability, and reliability. Source: RAG_Enterprise_Basics(No.3).pdf, page 10.",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 1,
+          "verdict_counts": {
+            "SUPPORTED": 1,
+            "INSUFFICIENT": 4
+          },
+          "timings": {
+            "retrieval_seconds": 0.23454510000010487,
+            "reranking_seconds": 0.47318100000120467,
+            "verification_seconds": 6.517806999996537,
+            "generation_seconds": 0.7526482999965083,
+            "total_stage_seconds": 7.978181399994355
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q010",
+      "question": "What is the purpose of indexing in a RAG pipeline?",
+      "type": "direct",
+      "expected_document": "RAG_Implementation_Guide(No.4)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "indexing",
+          "data"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "indexing",
+          "data"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "indexing",
+          "data"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q010_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "indexing",
+              "data"
+            ]
+          },
+          "final_answer": "The purpose of indexing in a RAG pipeline is to organize and structure tokenized source data into manageable chunks, transforming them into semantic embeddings for efficient retrieval. This enables the system to quickly locate relevant information in response to queries, ensuring accurate and contextually pertinent data is used in generation. Indexing also involves optimizing data granularity, index structures, and metadata to enhance retrieval quality. (DOC06_P10_PAR01_CH01, DOC08_P04_PAR01_CH01)",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.2628915999957826,
+            "reranking_seconds": 0.5237388000023202,
+            "verification_seconds": 4.599998646881431e-06,
+            "generation_seconds": 1.589536899999075,
+            "total_stage_seconds": 1.8524330999935046
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q010_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "indexing",
+              "data"
+            ]
+          },
+          "final_answer": "The purpose of indexing in a RAG pipeline is to organize and structure tokenized source data into searchable chunks, transforming them into semantic vector embeddings for efficient retrieval. This enables rapid identification of relevant data based on query similarity, providing contextual foundation for generation. Indexing enhances retrieval accuracy and system performance by optimizing data granularity, index structures, and metadata alignment. Source: RAG_Implementation_Guide(No.4).pdf (DOC06_P10_PAR01_CH01, DOC06_P16_PAR01_CH02, DOC08_P04_PAR01_CH01).",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.2628915999957826,
+            "reranking_seconds": 0.5237388000023202,
+            "verification_seconds": 4.800000169780105e-06,
+            "generation_seconds": 1.7340954999963287,
+            "total_stage_seconds": 2.5207306999946013
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q010_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "indexing",
+              "data"
+            ]
+          },
+          "final_answer": "The purpose of indexing in a RAG pipeline is to organize and structure tokenized source data to facilitate efficient retrieval and generation. Indexing enables rapid location of relevant information in response to queries, ensuring pertinent data is retrieved for generation. Efficient indexing methods, such as those in FAISS or Elasticsearch, support real-time retrieval of relevant data chunks. Optimization of indexing enhances content quality through strategies like data granularity, metadata addition, and alignment optimization. (DOC06_P10_PAR01_CH01, DOC06_P16_PAR01_CH02, DOC08_P04_PAR01_CH01)",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 2,
+          "verdict_counts": {
+            "SUPPORTED": 3,
+            "PARTIAL": 1,
+            "INSUFFICIENT": 1
+          },
+          "timings": {
+            "retrieval_seconds": 0.2628915999957826,
+            "reranking_seconds": 0.5237388000023202,
+            "verification_seconds": 9.104180700000143,
+            "generation_seconds": 1.658642599999439,
+            "total_stage_seconds": 11.549453699997684
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q011",
+      "question": "What is the difference between fixed-size chunking and semantic chunking?",
+      "type": "comparison",
+      "expected_document": "RAG_Implementation_Guide(No.4)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "fixed-size",
+          "semantic chunking"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "fixed-size",
+          "semantic chunking"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "fixed-size",
+          "semantic chunking"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q011_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "fixed-size",
+              "semantic chunking"
+            ]
+          },
+          "final_answer": "Fixed-size chunking divides text into equally sized segments (e.g., fixed number of sentences or characters) regardless of content, ensuring uniformity and simplicity but risking splitting meaningful information. Semantic chunking divides text based on natural meaning boundaries (e.g., complete sentences or logical sections), preserving context and coherence, enhancing retrieval accuracy and user experience, though it requires complex algorithms and more computational resources. Both methods are used in RAG systems to improve information retrieval. [DOC06_P10_PAR01_CH02, DOC06_P11_PAR01_CH01, DOC06_P12_PAR01_CH02, DOC06_P13_PAR01_CH01, DOC06_P14_PAR01_CH03]",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.26877349999995204,
+            "reranking_seconds": 0.4730163000058383,
+            "verification_seconds": 4.4000043999403715e-06,
+            "generation_seconds": 2.1062929999970947,
+            "total_stage_seconds": 2.3750709000014467
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q011_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "fixed-size",
+              "semantic chunking"
+            ]
+          },
+          "final_answer": "Fixed-size chunking divides text into equally sized segments (e.g., fixed number of sentences or characters) regardless of content, offering simplicity and efficiency but risking splitting meaningful information. Semantic chunking divides text based on natural meaning boundaries (e.g., sentences, paragraphs), preserving context and coherence, enhancing retrieval accuracy and user experience, though it requires complex algorithms and more computational resources. Both methods are used in RAG systems to improve information retrieval. [DOC06_P10_PAR01_CH02, DOC06_P11_PAR01_CH01, DOC06_P12_PAR01_CH02, DOC06_P13_PAR01_CH01]",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.26877349999995204,
+            "reranking_seconds": 0.4730163000058383,
+            "verification_seconds": 5.000001692678779e-06,
+            "generation_seconds": 1.6057607000038843,
+            "total_stage_seconds": 2.3475555000113673
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q011_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.5,
+            "matched_keywords": [
+              "semantic chunking"
+            ]
+          },
+          "final_answer": "Fixed-size chunking divides text into equally sized segments (e.g., sentences, words, characters) regardless of content, potentially splitting meaningful information. Semantic chunking divides text based on natural meaning boundaries (e.g., sentences, paragraphs) to preserve context and coherence. Source DOC06_P10_PAR01_CH02 defines both methods, while DOC06_P11_PAR01_CH01 and DOC06_P12_PAR01_CH02 provide partial details on semantic chunking and lack direct comparison or definition of fixed-size chunking. Evidence is insufficient to fully contrast the two methods.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 4,
+          "verdict_counts": {
+            "SUPPORTED": 1,
+            "INSUFFICIENT": 2,
+            "PARTIAL": 2
+          },
+          "timings": {
+            "retrieval_seconds": 0.26877349999995204,
+            "reranking_seconds": 0.4730163000058383,
+            "verification_seconds": 10.65009199999622,
+            "generation_seconds": 1.6769545999995898,
+            "total_stage_seconds": 13.0688364000016
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q012",
+      "question": "Why are reranking and context filtering used after retrieval?",
+      "type": "direct",
+      "expected_document": "RAG_Implementation_Guide(No.4)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 0.3333333333333333,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "reranking",
+          "relevance"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 0.3333333333333333,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "reranking",
+          "relevance"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "reranking",
+          "relevance"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q012_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 0.3333333333333333,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "reranking",
+              "relevance"
+            ]
+          },
+          "final_answer": "Reranking and context filtering are used to improve relevance and reduce information overload by reordering and selecting the most pertinent retrieved chunks. Reranking prioritizes high-relevance content using machine learning models or predefined metrics, ensuring the generation model receives focused, accurate context [DOC08_P10_PAR01_CH02][DOC06_P19_PAR01_CH02]. Context filtering eliminates irrelevant or redundant information, preventing dilution of key details and maintaining contextual integrity [DOC08_P04_PAR01_CH02][DOC06_P19_PAR01_CH01]. These steps enhance the precision and quality of generated responses.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.23891110000113258,
+            "reranking_seconds": 0.5718912000011187,
+            "verification_seconds": 4.599998646881431e-06,
+            "generation_seconds": 1.9991756999952486,
+            "total_stage_seconds": 2.238091399995028
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q012_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "reranking",
+              "relevance"
+            ]
+          },
+          "final_answer": "Reranking and context filtering are used to improve the relevance and quality of input to the generation model by prioritizing the most pertinent retrieved chunks and eliminating irrelevant or redundant information. Reranking reorders chunks based on relevance using machine learning models or rules, while context filtering (e.g., context compression) selects key portions of documents, avoiding information overload and preserving focus [DOC08_P04_PAR01_CH02, DOC08_P10_PAR01_CH02, DOC06_P19_PAR01_CH01]. This ensures the generation model receives focused, high-quality context for accurate and coherent responses.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.23891110000113258,
+            "reranking_seconds": 0.5718912000011187,
+            "verification_seconds": 5.200003215577453e-06,
+            "generation_seconds": 1.8854337000011583,
+            "total_stage_seconds": 2.696241200006625
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q012_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "reranking",
+              "relevance"
+            ]
+          },
+          "final_answer": "Reranking and context filtering are used to improve response quality by prioritizing the most relevant retrieved chunks and eliminating irrelevant or redundant content. Reranking orders chunks by relevance, ensuring the generation model receives refined, high-quality context. Context filtering removes irrelevant parts of retrieved information, preventing information overload and focusing the model on key details. This is supported by RAG_Implementation_Guide(No.4).pdf and RAG_Survey(No.1).pdf. (DOC06_P19_PAR01_CH02, DOC08_P04_PAR01_CH02, DOC08_P10_PAR01_CH02, DOC06_P04_PAR01_CH03)",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 3,
+          "verdict_counts": {
+            "SUPPORTED": 4,
+            "PARTIAL": 1
+          },
+          "timings": {
+            "retrieval_seconds": 0.23891110000113258,
+            "reranking_seconds": 0.5718912000011187,
+            "verification_seconds": 11.477318600002036,
+            "generation_seconds": 2.3186411000060616,
+            "total_stage_seconds": 14.606762000010349
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q013",
+      "question": "What is the main purpose of a document question-answering system?",
+      "type": "direct",
+      "expected_document": "RAG_Document_QA(No.5)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "document",
+          "question answering"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "document",
+          "question answering"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "document",
+          "question answering"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q013_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "document",
+              "question answering"
+            ]
+          },
+          "final_answer": "The main purpose of a document question-answering system is to automatically process external text documents, allowing users to input questions and receive answers based on the document content. It addresses time-consuming manual reading, human error, and hallucinatory responses by integrating retrieval techniques with large language models. The system improves accuracy and precision in information extraction and context understanding. Source: RAG_Document_QA(No.5).pdf (DOC04_P01_PAR01_CH01, DOC04_P01_PAR02_CH03).",
+          "answer_keyword_coverage": 0.5,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.27425039999798173,
+            "reranking_seconds": 0.828015700004471,
+            "verification_seconds": 1.4199998986441642e-05,
+            "generation_seconds": 1.8545341999997618,
+            "total_stage_seconds": 2.12879879999673
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q013_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "document",
+              "question answering"
+            ]
+          },
+          "final_answer": "The main purpose of a document question-answering system is to improve document processing efficiency and accuracy by leveraging Retrieval-Augmented Generation (RAG) and Large Language Models (LLMs), addressing limitations of manual reading and hallucinatory responses in traditional QA systems. It enables time-efficient, accurate information extraction from diverse document types such as journal articles, financial reports, and tutorials. This is achieved by combining search techniques with text generation, enhancing precision and context understanding. (Source: RAG_Document_QA(No.5).pdf, chunk IDs DOC04_P01_PAR01_CH03, DOC04_P01_PAR02_CH01, DOC04_P01_PAR01_CH01)",
+          "answer_keyword_coverage": 0.5,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.27425039999798173,
+            "reranking_seconds": 0.828015700004471,
+            "verification_seconds": 6.199996278155595e-06,
+            "generation_seconds": 1.7939136999993934,
+            "total_stage_seconds": 2.8961859999981243
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q013_C.json",
+          "gate_status": "PARTIAL",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.5,
+            "matched_keywords": [
+              "document"
+            ]
+          },
+          "final_answer": "The main purpose of a document question-answering system is implicitly tied to improving response accuracy and reducing hallucinations through the implementation of Retrieval-Augmented Generation (RAG), addressing challenges in manual document processing and LLM modifications. However, the explicit statement of the \"main purpose\" is not directly provided in the evidence.",
+          "answer_keyword_coverage": 0.5,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 2,
+          "verdict_counts": {
+            "INSUFFICIENT": 4,
+            "PARTIAL": 1
+          },
+          "timings": {
+            "retrieval_seconds": 0.27425039999798173,
+            "reranking_seconds": 0.828015700004471,
+            "verification_seconds": 8.309716999996454,
+            "generation_seconds": 0.9081717000008211,
+            "total_stage_seconds": 10.320154799999727
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q014",
+      "question": "Why can a language model hallucinate when relevant evidence is not retrieved?",
+      "type": "reasoning",
+      "expected_document": "RAG_Document_QA(No.5)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 0.2,
+        "keyword_coverage": 0.5,
+        "matched_keywords": [
+          "hallucination"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 0.2,
+        "keyword_coverage": 0.5,
+        "matched_keywords": [
+          "hallucination"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 0.5,
+        "keyword_coverage": 0.5,
+        "matched_keywords": [
+          "hallucination"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q014_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 0.2,
+            "keyword_coverage": 0.5,
+            "matched_keywords": [
+              "hallucination"
+            ]
+          },
+          "final_answer": "The evidence indicates that language models can hallucinate during generation even when relevant evidence is not retrieved because the model may generate responses based solely on its internal knowledge, especially when retrieval fails to provide accurate or complete context. This issue is particularly evident in Naive RAG systems, where poor retrieval precision leads to irrelevant or missing information, and the generation phase still produces hallucinated content unsupported by retrieved data. [DOC08_P03_PAR01_CH03]",
+          "answer_keyword_coverage": 0.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.5261549999995623,
+            "reranking_seconds": 0.7642543999972986,
+            "verification_seconds": 4.4000043999403715e-06,
+            "generation_seconds": 1.6141414999947301,
+            "total_stage_seconds": 2.1403008999986923
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q014_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 0.5,
+            "keyword_coverage": 0.5,
+            "matched_keywords": [
+              "hallucination"
+            ]
+          },
+          "final_answer": "A language model can hallucinate when relevant evidence is not retrieved because the model generates responses based solely on its internal knowledge or incomplete context, leading to fabricated or inaccurate content. Without retrieved, relevant document chunks, the model lacks grounding in factual information, increasing the likelihood of hallucination. This issue is particularly pronounced in RAG systems when retrieval fails to return precise or crucial information, resulting in responses unsupported by evidence. [DOC08_P03_PAR01_CH03, DOC04_P01_PAR02_CH01, DOC04_P01_PAR02_CH02]",
+          "answer_keyword_coverage": 0.5,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.5261549999995623,
+            "reranking_seconds": 0.7642543999972986,
+            "verification_seconds": 4.599998646881431e-06,
+            "generation_seconds": 1.9527021999965655,
+            "total_stage_seconds": 3.2431161999920732
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q014_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 0.5,
+            "keyword_coverage": 0.5,
+            "matched_keywords": [
+              "hallucination"
+            ]
+          },
+          "final_answer": "A language model can hallucinate when relevant evidence is not retrieved because the retrieval phase often fails to find precise or crucial information, leading to the selection of irrelevant or missing chunks. Without supporting context, the model generates responses not grounded in retrieved data. RAG mitigates this by linking language models to external knowledge sources, reducing hallucinations through accurate context retrieval. [RAG_Survey(No.1).pdf, RAG_Document_QA(No.5).pdf]",
+          "answer_keyword_coverage": 0.5,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 2,
+          "verdict_counts": {
+            "SUPPORTED": 3,
+            "INSUFFICIENT": 2
+          },
+          "timings": {
+            "retrieval_seconds": 0.5261549999995623,
+            "reranking_seconds": 0.7642543999972986,
+            "verification_seconds": 8.78608240000176,
+            "generation_seconds": 1.4064810999989277,
+            "total_stage_seconds": 11.482972899997549
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q015",
+      "question": "What is the role of a vector store in document question answering?",
+      "type": "direct",
+      "expected_document": "RAG_Document_QA(No.5)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "vector store",
+          "embeddings",
+          "similarity"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.3333333333333333,
+        "matched_keywords": [
+          "similarity"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "vector store",
+          "similarity"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q015_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.3333333333333333,
+            "matched_keywords": [
+              "similarity"
+            ]
+          },
+          "final_answer": "A vector store (or vector database) enables document question answering by storing text chunks as vectors through embedding models. It facilitates semantic similarity searches to retrieve the most relevant document segments based on query vectors. These retrieved chunks are then used as context in prompting large language models (LLMs) to generate accurate, contextually relevant answers. This process is central to the \"Retrieve-Read\" framework in RAG systems. [DOC05_P11_PAR01_CH01, DOC08_P03_PAR01_CH01, DOC04_P04_PAR01_CH02]",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.3223096000001533,
+            "reranking_seconds": 0.6125265000009676,
+            "verification_seconds": 5.900001269765198e-06,
+            "generation_seconds": 1.7823910000006435,
+            "total_stage_seconds": 2.1047065000020666
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q015_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "vector store",
+              "similarity"
+            ]
+          },
+          "final_answer": "A vector store enables semantic similarity searches by storing document chunks as vectors, allowing retrieval of the most relevant context based on query similarity. It facilitates efficient indexing and retrieval in the RAG pipeline, supporting prompt engineering by providing context to the LLM. The vector store uses embedding models to convert text into vectors and performs similarity searches using cosine similarity. This step is critical for overcoming language model context limitations. [DOC04_P01_PAR01_CH01, DOC08_P03_PAR01_CH01, DOC04_P04_PAR01_CH02]",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.3223096000001533,
+            "reranking_seconds": 0.6125265000009676,
+            "verification_seconds": 4.1000021155923605e-06,
+            "generation_seconds": 1.8158872000058182,
+            "total_stage_seconds": 2.7507274000090547
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q015_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "vector store",
+              "similarity"
+            ]
+          },
+          "final_answer": "A vector store stores text chunks converted into vectors via embedding models, enabling semantic search to retrieve relevant context for user queries. It facilitates efficient similarity searches that identify pertinent information for document question answering. This role is supported by evidence from RAG_Document_QA(No.5).pdf (DOC04_P04_PAR01_CH02) and RAG_Survey(No.1).pdf (DOC08_P03_PAR01_CH02). Evidence from DOC04_P03_PAR01_CH02 is partial and lacks explicit detail on its role in question answering.",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 1,
+          "verdict_counts": {
+            "SUPPORTED": 4,
+            "PARTIAL": 1
+          },
+          "timings": {
+            "retrieval_seconds": 0.3223096000001533,
+            "reranking_seconds": 0.6125265000009676,
+            "verification_seconds": 8.402934700003243,
+            "generation_seconds": 1.74698989999888,
+            "total_stage_seconds": 11.084760700003244
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q016",
+      "question": "What is a convolutional neural network mainly used for in computer vision?",
+      "type": "direct",
+      "expected_document": "Computer_Vision_AI(No.6)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "CNN",
+          "images"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "CNN",
+          "images"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.3333333333333333,
+        "matched_keywords": [
+          "CNN"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q016_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "CNN",
+              "images"
+            ]
+          },
+          "final_answer": "A convolutional neural network (CNN) is mainly used for visual recognition tasks in computer vision, such as image classification, object detection, and image identification. It is particularly effective in analyzing visual pictures and is a key component in deep learning for computer vision applications. CNNs are also used in medical image analysis, industrial quality control, and automated systems like self-driving cars. Source: Computer_Vision_AI(No.6).pdf (DOC02_P01_PAR01_CH03, DOC02_P02_PAR01_CH04, DOC02_P05_PAR01_CH02).",
+          "answer_keyword_coverage": 0.3333333333333333,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.2596655999950599,
+            "reranking_seconds": 0.5672635000009905,
+            "verification_seconds": 5.200003215577453e-06,
+            "generation_seconds": 1.8374739999999292,
+            "total_stage_seconds": 2.0971447999982047
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q016_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.3333333333333333,
+            "matched_keywords": [
+              "CNN"
+            ]
+          },
+          "final_answer": "A convolutional neural network (CNN) is mainly used for visual recognition tasks in computer vision, such as image identification, object detection, and image classification. It is a subtype of deep neural networks frequently employed in analyzing visual pictures and has demonstrated exceptional performance in these areas. CNNs are fundamental in applications like self-driving cars, medical imaging, and industrial quality control. Source: Computer_Vision_AI(No.6).pdf (DOC02_P01_PAR01_CH03, DOC02_P02_PAR01_CH04, DOC02_P05_PAR01_CH02).",
+          "answer_keyword_coverage": 0.3333333333333333,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.2596655999950599,
+            "reranking_seconds": 0.5672635000009905,
+            "verification_seconds": 4.4000043999403715e-06,
+            "generation_seconds": 1.3670518999933847,
+            "total_stage_seconds": 2.193985399993835
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q016_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.3333333333333333,
+            "matched_keywords": [
+              "CNN"
+            ]
+          },
+          "final_answer": "A convolutional neural network (CNN) is mainly used for visual recognition and analyzing visual pictures in computer vision. It serves as a basic building block in deep learning for computer vision and is particularly effective in image recognition tasks, such as those demonstrated in the ImageNet Large Scale Visual Recognition Challenge. This application is central to its role in computer vision. (Source: Computer_Vision_AI(No.6).pdf, chunks DOC02_P01_PAR01_CH03, DOC02_P02_PAR01_CH04, DOC02_P05_PAR01_CH02, DOC02_P05_PAR01_CH03)",
+          "answer_keyword_coverage": 0.3333333333333333,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 1,
+          "verdict_counts": {
+            "SUPPORTED": 5
+          },
+          "timings": {
+            "retrieval_seconds": 0.2596655999950599,
+            "reranking_seconds": 0.5672635000009905,
+            "verification_seconds": 8.528493699996034,
+            "generation_seconds": 2.0590214999974705,
+            "total_stage_seconds": 11.414444299989555
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q017",
+      "question": "How does convolution help an image-processing model?",
+      "type": "direct",
+      "expected_document": "Computer_Vision_AI(No.6)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "convolution",
+          "features"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "convolution",
+          "features"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "convolution",
+          "features"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q017_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "convolution",
+              "features"
+            ]
+          },
+          "final_answer": "Convolution helps an image-processing model by extracting spatial features from images through a mathematical operation that applies a filter (kernel) to image data, identifying patterns and edges. This process enables Convolutional Neural Networks (CNNs) to detect local features like edges and textures, which are crucial for image recognition. The operation is repeated across the image, allowing the model to recognize patterns at different scales and locations. CNNs use convolutional layers to process image data efficiently, forming the foundation of deep learning in computer vision. Source: Computer_Vision_AI(No.6).pdf (DOC02_P01_PAR01_CH03, DOC02_P02_PAR02_CH01, DOC02_P02_PAR02_CH02, DOC02_P02_PAR02_CH03).",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.2314184999995632,
+            "reranking_seconds": 0.5451383999970858,
+            "verification_seconds": 4.399997123982757e-06,
+            "generation_seconds": 2.3098924000005354,
+            "total_stage_seconds": 2.5413152999972226
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q017_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "convolution",
+              "features"
+            ]
+          },
+          "final_answer": "Convolution helps an image-processing model by extracting features from images through a mathematical operation that slides a filter (kernel) across the image, detecting patterns such as edges or textures. This process enables the model to identify relevant visual information efficiently. Convolutional Neural Networks (CNNs) use this technique to process image data, enhancing computational efficiency and enabling accurate pattern recognition. The operation is foundational in deep learning for computer vision tasks, such as image classification and object detection. Source: Computer_Vision_AI(No.6).pdf (DOC02_P02_PAR02_CH03, DOC02_P01_PAR01_CH03).",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.2314184999995632,
+            "reranking_seconds": 0.5451383999970858,
+            "verification_seconds": 4.2000028770416975e-06,
+            "generation_seconds": 1.6445272999990266,
+            "total_stage_seconds": 2.4210883999985526
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q017_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "convolution",
+              "features"
+            ]
+          },
+          "final_answer": "Convolution helps an image-processing model by applying filters (channels) across the image to extract features through pixel value interactions, enabling the detection of patterns and patterns in 2D image data. This process is fundamental in convolutional neural networks (CNNs), which are designed for image data and serve as key building blocks in computer vision tasks. The technique categorizes image components to assist machine learning and generate desired outputs. [DOC02_P02_PAR02_CH02, DOC02_P02_PAR02_CH01, DOC02_P02_PAR02_CH03]",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 3,
+          "verdict_counts": {
+            "SUPPORTED": 4,
+            "INSUFFICIENT": 1
+          },
+          "timings": {
+            "retrieval_seconds": 0.2314184999995632,
+            "reranking_seconds": 0.5451383999970858,
+            "verification_seconds": 9.650312300000223,
+            "generation_seconds": 1.818841699998302,
+            "total_stage_seconds": 12.245710899995174
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q018",
+      "question": "Mention two application areas of CNNs.",
+      "type": "application",
+      "expected_document": "Computer_Vision_AI(No.6)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "security",
+          "IoT"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "security",
+          "IoT"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "security",
+          "IoT"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q018_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "security",
+              "IoT"
+            ]
+          },
+          "final_answer": "Two application areas of CNNs are:  \n- Health and medical imaging, such as classifying cancers in CT, MRI, PET scans, and whole slide images.  \n- Self-driving cars and automaton design, involving visual recognition tasks like object detection and image identification.  \n(Source: DOC01_P12_PAR02_CH02, DOC02_P01_PAR01_CH02)",
+          "answer_keyword_coverage": 0.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.20811059999687131,
+            "reranking_seconds": 1.0764866999961669,
+            "verification_seconds": 9.800001862458885e-06,
+            "generation_seconds": 1.9015841000000364,
+            "total_stage_seconds": 2.10970449999877
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q018_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "security",
+              "IoT"
+            ]
+          },
+          "final_answer": "Two application areas of CNNs are:  \n- Medical imaging for cancer classification using CT, MRI, PET scans, and whole slide images [DOC01_P12_PAR02_CH02].  \n- Security systems in IoT, commercial, and domestic settings [DOC02_P06_PAR01_CH01].",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.20811059999687131,
+            "reranking_seconds": 1.0764866999961669,
+            "verification_seconds": 4.800000169780105e-06,
+            "generation_seconds": 1.3636413999993238,
+            "total_stage_seconds": 2.6482434999925317
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q018_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "security",
+              "IoT"
+            ]
+          },
+          "final_answer": "Two application areas of CNNs are health and medical, and self-driving cars.  \n(Source: DOC02_P01_PAR01_CH02 and DOC02_P01_PAR01_CH03)  \n\nAdditional applications include medical image analysis and image categorization.  \n(Source: DOC02_P02_PAR02_CH03)",
+          "answer_keyword_coverage": 0.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 4,
+          "verdict_counts": {
+            "PARTIAL": 2,
+            "SUPPORTED": 3
+          },
+          "timings": {
+            "retrieval_seconds": 0.20811059999687131,
+            "reranking_seconds": 1.0764866999961669,
+            "verification_seconds": 11.354184000003443,
+            "generation_seconds": 1.330366200003482,
+            "total_stage_seconds": 13.969147499999963
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q019",
+      "question": "Name three areas where AI or ML is applied in oncology.",
+      "type": "direct",
+      "expected_document": "Cancer_AI_ML(No.7)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "diagnosis",
+          "prognosis",
+          "treatment planning"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "diagnosis",
+          "prognosis"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "diagnosis",
+          "prognosis",
+          "treatment planning"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q019_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "diagnosis",
+              "prognosis"
+            ]
+          },
+          "final_answer": "- Cancer diagnosis  \n- Prognosis  \n- Treatment planning  \n\n(Source: DOC01_P18_PAR01_CH02, DOC01_P05_PAR01_CH03, DOC01_P04_PAR01_CH01)",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.2874960999979521,
+            "reranking_seconds": 0.7633044000031077,
+            "verification_seconds": 7.299997378140688e-06,
+            "generation_seconds": 1.2181783999985782,
+            "total_stage_seconds": 1.5056817999939085
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q019_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "diagnosis",
+              "prognosis",
+              "treatment planning"
+            ]
+          },
+          "final_answer": "Three areas where AI or ML is applied in oncology are: cancer diagnosis, prognosis, and treatment planning. Additionally, AI/ML is used in precision oncology and longitudinal surveillance. Evidence also mentions diagnostic decision-support systems and treatment-stratification pipelines. (Citations: DOC01_P18_PAR01_CH02, DOC01_P17_PAR02_CH02, DOC01_P04_PAR01_CH01)",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.2874960999979521,
+            "reranking_seconds": 0.7633044000031077,
+            "verification_seconds": 5.100002454128116e-06,
+            "generation_seconds": 1.385596499996609,
+            "total_stage_seconds": 2.436402100000123
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q019_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "diagnosis",
+              "prognosis",
+              "treatment planning"
+            ]
+          },
+          "final_answer": "Three areas where AI or ML is applied in oncology are: cancer diagnosis, treatment planning, and precision oncology. Additionally, AI/ML is used in diagnostic decision-support systems, treatment-stratification pipelines, and integration with telemedicine and mobile health platforms. Evidence from DOC01_P18_PAR01_CH02 and DOC01_P05_PAR01_CH03 supports these applications.",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 3,
+          "verdict_counts": {
+            "PARTIAL": 3,
+            "SUPPORTED": 2
+          },
+          "timings": {
+            "retrieval_seconds": 0.2874960999979521,
+            "reranking_seconds": 0.7633044000031077,
+            "verification_seconds": 13.86668710000231,
+            "generation_seconds": 1.746354800001427,
+            "total_stage_seconds": 16.663842400004796
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q020",
+      "question": "Why might a cancer AI model trained at one institution perform poorly at another?",
+      "type": "reasoning",
+      "expected_document": "Cancer_AI_ML(No.7)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.3333333333333333,
+        "matched_keywords": [
+          "distribution shift"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.3333333333333333,
+        "matched_keywords": [
+          "distribution shift"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.3333333333333333,
+        "matched_keywords": [
+          "distribution shift"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q020_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.3333333333333333,
+            "matched_keywords": [
+              "distribution shift"
+            ]
+          },
+          "final_answer": "A cancer AI model may perform poorly at another institution due to distribution shifts in data—such as differences in imaging protocols, patient demographics, and care practices—leading to covariate shifts. Models trained on curated single-institution datasets often overfit and fail in real-world, diverse settings. Inadequate prospective validation, lack of interpretability, and algorithmic bias from demographic underrepresentation exacerbate these issues. These challenges are compounded by infrastructure diversity and inconsistent data quality, particularly in regions like India. The failure of IBM Watson for Oncology highlights these translational gaps [33, 34, 38].",
+          "answer_keyword_coverage": 0.3333333333333333,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.29774059999908786,
+            "reranking_seconds": 0.5689303000035579,
+            "verification_seconds": 5.000001692678779e-06,
+            "generation_seconds": 2.029003899995587,
+            "total_stage_seconds": 2.3267494999963674
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q020_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.3333333333333333,
+            "matched_keywords": [
+              "distribution shift"
+            ]
+          },
+          "final_answer": "A cancer AI model may perform poorly at another institution due to domain shifts in imaging protocols, patient demographics, and care practices. Performance degradation occurs when models trained on single-institution, curated data are exposed to non-standardized, diverse, or fragmented real-world data. This results in covariate shifts that models cannot absorb without domain adaptation or transfer learning. Additionally, algorithmic bias from demographic underrepresentation and limited prospective validation contribute to poor generalization. Evidence from IBM Watson and Epic Sepsis Model highlights real-world failures due to these issues. Source: DOC01_P06_PAR02_CH01, DOC01_P11_PAR02_CH02, DOC01_P19_PAR01_CH02.",
+          "answer_keyword_coverage": 0.3333333333333333,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.29774059999908786,
+            "reranking_seconds": 0.5689303000035579,
+            "verification_seconds": 4.7000066842883825e-06,
+            "generation_seconds": 2.2950765999994474,
+            "total_stage_seconds": 3.1617522000087774
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q020_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.3333333333333333,
+            "matched_keywords": [
+              "distribution shift"
+            ]
+          },
+          "final_answer": "A cancer AI model may perform poorly at another institution due to domain shifts, including changes in imaging protocols, patient demographics, and institutional care practices. These shifts cause covariate and concept drift, leading to distributional imbalances that degrade model performance. Models trained on single-institution data often overfit and fail to generalize to diverse populations or settings, especially with non-standardized data, inconsistent imaging, or fragmented health records. Such issues are exacerbated by unmitigated dataset shift and poor integration with legacy systems. [DOC01_P11_PAR02_CH02, DOC01_P12_PAR01_CH03, DOC01_P19_PAR01_CH02, DOC01_P06_PAR02_CH01]",
+          "answer_keyword_coverage": 0.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 2,
+          "verdict_counts": {
+            "SUPPORTED": 2,
+            "PARTIAL": 2,
+            "INSUFFICIENT": 1
+          },
+          "timings": {
+            "retrieval_seconds": 0.29774059999908786,
+            "reranking_seconds": 0.5689303000035579,
+            "verification_seconds": 10.044677500001853,
+            "generation_seconds": 2.297586400003638,
+            "total_stage_seconds": 13.208934800008137
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q021",
+      "question": "Name two barriers to real-world clinical deployment of oncology AI.",
+      "type": "direct",
+      "expected_document": "Cancer_AI_ML(No.7)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "external validation",
+          "model drift"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.0,
+        "matched_keywords": []
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "external validation",
+          "model drift"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q021_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.0,
+            "matched_keywords": []
+          },
+          "final_answer": "Two barriers to real-world clinical deployment of oncology AI are:  \n1. Limited interpretability of complex deep learning models, which erodes clinician confidence due to black-box predictions without biological pathway links [DOC01_P11_PAR02_CH02].  \n2. Algorithmic bias and demographic underrepresentation in training data, leading to distorted performance across diverse populations [DOC01_P11_PAR02_CH02].",
+          "answer_keyword_coverage": 0.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.2898432000001776,
+            "reranking_seconds": 0.6043006999971112,
+            "verification_seconds": 4.499997885432094e-06,
+            "generation_seconds": 1.5063000000009197,
+            "total_stage_seconds": 1.7961476999989827
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q021_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "external validation",
+              "model drift"
+            ]
+          },
+          "final_answer": "Two barriers to real-world clinical deployment of oncology AI are:  \n- Data quality deficits and interoperability failures between legacy electronic health record systems and AI modules [DOC01_P17_PAR02_CH01].  \n- Variable healthcare-system digital maturity and infrastructure diversity, particularly in developing regions like India [DOC01_P06_PAR02_CH02, DOC01_P06_PAR01_CH04].",
+          "answer_keyword_coverage": 0.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.2898432000001776,
+            "reranking_seconds": 0.6043006999971112,
+            "verification_seconds": 4.800000169780105e-06,
+            "generation_seconds": 1.3757729999997537,
+            "total_stage_seconds": 2.2699216999972123
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q021_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.3333333333333333,
+            "matched_keywords": [
+              "external validation"
+            ]
+          },
+          "final_answer": "Two barriers to real-world clinical deployment of oncology AI are:  \n- Data quality deficits and interoperability failures between legacy electronic health record architectures and AI modules (DOC01_P17_PAR02_CH01).  \n- Clinician trust and workflow compatibility (DOC01_P18_PAR01_CH01).  \n\nNote: \"Distribution shift\" and \"insufficient model interpretability\" are also mentioned, but the above are directly cited and verified.",
+          "answer_keyword_coverage": 0.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 2,
+          "verdict_counts": {
+            "PARTIAL": 2,
+            "SUPPORTED": 3
+          },
+          "timings": {
+            "retrieval_seconds": 0.2898432000001776,
+            "reranking_seconds": 0.6043006999971112,
+            "verification_seconds": 10.01731760000257,
+            "generation_seconds": 1.6575687999938964,
+            "total_stage_seconds": 12.569030299993756
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q022",
+      "question": "What was the reported commercial paper issuance value during FY 2025–26?",
+      "type": "numeric",
+      "expected_document": "Finance_data(No.8)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "commercial paper",
+          "16.9 lakh crore"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.5,
+        "matched_keywords": [
+          "16.9 lakh crore"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 0.5,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "commercial paper",
+          "16.9 lakh crore"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q022_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.5,
+            "matched_keywords": [
+              "16.9 lakh crore"
+            ]
+          },
+          "final_answer": "The reported commercial paper (CP) issuance value during FY 2025–26 was ₹16.9 lakh crore, as stated in chunk ID \"DOC03_P29_PAR01_CH01\" of Finance_data(No.8).pdf. This figure reflects an increase from ₹15.7 lakh crore in the previous year. No conflicting values are reported in the provided evidence.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.261427299999923,
+            "reranking_seconds": 1.2016208000059123,
+            "verification_seconds": 6.399997801054269e-06,
+            "generation_seconds": 1.96212270000251,
+            "total_stage_seconds": 2.223556400000234
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q022_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 0.5,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "commercial paper",
+              "16.9 lakh crore"
+            ]
+          },
+          "final_answer": "The reported commercial paper issuance value during FY 2025–26 is ₹18.2 lakh crore, as stated in \"Synthetic_Contradictory_Finance(No.9).pdf\". However, another source (\"Finance_data(No.8).pdf\") reports total CP issuances increased to ₹16.9 lakh crore during 2025–26 from the previous year. The sources disagree: DOC09_P01_PAR01_CH01 states ₹18.2 lakh crore; DOC03_P29_PAR01_CH01 states ₹16.9 lakh crore. Evidence is insufficient to resolve the contradiction due to lack of authoritative confirmation.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.261427299999923,
+            "reranking_seconds": 1.2016208000059123,
+            "verification_seconds": 5.800000508315861e-06,
+            "generation_seconds": 3.2093745000020135,
+            "total_stage_seconds": 4.672428400008357
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q022_C.json",
+          "gate_status": "CONTRADICTORY",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 0.5,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "commercial paper",
+              "16.9 lakh crore"
+            ]
+          },
+          "final_answer": "Sources disagree on the reported commercial paper issuance value during FY 2025–26. One states ₹18.2 lakh crore (Synthetic_Contradictory_Finance(No.9).pdf, chunk DOC09_P01_PAR01_CH01). The other states ₹16.9 lakh crore (Finance_data(No.8).pdf, chunk DOC03_P29_PAR01_CH01). The contradiction is explicitly noted in the verification conflict.\n\nConflict record (verifier):\nSources disagree: [DOC09_P01_PAR01_CH01] Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2. | [DOC03_P29_PAR01_CH01] Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year.",
+          "answer_keyword_coverage": 1.0,
+          "gold": {
+            "required_conflict_values": [
+              "16.9",
+              "18.2"
+            ],
+            "acceptable_verdicts": [
+              "CONTRADICTORY"
+            ],
+            "basis": "Query-level collection annotation: the inspected source passages assert incompatible CP issuance values for the same fiscal year. Actual retrieval must find both; no values are supplied to the verifier."
+          },
+          "verification_correct": true,
+          "parent_expansions": 0,
+          "verdict_counts": {
+            "CONTRADICTORY": 2,
+            "INSUFFICIENT": 3
+          },
+          "timings": {
+            "retrieval_seconds": 0.261427299999923,
+            "reranking_seconds": 1.2016208000059123,
+            "verification_seconds": 7.66220500000054,
+            "generation_seconds": 1.422090499996557,
+            "total_stage_seconds": 10.547343600002932
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q023",
+      "question": "What was the reported average daily corporate bond market turnover during FY 2025–26?",
+      "type": "numeric",
+      "expected_document": "Finance_data(No.8)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "corporate bond",
+          "7.1 thousand crore"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "corporate bond",
+          "7.1 thousand crore"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "corporate bond",
+          "7.1 thousand crore"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q023_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "corporate bond",
+              "7.1 thousand crore"
+            ]
+          },
+          "final_answer": "The reported average daily corporate bond market turnover during FY 2025–26 is ₹7.1 thousand crore, as stated in Finance_data(No.8).pdf (DOC03_P30_PAR01_CH01). A synthetic document (Synthetic_Contradictory_Finance(No.9).pdf) reports ₹7.8 thousand crore, creating a discrepancy. Sources disagree: Finance_data(No.8).pdf cites ₹7.1 thousand crore; Synthetic_Contradictory_Finance(No.9).pdf cites ₹7.8 thousand crore.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.25883189999876777,
+            "reranking_seconds": 0.9430355000004056,
+            "verification_seconds": 5.599998985417187e-06,
+            "generation_seconds": 1.819875699999102,
+            "total_stage_seconds": 2.078713199996855
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q023_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "corporate bond",
+              "7.1 thousand crore"
+            ]
+          },
+          "final_answer": "The reported average daily corporate bond market turnover during FY 2025–26 is ₹7.1 thousand crore, as stated in Finance_data(No.8).pdf (DOC03_P30_PAR01_CH01). A synthetic document (Synthetic_Contradictory_Finance(No.9).pdf) reports ₹7.8 thousand crore, but it is marked as fictional and not official. The sources disagree: Finance_data(No.8).pdf cites ₹7.1 thousand crore; Synthetic_Contradictory_Finance(No.9).pdf cites ₹7.8 thousand crore.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.25883189999876777,
+            "reranking_seconds": 0.9430355000004056,
+            "verification_seconds": 4.800000169780105e-06,
+            "generation_seconds": 1.8578415000010864,
+            "total_stage_seconds": 3.0597137000004295
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q023_C.json",
+          "gate_status": "CONTRADICTORY",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "corporate bond",
+              "7.1 thousand crore"
+            ]
+          },
+          "final_answer": "Sources disagree on the reported average daily corporate bond market turnover during FY 2025–26. Finance_data(No.8).pdf states it was ₹7.1 thousand crore (DOC03_P30_PAR01_CH01). Synthetic_Contradictory_Finance(No.9).pdf reports ₹7.8 thousand crore (DOC09_P01_PAR01_CH01). The evidence contradicts itself on this value.\n\nConflict record (verifier):\nSources disagree: [DOC03_P30_PAR01_CH01] The average daily secondary market turnover in the corporate bond market increased to ₹7.1 thousand crore during 2025-26 from ₹6.2 thousand crore during the previous year (Chart II.5.5). | [DOC09_P01_PAR01_CH01] Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2.",
+          "answer_keyword_coverage": 1.0,
+          "gold": {
+            "required_conflict_values": [
+              "7.1",
+              "7.8"
+            ],
+            "acceptable_verdicts": [
+              "CONTRADICTORY"
+            ],
+            "basis": "Query-level collection annotation: original and synthetic passages assert different corporate bond turnover values for the same fiscal year."
+          },
+          "verification_correct": true,
+          "parent_expansions": 1,
+          "verdict_counts": {
+            "CONTRADICTORY": 2,
+            "INSUFFICIENT": 3
+          },
+          "timings": {
+            "retrieval_seconds": 0.25883189999876777,
+            "reranking_seconds": 0.9430355000004056,
+            "verification_seconds": 8.137855599998147,
+            "generation_seconds": 1.488867100000789,
+            "total_stage_seconds": 10.82859009999811
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q024",
+      "question": "What was the aggregate value of Q4 OMO purchases reported in the financial document?",
+      "type": "numeric",
+      "expected_document": "Finance_data(No.8)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "OMO",
+          "4.57 lakh crore",
+          "3.5 lakh crore"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "OMO",
+          "4.57 lakh crore",
+          "3.5 lakh crore"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "OMO",
+          "4.57 lakh crore",
+          "3.5 lakh crore"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q024_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "OMO",
+              "4.57 lakh crore",
+              "3.5 lakh crore"
+            ]
+          },
+          "final_answer": "The aggregate value of Q4 OMO purchases is reported as ₹4.57 lakh crore in Finance_data(No.8).pdf (DOC03_P29_PAR01_CH03), while Synthetic_Contradictory_Finance(No.9).pdf (DOC09_P01_PAR01_CH01) states ₹4.15 lakh crore. The sources disagree. The synthetic document is marked as fictional and not to be treated as real-world data. Evidence is insufficient to confirm accuracy due to conflicting values and lack of SLM verification.",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.30239179999625776,
+            "reranking_seconds": 0.967368700003135,
+            "verification_seconds": 5.000001692678779e-06,
+            "generation_seconds": 1.9965607000049204,
+            "total_stage_seconds": 2.298957500002871
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q024_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "OMO",
+              "4.57 lakh crore",
+              "3.5 lakh crore"
+            ]
+          },
+          "final_answer": "The aggregate value of Q4 OMO purchases is ₹4.57 lakh crore, as reported in Finance_data(No.8).pdf (DOC03_P29_PAR01_CH03). A synthetic document (Synthetic_Contradictory_Finance(No.9).pdf) reports ₹4.15 lakh crore for Q4 OMO purchases, but is marked as fictional and not to be treated as real-world data. The evidence contains a contradiction between the official and synthetic sources, but the official document is primary. The synthetic source is explicitly labeled as adversarial and fictional.",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.30239179999625776,
+            "reranking_seconds": 0.967368700003135,
+            "verification_seconds": 4.900000931229442e-06,
+            "generation_seconds": 1.754299499996705,
+            "total_stage_seconds": 3.024064899997029
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q024_C.json",
+          "gate_status": "CONTRADICTORY",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "OMO",
+              "4.57 lakh crore",
+              "3.5 lakh crore"
+            ]
+          },
+          "final_answer": "Sources disagree on the aggregate value of Q4 OMO purchases. One states ₹4.57 lakh crore (Finance_data(No.8).pdf, chunk DOC03_P29_PAR01_CH03), while another reports ₹4.15 lakh crore (Synthetic_Contradictory_Finance(No.9).pdf, chunk DOC09_P01_PAR01_CH01). A third source claims ₹2.39 lakh crore (Finance_data(No.8).pdf, chunk DOC03_P29_PAR01_CH01) and another mentions ₹1.81 lakh crore (Finance_data(No.8).pdf, chunk DOC03_P29_PAR01_CH02), though the latter pertains to Q3, not Q4. The conflicting values arise due to inconsistent reporting and potential misattribution of periods.\n\nConflict record (verifier):\nSources disagree: [DOC03_P29_PAR01_CH03] OMO purchases for an aggregate amount of ₹4.57 lakh crore were conducted during the quarter, of which ₹3.5 lakh crore were through auctions. | [DOC09_P01_PAR01_CH01] Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2.\nSources disagree: [DOC03_P29_PAR01_CH03] OMO purchases for an aggregate amount of ₹4.57 lakh crore were conducted during the quarter, of which ₹3.5 lakh crore were through auctions. | [DOC03_P29_PAR01_CH01] Open market operation (OMO) purchase auctions for an aggregate amount of ₹2.39 lakh crore were conducted during the quarter.\nSources disagree: [DOC03_P29_PAR01_CH03] OMO purchases for an aggregate amount of ₹4.57 lakh crore were conducted during the quarter, of which ₹3.5 lakh crore were through auctions. | [DOC03_P29_PAR01_CH02] OMO purchases for an aggregate amount of ₹1.81 lakh crore were conducted during the quarter, of which ₹1.50 lakh crore were through auctions.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {
+            "CONTRADICTORY": 4,
+            "INSUFFICIENT": 1
+          },
+          "timings": {
+            "retrieval_seconds": 0.30239179999625776,
+            "reranking_seconds": 0.967368700003135,
+            "verification_seconds": 8.209831800006214,
+            "generation_seconds": 2.542670900002122,
+            "total_stage_seconds": 12.022263200007728
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q025",
+      "question": "What average daily money market volume is stated in the synthetic document?",
+      "type": "numeric",
+      "expected_document": "Synthetic_Contradictory_Finance(No.9)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "money market",
+          "6.9 lakh crore"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "money market",
+          "6.9 lakh crore"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "money market",
+          "6.9 lakh crore"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q025_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "money market",
+              "6.9 lakh crore"
+            ]
+          },
+          "final_answer": "The synthetic document states an average daily money market volume of ₹6.9 lakh crore for FY 2025–26 (DOC09_P01_PAR01_CH01). However, another source (DOC03_P27_PAR01_CH04) mentions an increase in money market volume to ₹6.4 lakh crore during 2025–26, though it does not specify the average daily volume. The evidence is contradictory and incomplete; the value in the synthetic document is explicitly stated, but the supporting data from the financial report is partial and lacks clarity on daily volume. Thus, the available evidence is insufficient to confirm the average daily volume.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.32312780000211205,
+            "reranking_seconds": 1.0376971000005142,
+            "verification_seconds": 7.90000194683671e-06,
+            "generation_seconds": 2.575608999999531,
+            "total_stage_seconds": 2.89874470000359
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q025_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "money market",
+              "6.9 lakh crore"
+            ]
+          },
+          "final_answer": "The synthetic document states an average daily money market volume of ₹6.9 lakh crore for FY 2025–26 (DOC09_P01_PAR01_CH01). However, another part of the same document notes a 16% increase in money market volume to ₹6.4 lakh crore in 2025–26 (DOC03_P27_PAR02_CH01), indicating a discrepancy. The evidence is partial and contradictory; no definitive average daily volume is confirmed. The value of ₹6.9 lakh crore is explicitly stated but not verified against the ₹6.4 lakh crore figure.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.32312780000211205,
+            "reranking_seconds": 1.0376971000005142,
+            "verification_seconds": 5.100002454128116e-06,
+            "generation_seconds": 1.721893399997498,
+            "total_stage_seconds": 3.0827234000025783
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q025_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "money market",
+              "6.9 lakh crore"
+            ]
+          },
+          "final_answer": "The average daily money market volume is stated as \"6.9 lakh crore\" for FY 2025–26 in the synthetic document. This value is explicitly mentioned in chunk DOC09_P01_PAR01_CH01 of the source file Synthetic_Contradictory_Finance(No.9).pdf. The evidence from DOC09_P02_PAR01_CH01 is partial and does not provide the actual value.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {
+            "SUPPORTED": 1,
+            "PARTIAL": 1,
+            "INSUFFICIENT": 3
+          },
+          "timings": {
+            "retrieval_seconds": 0.32312780000211205,
+            "reranking_seconds": 1.0376971000005142,
+            "verification_seconds": 5.116547599995101,
+            "generation_seconds": 1.2036318000027677,
+            "total_stage_seconds": 7.681004300000495
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q026",
+      "question": "What commercial paper issuance value is stated in the synthetic document?",
+      "type": "numeric",
+      "expected_document": "Synthetic_Contradictory_Finance(No.9)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "commercial paper",
+          "18.2 lakh crore"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "commercial paper",
+          "18.2 lakh crore"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "commercial paper",
+          "18.2 lakh crore"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q026_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "commercial paper",
+              "18.2 lakh crore"
+            ]
+          },
+          "final_answer": "The commercial paper issuance value stated in the synthetic document is 18.2 lakh crore FY 2025–26. This value is derived from chunk DOC09_P01_PAR01_CH01 in the file Synthetic_Contradictory_Finance(No.9).pdf. The document is marked as synthetic and adversarial, and its figures should not be treated as real-world facts.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.29217769999377197,
+            "reranking_seconds": 0.6118071000018972,
+            "verification_seconds": 4.499997885432094e-06,
+            "generation_seconds": 1.2970841999995173,
+            "total_stage_seconds": 1.5892663999911747
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q026_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "commercial paper",
+              "18.2 lakh crore"
+            ]
+          },
+          "final_answer": "The commercial paper issuance value stated in the synthetic document is 18.2 lakh crore FY 2025–26. This value is derived from chunk DOC09_P01_PAR01_CH01 in the file Synthetic_Contradictory_Finance(No.9).pdf. The document is marked as synthetic and adversarial, and its figures should not be treated as real-world facts.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.29217769999377197,
+            "reranking_seconds": 0.6118071000018972,
+            "verification_seconds": 3.7999998312443495e-06,
+            "generation_seconds": 1.2284769999969285,
+            "total_stage_seconds": 2.132465599992429
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q026_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "commercial paper",
+              "18.2 lakh crore"
+            ]
+          },
+          "final_answer": "The commercial paper issuance value stated in the synthetic document is 18.2 lakh crore FY 2025–26. This is directly mentioned in the text: \"Commercial paper issuances ■18.2 lakh crore FY 2025–26\". Source: DOC09_P01_PAR01_CH01.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 1,
+          "verdict_counts": {
+            "SUPPORTED": 1,
+            "INSUFFICIENT": 4
+          },
+          "timings": {
+            "retrieval_seconds": 0.29217769999377197,
+            "reranking_seconds": 0.6118071000018972,
+            "verification_seconds": 5.5012968000010005,
+            "generation_seconds": 1.0269293000019388,
+            "total_stage_seconds": 7.4322108999986085
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q027",
+      "question": "Does the synthetic memorandum agree with the original financial report about commercial paper issuance?",
+      "type": "contradiction",
+      "expected_document": "Synthetic_Contradictory_Finance(No.9)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "18.2",
+          "16.9",
+          "contradiction"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "matched_keywords": [
+          "18.2",
+          "contradiction"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "18.2",
+          "16.9",
+          "contradiction"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q027_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "18.2",
+              "contradiction"
+            ]
+          },
+          "final_answer": "The synthetic memorandum does not provide an original financial report for comparison. It states its figures are deliberately modified and fictional, with no assertion of agreement or disagreement with any real or original financial report. The evidence is synthetic and marked as adversarial; thus, no verifiable alignment with an original financial report can be established. Source: Synthetic_Contradictory_Finance(No.9).pdf.",
+          "answer_keyword_coverage": 0.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.45376690000557574,
+            "reranking_seconds": 1.4916171000004397,
+            "verification_seconds": 4.5000051613897085e-06,
+            "generation_seconds": 1.1959185999949113,
+            "total_stage_seconds": 1.6496900000056485
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q027_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "18.2",
+              "16.9",
+              "contradiction"
+            ]
+          },
+          "final_answer": "The synthetic memorandum states commercial paper issuances of ₹18.2 lakh crore during FY 2025–26, while the original financial report indicates issuances of ₹16.9 lakh crore. The values differ, indicating disagreement. The evidence does not confirm alignment between the two reports. Source: DOC09_P01_PAR01_CH01 (Synthetic_Contradictory_Finance(No.9).pdf), DOC03_P29_PAR01_CH01 (Finance_data(No.8).pdf).",
+          "answer_keyword_coverage": 0.6666666666666666,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.45376690000557574,
+            "reranking_seconds": 1.4916171000004397,
+            "verification_seconds": 5.100002454128116e-06,
+            "generation_seconds": 2.7464116999981343,
+            "total_stage_seconds": 4.691800800006604
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q027_C.json",
+          "gate_status": "CONTRADICTORY",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.6666666666666666,
+            "matched_keywords": [
+              "18.2",
+              "16.9"
+            ]
+          },
+          "final_answer": "The sources disagree on commercial paper issuance for FY 2025–26. The synthetic memorandum states \"18.2 lakh crore\" (DOC09_P01_PAR01_CH01). The original financial report states \"16.9 lakh crore\" (DOC03_P29_PAR01_CH01). This contradiction is explicitly noted in the verification conflict.\n\nConflict record (verifier):\nSources disagree: [DOC09_P01_PAR01_CH01] Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2. | [DOC03_P29_PAR01_CH01] Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year.",
+          "answer_keyword_coverage": 1.0,
+          "gold": {
+            "required_conflict_values": [
+              "16.9",
+              "18.2"
+            ],
+            "acceptable_verdicts": [
+              "CONTRADICTORY"
+            ],
+            "basis": "Existing question explicitly asks whether original and synthetic CP issuance assertions agree."
+          },
+          "verification_correct": true,
+          "parent_expansions": 0,
+          "verdict_counts": {
+            "INSUFFICIENT": 3,
+            "CONTRADICTORY": 2
+          },
+          "timings": {
+            "retrieval_seconds": 0.45376690000557574,
+            "reranking_seconds": 1.4916171000004397,
+            "verification_seconds": 7.663991500005068,
+            "generation_seconds": 7.463303399999859,
+            "total_stage_seconds": 17.072678900010942
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q028",
+      "question": "Is the complete Q3 average daily money market volume provided in the synthetic document?",
+      "type": "partial",
+      "expected_document": "Synthetic_Contradictory_Finance(No.9)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "Q3",
+          "missing",
+          "partial",
+          "uncertain"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "Q3",
+          "missing",
+          "partial",
+          "uncertain"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "Q3",
+          "missing",
+          "partial",
+          "uncertain"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q028_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "Q3",
+              "missing",
+              "partial",
+              "uncertain"
+            ]
+          },
+          "final_answer": "The complete Q3 average daily money market volume is not provided in the synthetic document. The document explicitly states that \"the memorandum discusses quarterly liquidity conditions but does not provide the complete Q3 average daily money market volume\" and classifies this as PARTIAL or UNCERTAIN. This assertion is from chunk ID DOC09_P01_PAR01_CH01. No conflicting values are reported in the evidence.",
+          "answer_keyword_coverage": 0.75,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.3023103000014089,
+            "reranking_seconds": 0.9770595999943907,
+            "verification_seconds": 7.90000194683671e-06,
+            "generation_seconds": 1.6603524000020116,
+            "total_stage_seconds": 1.9626706000053673
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q028_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "Q3",
+              "missing",
+              "partial",
+              "uncertain"
+            ]
+          },
+          "final_answer": "The complete Q3 average daily money market volume is not provided in the synthetic document. The document explicitly states that \"the Q3 value is missing\" and classifies this as PARTIAL/UNCERTAIN, instructing not to invent or guess values. This assertion is from Synthetic_Contradictory_Finance(No.9).pdf (chunk ID: DOC09_P01_PAR01_CH01). No conflicting value is present in the evidence.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.3023103000014089,
+            "reranking_seconds": 0.9770595999943907,
+            "verification_seconds": 4.800000169780105e-06,
+            "generation_seconds": 1.6120846000048914,
+            "total_stage_seconds": 2.891459300000861
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q028_C.json",
+          "gate_status": "PARTIAL",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 0.25,
+            "matched_keywords": [
+              "Q3"
+            ]
+          },
+          "final_answer": "The complete Q3 average daily money market volume is not provided in the synthetic document. The evidence from DOC09_P01_PAR01_CH01 explicitly states that the memorandum does not provide this information, indicating partial absence. No contradictory claims are present in the evidence. Missing values are not inferred.",
+          "answer_keyword_coverage": 0.75,
+          "gold": {
+            "acceptable_verdicts": [
+              "PARTIAL",
+              "INSUFFICIENT"
+            ],
+            "basis": "The requested Q3 quantity is explicitly missing from the synthetic source. Conservative value-availability annotation, not an answer-quality label."
+          },
+          "verification_correct": true,
+          "parent_expansions": 0,
+          "verdict_counts": {
+            "PARTIAL": 1,
+            "INSUFFICIENT": 4
+          },
+          "timings": {
+            "retrieval_seconds": 0.3023103000014089,
+            "reranking_seconds": 0.9770595999943907,
+            "verification_seconds": 5.22819729999901,
+            "generation_seconds": 0.8012132000003476,
+            "total_stage_seconds": 7.3087803999951575
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q029",
+      "question": "Which information in the synthetic document is irrelevant to financial market analysis?",
+      "type": "irrelevant",
+      "expected_document": "Synthetic_Contradictory_Finance(No.9)",
+      "candidate_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "wellness campaign",
+          "420",
+          "irrelevant"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "wellness campaign",
+          "420",
+          "irrelevant"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": true,
+        "reciprocal_source_rank": 1.0,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "wellness campaign",
+          "420",
+          "irrelevant"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q029_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "wellness campaign",
+              "420",
+              "irrelevant"
+            ]
+          },
+          "final_answer": "The information about the employee wellness campaign—including 420 participants, three workshops, two feedback sessions, and 78% attendance—is irrelevant to financial market analysis. This detail is explicitly stated in the synthetic document as unrelated to financial market analysis. Source: DOC09_P01_PAR01_CH01.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.35323699999571545,
+            "reranking_seconds": 0.522522500003106,
+            "verification_seconds": 4.2000028770416975e-06,
+            "generation_seconds": 1.033975799997279,
+            "total_stage_seconds": 1.3872169999958714
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q029_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "wellness campaign",
+              "420",
+              "irrelevant"
+            ]
+          },
+          "final_answer": "The information about the employee wellness campaign—such as 420 participants, three workshops, and a 78% attendance rate—is irrelevant to financial market analysis. This is explicitly stated in chunk IDs DOC09_P01_PAR01_CH01 and DOC09_P01_PAR01_CH02.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.35323699999571545,
+            "reranking_seconds": 0.522522500003106,
+            "verification_seconds": 4.2000028770416975e-06,
+            "generation_seconds": 1.032880100006878,
+            "total_stage_seconds": 1.9086438000085764
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q029_C.json",
+          "gate_status": "SUPPORTED",
+          "evidence_metrics": {
+            "source_hit": true,
+            "reciprocal_source_rank": 1.0,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "wellness campaign",
+              "420",
+              "irrelevant"
+            ]
+          },
+          "final_answer": "The employee wellness campaign details—such as 420 participants, three workshops, two feedback sessions, and a 78% attendance rate—are irrelevant to financial market analysis. This is explicitly stated in both chunks. Source: Synthetic_Contradictory_Finance(No.9).pdf.",
+          "answer_keyword_coverage": 1.0,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {
+            "INSUFFICIENT": 3,
+            "SUPPORTED": 2
+          },
+          "timings": {
+            "retrieval_seconds": 0.35323699999571545,
+            "reranking_seconds": 0.522522500003106,
+            "verification_seconds": 5.159111699998903,
+            "generation_seconds": 0.849000199996226,
+            "total_stage_seconds": 6.88387139999395
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    },
+    {
+      "id": "Q030",
+      "question": "Compare the original and synthetic documents for corporate bond turnover.",
+      "type": "cross_document",
+      "expected_document": "cross_document",
+      "candidate_metrics": {
+        "source_hit": null,
+        "reciprocal_source_rank": null,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "7.1",
+          "7.8",
+          "corporate bond",
+          "contradiction"
+        ]
+      },
+      "raw_top_n_metrics": {
+        "source_hit": null,
+        "reciprocal_source_rank": null,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "7.1",
+          "7.8",
+          "corporate bond",
+          "contradiction"
+        ]
+      },
+      "reranked_top_n_metrics": {
+        "source_hit": null,
+        "reciprocal_source_rank": null,
+        "keyword_coverage": 1.0,
+        "matched_keywords": [
+          "7.1",
+          "7.8",
+          "corporate bond",
+          "contradiction"
+        ]
+      },
+      "modes": {
+        "A": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q030_A.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": null,
+            "reciprocal_source_rank": null,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "7.1",
+              "7.8",
+              "corporate bond",
+              "contradiction"
+            ]
+          },
+          "final_answer": "The original document states corporate bond market secondary market turnover was ₹7.1 thousand crore in FY 2025–26, while the synthetic document reports ₹7.8 thousand crore. The evidence shows a discrepancy: original reports a higher turnover than the synthetic version. The synthetic document is marked as fictional and adversarial; thus, its figures should not be treated as real-world facts. The available evidence is insufficient to confirm or resolve the difference due to lack of independent verification.",
+          "answer_keyword_coverage": 0.75,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.4196395000035409,
+            "reranking_seconds": 1.596779700004845,
+            "verification_seconds": 8.000002708286047e-06,
+            "generation_seconds": 1.6370486999949208,
+            "total_stage_seconds": 2.05669620000117
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "B": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q030_B.json",
+          "gate_status": "UNVERIFIED_BASELINE",
+          "evidence_metrics": {
+            "source_hit": null,
+            "reciprocal_source_rank": null,
+            "keyword_coverage": 1.0,
+            "matched_keywords": [
+              "7.1",
+              "7.8",
+              "corporate bond",
+              "contradiction"
+            ]
+          },
+          "final_answer": "The original document reports an average daily secondary market turnover of ₹7.1 thousand crore in the corporate bond market during 2025–26, while the synthetic document states ₹7.8 thousand crore. The sources disagree on the turnover value. The synthetic document is explicitly labeled as fictional and not an official source. Evidence is insufficient to confirm the accuracy of either value due to the synthetic nature of one source.",
+          "answer_keyword_coverage": 0.75,
+          "gold": null,
+          "verification_correct": null,
+          "parent_expansions": 0,
+          "verdict_counts": {},
+          "timings": {
+            "retrieval_seconds": 0.4196395000035409,
+            "reranking_seconds": 1.596779700004845,
+            "verification_seconds": 4.4000043999403715e-06,
+            "generation_seconds": 1.908658700005617,
+            "total_stage_seconds": 3.9250823000184027
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        },
+        "C": {
+          "trace": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000\\Q030_C.json",
+          "gate_status": "CONTRADICTORY",
+          "evidence_metrics": {
+            "source_hit": null,
+            "reciprocal_source_rank": null,
+            "keyword_coverage": 0.75,
+            "matched_keywords": [
+              "7.1",
+              "7.8",
+              "corporate bond"
+            ]
+          },
+          "final_answer": "The sources disagree on corporate bond market turnover in FY 2025–26. Finance_data(No.8).pdf reports ₹7.1 thousand crore, while Synthetic_Contradictory_Finance(No.9).pdf reports ₹7.8 thousand crore. This contradiction is explicitly noted in both documents' verification sections. The discrepancy arises in the stated value of turnover, with no resolution provided.\n\nConflict record (verifier):\nSources disagree: [DOC03_P30_PAR01_CH01] The average daily secondary market turnover in the corporate bond market increased to ₹7.1 thousand crore during 2025-26 from ₹6.2 thousand crore during the previous year (Chart II.5.5). | [DOC09_P01_PAR01_CH01] Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2.",
+          "answer_keyword_coverage": 1.0,
+          "gold": {
+            "required_conflict_values": [
+              "7.1",
+              "7.8"
+            ],
+            "acceptable_verdicts": [
+              "CONTRADICTORY"
+            ],
+            "basis": "Existing cross-document question requests comparison of incompatible bond turnover assertions."
+          },
+          "verification_correct": true,
+          "parent_expansions": 1,
+          "verdict_counts": {
+            "CONTRADICTORY": 2,
+            "INSUFFICIENT": 3
+          },
+          "timings": {
+            "retrieval_seconds": 0.4196395000035409,
+            "reranking_seconds": 1.596779700004845,
+            "verification_seconds": 8.802621900002123,
+            "generation_seconds": 1.3338074999992386,
+            "total_stage_seconds": 12.152848600009747
+          },
+          "generation_provider": "local",
+          "verification_errors": [],
+          "generation_error": null
+        }
+      }
+    }
+  ],
+  "experiment_directory": "C:\\SLM\\_RAG\\_Project\\data\\reports\\experiments\\2026-09-21T104031483480+0000"
+}

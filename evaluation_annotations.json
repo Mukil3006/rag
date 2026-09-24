@@ -1,0 +1,26 @@
+{
+  "Q022": {
+    "required_conflict_values": ["16.9", "18.2"],
+    "acceptable_verdicts": ["CONTRADICTORY"],
+    "basis": "Query-level collection annotation: the inspected source passages assert incompatible CP issuance values for the same fiscal year. Actual retrieval must find both; no values are supplied to the verifier."
+  },
+  "Q023": {
+    "required_conflict_values": ["7.1", "7.8"],
+    "acceptable_verdicts": ["CONTRADICTORY"],
+    "basis": "Query-level collection annotation: original and synthetic passages assert different corporate bond turnover values for the same fiscal year."
+  },
+  "Q027": {
+    "required_conflict_values": ["16.9", "18.2"],
+    "acceptable_verdicts": ["CONTRADICTORY"],
+    "basis": "Existing question explicitly asks whether original and synthetic CP issuance assertions agree."
+  },
+  "Q028": {
+    "acceptable_verdicts": ["PARTIAL", "INSUFFICIENT"],
+    "basis": "The requested Q3 quantity is explicitly missing from the synthetic source. Conservative value-availability annotation, not an answer-quality label."
+  },
+  "Q030": {
+    "required_conflict_values": ["7.1", "7.8"],
+    "acceptable_verdicts": ["CONTRADICTORY"],
+    "basis": "Existing cross-document question requests comparison of incompatible bond turnover assertions."
+  }
+}

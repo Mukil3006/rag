@@ -1,0 +1,55 @@
+Loading FAISS index...
+Total vectors: 715
+Metadata records: 715
+
+Loading BGE-M3...
+BGE-M3 loaded.
+BGE-M3 / stored vector compatibility cosines: [1.0, 1.0000001192092896, 1.0000001192092896]
+
+QUERY: What are the components of a RAG system?
+DOC06_P07_PAR01_CH01 RAG_Implementation_Guide(No.4).pdf 0.6248 Building a Retrieval-Augmented Generation (RAG) solution involves various components, each
+DOC06_P03_PAR01_CH01 RAG_Implementation_Guide(No.4).pdf 0.6246 Retrieval-Augmented Generation (RAG) systems are a cutting-edge technology that enhances t
+DOC06_P03_PAR01_CH02 RAG_Implementation_Guide(No.4).pdf 0.6127 discuss how to measure the accuracy of your RAG system and how to monitor and test it over
+DOC08_P02_PAR01_CH02 RAG_Survey(No.1).pdf 0.6099 intricately collaborate to form a cohesive and effective RAG framework. • We have summariz
+DOC06_P22_PAR01_CH01 RAG_Implementation_Guide(No.4).pdf 0.6073 © Infinitive All Rights Reserved 22 Continuous Improvement & Maintenance CHAPTER 7 Regular
+DOC05_P06_PAR01_CH01 RAG_Enterprise_Basics(No.3).pdf 0.6058 Your data is the backbone The foundation of RAG architecture is a reliable database that a
+DOC08_P04_PAR01_CH01 RAG_Survey(No.1).pdf 0.6001 Fig. 3. Comparison between the three paradigms of RAG. (Left) Naive RAG mainly consists of
+DOC06_P25_PAR01_CH02 RAG_Implementation_Guide(No.4).pdf 0.596 dynamically allocate resources based on demand. 3. Microservices Architecture: Design the 
+DOC06_P26_PAR01_CH02 RAG_Implementation_Guide(No.4).pdf 0.5938 and build confidence among users. 3. Transparency: Ensure transparency in how the system w
+DOC06_P04_PAR01_CH02 RAG_Implementation_Guide(No.4).pdf 0.5908 optimizes the search query for better results, and fine-tuning of embedding models, which 
+
+QUERY: What was the commercial paper issuance value?
+DOC03_P28_PAR01_CH01 Finance_data(No.8).pdf 0.4354 the average share of triparty repo and market repo at around 67 per cent and 30 per cent, 
+DOC09_P01_PAR01_CH01 Synthetic_Contradictory_Finance(No.9).pdf 0.4318 Synthetic Financial Market Test Memorandum IMPORTANT: This is a deliberately modified fict
+DOC09_P02_PAR01_CH01 Synthetic_Contradictory_Finance(No.9).pdf 0.4198 4. Test Questions 1. What was the average daily money market volume during FY 2025–26? 2. 
+DOC03_P24_PAR01_CH03 Finance_data(No.8).pdf 0.4189 4.6 4.6 6.9 5.5 7.8 8.9 II.3.1 Infrastructure 2.8 0.3 -1.3 0.8 3.4 3.5 5.0 4.6 4.3 7.2 6.4
+DOC03_P24_PAR01_CH04 Finance_data(No.8).pdf 0.4142 10.7 12.8 12.3 11.7 13.8 14.2 17.5 16.1 14.4 16.2 III.2. Commercial Real Estate 13.7 17.3 
+DOC03_P13_PAR01_CH02 Finance_data(No.8).pdf 0.4121 1 Food and beverages 36.8 1 Food and beverages 45.9 2 Pan, tobacco and intoxicants 3.0 2 P
+DOC03_P29_PAR01_CH03 Finance_data(No.8).pdf 0.3855 auctions. II.5.12 During Q4:2025-26, yields traded with a hardening bias amidst higher-tha
+DOC03_P27_PAR01_CH04 Finance_data(No.8).pdf 0.3829 the WACR movements (Chart II.5.1a). II.5.4 For the longer tenor money market instruments, 
+DOC03_P29_PAR01_CH01 Finance_data(No.8).pdf 0.3805 26, as higher rates led to a shift towards bank borrowings. Total issuances of CPs increas
+DOC03_P24_PAR02_CH01 Finance_data(No.8).pdf 0.3782 Housing 10.7 9.8 9.0 9.6 9.6 9.7 10.1 11.0 9.9 11.1 11.1 11.0 11.5 IV.3. Credit Card Outst
+
+QUERY: Does the synthetic memorandum agree with the original financial report about commercial paper issuance?
+DOC09_P01_PAR01_CH01 Synthetic_Contradictory_Finance(No.9).pdf 0.6389 Synthetic Financial Market Test Memorandum IMPORTANT: This is a deliberately modified fict
+DOC09_P02_PAR01_CH01 Synthetic_Contradictory_Finance(No.9).pdf 0.5717 4. Test Questions 1. What was the average daily money market volume during FY 2025–26? 2. 
+DOC09_P02_PAR01_CH02 Synthetic_Contradictory_Finance(No.9).pdf 0.5285 this document marked as synthetic/adversarial in your metadata. Do not present its altered
+DOC01_P14_PAR01_CH03 Cancer_AI_ML(No.7).pdf 0.4757 modes with direct consequences for downstream clinical utility. Synthetic multi-omics and 
+DOC01_P25_PAR03_CH02 Cancer_AI_ML(No.7).pdf 0.4307 with regard to jurisdictional claims in published maps and institutional affiliations.
+DOC03_P19_PAR01_CH03 Finance_data(No.8).pdf 0.4282 bank’s balance sheet (Chart II.4.1). Risk buffers and revaluation accounts [forming the bu
+DOC03_P26_PAR01_CH01 Finance_data(No.8).pdf 0.4274 II.4.12 Against the backdrop of deposit growth lagging credit expansion, the total flow of
+DOC03_P32_PAR01_CH01 Finance_data(No.8).pdf 0.4244 announcement of India-EU trade deal, and higher GDP growth projections for 2025-26 and Q1 
+DOC01_P24_PAR04_CH01 Cancer_AI_ML(No.7).pdf 0.4234 3 3 . 70. Treppner M, Salas-Bastos A, Hess M, Lenz S, Vogel T, Binder H. Synthetic single 
+DOC03_P25_PAR01_CH01 Finance_data(No.8).pdf 0.4222 bridge the funding gap, banks took recourse to sizeable issuances of certificates of depos
+
+QUERY: What is the capital of the fictional planet Zorblax?
+DOC03_P33_PAR01_CH03 Finance_data(No.8).pdf 0.3636     ,1586' 86GROODULQGH[ %UHQWFUXGHRLOSULFH 06&,(0FXUUHQF\LQGH[ &KD
+DOC03_P28_PAR01_CH03 Finance_data(No.8).pdf 0.3383                 &DOO1RWLFH 0DUNHWUHSR 7ULSDUW\UHSR )%,/
+DOC01_P24_PAR05_CH02 Cancer_AI_ML(No.7).pdf 0.32 0 2 1 4 - 9 . 80. Tarashansky AJ, Musser JM, Khariton M, Li P , Arendt D, Quake SR, et al.
+DOC01_P20_PAR02_CH02 Cancer_AI_ML(No.7).pdf 0.3167 transition - ing toward localised, prospectively validated deployment frameworks. Niramai 
+DOC03_P09_PAR01_CH04 Finance_data(No.8).pdf 0.3098 Plant Committee, Office of Economic Adviser, GoI; HVS Anarock, and Ministry of Tourism, Go
+DOC03_P11_PAR01_CH02 Finance_data(No.8).pdf 0.3016 [RHS] UR (Urban) [RHS] 56.6 58.2 57.5 56.2 20.9 21.5 22.4 23.6 22.5 20.3 20.0 20.2 2022 20
+DOC01_P25_PAR02_CH01 Cancer_AI_ML(No.7).pdf 0.301 0 . 1 0 3 8 / s 4 1 7 4 6 - 0 2 0 - 0 0 3 2 3 - 1 . 97. Pati S, Baid U, Edwards B, Sheller
+DOC03_P31_PAR01_CH04 Finance_data(No.8).pdf 0.3003 0DOD\VLD &KLQD 8. 7KDLODQG 0H[LFR -DSDQ %UD]LO 6RXWK$IULFD
+DOC03_P41_PAR01_CH03 Finance_data(No.8).pdf 0.299 -78.3 -62.2 -87.1 -88.0 Q3 -71.5 -69.1 -78.7 -94.0 Q4 -52.6 -49.7 -58.6 -82.5 Annual -264.
+DOC06_P14_PAR01_CH02 RAG_Implementation_Guide(No.4).pdf 0.2977 text processing, sentence segmentation, and other NLP tasks essential for semantic chunkin

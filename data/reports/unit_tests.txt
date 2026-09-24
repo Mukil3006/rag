@@ -1,0 +1,36 @@
+test_baselines_skip_slm_explicitly (test_pipeline.BoundaryTests.test_baselines_skip_slm_explicitly) ... ok
+test_c_verifies_before_generation_and_passes_only_excerpt (test_pipeline.BoundaryTests.test_c_verifies_before_generation_and_passes_only_excerpt) ... ok
+test_comparison_focus_is_domain_independent (test_pipeline.BoundaryTests.test_comparison_focus_is_domain_independent) ... ok
+test_comparison_inspects_subject_at_both_stages (test_pipeline.BoundaryTests.test_comparison_inspects_subject_at_both_stages) ... ok
+test_conflict_never_releases_only_one_failed_counterpart (test_pipeline.BoundaryTests.test_conflict_never_releases_only_one_failed_counterpart) ... ok
+test_cross_failure_fails_closed (test_pipeline.BoundaryTests.test_cross_failure_fails_closed) ... ok
+test_equivalent_numeric_formats_are_not_hallucinations (test_pipeline.BoundaryTests.test_equivalent_numeric_formats_are_not_hallucinations) ... ok
+test_evaluation_rubric_does_not_reach_verifier (test_pipeline.BoundaryTests.test_evaluation_rubric_does_not_reach_verifier) ... ok
+test_fabricated_conflict_quote_is_blocked (test_pipeline.BoundaryTests.test_fabricated_conflict_quote_is_blocked) ... ok
+test_filename_numbers_allowed_but_new_quantities_rejected (test_pipeline.BoundaryTests.test_filename_numbers_allowed_but_new_quantities_rejected) ... ok
+test_instruction_filter_is_content_based (test_pipeline.BoundaryTests.test_instruction_filter_is_content_based) ... ok
+test_invalid_schema_and_confidence_fail (test_pipeline.BoundaryTests.test_invalid_schema_and_confidence_fail) ... ok
+test_invalid_selection_retries_once_and_preserves_failure_trace (test_pipeline.BoundaryTests.test_invalid_selection_retries_once_and_preserves_failure_trace) ... ok
+test_parent_only_after_slm_requests_it (test_pipeline.BoundaryTests.test_parent_only_after_slm_requests_it) ... ok
+test_partial_is_allowed_with_warning (test_pipeline.BoundaryTests.test_partial_is_allowed_with_warning) ... ok
+test_question_cannot_be_approved_as_factual_assertion (test_pipeline.BoundaryTests.test_question_cannot_be_approved_as_factual_assertion) ... ok
+test_questions_are_not_selectable_support (test_pipeline.BoundaryTests.test_questions_are_not_selectable_support) ... ok
+test_real_conflict_quotes_both_pass_gate (test_pipeline.BoundaryTests.test_real_conflict_quotes_both_pass_gate) ... ok
+test_sentence_selection_resolves_verbatim_text (test_pipeline.BoundaryTests.test_sentence_selection_resolves_verbatim_text) ... ok
+test_supported_child_does_not_expand_even_if_bad_flag (test_pipeline.BoundaryTests.test_supported_child_does_not_expand_even_if_bad_flag) ... ok
+test_unsupported_quotes_are_rejected (test_pipeline.BoundaryTests.test_unsupported_quotes_are_rejected) ... ok
+test_verifier_error_blocks_generation (test_pipeline.BoundaryTests.test_verifier_error_blocks_generation) ... ok
+test_arbitrary_project_files_are_not_served (test_web_app.WebTests.test_arbitrary_project_files_are_not_served) ... 127.0.0.1 - - [21/Sep/2026 16:08:55] "GET /src/config.py HTTP/1.1" 404 -
+127.0.0.1 - - [21/Sep/2026 16:08:55] "GET /api/saved/../../src/config.py HTTP/1.1" 404 -
+ok
+test_cross_origin_run_is_blocked (test_web_app.WebTests.test_cross_origin_run_is_blocked) ... 127.0.0.1 - - [21/Sep/2026 16:08:55] "POST /api/runs HTTP/1.1" 403 -
+ok
+test_invalid_question_never_starts_inference (test_web_app.WebTests.test_invalid_question_never_starts_inference) ... 127.0.0.1 - - [21/Sep/2026 16:08:55] "POST /api/runs HTTP/1.1" 400 -
+ok
+test_static_ui_is_served_with_no_external_scripts (test_web_app.WebTests.test_static_ui_is_served_with_no_external_scripts) ... 127.0.0.1 - - [21/Sep/2026 16:08:55] "GET / HTTP/1.1" 200 -
+ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.583s
+
+OK

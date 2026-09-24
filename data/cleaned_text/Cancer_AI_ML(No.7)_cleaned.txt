@@ -1,0 +1,2538 @@
+
+
+======================================================================
+PAGE 1
+======================================================================
+
+REVIEW Open Access
+Journal of Translational
+Medicine
+https://doi.org/10.1186/s12967-026-08503-5
+Navigating AI and machine learning in cancer
+research: an end-to-end translational
+framework
+Shalini Saha1†, Md Saif Ali2†, Anand Kumar Tengli3, Sankeerthana Renuka Prasad4, Pramod Mallikarjunaswamy5,
+Ramkumar Pillappan6 and Komal Kumar Javarappa4*
+† S h a l i n i Saha and Md Saif Ali share equal contribution.
+*Correspondence:
+Komal Kumar Javarappa
+komalkumar@jssuni.edu.in
+1Pharmaceutical Analysis, JSS College of Pharmacy, Mysore, Karnataka,
+India
+2Centre for Systems and Control, Indian Institute of Technology Bombay,
+Mumbai, India
+3Department of Pharmaceutical Chemistry, JSS College of Pharmacy and
+JSS Academy of Higher Education and Research, Mysuru, India
+4University Sophisticated Instrumentation Center (USIC), JSS Academy of
+Higher Education and Research (JSS AHER), Mysuru, Karnataka, India
+5Division of Biochemistry, School of Life Sciences, JSS Academy of Higher
+Education and Research (JSS AHER), Mysuru, Karnataka, India
+6NGSM Institute of Pharmaceutical Sciences (NGSMIPS), NITTE (Deemed
+to be University), Mangalore, Karnataka, India
+© The Author(s) 2026, modified publication 2026. Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-
+NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format,
+as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you
+modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The
+images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line
+to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation
+or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit h t t p : / / c r e
+a t i v e c o m m o n s . o r g / l i c e n s e s / b y - n c - n d / 4 . 0 / .
+Abstract
+Cancer is a complex and heterogeneous disease that is characterized by multi-level biological variability. Advances
+in high-throughput technologies have led to large-scale, high-dimensional data sets in cancer research, creating
+a pressing need for powerful computational techniques for successful data analysis. Current techniques may be
+inadequate for this purpose, thus underscoring the potential of artificial intelligence (AI) and machine learning
+(ML) for successful data analysis. This review provides a comprehensive pipeline for artificial intelligence/machine
+learning in cancer research, including preclinical research, clinical decision support, and real-world implementation.
+It emphasizes several important technologies, data integration, and implementation challenges. The review critically
+examines multi-omics fusion architectures, regularization-based machine learning, batch-effect harmonization,
+explainable AI, and federated learning, while addressing translational barriers including algorithmic bias, covariate
+drift, and regulatory asynchrony across Indian, US, and EU frameworks. Anchored by Decision Curve Analysis as a
+clinical utility benchmark, this narrative framework establishes that meaningful progress in precision oncology, early
+detection, and patient outcomes demands not only predictive accuracy but also externally validated, populationrepresentative, and governance-compliant AI systems capable of sustained real-world oncology impact.
+Keywords Artificial intelligence, Machine learning, Precision oncology, Cancer research, Clinical decision support,
+Multi-omics integration, Big data
+Global cancer burden and data
+Current global estimates suggest that cancer is among
+the most prominent contributors to morbidity and mor -
+tality, with great variability in incidence and mortality
+rates across various countries, age, and sex. The synthe -
+sis of data from various cancer sites and sources reveals
+that cancer is not one disease but rather many, with great
+biological variability driven by studies of demographic,
+environment, and healthcare factors. The simultaneous
+inclusion of various cancer types, broad age stratification,
+and regional variability leads to complex data sets that
+cannot be analyzed using traditional tools of statistical
+analysis [ 1]. Therefore, it is essential to use data-driven
+
+
+======================================================================
+PAGE 2
+======================================================================
+
+Page 2 of 25
+methods of synthesizing trends in cancer incidence and
+biological data in an attempt to optimize risk assessment
+and accelerate transition research towards optimizing
+cancer control [2].
+Global burden of cancer: trends, disparities, and future
+projections
+Global cancer epidemiology over the past three decades
+reveals a divergence between rising case counts and fall -
+ing age-standardized mortality. In 2021, the number of
+new cancer incidence and deaths is estimated to be 23.6
+million and 9.8 million, respectively. An enormous con -
+tribution to the increased number is obtained because
+of the aging and growing population. Though there is a
+slight increase in the incidence rate, a very large decline
+in the age-standardized mortality rate is observed [ 3].
+Future estimates indicate that the incidence and preva -
+lence of cancer will continue to increase worldwide by
+2050, particularly among older generations, whereas
+mortality rates and DALYs will steadily decline [ 3].
+Recent estimates from the World Health Organization
+and the International Agency for Research on Cancer
+indicate cancer to be a leading cause of morbidity and
+mortality. In 2022, it was postulated that 20 million cases
+of cancer occurred worldwide, with 9.7 million deaths;
+more than 53 million lives were at risk due to a cancer
+diagnosis within five years. Despite the progress made in
+the sphere of cancer control, access to basic services is
+uneven. Projections based on this level of progress sug -
+gests that by 2050, the worldwide cancer incidence will
+be more than 35 million new cases annually, an increase
+from current levels that is far greater than observed in the
+past. The absolute increase will be largest in high-income
+countries, while the fastest proportional increases will be
+among the low and middle HDI countries. These trends
+highlight the urgent need for equitable investment in
+cancer prevention, early detection, treatment, and pal -
+liative care worldwide. The challenges and lessons associated with the cancer big data pipeline are summarized in
+Table 1.
+Statistical limitations of conventional methods in highdimensional oncology data
+Classical oncology statistics Cox proportional-hazards
+regression, ordinary least squares, and standard logis -
+tic regression are architecturally constrained by the
+requirement that the number of observations n sub -
+stantially exceeds the number of predictors p. Modern
+high-throughput genomic, transcriptomic, and radiomic
+platforms systematically violate this assumption, gen -
+erating 10 4 to 10 6 molecular features per patient from
+cohorts of only 102 to 103 individuals. This inversion rep -
+resents a structural incompatibility, not merely a practical
+inconvenience. For a cohort with D uncensored events at
+ordered event times t< ··· <t D and risk set R (ti) at
+each event time, the Cox partial likelihood is:
+ˆβEN = arg min β
+−ℓ(β)+λ
+,α ∈ [0, 1] (1)
+• L(β) is the partial likelihood as a function of the
+parameter vector β;
+• β is the p-dimensional vector of regression
+coefficients;
+• xi is the p-dimensional covariate vector of the i-th
+patient at risk; the superscript ⊤ denotes vector
+transpose;
+• ti is the time of the i-th uncensored event;
+• D is the total number of uncensored events in the
+cohort;
+• R(ti) is the risk set, that is, the set of patients still
+under observation just prior to event time ti.
+Taking logarithms yields the log partial likelihood,
+ℓ (β)=
+D∑
+
+xT
+j β − log
+∑
+j∈R(ti )
+exp
+xT
+j β
+
+ (2)
+Table 1 Major challenges and strategic solutions for cancer big
+data integration, analytics, and clinical translation
+Challenge Area Insights References
+Data quality and
+interoperability
+Standardized formats, common data
+models, and consistent collection are
+essential for reliable and comparable
+analysis.
+[1, 2,
+4]
+Scalability & Data
+Aggregation
+Cloud-based and federated architectures enable efficient handling of large,
+continuously updating datasets.
+[5–7]
+Workflow
+Integration
+Embedding data capture into routine
+clinical workflows improves adoption
+and minimizes clinician burden.
+[4,
+7–9]
+Data Completeness Integrating multi-modal data (clinical,
+molecular, imaging, outcomes) enhances
+predictive and translational value.
+[4, 6,
+7, 10]
+Quality Assurance
+(Qa/Qc)
+Continuous and early-stage validation
+ensures data reliability and reduces
+downstream analytical errors.
+[3, 4,
+7, 11]
+Data Governance &
+Sharing
+Clear policies on privacy, consent, and
+access are critical for secure and effective
+data sharing.
+[7, 10,
+12,
+13]
+Analytical Validity Robust statistical methods and transparent modelling are necessary to avoid
+bias and false associations.
+[3, 4,
+11,
+12]
+Infrastructure &
+Standards
+Interoperable systems, APIs, and modern
+data standards improve reproducibility
+and long-term sustainability.
+[4, 5,
+7, 11,
+14]
+
+
+======================================================================
+PAGE 3
+======================================================================
+
+Page 3 of 25
+where ℓ(β) is the log partial likelihood. All other symbols
+are as defined for Eq. 1.
+Maximum partial-likelihood estimation requires inverting the observed information matrix I (β)= −∇2ℓ (β), a
+p × pmatrix. Because each uncensored event contributes
+at most rank-1 information through its covariate vector
+xi, the rank of I (β)is bounded by D ≤ n. Under genomic
+p > n conditions:
+rank (I (β)) ⩽ D ⩽ n<p ⇒
+I (β) is singular and not invertible (3)
+where I(β) is the observed Fisher information matrix
+equal to the negative Hessian of ℓ(β); rank(·) denotes
+matrix rank; n is the patient count; and p is the predictor
+count. I(β) is therefore singular and non-invertible: the
+maximum partial-likelihood estimator either fails to exist
+(complete separation) or exhibits infinite variance, yield -
+ing hazard-ratio estimates with no external validity. Ordinary least squares suffer an analogous rank degeneracy.
+The clinical consequence is not statistical inefficiency but
+analytical breakdown genome-scale Cox regression with -
+out regularization is mathematically ill-posed.
+Regularization restores identifiability by appending a
+convex penalty to the negative log partial likelihood. The
+LASSO-Cox, ridge-Cox, and elastic-net Cox estimators
+are:
+ˆβLASSO = arg minβ {−ℓ(β)+λ∥β ∥1}, ∥β∥1 =
+p∑
+j=1
+|βj | (4)
+ˆβridge = arg minβ {−ℓ(β)+λ∥β ∥2
+2}, ∥β∥2
+2 =
+p∑
+j=1
+β2
+j (5)
+ˆβEN = arg minβ
+ℓ(β)+λ
+,α ∈ [0, 1] (6)
+• ˆβLASSO , ˆβridge and ˆβEN are the LASSO-Cox, ridge-
+Cox and elastic-net Cox coefficient estimates;
+• ℓ(β) is the log partial likelihood from Eq. 2;
+• λ >0 is the regularization strength, selected by k-fold
+cross-validation;
+• ‖β‖1 is the ℓ1 norm of β, defined as the sum ∑j = 1
+p
+|βj|;
+• ‖β‖2
+2 is the squared ℓ2 norm of β, defined as the sum
+∑j = 1
+p βj
+2;
+• α ∈ [0,1] is the mixing parameter that balances ℓ1
+sparsity against ℓ2 stability;
+• j indexes the p individual coefficients of β.
+LASSO-Cox achieves simultaneous estimation and vari -
+able selection by shrinking irrelevant coefficients to
+exactly zero biologically equivalent to automatic pathway
+filtering. Ridge-Cox stabilizes estimation in highly corre -
+lated predictor blocks characteristic of co-expressed gene
+modules. Elastic-net Cox combines both mechanisms
+and remains the methodological default for correlated
+multi-omics feature matrices [15, 16].
+Beyond linear regularization, non-linear dimension -
+ality reduction and ensemble survival learners’ random
+survival forests, gradient-boosted survival trees, and deep
+survival networks additionally accommodate non-addi -
+tive feature interactions, time-varying covariate effects,
+and proportional-hazards violations endemic to hetero -
+geneous cancer transcriptomes [ 17]. These mathemati -
+cal properties, rather than data volume alone, establish
+advanced computational methods as an analytical neces -
+sity in modern translational oncology, where genomic p
+≫ n is the rule rather than the exception.
+AI-driven multi-omics approaches in cancer
+Modern oncology has increasingly shifted toward inte -
+grative, omics-driven research to better capture the bio -
+logical complexity of cancer. By combining genomic,
+transcriptomic, proteomic, metabolomic, and epig -
+enomic information, researchers can examine tumors
+across multiple regulatory layers, allowing for more
+nuanced insights into tumor initiation, progression, and
+heterogeneity. This systems-level perspective has become
+essential for biomarker discovery and for refining patient
+stratification strategies. The rapid expansion of highdimensional omics datasets has driven the adoption of
+artificial intelligence and machine learning approaches
+capable of extracting clinically meaningful patterns from
+complex data. These computational methods have dem -
+onstrated value in improving diagnostic accuracy, mod -
+elling disease trajectories, and supporting individualized
+therapeutic decision-making by integrating molecular
+profiles with clinical and demographic information. In
+particular, predictive models derived from multi-omics
+data provide a more detailed assessment of patientspecific risk and treatment response than single-layer
+analyses. Despite substantial progress, the translation
+of AI-enabled multi-omics research into routine clini -
+cal practice remains constrained by data heterogeneity,
+limited availability of well-annotated datasets, interpret -
+ability of computational models, and regulatory consid -
+erations [12].
+Multi-omics integration follows three distinct archi -
+tectures: early fusion concatenates raw features before
+model training; intermediate fusion projects modal -
+ity-specific representations into a shared latent space
+via autoencoders, attention mechanisms, or contras -
+tive learning objectives, currently dominating sur -
+vival-prediction benchmarks; and late fusion combines
+
+
+======================================================================
+PAGE 4
+======================================================================
+
+Page 4 of 25
+designing individualized clinical trials. Emerging models
+such as precision medicine tumor boards and patientcentered care frameworks highlight the importance
+of multidisciplinary collaboration and active patient
+involvement. Overcoming organizational, technical, and
+ethical barriers will be critical to fully realize the clinical
+potential of AI-driven personalized cancer medicine [10].
+An integrated artificial intelligence and machine learning
+(AI/ML) framework for cancer big data analysis is illus -
+trated in Fig. 1.
+Data integration architecture: early, intermediate, and late
+fusion
+Multi-omics integration architectures fall into three
+categories, each with fundamentally distinct computa -
+tional trade-offs that become most consequential when
+combining highly sparse molecular data such as binary
+somatic mutation matrices with high-density spatial data,
+such as whole-slide histopathology images or volumetric
+radiological tensors.
+Early (data-level) fusion concatenates raw or minimally
+transformed features from all modalities into a single
+input vector before model training. While this maximizes
+theoretical cross-modal interaction modelling, dense
+radiomic or pathomic tensors inherently overwhelm
+sparse genomic mutation matrices unless rigorous permodality variance stabilization and aggressive dimen -
+sionality reduction are applied. In practice, naïve early
+fusion propagates the noise and dimensionality of the
+largest modality into the unified feature space, systemati -
+cally suppressing biologically meaningful low-frequency
+mutational signals [20].
+Intermediate (joint-representation) fusion learns
+modality-specific encoders through autoencoders, multiomics factor analysis (MOFA, MOFA+), attention-based
+transformers, or cross-modal contrastive objectives that
+project each data type into a shared latent space before
+downstream prediction. This paradigm best preserves
+the statistical structure of sparse mutation data alongside
+dense imaging representations, and currently dominates
+survival- and treatment-response prediction benchmarks
+[20–22]. Its primary vulnerability lies in encoder sen -
+sitivity to batch effects; without explicit harmonization,
+learned representations risk encoding site-specific tech -
+nical variation rather than genuine tumour biology.
+Late (decision-level) fusion trains independent uni -
+modal models and combines outputs via stacking,
+weighted averaging, or meta-learners. It is inherently
+robust to missing modalities a clinically critical prop -
+erty when complete multi-omics profiles are unavail -
+able at the point of care but cannot capture fine-grained
+cross-modal dependencies that drive tumour heteroge -
+neity. Hybrid and gated-fusion architectures that adap -
+tively reweight modalities at inference are increasingly
+independent unimodal predictions at the decision level,
+preserving modality-missing robustness at the cost of
+cross-modal interaction depth. Explainable AI and digital
+twin models further strengthen interpretability and sup -
+port personalized precision oncology [18, 19].
+Despite these advances, clinical translation remains
+constrained by batch effects, missing data, high dimen -
+sionality, and cross-institutional platform variability.
+Uncorrected site-specific confounders cause models to
+learn technical artifacts rather than biologically mean -
+ingful oncogenic signatures the primary driver of exter -
+nal-validation collapse. Algorithmic harmonization is
+therefore mandatory: ComBat applies empirical-Bayes
+shrinkage to correct additive and multiplicative batch
+effects, while domain-adversarial neural networks learn
+site-invariant representations through adversarial mini -
+max optimization. Furthermore, standard AUC-based
+validation is analytically insufficient for class-imbalanced
+oncology datasets; precision-recall analysis, F1-scoring,
+and cost-sensitive learning that explicitly penalizes false
+negatives are essential for rare mutational subtypes and
+skewed survival distributions [18, 19].
+Modelling approaches in oncology
+Modelling approaches in oncology are commonly clas -
+sified into bottom-up and top-down methods. Although
+bottom-up approach provides valuable mechanistic
+insight, their complexity and computational demands
+limit their direct applicability in routine clinical outcome
+prediction.
+Top-down models typically employ supervised learn -
+ing when clinical outcomes are known and unsuper -
+vised learning to explore data structure, identify patient
+subgroups, and reduce dimensionality. Logistic regres -
+sion is frequently applied for binary outcomes due to its
+simplicity and interpretability, while machine learning
+methods are used to capture more complex relationships.
+However, concerns regarding model interpretability have
+limited clinical adoption, leading to increased interest
+in probabilistic graphical models such as Bayesian net -
+works, which provide more transparent representation of
+variable relationships and uncertainty [4].
+AI-driven approaches in personalized cancer medicine
+Artificial intelligence is increasingly shaping personal -
+ized cancer medicine by enabling efficient analysis of
+large and heterogeneous datasets, including genomic,
+imaging, and clinical data. AI-based approaches support
+the identification of therapeutic targets and prediction
+of treatment response, contributing to more individual -
+ized cancer care. Despite growing clinical interest, the
+implementation of personalized cancer medicine remains
+challenging due to limited access to targeted therapies,
+regulatory and financial constraints, and difficulties in
+
+
+======================================================================
+PAGE 5
+======================================================================
+
+Page 5 of 25
+preferred when modality quality varies systematically
+across patients or institutions [23].
+Necessity of integration of AI/ML
+Global and Indian cancer prevalence
+Beyond aggregate incidence, the clinical and economic
+weight of cancer falls unevenly across health systems
+and populations. The combined effect of demographi -
+cally altering factors like transition, aging population,
+urbanization, and risk factors has contributed largely
+to the constantly increasing global prevalence of cancer
+[5]. This burden continues its upward trajectory, pro -
+pelled by an ageing global population, rapid urbanisation,
+shifting environmental exposures, tobacco consump -
+tion, unhealthy dietary patterns, and escalating rates of
+obesity-related malignancies. Breast, lung, colorectal,
+prostate, and gastric cancers dominate incidence sta -
+tistics worldwide, with lung cancer retaining primacy
+as the leading cause of oncology-related mortality [ 14].
+Despite transformative advances in precision therapeu -
+tics and targeted agents, a pronounced divide persists
+between high-income countries and low- and middleincome countries (LMICs) in early-stage screening cov -
+erage, treatment accessibility, long-term survival, and
+core oncology infrastructure a structural disparity that
+any data-driven intervention must explicitly account for
+rather than obscure.
+This epidemiological asymmetry disproportionately
+burdens resource-constrained health systems, where
+diagnostic backlogs, an overstretched oncology work -
+force, and restricted access to advanced therapeutic
+options compound delays across the care continuum
+[7]. Within India, this challenge is especially acute: diag -
+nostic incidence is projected to escalate sharply over the
+coming decades, while outcomes remain constrained by
+late-stage presentations, fragmented referral pathways
+to tertiary centres, and persistent infrastructural deficits
+[6, 13]. These structural pressures have driven invest -
+ment in AI/ML-based triage algorithms, diagnostic
+decision-support systems, and treatment-stratification
+pipelines though deployment within heterogeneous,
+digitally uneven health ecosystems simultaneously intro -
+duces documented risks of algorithmic bias, data frag -
+mentation, and unvalidated external generalisability that
+demand proactive mitigation [13].
+Limitations of conventional oncology workflows
+The traditional oncology care process is primarily lin -
+ear, manual, and fragmented in terms of preclinical
+research, clinical trials, and practice. The data created
+at various ends of this spectrum, starting from labora -
+tory experiments, animal models, imaging, genomics,
+and Electronic Health Records, are often fragmented,
+heterogeneous, and not used to their fullest potential [ 8].
+Fig. 1 Integrated AI/ML framework for precision oncology. Multi-model datasets obtained from medical imaging, genomics and multi-omics, digital
+pathology, and machine learning platforms are integrated through a centralized analytical layer for data harmonization and knowledge discovery. The
+framework enables biomarker identification, patient stratification, therapeutic response prediction, and clinical decision support, ultimately advancing
+personalized cancer management and precision oncology outcomes. Generated using https://www.canva.com/graphs/
+
+
+======================================================================
+PAGE 6
+======================================================================
+
+Page 6 of 25
+Additionally, traditional analytical techniques are heavily
+reliant on human interpretation and hypothesis-driven
+analysis, which have difficulties in handling the grow -
+ing complexity of cancer datasets [ 24]. The high drop -
+out rates of drugs in clinical pipelines, the length of the
+clinical trials process, and the lack of personalization of
+therapies are indicative of systemic inefficiencies in the
+traditional pipelines [ 25]. The above points to the ineffi -
+cacy of traditional pipelines in addressing the challenges
+of cancer heterogeneity and the potential of integrative
+computational models [26].
+The role of AI/ML in precision and translational oncology
+Artificial intelligence and machine learning have funda -
+mentally transformed precision and translational oncol -
+ogy by enabling large-scale integration of heterogeneous
+clinical, molecular, radiological, and pathological data -
+sets that conventional analytical frameworks cannot
+practically accommodate [ 27]. Advanced computational
+architectures including deep neural networks, graphbased learning systems, and sequence-aware transformer
+models identify complex nonlinear associations and
+latent biological patterns undetectable through stan -
+dard statistical approaches, supporting patient stratifi -
+cation, biomarker discovery, outcome prediction, and
+treatment-response forecasting [ 9, 28]. In translational
+research, AI/ML accelerates target identification, in
+silico toxicity screening, and preclinical-to-clinical align -
+ment, substantially reducing the attrition that has historically characterised drug development pipelines [ 29, 30].
+However, many high-performing retrospective models
+demonstrate markedly reduced generalisability during
+prospective clinical implementation, attributable to hid -
+den confounding variables, demographic imbalance, and
+dataset shift reinforcing that predictive accuracy alone
+cannot substitute for rigorous, population-representative
+external validation [29, 30].
+Expanding big data landscape in cancer informatics
+Beyond conventional multi-omics integration, emerg -
+ing big data sources such as polygenic risk score (PRS)
+models, liquid biopsy datasets, and multimodal clinical
+records are expanding the scope of AI-driven oncology
+research. PRS approaches utilize large-scale genomic
+variant data to estimate an individual’s inherited suscep -
+tibility to cancer, enabling population-level risk stratification and preventive strategies. In parallel, AI analysis of
+liquid biopsy data, including circulating tumor DNA and
+protein biomarkers, offers a minimally invasive method
+for early detection and continuous disease monitoring.
+Recent advances in multimodal learning further enable
+integration of heterogeneous data types such as radio -
+logical images and unstructured clinical text, improv -
+ing the depth and reliability of predictive modelling.
+Additionally, large population-scale screening programs
+are generating real-world datasets that enhance model
+robustness and support translation of big data analyt -
+ics into practical cancer care settings, particularly in
+resource-constrained healthcare systems [31].
+Heterogeneous ecosystems and socio-infrastructural
+variations
+The principal barrier to clinical AI adoption in develop -
+ing healthcare landscapes such as India is not a deficit in
+algorithmic sophistication, but systematic heterogeneity
+across regional infrastructure and digital health matu -
+rity. A model demonstrating strong internal validity on
+standardised, digitally integrated tertiary-centre data
+exhibits marked performance degradation when exposed
+to non-standardised registries, inconsistent imaging for -
+mats, variable staining protocols, and fragmented health
+records characteristic of rural and semi-urban facili -
+ties [ 32]. These disparities generate covariate shifts that
+trained models cannot absorb without explicit domain
+adaptation, federated learning, or transfer-learning strat -
+egies computational safeguards that must be architec -
+turally embedded from the outset rather than applied as
+post-deployment corrections [32].
+Motivation: overcoming research-implementation gaps
+Despite substantial research progress, a persistent and
+well-documented gap separates algorithm development
+from clinical deployment in oncology AI. Models dem -
+onstrating strong retrospective performance consistently
+underperform during prospective implementation a pat -
+tern attributable to overfitting on curated single-institu -
+tion datasets, unrecognised confounding variables, and
+distribution shift between training and deployment pop -
+ulations [33, 34]. The failure of IBM Watson for Oncol -
+ogy to achieve consistent treatment concordance across
+diverse health systems exemplifies how algorithms opti -
+mised on academically controlled corpora collapse when
+confronted with real-world clinical heterogeneity [ 33].
+Absence of external validation, insufficient model inter -
+pretability, and clinician acceptance barriers represent
+the primary mechanistic causes of this translational fail -
+ure [34]. Within India, these challenges are compounded
+by infrastructure diversity, inconsistent data quality, and
+variable digital maturity across facilities [ 35]. Bridging
+this divide requires a coordinated pipeline encompass -
+ing prospective validation, independent algorithmic
+auditing, post-deployment drift monitoring, and robust
+governance frameworks embedding AI as continuously
+maintained clinical infrastructure rather than isolated
+point-of-need solutions [36, 37].
+
+
+======================================================================
+PAGE 7
+======================================================================
+
+Page 7 of 25
+Research gap and scope of the present review
+Artificial intelligence and machine learning have achieved
+rapid penetration across cancer research domains including medical imaging, biomarker discovery, genomics,
+radiomics, and multimodal data analysis. Existing nar -
+rative reviews have documented the application of con -
+volutional neural networks, transformers, graph neural
+networks, and generative models for cancer diagnosis
+and prognosis. However, the predominant focus of these
+reviews remains on individual technical applications or
+algorithm benchmarking, with limited systematic exami -
+nation of how these technologies can be integrated across
+the complete translational oncology continuum from
+preclinical investigation through regulatory approval and
+post-deployment monitoring in operationally realistic
+clinical environments [38, 39]. Furthermore, comparative
+regulatory analysis spanning the Indian CDSCO frame -
+work, the FDA Software as a Medical Device guideline,
+and the EU AI Act remains largely absent from existing
+literature, leaving implementation-oriented practitioners
+without actionable cross-jurisdictional guidance.
+This narrative review addresses these gaps by pro -
+viding a structured end-to-end AI/ML framework for
+translational oncology that deliberately integrates tech -
+nical, clinical, regulatory, and implementation perspec -
+tives within a single coherent workflow. Distinct from
+prior algorithmic surveys, its unique contribution lies
+in explicitly connecting multimodal data harmonisa -
+tion, model interpretability, clinical utility assessment,
+and adaptive governance with particular emphasis on
+implementation challenges and opportunities within the
+Indian healthcare landscape into a practically deployable
+translational architecture [39].
+End-to-end AI/ML solution pipeline for cancer
+Data foundation layer
+Receipt of data
+Data acquisition is the starting point of the workflow,
+and it refers to the organized and systematic retrieval of
+disparate data with respect to cancer biology studies conducted in the preclinical and clinical setting [36] and represented by a variety of data types including multi-omics
+platforms (genomic, transcriptomic, proteomic data) and
+digital images of radiology and digital pathology, clini -
+cal trial data, electronic records, and population-level
+registers [ 8]. Large-scale efforts like TCGA, ICGC, and
+Genome India, and the National Cancer Grid, among
+others, have leveraged data and allowed the creation of
+cohorts amenable to analysis by artificial intelligence
+including machine learning algorithms and analytics
+techniques based on machine learning and deep learn -
+ing approaches, machine vision [ 25, 35]. A schematic
+representation of the end-to-end artificial intelligence
+and machine learning (AI/ML) pipeline, illustrating key
+stages from data acquisition to real-world deployment, is
+depicted in Fig. 2.
+Data ingestion, governance, and storage
+After acquisition, the data has to be ingested and gov -
+erned securely for integrity, traceability, and regula -
+tion compliance [ 37]. Data governance frameworks are
+based on FAIR principles and rely on standardized clini -
+cal and image data schema for future interoperation [ 6].
+Storage systems with scalable infrastructures, including
+cloud computing or high-performance computing envi -
+ronments, are needed for dealing with petabyte-sized
+genomics and image databases [29].
+Data preparation layer
+Data preprocessing and harmonization
+Real-world oncology datasets are very often noisy, incomplete, and dataset- and institution-specific. Normaliza -
+tion, removal of personally identifiable information, and
+artifact correction are part of preprocessing pipelines in
+both single and multimodal datasets [ 36]. Normalization,
+adjustment for differences in imaging equipment, align -
+ment, variant detection, and removal of batch effects are
+carried out in imaging and genomics datasets respec -
+tively and are standard procedures in these domains [24].
+Multi-centric oncology datasets are routinely con -
+founded by site-, scanner-, platform-, and protocol-spe -
+cific variation collectively termed batch effects or domain
+shift that can systematically overwhelm the underlying
+biological signal of interest. Left uncorrected, these tech -
+nical confounders cause predictive models to encode
+institutional signatures rather than tumour biology, rep -
+resenting the primary documented cause of externalvalidation collapse in oncology AI. Three algorithmically
+distinct families address this challenge. First, empirical-
+Bayes methods such as ComBat model the observed
+value Yij,g for feature g in sample j of batch i as
+Yij,g = αg + Xβg + γi,g + δi,g · εij,g (7)
+• Yij,g is the measured value of feature g in sample j of
+batch i;
+• αg is the overall mean of feature g across all samples;
+• X is the design matrix encoding the biological
+covariates that must be preserved;
+• βgis the effect vector associated with X for feature g;
+• γi,g and δi,gare the additive and multiplicative
+batch effects for feature g in batch i, estimated by
+empirical-Bayes shrinkage toward feature-set hyperparameters [40].
+• εij,g is a zero-mean error term.
+
+
+======================================================================
+PAGE 8
+======================================================================
+
+Page 8 of 25
+ComBat-seq extends this formulation to negative-bino -
+mial-distributed RNA-seq counts, explicitly accommo -
+dating the overdispersion and library-size heterogeneity
+intrinsic to high-throughput count data [ 41]. Second,
+latent-variable methods SVA, RUV, PEER, and Har -
+mony infer and remove unobserved technical con -
+founders directly from data structure without requiring
+known batch labels, rendering them applicable when
+institutional metadata is incomplete or entirely unavail -
+able. Third, deep domain-adaptation methods Domain-
+Adversarial Neural Networks (DANN), Deep CORAL for
+second-order feature-distribution alignment, and cycleconsistent generative networks for cross-scanner MRI
+and cross-stain histopathology harmonisation cast the
+correction as a minimax optimisation between a feature
+extractor fθ, a task classifier hφ, and a domain discrimi -
+nator gψ:
+minθ,φ maxψ [Ltask (hφ ◦ fθ ) − λ · Ldomain (gψ ◦ fθ )] (8)
+• fθ is the feature extractor parameterised by θ;
+• hφ is the task classifier parameterised by φ,
+predicting the clinical outcome;
+• gψ is the domain discriminator parameterised by ψ,
+predicting site or batch identity;
+• Ltask is the supervised task loss (for example, crossentropy on the clinical label);
+• Ldomain is the domain-classification loss;
+• λ >0 controls the trade-off between task accuracy
+and site invariance;
+• ∘ denotes function composition.
+Robust harmonisation prior to downstream modelling
+is not optional but analytically mandatory uncorrected
+batch effects represent the most consistently docu -
+mented cause of external-validation collapse in multicentric oncology AI. For structured high-dimensional
+molecular data, including gene expression profiles,
+DNA methylation arrays, and radiomic feature matrices,
+empirical-Bayes methods such as ComBat and ComBatseq remove additive and multiplicative site effects while
+explicitly preserving covariate-encoded biological signal
+through known-variable modelling. When batch labels
+are unavailable, latent-variable approaches SVA, RUV,
+and Harmony estimate and regress unobserved techni -
+cal factors directly from data structure. For non-tabular
+spatial modalities, including radiological imaging and
+whole-slide digital pathology, adversarial domain-adap -
+tation frameworks such as DANN and Deep CORAL
+generate site-invariant feature representations, with the
+learned encoder remaining statistically indistinguish -
+able across institutional domains while retaining clinical
+Fig. 2 End-to-end artificial intelligence and machine learning (AI/ML) pipeline for translational oncology. The workflow demonstrates successive stages
+of AI/ML implementation, encompassing multi-modal data acquisition, secure data integration and governance, preprocessing and harmonization, feature extraction and representation learning, model development and optimization, clinical deployment, and real-world performance monitoring. Continuous feedback and recalibration enable iterative model refinement, ensuring robustness, interpretability, and clinical applicability for precision oncology,
+biomarker discovery, therapeutic decision-making, and outcome prediction. Generated using h t t p s : / / w w w . c a n v a . c o m / g r a p h s /
+
+
+======================================================================
+PAGE 9
+======================================================================
+
+Page 9 of 25
+predictive signal [ 42]. Regardless of method selected,
+routine reporting of batch-effect diagnostics principalvariance component analysis, gPCA, and kBET along -
+side model performance metrics constitutes a minimum
+transparency standard for multi-centric oncology AI.
+Feature engineering and representation learning
+This involves the processing of data into useful models,
+and there are two ways in which this is achieved: by fea -
+ture engineering, where features such as radiomic tex -
+tures and gene expression signatures are extracted, while
+deep learning focuses on end-to-end representation
+learning from input data [ 28]. Representation learning
+plays an important role especially in multimodal fusion.
+It enables the embedding of diverse data types into a
+common space where meaningful relation-ships across
+domains can be maintained [ 9]. Representation learning
+is seen as one of the basic building blocks for predictive
+modelling in either pre-clinical as well as clinical envi -
+ronments [5].
+Model development
+Selection of AI/ML algorithm
+The choice of algorithm depends on data modality, level
+of complexity, and medical intent. CNNs dominate imaging, Transformers are used for sequence and text data,
+and GNNs model for chemical interactions and the
+graphical structures of life, as reported [ 7, 13, 14]. Generation networks have their uses in de novo synthesis or
+data augmentation, while conventional machine learn -
+ing for structured table data has its applications [ 28].
+The choice process needs a balance between predictive
+accuracy and interpretability, computability, and legal
+requirements [26].
+Model training and optimization
+For the training of the model, there is the use of itera -
+tive optimization through the use of la-belled datasets,
+and there may be the use of transfer learning or selfsupervised pretraining to overcome data constraints
+[33]. Hyperparameter tuning, imbalance correction, and
+regularization techniques are used to boost the ability to
+be more generalizable [ 25]. Privacy-preserving models,
+such as Federated Learning, can be used to train models
+collaboratively across multiple sites without needing to
+share patient data, thereby overcoming the limitations of
+regulations and ethics [30].
+Evaluation and insight layer
+Validation and performance metrics
+Sensitivity, specificity, and AUC-ROC, although uni -
+versally reported, are fundamentally unreliable in
+class-imbalanced oncology tasks such as identify -
+ing rare driver mutations, early-stage malignancies, or
+treatment-responder subgroups where positive-class
+prevalence may fall below 1–5%. AUC-ROC is math -
+ematically insensitive to class prevalence: at a 1:99 imbal -
+ance ratio, a naïve classifier predicting all negatives
+achieves 99% accuracy yet zero clinical utility. Precision-
+Recall AUC, the F1-score, and the Matthews Correla -
+tion Coefficient (MCC) are therefore essential primary
+reporting endpoints. In high-stakes diagnostic contexts
+where a missed malignancy carries irreversible clinical
+consequences, cost-sensitive learning frameworks that
+explicitly assign asymmetric misclassification penalties
+heavily penalising false negatives relative to false positives
+are analytically necessary rather than optional enhance -
+ments; rigorous selection of appropriate performance
+parameters and validation across diverse structural data -
+sets are paramount for ensuring generalisability of novel
+computational frameworks [ 43]. With precision Pr = TP/
+(TP+FP) and recall Re = TP/(TP+FN), the F1-score is the
+harmonic mean of Pr and Re,
+F 1=2 · Pr · Re
+Pr + Re (9)
+• F1 is the F1-score, a harmonic mean of precision and
+recall;
+• Pr is precision, defined as Pr = TP / (TP + FP);
+• Re is recall (also called sensitivity), defined as Re = TP
+/ (TP + FN);
+• TP , FP and FN are the counts of true positives, false
+positives and false negatives in the confusion matrix.
+MCC, which incorporates all four confusion-matrix
+quadrants in a single balanced score, is defined as
+MCC = TP · TN − FP · FN√
+(TP + FP )( TP + FN )( TN + FP )( TN + FN ) (10)
+• MCC is the Matthews Correlation Coefficient,
+bounded in [−1, +1] with 0 indicating no better than
+random;
+• TP , TN, FP and FN are the counts of true positives,
+true negatives, false positives and false negatives,
+respectively.
+MCC is the most robust single-number metric for
+imbalanced binary classification because all four cells
+of the confusion matrix enter its computation [ 44, 45].
+Cost-sensitive learning strategies (class-weighted crossentropy, asymmetric misclassification cost matrices, and
+the focal loss) are deployed whenever false negatives
+
+
+======================================================================
+PAGE 10
+======================================================================
+
+Page 10 of 25
+carry disproportionate clinical harm. With pt the model’s
+predicted probability for the true class and γ ≥ 0 a focus -
+ing parameter, the focal loss is
+FL (pt)= − αt(1 − pt)γ · log (pt) (11)
+• FL (pt) is the focal-loss value for a single training
+example;
+• pt is the model’s estimated probability assigned to
+the true class for that example;
+• αt ∈ (0, 1] is a class-balancing weight, typically set
+inversely proportional to class frequency;
+• γ ≥ 0 is the focusing parameter; γ = 0 recovers
+standard cross-entropy, and γ = 2 is the value used by
+Lin et al. in the original report;
+• the factor (1 − pt)γ down-weights easy, wellclassified majority examples and concentrates
+gradient updates on hard, rare-class examples [46].
+Beyond discrimination and class-imbalance metrics,
+models intended for clinical deployment must addition -
+ally report calibration quantified through the Brier score,
+Expected Calibration Error (ECE), and reliability dia -
+grams alongside net clinical benefit through Decision
+Curve Analysis. The principle that rigorous selection of
+descriptive parameters and comprehensive validation
+across structurally diverse datasets are prerequisites for
+predictive accuracy and generalisability, demonstrated in
+computational chemistry and adjacent molecular mod -
+elling domains [ 47], applies with equal force to transla -
+tional oncology frameworks.
+Despite widespread reporting of sensitivity, specific -
+ity, and AUC-ROC, these discrimination metrics do not
+account for the real-world consequences of acting on
+model outputs. A model with a high AUC can still rec -
+ommend unnecessary interventions or fail to alter deci -
+sions that meaningfully affect outcomes. This structural
+disconnect the performance-utility gap underscores that
+statistical optimality and clinical usefulness are distinct,
+independently measurable properties, and that evalua -
+tion frameworks must explicitly quantify both to avoid
+deploying statistically impressive but clinically inert sys -
+tems [48].
+Decision Curve Analysis (DCA) addresses this gap by
+quantifying net benefit across a spectrum of clinically
+plausible threshold probabilities. Net benefit is formally
+defined as:
+NB = TPR − FPR ×
+( pt
+1 − pt
+(12)
+where pt is the threshold probability at which clini -
+cal intervention is judged appropriate. This formulation
+simultaneously penalises false positives unnecessary
+interventions and rewards true positive identifications,
+embedding the clinician’s implicit harm-benefit trade-off
+directly into the metric rather than treating it as an external consideration [48].
+In a standard decision curve, the x-axis represents the
+threshold probability and the y-axis represents net ben -
+efit. Two reference strategies define the comparative
+baseline: treating all patients unconditionally and treating
+none. A model demonstrates genuine clinical value only
+when its decision curve consistently exceeds both base -
+lines across the clinically relevant threshold range. Mod -
+els exhibiting high discrimination yet flat or negative net
+benefit curves lying below either reference line must be
+regarded as clinically non-viable regardless of their AUC
+or F1-score [49].
+In oncology, treatment decisions require explicitly
+balancing the harms of overtreatment against the irre -
+versible consequences of missed diagnoses precisely the
+trade-off DCA formalises. A model with exceptional
+AUC may deliver zero net benefit if its threshold rec -
+ommendations generate over-intervention in low-risk
+patients or under-treatment in high-risk subgroups.
+DCA therefore functions as the definitive translational
+filter separating statistically successful models from clini -
+cally deployable decision-support tools [48, 49].
+Model interpretability and explainability
+Interpretability mechanisms provide insight into how
+models make decisions. This helps build trust among cli -
+nicians, which help to obtain regulatory approval [ 26].
+Techniques like attention mapping, saliency analysis,
+and feature attribution identify the data elements that
+influence predictions [ 35]. Explainability is particularly
+important in high-stakes oncology applications. Opaque
+models may prevent adoption, even if they perform well
+[27].
+Deployment and influence layer
+Clinical integration and decision support
+Deployment enables the integration of models that have
+been validated into clinical information systems such as
+electronic records and picture archiving and communi -
+cation systems (PACS), as well as clinical decision sup -
+port systems [37]. Seamless integration into the workflow
+reduces the clinicians’ cognitive workload and supports
+the provision of informed insights at the point of care
+through integration of validated models [ 28]. In transla -
+tional settings, decision-support systems have become
+more prevalent in screening, triage, treatment decisionmaking, as well as trial-matching [34].
+
+
+======================================================================
+PAGE 11
+======================================================================
+
+Page 11 of 25
+Regulatory considerations for clinical implementation of AI
+Regulatory AI for oncology is treated as software that
+acts like a medical device. It must demonstrate its safety,
+effectiveness, and strength [ 38]. These ethical principles
+include the importance of explainability, overcoming
+bias, and the need for “human-in-the-loop” oversight
+and also important for Digital twin concept [ 50, 51]. The
+regulatory procedures are not standard across all coun -
+tries, which makes it necessary to be flexible in validation
+and documentation processes [ 35]. Artificial intelligence
+tools intended for clinical use are generally regulated as
+Software as a Medical Device (SaMD), requiring demon -
+stration of safety, accuracy, and clinical reliability prior
+to implementation in healthcare settings. Regulatory
+agencies such as the U.S. Food and Drug Administration
+(FDA) evaluate AI systems based on risk classification
+and approve them through established pathways includ -
+ing 510(k), De novo, or Premarket Approval depending
+on the intended medical application. As AI models often
+evolve with new data, regulatory frameworks emphasize
+a Total Product Life Cycle approach that includes continuous performance monitoring after deployment. Addi -
+tional considerations such as use of high-quality datasets,
+transparency of algorithm functioning, and controlled
+update mechanisms are essential to ensure trustworthy
+and ethically responsible integration of AI into clinical
+oncology practice.[52]
+Deployment and real-world monitoring deployment
+monitoring
+Post-deployment evaluation and transparent reporting of
+model performance are very important. It ensures reli -
+ability, detect potential biases, and support safe clinical
+use of AI systems [ 53]. AI-driven personalized medicine
+approaches leverage continuously evolving clinical and
+genomic data to refine patient stratification and improve
+treatment decision-making over time [ 43]. This, the final
+stage, completes the translation loop by using insights
+derived from deployment to inform the earlier stages of
+Post-deployment monitoring is a critical yet underde -
+veloped translational oncology component. Real-world
+environments introduce continuous performance deg -
+radation through two distinct phenomena: covariate
+shiftPdeploy (X) ̸=Ptrain (X) driven by demographic
+transitions, hardware upgrades, or new sequencing plat -
+forms; and concept drift Pdeploy (YX ) ̸=Ptrain (YX )
+triggered by revised oncology guidelines, evolving epide -
+miology, or novel therapeutic protocols [54, 55]. Concept
+drift is especially insidious as standard input monitors
+fail to detect it; degradation manifests only through clini -
+cal outcome divergence. Both require continuous
+surveillance via Population Stability Index tracking, Page-
+Hinkley testing, and automated recalibration supported
+by human-in-the-loop oversight. Deployment must
+therefore be governed as dynamic clinical infrastructure
+under FDA Predetermined Change Control Plans and EU
+AI Act adaptive provisions [55].
+The operational loop demands continuous adaptive
+surveillance pipelines tracking Population Stability Indi -
+ces, prediction-distribution deviations, and calibration
+trend metrics. Real-time logging infrastructures with
+automated statistical alerting including sequential Page-
+Hinkley testing enable frameworks to flag calibration
+degradation and initiate localised recalibration or sched -
+uled retraining before performance breaches clinically
+safe thresholds. Embedding structured human-in-theloop oversight interfaces ensures clinician feedback is
+systematically captured and operationalised. This col -
+laborative architecture provides a critical patient-safety
+layer, detecting unexpected bias propagation, edge-case
+misclassifications, and workflow friction points before
+they propagate into adverse clinical outcomes [54, 55].
+Critical discussion: external validation, bias, drift and realworld impact
+External validation failure and interpretability barriers to
+clinical adoption
+Although AI/ML models in oncology report promising
+retrospective performance, generalisation and repro -
+ducibility deficits persistently obstruct clinical transla -
+tion. External validation studies consistently reveal that
+institution-specific training datasets fail to represent the
+phenotypic, demographic, and protocol variability of
+real-world clinical settings [ 29, 38]. Models with strong
+internal performance routinely degrade during prospec -
+tive evaluation due to domain shift across imaging pro -
+tocols, patient demographics, and institutional care
+practices. Inadequate prospective validation remains the
+most prevalent methodological deficiency in published
+oncology AI literature [56].
+Beyond validation, the limited interpretability of com -
+plex deep learning architectures constitutes a fundamen -
+tal adoption barrier. In high-stakes oncology settings,
+black-box predictions unsupported by feature attribu -
+tion methods SHAP , integrated gradients, or saliency
+mapping linked to biological pathways systematically
+erode clinician confidence and constrain implementation
+regardless of predictive accuracy [ 29, 38]. Explainability,
+transparency, and workflow compatibility are therefore
+non-negotiable prerequisites for safe and effective clinical
+integration of oncology AI systems.
+Algorithmic bias propagation and demographic
+underrepresentation
+Dataset bias systematically distorts oncology AI when
+training repositories overrepresent specific demographic
+or ancestral groups as in Western-dominated genomic
+
+
+======================================================================
+PAGE 12
+======================================================================
+
+Page 12 of 25
+biobanks that underrepresent South Asian, African, and
+Hispanic populations. This distributional imbalance
+propagates into clinically consequential performance
+disparities across ethnic, socioeconomic, and geographic
+subgroups, reducing external validity and compromising
+equitable care delivery [ 57, 58]. Mitigation requires shifting from standard empirical risk minimisation toward
+fairness-aware loss functions with mandatory subgroupstratified external validation reporting.
+Characterizing model drift via covariate and concept shift
+The real-world deployment of oncology algorithms is
+inherently susceptible to performance degradation over
+time, a phenomenon mathematically categorized as
+model drift. This degradation is driven by two distinct
+statistical mechanisms: covariate shift, where the input
+data distribution changes over time,
+Pdeploy (X) ̸=Ptrain (X) (13)
+and concept shift, where the true conditional probabil -
+ity of the clinical diagnosis alters relative to the feature
+space,
+Pdeploy (Y | X) ̸=Ptrain (Y | X) (14)
+In longitudinal clinical environments, these shifts are
+triggered by evolving diagnostic criteria, the introduction
+of higher-resolution imaging sensors, shifts in regional
+referral patterns, or the introduction of novel neoadju -
+vant systemic therapies. Because deep neural networks
+are fundamentally static mapping functions, they can -
+not dynamically adapt to these shifting distributions,
+leading to progressive calibration decay and inflation of
+false-negative rates. Consequently, avoiding catastrophic
+failure modes requires implementing continuous statis -
+tical drift-monitoring architectures such as online Page-
+Hinkley testing or sequential Kullback-Leibler divergence
+tracking coupled with rigorous automated retraining
+triggers and real-time recalibration protocols [59].
+Prospective clinical evaluation
+Despite promising results reported in retrospective stud -
+ies, prospective clinical evaluation remains essential for
+determining the real-world effectiveness of AI systems in
+healthcare. The GEMINI study prospectively evaluated
+AI integration in routine breast cancer screening across
+multiple clinical settings and demonstrated that AIassisted screening could improve cancer detection while
+reducing radiologist workload. Importantly, the study
+highlighted that AI performance is influenced not only by
+the algorithm itself, but also by factors related to clinical
+implementation, including human oversight, arbitration
+strategies, and workflow integration. The authors further
+emphasized that prospective evaluation provides a more
+realistic assessment of AI performance under routine
+clinical conditions by accounting for variations in clini -
+cian interaction, operational practices, and institutional
+settings [60].
+Asynchrony in adaptive regulatory frameworks
+The clinical translation of oncology software is heavily
+bottlenecked by an asynchrony between static regula -
+tory oversight mechanisms and the dynamic, iterative
+nature of machine learning algorithms. Traditional medical device pathways are structurally designed for locked
+software configurations, categorizing any post-market
+optimization or online update as a material modification
+that requires a complete, resource-intensive regulatory
+re-submission.
+While advanced regulatory bodies have begun pilot -
+ing adaptive strategies such as the United States Food
+and Drug Administration’s (FDA) final guidance on Pre -
+determined Change Control Plans (PCCP), which per -
+mits pre-authorized algorithmic modifications via strict
+Algorithm Change Protocols global frameworks remain
+deeply fragmented. Current regulatory architecture is
+largely unequipped to handle localized continuous learn -
+ing paradigms, cross-border data privacy mandates
+(e.g., GDPR compliance within federated networks), and
+post-market safety tracking for real-time model updates.
+Bridging this translational gap requires establishing internationally harmonized, total product life cycle (TPLC)
+regulatory frameworks that treat artificial intelligence as
+an evolving, risk-stratified software infrastructure rather
+than a static diagnostic tool. [61–63]
+AI/ML technologies enabling the pipeline
+Deep learning for imaging (CNNs)
+Convolutional Neural Networks (CNNs) provide the
+paradigm for AI-assisted analysis in radiology and digital
+pathology in oncology applications [ 28]. Their ability to
+extract hierarchical features helps to automatically iden -
+tify, segment, and classify cancers in imaging modali -
+ties such as CT scans, MRI, PET scans, and whole slide
+images in digital pathology [ 33]. In translational pipe -
+lines, CNN-based radiomics and pathomics identify vol -
+umetric features related to tumor grade, genetic changes,
+and predictive outcomes, facilitating non-invasive bio -
+markers and decision-making in cancer care [ 27]. The
+universality and efficacy of CNNs have led to their pivotal
+role in studies and initial implementations, especially in
+screening and diagnostic aid [34].
+An overview of modern artificial intelligence and
+machine learning (AI/ML) technologies applied in drug
+discovery and biomedical research is illustrated in Fig. 3.
+
+
+======================================================================
+PAGE 13
+======================================================================
+
+Page 13 of 25
+Transformers and large language models for sequences
+and text
+Transformer models represent an extension of the capa -
+bilities of AI algorithms from images to sequential and
+text data in the field of oncology, including genetic infor -
+mation and trial documentation [ 14]. Large language
+models help in extraction, synthesis, and reasoning over
+complex clinical and biomedical text, which improved
+utilization of unstructured data in oncology work-flows
+[24]. Large language models also make it feasible to
+automatically extract structured data from unstruc -
+tured clinical notes, thus making EHRs more integrable
+into real-world evidence [ 28]. Large language models in
+translational research help in synthesis, identification of
+cohort, and alignment of molecular data to the findings
+in clinical phenotypes [27].
+Graph neural networks in molecular and Network biology
+Although deep convolutional, graph, and transformer
+architectures extract predictive features from imaging
+and multi-omics data with high accuracy, their internal
+representations remain opaque systematically eroding
+clinician trust and obstructing regulatory acceptance in
+high-stakes oncology settings. An uninterpretable pre -
+diction, regardless of its discrimination performance,
+is clinically inactionable and regulatory-audit-resistant.
+Biologically informed neural architectures address this
+by constraining network topology to mirror curated bio -
+logical hierarchies derived from Reactome, KEGG, or
+Gene Ontology. For a hidden layer l with weights W(l)
+and a binary biological-topology mask M(l) of dimension
+dl + 1 × dl, the forward pass is
+h(l+1) = σ
+((
+M (l) ⊙ W (l)
+h(l) + b(l)
+(15)
+• h(l+1) is the activation vector at layer l + 1;
+• h(l)is the activation vector at layer l;
+• W (l) is the learnable weight matrix at layer l;
+• M (l) is a binary mask of the same shape asW (l),
+whose entries equal 1 where a biological connection
+exists in the curated ontology and 0 otherwise;
+• ⊙ is the element-wise (Hadamard) product, which
+zeros out all biologically unsupported connections in
+W (l);
+• b(l) is the bias vector at layer l;
+• σ is a non-linear activation function (for example
+ReLU or hyperbolic tangent).
+Because the mask enforces only biologically supported
+connections, hidden units in architectures such as P-NET
+correspond directly to specific Reactome pathways their
+activations readable as pathway-level evidence for the
+clinical phenotype, providing mechanistic accountability
+that is structurally absent from standard deep learning
+frameworks [ 64]. Group-LASSO regularisation provides
+a complementary mechanism for pathway-level spar -
+sification, operating on entire gene sets simultaneously
+rather than individual coefficients. For G predefined gene
+sets {G1,..., GG} with corresponding coefficient subvectors β =( βG1,..., β GG), the penalty is
+R (β)= λ
+∑ G
+g=1
+|Gg |·
+‖‖βGg
+‖‖
+2 (16)
+• R( β) is the group-LASSO penalty added to the loss
+function;
+Fig. 3 Clinical distribution of AI/ML applications in oncology trials. Pie charts illustrating the distribution of AI/ML-based oncology clinical trials (N = 397)
+according to application domains and primary cancer focus areas. Diagnostic systems and longitudinal surveillance constitute the largest application
+sectors, while breast/gynecological, gastrointestinal, and thoracic cancers represent the most frequently investigated disease categories, highlighting the
+expanding role of AI/ML in precision oncology. Generated using https://www.canva.com/graphs/
+
+
+======================================================================
+PAGE 14
+======================================================================
+
+Page 14 of 25
+• G is the total number of predefined gene sets
+(pathways);
+• Gg is the g-th gene set, for g = 1, …, G;
+• |Gg| denotes the cardinality of Gg, that is, the
+number of genes it contains;
+• β is the full vector of regression coefficients,
+partitioned by gene set;
+• βGg is the sub-vector of coefficients corresponding to
+the genes in Gg;
+• βGg2 is the ℓ2 norm of βGg;
+• √ |Gg | is a scaling factor that balances unequal
+gene-set sizes, so that larger sets are not penalised
+disproportionately;
+• λ> 0 is the regularization strength, selected by
+cross-validation.
+Group-LASSO shrinks entire gene sets simultaneously,
+producing pathway-level rather than gene-level feature
+selection that is directly interpretable by oncologists.
+Comparable pathway-resolved attribution approaches
+have demonstrated utility in proteomics-based bio -
+marker discovery [ 65]. Post-hoc attribution methods
+DeepLIFT, integrated gradients, and SHAP projected
+onto Reactome and KEGG ontologies further bridge
+abstract latent representations to mechanistically mean -
+ingful oncogenic biology. Implementing robust math -
+ematical descriptors within advanced multi-layered
+computational frameworks analogously enhances predic -
+tive accuracy and convergence stability across molecular
+modelling domains a principle with established prec -
+edent in computational chemistry and structural bioin -
+formatics underscoring the broader value of principled
+feature representations in hierarchical oncology AI architectures [53, 66].
+Generative models for synthetic oncology data: biological
+fidelity, fairness, and privacy validation
+Generative models risk hallucinating biologically nonexistent structures and amplifying demographic biases
+embedded in training cohorts’ failure modes with direct
+consequences for downstream clinical utility. Synthetic
+multi-omics and imaging data must therefore be vali -
+dated against a stringent multi-criterion framework
+before clinical or research deployment. Distributional
+fidelity between real distribution P and synthetic distri -
+bution Q is assessed through three complementary mea -
+sures; the squared Maximum Mean Discrepancy in a
+reproducing-kernel Hilbert space with kernel k is:
+MMD 2 (P, Q)= Ex,x′ ∼P k (x, x′)+ Ey,y′ ∼Qk (y, y′)
+− 2Ex∼P,y∼Qk (x, y) (17)
+• MMD2(P , Q) is the squared Maximum Mean
+Discrepancy between distributions P and Q;
+• P is the real data distribution and Q is the synthetic
+data distribution;
+• k(·, ·) is a positive-definite kernel, typically Gaussian
+or rational quadratic;
+• E denotes mathematical expectation under the
+distribution shown in its subscript;
+• x, x’ are independent samples drawn from P; y, y’ are
+independent samples drawn from Q;
+• for characteristic kernels (for example the Gaussian
+kernel), MMD2(P , Q) = 0 if and only if p = Q [67].
+A geometry-aware alternative is the p-Wasserstein
+distance,
+Wp(P, Q)=
+infπ∈Π(P,Q)
+ˆ
+∥x − y∥p dπ(x, y)
+)1/p
+(18)
+• Wp(P , Q) is the p-Wasserstein distance between
+distributions P and Q;
+• P and Q are the real and synthetic distributions, as in
+Eq. 11;
+• Π (P, Q) is the set of all joint distributions
+(couplings) on the product space whose marginal
+distributions are P and Q;
+• π is one such coupling; inf denotes the infimum over
+all admissible couplings;
+• x − y is the ground distance on the sample space,
+taken as the Euclidean norm;
+• p ≥ 1 is the order of the distance; the special case
+p = 1 is the earth-mover distance.
+For imaging applications, the Fréchet Inception Distance
+(and its omics analogue, the Fréchet Biological Distance)
+compares the means and covariances of Inception or
+encoder feature embeddings,
+FID (P, Q)= ∥µP − µQ∥2 + Tr
+ΣP +Σ Q − 2
+ΣP ΣQ
+(19)
+• FID (P, Q) is the Fréchet Inception (or Biological)
+Distance between distributions P and Q;
+• P and Q are the real and synthetic distributions
+• μP and μQ are the mean feature vectors of real and
+synthetic samples in the Inception (or encoder)
+embedding space;
+• µP−µQ2 is the squared Euclidean distance between
+these means;
+• ΣP andΣQ are the corresponding feature-covariance
+matrices;
+
+
+======================================================================
+PAGE 15
+======================================================================
+
+Page 15 of 25
+• Tr (·) is the matrix trace;
+• √ (ΣP ΣQ) denotes the principal matrix square root
+of the product ΣP ΣQ;
+• each feature distribution is modelled as multivariate
+Gaussian [68].
+Downstream utility is quantified through Train-on-Syn -
+thetic, Test-on-Real (TSTR) experiments, where per -
+formance on real held-out data confirms that synthetic
+samples encode clinically relevant signal [ 69]. Biological
+fidelity requires preservation of cohort-level differentially
+expressed genes, pathway-enrichment concordance with
+the source cohort, and retention of established histologi -
+cal marker structure [ 70]. Fairness diagnostics subgroup
+distributional parity and bias-amplification ratios across
+age, sex, and ancestry are mandatory to prevent demo -
+graphic skew magnification. Privacy audits encompass -
+ing membership-inference attacks and nearest-neighbour
+latent-space distance accompany every synthetic data
+release to preclude inadvertent re-identification [ 71].
+Generative-augmentation studies in rare-cancer settings
+must publish the complete validation suite alongside
+model code as a condition of responsible reporting.
+Dynamic models for optimization
+Reinforcement learning (RL) is a paradigm of machine
+learning where the sequential decision-making process is
+modelled [30]. RL algorithms learn decision-making policies when they interact with the simulated environment
+or real data, balancing different objectives in the process,
+such as efficacy and toxicity [ 26]. In translational oncol -
+ogy research, the role of RL is in supporting adaptive
+trial design and optimizing therapy at the personal level
+through prescriptive capabilities that complement model
+predictions [34]. Along with real-world data feedback, RL
+enables continuous learning in the deployment phase of
+AI/ML applications in preclinical oncology and
+translational target discovery
+Preclinical oncological modelling provides the funda -
+mental translational substrate for establishing mecha -
+nistic biological validity and optimizing therapeutic
+interventions prior to clinical deployment. Conven -
+tional in vitro and in vivo workflows are constrained by
+high experimental variance, limited scalable through -
+put, and poor baseline predictive fidelity across species.
+Deep learning pipelines are increasingly deployed to map
+high-dimensional biochemical feature spaces, enhanc -
+ing computational model realism and aligning laboratory
+discoveries with human physiological targets [36].
+A critical translational bottleneck emerges at this interface: predictive networks optimized under controlled
+in silico or cell-line environments routinely exhibit
+significant performance degradation when confronted
+with the stochastic, multi-layered biological complexity
+of real-world human malignancies. This generalization
+failure reflects a systematic mismatch between the sta -
+tistical regularity of curated laboratory data and the phe -
+notypic heterogeneity encountered in primary clinical
+tumor specimens [5, 29].
+Multi-omics integration and computational biomarker
+discovery
+High-throughput multi-omics discovery pipelines gener -
+ate large, multi-layered data matrices spanning genomic
+variant arrays, transcriptomic count matrices, massspectrometry proteomics profiles, and epigenomic land -
+scapes across heterogeneous tumour models. Graph
+neural networks and transformer-based encoders are
+increasingly preferred for reconstructing global signalling
+network topologies and isolating candidate oncogenic
+driver mutations, capturing relational dependencies
+between molecular entities that conventional unimodal
+analyses cannot represent. Unsupervised and semisupervised embedding algorithms further map multiparameter drug-sensitivity matrices and rank putative
+therapeutic targets according to biological relevance,
+druggability, and translational potential [72].
+A fundamental limitation of these screening pipelines,
+however, is structural overfitting to uniform, immor -
+talised cell lines maintained in artificially stable microen -
+vironments. When an optimisation algorithm overfits its
+internal parameters to these controlled conditions, pre -
+dictive calibration degrades substantially upon exposure
+to the complex cellular cross-talk, hypoxia gradients,
+and structural heterogeneity of primary human tumour
+tissue. Computational target ranking therefore cannot
+serve as a standalone translational endpoint; rigorous
+cross-platform validation arrays are required to establish
+authentic clinical utility [72].
+Generative molecular design and chemical space
+navigation
+Advanced machine learning has transformed early-stage
+drug design by shifting computational chemistry away
+from empirical trial-and-error workflows. Multi-layered
+analytical pipelines project high-dimensional chemical
+spaces to estimate binding affinity, pharmacokinetics, and
+off-target cross-reactivity profiles before chemical syn -
+thesis is initiated. Deep generative architectures includ -
+ing variational autoencoders, generative adversarial
+networks, and molecular diffusion models enable the
+de novo engineering of molecular structures optimised
+against multi-objective fitness functions encompassing
+target potency, selectivity, and minimal systemic toxicity
+[73].
+
+
+======================================================================
+PAGE 16
+======================================================================
+
+Page 16 of 25
+The primary computational failure mode within these
+pipelines remains structural hallucination: generative
+algorithms trained on sparse or structurally homoge -
+neous datasets frequently produce molecular graphs with
+apparently favourable binding metrics that violate foun -
+dational laws of physical chemistry, yielding compounds
+that are thermodynamically unstable or synthetically
+inaccessible. Mitigating this requires explicit integra -
+tion of hard geometric, spatial, and quantum-mechanical
+constraints directly into latent-space optimisation lay -
+ers, combined with independent synthetic-accessibility
+scoring and experimental wet-laboratory confirmation of
+computationally prioritised candidates [73].
+Cost-sensitive machine learning for in silico toxicity and
+safety profiling
+Unanticipated clinical toxicity remains the dominant
+driver of late-stage drug attrition, positioning early safety
+profiling as a critical economic and ethical necessity.
+Deep in silico toxicology networks process molecular
+graphs and legacy bioassay matrices to flag major adverse
+events including hepatotoxicity, cardiotoxicity, and genotoxicity during initial compound triage. By mapping
+structural chemical descriptors through deep neural net -
+works, researchers execute high-throughput screening
+across large molecular libraries, prioritising viable candi -
+dates while reducing dependence on resource-intensive
+animal models [74].
+This predictive paradigm is heavily constrained by
+severe data sparsity and systematic reporting bias: phar -
+maceutical developers rarely publish detailed profiles of
+failed, toxic structures, causing training data to remain
+disproportionately weighted toward successful, nontoxic molecules. Standard classifiers consequently miss
+niche off-target toxic signals due to this class imbalance.
+Reliable safety models require cost-sensitive learning
+frameworks applying asymmetric loss weights to heav -
+ily penalise false-negative toxic predictions, coupled
+with validation against structurally diverse, indepen -
+dently curated datasets. Rigorous selection of descriptive
+parameters and comprehensive validation across diverse
+structural datasets are paramount for ensuring predictive
+generalisability of computational safety frameworks [ 43,
+74].
+Cross-species transcriptomic alignment and translational
+domain Adaptation
+To approximate human clinical physiology, preclinical
+workflows employ patient-derived organoids and multispecies animal systems as advanced translational plat -
+forms. Computer vision and machine learning enhance
+these models by automating high-content image-screen -
+ing pipelines, eliminating observer bias from the track -
+ing of cellular growth kinetics, morphometric changes,
+and phenotypic drug responses. However, murine and
+human tumour microenvironments differ fundamentally
+in immune architecture, stromal composition, metabolic
+clearance rates, and vascular organization creating a pro -
+found cross-species transcriptomic divide that computa -
+tional approaches must explicitly bridge [54, 75].
+Bridging this divide requires transitioning from sim -
+ple empirical models toward unsupervised domain
+adaptation and transfer learning protocols. These strat -
+egies enable a network to first learn core biological rela -
+tionships within the animal model domain and then
+mathematically align latent features to human clinical
+endpoints, transforming isolated laboratory outputs into
+generalisable translational pipelines. Advanced transcriptomic profiling and robust gene expression validation are
+critical for accurately interpreting the complex genetic
+variations driving tumour behaviour across biological
+models a principle empirically demonstrated through
+rigorous cross-species transcriptomic analyses revealing
+fundamental regulatory divergences between murine and
+human tumour ecosystems [ 54]. Cross-species model
+alignment therefore represents an integrated compu -
+tational and biological validation challenge, requiring
+convergent genomic, transcriptomic, and phenotypic evidence before preclinical findings can be extrapolated reliably to clinical trial design [32, 54, 75].
+Global adoption of AI in oncology decision-making
+One of the widely cited real-world examples of AI-based
+clinical decision support in oncology is IBM Watson
+for Oncology, developed in collaboration with Memo -
+rial Sloan Kettering Cancer Centre (USA). The system
+applies machine learning and natural language process -
+ing to analyze large volumes of structured and unstruc -
+tured healthcare data, including electronic health
+records, genomic information, clinical guidelines, and
+published scientific literature. Watson for Oncology has
+been implemented in hospitals across multiple countries
+including the United States, China, South Korea, Thai -
+land, and Australia, where it assists clinicians in selecting
+evidence-based and personalized treatment strategies.
+The system demonstrates how large-scale biomedical big
+data can be translated into clinically actionable insights,
+supporting oncologists in managing complex treatment
+decisions and improving consistence [ 76]. Subsequent
+independent evaluations, however, raised substantive
+concerns regarding the system’s documented reliance on
+synthetic training scenarios, limited training-data trans -
+parency, and inconsistent concordance with local tumour
+board recommendations across international deploy -
+ments; these limitations and broader lessons from highprofile clinical AI failures are critically examined in Sect.
+7.2.
+
+
+======================================================================
+PAGE 17
+======================================================================
+
+Page 17 of 25
+Clinical limitations and evidence gaps for IBM Watson for
+oncology
+Several retrospective concordance studies evaluating
+IBM Watson for Oncology have reported considerable
+variability in agreement with clinician-recommended
+treatment decisions across cancer types and healthcare
+settings. These discrepancies were influenced by regional
+treatment practices, local clinical guidelines, drug acces -
+sibility, healthcare infrastructure, and variations in regu -
+latory approval pathways across countries. Reliance on
+concordance alone as an indicator of clinical effective -
+ness has been increasingly questioned, as agreement with
+oncologist recommendations does not necessarily trans -
+late into improved patient outcomes or optimal thera -
+peutic decision-making. Concerns regarding the system’s
+limited transparency and opaque reasoning architecture
+further reduce clinician confidence and complicate realworld interpretation of treatment recommendations.
+Collectively, these limitations underscore the need for
+rigorous prospective validation, outcome-based assess -
+ment, and regional adaptation of AI decision-support
+systems prior to large-scale oncology deployment [ 77,
+78].
+Bridging the cross-species translational divide:
+computational strategies
+A persistent contributor to the high attrition rate of
+oncology drug candidates exceeding 90% in late-stage
+development is the fundamental divergence between
+murine and human tumour biology, arising from orthol -
+ogy mismatches, species-specific paralog expansion, and
+substantially different immune and stromal microenvi -
+ronments. The Found In Translation (FIT) framework
+uses paired mouse and human expression compendia
+to extrapolate murine differential-expression results
+to equivalent human conditions with measurable con -
+cordance gains [ 79]. Unsupervised domain-adaptation
+networks learn species-invariant latent representations
+through adversarial or optimal-transport objectives,
+while cross-species single-cell alignment tools such as
+SAMap resolve homologous cell states across biologi -
+cal models [ 80]. Advanced transcriptomic profiling and
+robust gene expression validation are critical for accu -
+rately interpreting the complex genetic variations driv -
+ing tumour behaviour across different species [ 54, 81].
+Integrated transfer-learning protocols that pre-train on
+large murine pharmacological screens and fine-tune on
+smaller human cohorts represent the most actively pur -
+sued path to reduced oncology drug attrition.
+Gap: from algorithm development to clinical
+implementation
+The translational gap in AI/ML-driven oncology refers
+to the persistent disparity between rapid advances in
+algorithm development and the comparatively limited
+adoption of these technologies in routine clinical prac -
+tice [ 5, 26, 35]. Although substantial progress has been
+achieved in predictive model development and perfor -
+mance benchmarking, disproportionately less empha -
+sis has been placed on model robustness, external
+generalisability, and real-world implementation readi -
+ness thereby limiting sustained clinical translation across
+diverse healthcare systems [ 26]. The global distribution
+and emerging trends in AI/ML applications in cancer
+research, illustrated in Fig. 4, reflect this systemic imbal -
+ance between publication output and operational clinical
+deployment.
+Several challenges continue to obstruct practical
+implementation of AI/ML systems in oncology. Models
+are predominantly developed using retrospective, sin -
+gle-institution datasets that inadequately represent the
+demographic heterogeneity, workflow variability, and
+clinical complexity of routine practice [ 7]. Beyond data -
+set limitations, critical barriers include data quality defi -
+cits, interoperability failures between legacy electronic
+health record architectures and AI modules, fragmented
+health informatics infrastructure, and variable health -
+care-system digital maturity each independently disrupt -
+ing the path from validated algorithm to deployed clinical
+tool [8, 35].
+Regulatory approval and governance present additional
+structural barriers. Existing frameworks were designed
+for static, locked software and are poorly equipped to
+address model drift, limited external validation, and con -
+tinuous algorithm updates intrinsic to adaptive AI. In
+India, AI-enabled clinical software is regulated under the
+Medical Device Rules 2017 by CDSCO, requiring tech -
+nical documentation and clinical performance evidence.
+The FDA’s Predetermined Change Control Plan permits
+pre-authorised adaptive modifications under defined
+Algorithm Change Protocols, while the EU AI Act clas -
+sifies oncology AI as High-Risk and mandates transpar -
+ency, human oversight, and post-market surveillance.
+Harmonising these three regulatory regimes establishing
+standardised drift thresholds and audit requirements is
+an urgent governance priority [35, 77].
+Although AI/ML technologies have demonstrated con -
+siderable potential across cancer diagnosis, prognosis,
+treatment planning, and precision oncology, real-world
+clinical impact is determined not by retrospective vali -
+dation alone but by successful integration into routine
+workflows. Deployment requires institutional readiness,
+workforce digital literacy, sustainable infrastructure,
+reimbursement mechanisms, and regulatory clearance
+
+
+======================================================================
+PAGE 18
+======================================================================
+
+Page 18 of 25
+a multidimensional challenge that publication-met -
+ric-focused research frameworks systematically fail to
+address. The gap between algorithmic performance and
+operational clinical utility will not close until implemen -
+tation science is treated as a first-class research objective
+alongside model accuracy [35, 60].
+Within India, disease burden, infrastructural hetero -
+geneity, and variability in digital maturity across Tier-1,
+Tier-2, and rural facilities represent compounding implementation barriers. However, meaningful opportunities
+are emerging through context-aware deployment strate -
+gies and indigenous validation initiatives including Nira -
+mai Thermalytix for AI-assisted breast screening and the
+National Cancer Grid’s federated biobanking infrastruc -
+ture signalling a transition from theoretical AI adoption
+toward locally validated, population-adapted implemen -
+tation [38].
+Real-world clinical impact and implementation
+prerequisites
+Although AI/ML technologies demonstrate strong per -
+formance in cancer diagnosis, prognosis, treatment plan -
+ning, and precision oncology, real-world clinical impact
+depends on multiple factors beyond predictive accu -
+racy. Clinician trust, workflow compatibility, healthcare
+infrastructure, cost-effectiveness, equitable access, and
+prospective multicenter validation jointly determine
+the practical utility and long-term sustainability of AIassisted oncology systems. Future translational efforts
+must therefore prioritise not only performance improve -
+ment but also the development of clinically meaning -
+ful, safe, and equitable decision-support tools validated
+against real-world patient population heterogeneity
+across diverse healthcare settings [38, 60–62].
+Integration of AI with telemedicine and mobile health
+platforms represents an important access-expansion
+strategy for geographically underserved populations [ 63,
+82]. However, the core bottleneck in oncology AI research
+is a disproportionate emphasis on static retrospective
+Fig. 4 Distribution of AI-assisted oncology clinical trials registered in ClinicalTrials.Gov, stratified by application domain, cancer type, and geographic
+location. (A) Distribution across clinical domains: diagnostic biomarkers (~54%), non-diagnostic biomarkers (~28.6%), treatment decision-support (~12%),
+supportive care (~4%), and other applications. ( B) Distribution by cancer type: colon cancer (~22.7%), lung cancer (~9%), head and neck cancer (~8%),
+breast cancer (~7.8%), skin cancer (~6.3%), prostate cancer (~6.3%), oesophageal and gastric cancer (~6.3%), liver cancer (~5%), cervical cancer (~3.5%),
+and bladder cancer (~3.3%). ( C) Top ten countries by number of registered AI-assisted oncology trials evaluating AI-driven tools for cancer manage -
+ment. Reproduced from: Goda RY, Abdel-Aziz AK. Exploiting artificial intelligence in precision oncology: an updated comprehensive review. J transl Med.
+2025;23:1397. doi:10.1186/s12967-025–07308-2, under the terms of the creative commons attribution 4.0 international license (CC BY 4.0)
+
+
+======================================================================
+PAGE 19
+======================================================================
+
+Page 19 of 25
+validation scores at the expense of long-term operational
+feasibility. Most published models train on highly curated
+historical repositories that mask the operational realities
+of active clinics. During prospective deployment, predic -
+tive reliability routinely degrades driven by unmitigated
+dataset shift, where changing patient demographics or
+new imaging hardware alter incoming feature distribu -
+tions, and by algorithmic friction from poor integration
+with legacy electronic health record architectures [ 83,
+84].
+Clinical translation further fails because standard ret -
+rospective validation ignores human-system interaction
+dynamics. A model achieving exceptional retrospective
+AUC can still fail clinically when its interface increases
+cognitive burden, generating user fatigue or complete
+tool abandonment. Sustainable deployment therefore
+requires treating AI not as a software release but as a continuously monitored clinical process anchored by opensource auditing pipelines, standardised data schemas,
+prospective clinical utility testing, and explicit humanin-the-loop oversight. Marginal gains in raw predictive
+accuracy must be deprioritised in favour of operation -
+ally robust, clinician-compatible, governance-compliant
+translational systems [83, 84].
+AI failures in oncology: documented lessons for robust
+translation
+A scientifically balanced evaluation of oncology AI
+requires explicit engagement with documented imple -
+mentation failures. IBM Watson for Oncology trained
+substantially on synthetic scenarios at a single institu -
+tion demonstrated low concordance with tumour board
+recommendations across multiple international deploy -
+ments, ultimately contributing to its commercial divest -
+ment [ 85]. The Epic Sepsis Model, deployed across
+hundreds of US hospitals, achieved a sensitivity of only
+33% and AUC of 0.63 in independent external valida -
+tion far below developer-reported performance while
+generating clinically significant alert fatigue [ 86]. A sys -
+tematic review of COVID-19 imaging AI found none of
+415 evaluated models clinically deployable, with data
+leakage, site-confounded labels, and demographic bias
+as recurrent failure mechanisms [ 33]. Dataset shift the
+distributional change between training and deploy -
+ment populations has been identified as a generalised
+threat across clinical AI pipelines [ 59]. These failures
+collectively define minimum operational standards: pro -
+spective external validation on demographically and geo -
+graphically distinct cohorts, site-stratified rather than
+patient-stratified data splits, explicit auditing for scanner,
+staining, site, and label-source confounders, continuous
+drift monitoring, and shadow-mode deployment prior to
+clinical workflow activation.
+To systematically evaluate the clinical footprint of
+artificial intelligence within the oncology landscape,
+the dataset visualised in Fig. 2 was generated through a
+structured scoping audit of ClinicalTrials.gov. An initial
+registry query targeting machine learning, deep learning,
+and computational oncology applications was executed
+across all active trial records available at the time of audit.
+A subsequent data-cleansing protocol eliminated records
+lacking verified algorithmic intervention pipelines, dupli -
+cate entries, and trials without oncology-specific pri -
+mary clinical endpoints. This filtering procedure yielded
+a finalised analytical cohort of 397 active, independently
+verified oncology clinical trials, constituting the quantitative basis for all reported distributions.
+The reported percentage distributions were derived
+by stratifying the 397-trial cohort into mutually exclu -
+sive subsets according to primary clinical intent, cancer
+type, and geographic registration. For a finite cohort of
+N_“total” validated trials, let idenote a specific clinical
+application domain and n_idenote the number of trials
+classified within that domain. The normalised percentage
+distribution P_ifor each category is formally defined as:
+Pi =
+( ni
+Ntotal
+× 100 (20)
+and Ntotal = 397 and ∑ ni = Ntotal
+• Piis the final percentage allocation representing
+the relative clinical footprint of the i-th application
+domain;
+• nirepresents the absolute frequency count of active,
+verified clinical trials strictly categorized within that
+specific operational layer;
+• Ntotal is the total number of unique, non-redundant
+clinical trials qualifying after data-cleansing filters
+(Ntotal = 397).
+To confirm the structural composition of the dataset, the
+categorical sum must satisfy the constraint of complete -
+ness, ensuring no overlapping profiles or unclassified
+data remnants exist within the analyzed ecosystem:
+M∑
+ni = n1 + n2 + ··· + nM = Ntotal (21)
+where M represents the total number of distinct clinical
+application categories (M =4 ).
+Substituting the empirically derived frequency values:
+ndiagnostic = 214
+
+
+======================================================================
+PAGE 20
+======================================================================
+
+Page 20 of 25
+nnon−diagnostic = 114
+ntreatment = 48
+nsupportive = 16
+into the system demonstrates precise compliance with
+the total sample space boundaries, providing a verifi -
+able, reproducible statistical foundation for the observed
+macro-trends. Diagnostic workflows comprised the clear
+majority at 54%, driven by a heavy focus on algorithmic
+lesion characterization and automated screening, fol -
+lowed by non-diagnostic monitoring protocols at 28.6%,
+automated treatment decision-support systems at 12%,
+and patient supportive care platforms at 4%.
+T o confirm the structural completeness of the audited
+dataset, the categorical sum across all application
+domains must satisfy Σni = Ntotal = 397, ensuring no
+overlapping trial classifications or unclassified records
+persist within the analytical cohort. Compliance with
+this total-sample-space boundary condition provides a
+verifiable and reproducible statistical foundation for all
+reported distributional patterns. Diagnostic workflows
+comprised the clear majority at 54%, driven by algorith -
+mic lesion characterization and automated screening
+pipelines; non-diagnostic monitoring protocols followed
+at 28.6%, automated treatment decision-support systems
+at 12%, and patient supportive care platforms at 4%, with
+the combined distribution confirming full categorical
+coverage.
+India-specific implementation: translational
+challenges and contextual opportunities
+To cover up the gap between research and clinical imple -
+mentation, a well-thought-out implementation strategy
+should be developed that fits well with the Indian health -
+care scenario.
+Firstly, data standardization and interoperability should
+be enhanced with the help of FHIR and a unified national
+health data architecture to enable smooth integration
+between different healthcare centres [ 87, 88]. Secondly,
+capacity building and collaboration should also take cen -
+tre stage with the help of AI literacy among clinicians
+and collaboration between data scientists and healthcare
+practitioners to ensure that the developed solutions are
+clinically relevant [89]. Thirdly, the regulatory framework
+should also change to accommodate AI-based medical
+technologies with the help of thorough validation using
+Indian population data for ensuring fairness, reliabil -
+ity, and generalizability [ 84, 90]. Lastly, public-private
+partnerships should also play a key role in accelerat -
+ing innovation with the help of shared resources for the
+large-scale implementation of AI systems in the domain
+of oncology [91, 92].
+The trajectory of AI/ML adoption in India will be
+shaped by scalability imperatives, cost-effectiveness con -
+straints, and population health literacy factors that must
+collectively address the heterogeneous infrastructural
+landscape and fragmented data ecosystems character -
+istic of Indian healthcare. Expansion of national digital
+health initiatives and cancer registry networks is pro -
+jected to enable construction of large, representative,
+and longitudinally annotated datasets, supporting more
+robust and externally generalisable AI/ML models [ 93,
+94]. Federated and privacy-preserving learning frame -
+works represent a particularly critical research direction,
+enabling collaborative multi-institutional model development without centralised patient data transfer a frame -
+work directly suited to contexts where data sharing is
+frequently constrained by infrastructural and regulatory
+barriers [ 95, 96]. Future AI deployments must addition -
+ally prioritise lightweight, interpretable, and workflowcompatible architectures for early detection, triage, and
+treatment in rural and semi-urban settings, while main -
+taining regulatory alignment with CDSCO Medical
+Device Rules 2017 requirements for prospective clinical
+validation using representative Indian population data
+[61, 62, 97].
+The vast majority of Western-trained oncology models
+lack adequate South Asian demographic representation,
+producing documented performance degradation when
+deployed in India due to distinct epidemiological realities
+including a high burden of region-specific oral squamous
+cell carcinoma subtypes and early-onset breast cancers
+presenting in dense fibroglandular tissue. To address
+this translational gap, Indian initiatives are transition -
+ing toward localised, prospectively validated deployment
+frameworks. Niramai Thermalytix has circumvented the
+known limitations of mammography in dense breast tis -
+sue by deploying AI-driven infrared thermography to
+detect metabolic heat variations, validated across multicentre Indian trials [AW]. Concurrently, the contactless
+monitoring platform Dozee employs machine learning to
+continuously track patient vitals, directly mitigating acute
+nurse workforce shortages at major centres including
+NIMHANS [AX]. Structural data fragmentation is being
+systematically countered by the National Cancer Grid,
+linking over 300 hospitals under unified data schemas to
+build India-native biobanks essential for training popula -
+tion-representative oncology AI [98, 99]. These initiatives
+collectively represent a transition from Western-adapted
+deployment toward indigenously validated, epidemiolog -
+ically grounded precision oncology frameworks.
+Regulatory landscape for AI-driven healthcare
+technologies in India
+In India, AI-based clinical software is regulated under
+the Medical Device Rules (MDR), 2017 by the Central
+
+
+======================================================================
+PAGE 21
+======================================================================
+
+Page 21 of 25
+Drugs Standard Control Organization (CDSCO). When
+artificial intelligence is intended for diagnostic or thera -
+peutic decision-making, it is considered a medical device
+and requires submission of detailed technical documen -
+tation prior to approval. Manufacturers must specify the
+intended clinical use, risk classification, algorithm design,
+and evidence of analytical and clinical performance [ 100,
+101]. Documentation related to dataset quality, safety
+validation, and quality management practices is also
+required to ensure reliability of AI-based outputs. Postmarket monitoring is additionally recommended to eval -
+uate real-world performance and maintain patient safety
+[102]. These regulatory provisions aim to ensure that
+AI-driven healthcare technologies are safe, effective, and
+suitable for clinical implementation in the Indian health -
+care system [103].
+The three principal regulatory ecosystems treat adap -
+tive AI differently (Table 2). In the United States, the
+FDA’s December 2024 final guidance on Predetermined
+Change Control Plans under section 515C of the FD&C
+Act permits manufacturers of AI/ML-enabled SaMD
+to obtain prospective authorisation for pre-specified
+modifications through a SaMD Pre-Specification and
+an Algorithm Change Protocol [ 104]. In the European
+Union, Regulation (EU) 2024/1689 (the AI Act) classi -
+fies most medical AI as high-risk, imposing obligations
+on data governance, transparency, human oversight,
+and post-market monitoring above existing MDR or
+IVDR conformity requirements; adaptive learning sys -
+tems additionally require explicit risk management pro -
+visions for performance drift and distributional shift
+[105]. India’s Medical Device Rules 2017, administered
+by CDSCO, regulate AI-based clinical software through
+risk-classified pathways but lack a formal PCCP-equiv -
+alent mechanism adaptive algorithms must therefore
+either remain locked at approval or undergo full repeat
+submissions for material updates [ 106]. Harmonizing the
+Indian framework with internationally accepted adap -
+tive-algorithm governance principles and post-market
+surveillance standards would accelerate domestic oncol -
+ogy AI translation while preserving patient safety. A
+structured comparison across dimensions most relevant
+adaptive AI is provided in Table 2.
+Conclusion
+Artificial intelligence and machine learning have substantial potential to improve translational oncology, but their
+value lies less in isolated predictive performance than in
+their integration across the full pathway from data gen -
+eration to real-world clinical use. The central message
+of this review is that successful oncology AI requires
+coordinated attention to multimodal data quality,
+Table 2 Comparative regulatory frameworks governing adaptive artificial intelligence in oncology across the United States (FDA),
+European Union (EU), and India (CDSCO)
+Dimension United States (FDA) European Union (EU) India (CDSCO) References
+Primary
+instrument
+FD&C Act, section 515C; PCCP Final
+Guidance, December 2024
+MDR (EU) 2017/745; IVDR (EU)
+2017/746; AI Act (EU) 2024/1689
+Medical Device Rules, 2017 under
+Drugs and Cosmetics Act, 1940
+[104–106]
+Classification of
+clinical AI
+Software as a Medical Device (SaMD),
+risk-classified Class I–III
+High-risk AI system under AI Act,
+layered on MDR/IVDR Class IIa–III
+conformity
+Medical device, Class A–D based on
+intended risk profile
+[104–106]
+Approval
+pathway
+510(k), De Novo, or PMA depending on risk class; PCCP authorisation
+available for pre-specified algorithm
+changes
+MDR/IVDR conformity assessment by
+Notified Body, plus separate AI Act
+conformity assessment
+Manufacturing or import licence
+(Form MD-9/MD-15) following
+technical-file review by CDSCO
+[104–106]
+Adaptive-algorithm pathway
+PCCP with SaMD Pre-Specification
+and Algorithm Change Protocol;
+pre-authorised modifications do not
+require new submission
+AI Act Article 43 requires reassessment for substantial modifications;
+performance drift is an explicit riskmanagement obligation
+No formal PCCP-equivalent; algorithms either locked at approval or
+resubmitted in full for each material
+update
+[104–106]
+Post-market
+obligations
+Total Product Life Cycle (TPLC)
+approach: real-world performance
+monitoring, periodic reporting, and
+MDR adverse-event reporting
+Mandatory post-market surveillance
+plan, periodic safety update reports,
+and serious-incident reporting under
+MDR/MDCG guidance and AI Act
+post-market monitoring
+Post-market surveillance recommended but not yet mandated for AI;
+adverse-event reporting via Materiovigilance Programme of India (MvPI)
+[104–106]
+Transparency and data
+governance
+Algorithm-modification transparency
+required in labelling and Special
+Controls; bias-mitigation principles
+incorporated in 2024 PCCP guidance
+AI Act Articles 10–15: data governance, technical documentation,
+transparency, human oversight,
+robustness, and cybersecurity
+requirements
+Technical documentation must
+include dataset description, validation
+evidence, algorithm design, and QMS
+practices; no codified AI-specific
+data-governance or bias-mitigation
+regime yet
+[104–106]
+Maturity for
+adaptive oncology AI
+Most mature framework for adaptive
+AI; PCCP specifically designed for
+continuously evolving models
+Comprehensive but newest framework; many AI Act provisions phase in
+progressively through 2026–2027
+Foundational medical-device
+framework in place; AI-specific and
+adaptive-algorithm governance provisions are still emerging
+[104–106]
+
+
+======================================================================
+PAGE 22
+======================================================================
+
+Page 22 of 25
+harmonization, biologically credible modelling, rigorous
+and multidimensional validation, workflow integration,
+and adaptive governance.
+By framing the manuscript as a narrative review and
+end-to-end translational framework article, this revi -
+sion clarifies both scope and distinctive contribution.
+It highlights that the true bottleneck in oncology AI is
+not a shortage of algorithms, but a shortage of clinically
+grounded, externally validated, implementation-ready
+systems. Addressing that bottleneck will require interop -
+erable data ecosystems, federated collaboration, explain -
+able and auditable models, and prospective evidence
+of patient benefit. For India and other heterogeneous
+healthcare settings, context-sensitive deployment strate -
+gies will be essential if AI/ML is to move from computa -
+tional promise to measurable oncology impact [107, 108].
+Abbreviations
+AI Artificial Intelligence
+ML Machine Learning
+DL Deep Learning
+ANN Artificial Neural Network
+DNN Deep Neural Network
+CNN Convolutional Neural Network
+GNN Graph Neural Network
+RL Reinforcement Learning
+NLP Natural Language Processing
+LLM Large Language Model
+GAN Generative Adversarial Network
+DANN Domain-Adversarial Neural Network;
+AUC Area Under the Curve
+ROC Receiver Operating Characteristic
+AUROC Area Under the Receiver Operating Characteristic Curve
+AUPRC Area Under the Precision–Recall Curve
+PR Precision–Recall
+MCC Matthews Correlation Coefficient
+ECE Expected Calibration Error
+TPR True Positive Rate
+FPR False Positive Rate
+DCA Decision Curve Analysis
+NB Net Benefit
+LASSO Least Absolute Shrinkage and Selection Operator
+EN Elastic Net
+ComBat Empirical Bayes Batch-Effect Correction Method
+MMD Maximum Mean Discrepancy
+FID Fréchet Inception Distance
+MOFA Multi-Omics Factor Analysis
+TSTR Train-on-Synthetic, Test-on-Real
+SHAP SHapley Additive exPlanations
+LIME Local Interpretable Model-agnostic Explanations
+PRS Polygenic Risk Score
+RT-DMF Residual Threshold Deep Matrix Factorization
+DIPK Deep Neural Network Integrating Prior Knowledge
+HER Electronic Health Record
+EMR Electronic Medical Record
+FHIR Fast Healthcare Interoperability Resources
+API Application Programming Interface
+PACS Picture Archiving and Communication System
+GDPR General Data Protection Regulation
+DNA Deoxyribonucleic Acid
+RNA Ribonucleic Acid
+mRNA Messenger Ribonucleic Acid
+NGS Next-Generation Sequencing
+WES Whole-Exome Sequencing
+WGS Whole-Genome Sequencing
+SNP Single-Nucleotide Polymorphism
+SNV Single-Nucleotide Variant
+CNV Copy-Number Variation
+TCGA The Cancer Genome Atlas
+ICGC International Cancer Genome Consortium
+GDSC Genomics of Drug Sensitivity in Cancer
+CCLE Cancer Cell Line Encyclopedia
+MRI Magnetic Resonance Imaging
+CT Computed Tomography
+PET Positron Emission Tomography
+WSI Whole-Slide Image
+H&E Haematoxylin and Eosin
+FDA Food and Drug Administration
+EU European Union
+CDSCO Central Drugs Standard Control Organisation
+MDR Medical Device Rules
+PCCP Predetermined Change Control Plan
+TPLC Total Product Life Cycle
+SaMD Software as a Medical Device
+NHS National Health Service
+WHO World Health Organization
+IBM WFO IBM Watson for Oncology
+MSKCC Memorial Sloan Kettering Cancer Center
+NCCN National Comprehensive Cancer Network
+FIT Found In Translation
+CONSORT-AI Consolidated Standards of Reporting Trials–Artificial
+Intelligence
+DECIDE-AI Developmental and Exploratory Clinical Investigations of
+Decision Support Systems Driven by Artificial Intelligence
+Acknowledgements
+The Authors are thankful for University Sophisticated Instrumentation Centre
+(USIC), JSS AHER, Mysuru, Karnataka, India. for their support in drafting this
+article.
+Author contributions
+Komal Kumar Javarappa: Conceptualization, literature review, manuscript
+drafting, figure preparation, and overall supervision of the review. Shalini Saha:
+Writing original draft, literature review, figure preparation. Md Saif Ali: Writing
+original draft, proofreading and technical feedback. Sankeerthana Renuka
+Prasad: Critical revision, formatting and final review, reference checking and
+editing assistance. Pramod Mallikarjunnaswamy: Formatting and final review,
+Critical comments and language editing. Anand Kumar Tengli: Final review
+and Supervision. Ramkumar Pillappan: Creation and design of figure, final
+review and supervision.
+Funding
+Open access funding provided by JSS Academy of Higher Education and
+Research, Mysore.
+Data availability
+Not applicable.
+Declarations
+Ethical approval and consent to participate
+Not required.
+Consent for publication
+Not required.
+Competing interests
+The authors declare no conflict of interest.
+Received: 7 April 2026 / Accepted: 16 June 2026
+
+
+======================================================================
+PAGE 23
+======================================================================
+
+Page 23 of 25
+References
+1. Jiang P , Sinha S, Aldape K, Hannenhalli S, Sahinalp C, Ruppin E. Big data in
+basic and translational cancer research. Nat Rev Cancer. 2022;22(11):625–39.
+https:/ /doi.or g/10.10 38/s 41568-022-00502-0.
+2. Bray F, Laversanne M, Sung H, Ferlay J, Siegel RL, Soerjomataram I, et al.
+Global cancer statistics 2022: GLOBOCAN estimates of incidence and
+mortality worldwide for 36 cancers in 185 countries. CA Cancer J Clinicians.
+2024;74(3):229–63. https:/ /doi.or g/10.33 22/c aac.21834.
+3. Zhu L, Zhu J, Wang Q, Sun X, Yuan Y, Ding S, et al. Global, regional, and
+national burden of 34 cancer groups across 204 countries and territories,
+1990–2021, and projections to 2050: a systematic analysis of the Global
+burden of disease study 2021. Front Oncol. 2025;15:1660125. h t t p s : / / d o i . o r g /
+1 0 . 3 3 8 9 / f o n c . 2 0 2 5 . 1 6 6 0 1 2 5 .
+4. Costa FF. Big data analytics in oncology: opportunities and challenges. Methods. 2016;111:50–56.
+5. Bhinder B, Gilvary C, Madhukar NS, Elemento O. Artificial intelligence in
+cancer research and precision medicine. Cancer Discov. 2021;11(4):900–15.
+https:/ /doi.or g/10.11 58/2 159-8290.CD-21-0090.
+6. Kahn CE Jr, Carrino JA, Flynn MJ, Peck DJ, Horii SC. DICOM and radiology: past,
+present, and future. J Am Coll Radiol. 2007;4(9):652–57. h t t p s : / / d o i . o r g / 1 0 . 1 0 1
+6 / j . j a c r . 2 0 0 7 . 0 6 . 0 0 4 .
+7. Gogoshin G, Rodin AS. Graph neural networks in cancer and oncology
+research: emerging and future trends. Cancers (Basel). 2023;15(24):5858.
+https:/ /doi.or g/10.33 90/c ancers15245858.
+8. Davenport T, Kalakota R. The potential for artificial intelligence in healthcare.
+Future Healthcare J. 2019;6(2):94–98. h t t p s : / / d o i . o r g / 1 0 . 7 8 6 1 / f u t u r e h o s p . 6 - 2 -
+9 4 .
+9. Chaudhary K, Poirion OB, Lu L, Garmire LX. Deep learning–based multiomics integration robustly predicts survival in liver cancer. Clin Cancer Res.
+2018;24(6):1248–59. https:/ /doi.or g/10.11 58/1 078-0432.CCR-17-0853.
+10. Masucci M, Karlsson C, Blomqvist L, Ernberg I. Bridging the divide: a review on
+the implementation of personalized cancer medicine. JPM. 2024;14(6):561.
+https:/ /doi.or g/10.33 90/j pm14060561.
+11. Sweeney SM, Hamadeh HK, Abrams N, Adam SJ, Brenner S, Connors DE, et al.
+Case studies for overcoming challenges in using big data in cancer. Cancer
+Res. 2023;83(8):1183–90. https:/ /doi.or g/10.11 58/0 008-5472.CAN-22-1277.
+12. Frasca M, La Torre D, Repetto M, De Nicolo V, Pravettoni G, Cutica I. Artificial
+intelligence applications to genomic data in cancer research: a review of
+recent trends and emerging areas. Discov Anal. 2024;2(1):10. h t t p s : / / d o i . o r g / 1
+0 . 1 0 0 7 / s 4 4 2 5 7 - 0 2 4 - 0 0 0 1 7 - y .
+13. Stokes JM, Yang K, Swanson K, Jin W, Cubillos-Ruiz A, Donghia NM, et al. A
+deep learning approach to antibiotic discovery. Cell. 2020;181(2):475–83.
+https:/ /doi.or g/10.10 16/j .cell.2020.04.001.
+14. Boehm KM, Khosravi P , Vanguri R, Gao J, Shah SP . Harnessing multimodal data
+integration to advance precision oncology. Nat Rev Cancer. 2022;22(2):114–
+26. https:/ /doi.or g/10.10 38/s 41568-021-00408-3.
+15. Witten DM, Tibshirani R. Survival analysis with high-dimensional covariates.
+Stat Methods Med Res. 2010;19(1):29–51. h t t p s : / / d o i . o r g / 1 0 . 1 1 7 7 / 0 9 6 2 2 8 0 2 0
+9 1 0 5 0 2 4 .
+16. Simon N, Friedman JH, Hastie T, Tibshirani R. Regularization paths for Cox’s
+proportional hazards model via coordinate descent. J Stat Soft. 2011;39(5):1–
+13. https:/ /doi.or g/10.18 637/ jss.v039.i05.
+17. Wang P , Li Y, Reddy CK. Machine learning for survival analysis: a survey. ACM
+Comput Surv. 2019;51(6):1–36. https:/ /doi.or g/10.11 45/3 214306.
+18. Liu F, Beck S, Yang L, Luo H, Zhang K. Advancing AI for multi-omics and
+clinical data integration in basic and translational cancer research. Nat Rev
+Cancer. 2026;26(5):285–301. https:/ /doi.or g/10.10 38/s 41568-026-00922-2.
+19. Leek JT, Scharpf RB, Bravo HC, Simcha D, Langmead B, Johnson WE, et al. Tackling the widespread and critical impact of batch effects in high-throughput
+data. Nat Rev Genet. 2010;11(10):733–39. https:/ /doi.or g/10.10 38/n rg2825.
+20. Picard M, Scott-Boyer MP , Bodein A, Perin O, Droit A. Integration strategies of
+multi-omics data for machine learning analysis. Comput Struct Biotechnol J.
+2021;19:3735–46. https:/ /doi.or g/10.10 16/j .csbj.2021.06.030.
+21. Argelaguet R, Velten B, Arnol D, Dietrich S, Zenz T, Marioni JC, et al. Multiomics factor analysis—a framework for unsupervised integration of multiomics data sets. Mol Syst Biol. 2018;14(6):e8124. h t t p s : / / d o i . o r g / 1 0 . 1 5 2 5 2 / m s
+b . 2 0 1 7 8 1 2 4 .
+22. Argelaguet R, Arnol D, Bredikhin D, Deloro Y, Velten B, Marioni JC, et al.
+MOFA+: a statistical framework for comprehensive integration of multi-modal
+single-cell data. Genome Biol. 2020;21(1):111. h t t p s : / / d o i . o r g / 1 0 . 1 1 8 6 / s 1 3 0 5
+9 - 0 2 0 - 0 2 0 1 5 - 1 .
+23. Stahlschmidt SR, Ulfenborg B, Synnergren J. Multimodal deep learning for
+biomedical data fusion: a review. Briefings Bioinf. 2022;23(2):bbab569. h t t p s : / /
+d o i . o r g / 1 0 . 1 0 9 3 / b i b / b b a b 5 6 9 .
+24. Singhal K, Azizi S, Tu T, Mahdavi SS, Wei J, Chung HW, et al. Large language
+models encode clinical knowledge. Nature. 2023;620(7972):172–80. h t t p s : / / d
+o i . o r g / 1 0 . 1 0 3 8 / s 4 1 5 8 6 - 0 2 3 - 0 6 2 9 1 - 2 .
+25. Vamathevan J, Clark D, Czodrowski P , Dunham I, Ferran E, Lee G, et al. Applications of machine learning in drug discovery and development. Nat Rev Drug
+Discov. 2019;18(6):463–77. https:/ /doi.or g/10.10 38/s 41573-019-0024-5.
+26. Tjoa E, Guan C. A survey on explainable artificial intelligence (XAI): toward
+medical XAI. IEEE Trans Neural Netw Learn Syst. 2021;32(11):4793–813. https:/
+/doi.or g/10.11 09/T NNLS.2020.3027314.
+27. Kourou K, Exarchos TP , Exarchos KP , Karamouzis MV, Fotiadis DI. Machine
+learning applications in cancer prognosis and prediction. Comput Struct
+Biotechnol J. 2015;13:8–17. https:/ /doi.or g/10.10 16/j .csbj.2014.11.005.
+28. Litjens G, Kooi T, Bejnordi BE, Setio AAA, Ciompi F, Ghafoorian M, et al.
+A survey on deep learning in medical image analysis. Med Image Anal.
+2017;42:60–88. https:/ /doi.or g/10.10 16/j .media.2017.07.005.
+29. Gao H, Korn JM, Ferretti S, Monahan JE, Wang Y, Singh M, et al. High-throughput screening using patient-derived tumor xenografts to predict clinical trial
+drug response. Nat Med. 2015;21(11):1318–25. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / n m . 3 9
+5 4 .
+30. Li T, Sahu AK, Talwalkar A, Smith V. Federated learning: challenges, methods,
+and future directions. IEEE Signal Process Mag. 2020;37(3):50–60. h t t p s : / / d o i . o
+r g / 1 0 . 1 1 0 9 / M S P . 2 0 2 0 . 2 9 7 5 7 4 9 .
+31. Goel I, Bhaskar Y, Kumar N, Singh S, Amanullah M, Dhar R, et al. Role of AI in
+empowering and redefining the oncology care landscape: perspective from
+a developing nation. Front Digit Health. 2025;7:1550407. h t t p s : / / d o i . o r g / 1 0 . 3 3
+8 9 / f d g t h . 2 0 2 5 . 1 5 5 0 4 0 7 .
+32. Rajpurkar P , Chen E, Banerjee O, Topol EJ. AI in health and medicine. Nat Med.
+2022;28(1):31–38. https:/ /doi.or g/10.10 38/s 41591-021-01614-0.
+33. Roberts M, Driggs D, Thorpe M, Gilbey J, Yeung M, Ursprung S, et al. Common
+pitfalls and recommendations for using machine learning to detect and
+prognosticate for COVID-19 using chest radiographs and CT scans. Nat Mach
+Intell. 2021;3(3):199–217. https:/ /doi.or g/10.10 38/s 42256-021-00307-0.
+34. Liu R, Rizzo S, Whipple S, Pal N, Pineda AL, Lu M, et al. Evaluating eligibility criteria of oncology trials using real-world data and AI. Nature.
+2021;592(7855):629–33. https:/ /doi.or g/10.10 38/s 41586-021-03430-5.
+35. Kelly CJ, Karthikesalingam A, Suleyman M, Corrado G, King D. Key challenges for delivering clinical impact with artificial intelligence. BMC Med.
+2019;17(1):195. https:/ /doi.or g/10.11 86/s 12916-019-1426-2.
+36. Day CP , Merlino G, Van Dyke T. Preclinical mouse cancer models: a maze of
+opportunities and challenges. Cell. 2015;163(1):39–53. h t t p s : / / d o i . o r g / 1 0 . 1 0 1
+6 / j . c e l l . 2 0 1 5 . 0 8 . 0 6 8 .
+37. Sendak MP , D’Arcy J, Kashyap S, Gao M, Nichols M, Corey K, et al. A path for
+translation of machine learning products into healthcare delivery. EMJ Innov.
+2020;4(1):45–53. https:/ /doi.or g/10.33 590/ emjinnov/19-00172.
+38. Naik N, Hameed BMZ, Shetty DK, Swain D, Shah M, Paul R, et al. Legal and
+ethical consideration in artificial intelligence in healthcare: who takes responsibility? Front Surg. 2022;9:862322. https:/ /doi.or g/10.33 89/f surg.2022.862322.
+39. Lipkova J, Chen RJ, Chen B, Lu MY, Barbieri M, Shao D, et al. Artificial
+intelligence for multimodal data integration in oncology. Cancer Cell.
+2022;40(10):1095–110. https:/ /doi.or g/10.10 16/j .ccell.2022.09.012.
+40. Johnson WE, Li C, Rabinovic A. Adjusting batch effects in microarray expression data using empirical Bayes methods. Biostatistics. 2007;8(1):118–27.
+https:/ /doi.or g/10.10 93/b iostatistics/kxj037.
+41. Zhang Y, Parmigiani G, Johnson WE. ComBat-seq: batch effect adjustment for
+RNA-seq count data. NAR Genomics Bioinf. 2020;2(3):lqaa078. h t t p s : / / d o i . o r g /
+1 0 . 1 0 9 3 / n a r g a b / l q a a 0 7 8 .
+42. Guan H, Liu M. Domain adaptation for medical image analysis: a survey. IEEE
+Trans Biomed Eng. 2022;69(3):1173–85. h t t p s : / / d o i . o r g / 1 0 . 1 1 0 9 / T B M E . 2 0 2 1 . 3
+1 1 7 4 0 7 .
+43. Schork NJ. Artificial intelligence and personalized medicine. Cancer Treat Res.
+2019;178:265–83. https:/ /doi.or g/10.10 07/9 78-3-030-16391-4_11.
+44. Saito T, Rehmsmeier M. The precision-recall plot is more informative than the
+ROC plot when evaluating binary classifiers on imbalanced datasets. PLoS
+ONE. 2015;10(3):e0118432. https:/ /doi.or g/10.13 71/j ournal.pone.0118432.
+45. Chicco D, Jurman G. The advantages of the Matthews correlation coefficient
+(MCC) over F1 score and accuracy in binary classification evaluation. BMC
+Genomics. 2020;21(1):6. https:/ /doi.or g/10.11 86/s 12864-019-6413-7.
+
+
+======================================================================
+PAGE 24
+======================================================================
+
+Page 24 of 25
+46. Lin TY, Goyal P , Girshick R, He K, Dollar P . Focal loss for dense object detection.
+IEEE Trans Pattern Anal Mach Intell. 2020;42(2):318–27. h t t p s : / / d o i . o r g / 1 0 . 1 1 0
+9 / T P A M I . 2 0 1 8 . 2 8 5 8 8 2 6 .
+47. Rana M, Ahmedi S, Fatima A, Ahmad S, Siddiqui N, Siddiqui N, et al. Synthesis,
+single crystal, TD-DFT, molecular dynamics simulation and DNA binding studies of carbothioamide analog. J Mol Struct. 2023;1287:135701. h t t p s : / / d o i . o r g
+/ 1 0 . 1 0 1 6 / j . m o l s t r u c . 2 0 2 3 . 1 3 5 7 0 1 .
+48. Vickers AJ, van Calster B, Steyerberg EW. A simple, step-by-step guide to
+interpreting decision curve analysis. Diagn Progn Res. 2019;3(1):18. h t t p s : / / d o
+i . o r g / 1 0 . 1 1 8 6 / s 4 1 5 1 2 - 0 1 9 - 0 0 6 4 - 7 .
+49. Vickers AJ, Van Calster B, Steyerberg EW. Net benefit approaches to the evaluation of prediction models, molecular markers, and diagnostic tests. BMJ.
+2016;352:i6. https:/ /doi.or g/10.11 36/b mj.i6.
+50. Olawade DB, Oisakede EO, Bello OJ, Analikwu CC, Egbon E, Ojo A. Digital
+twins in oncology: from predictive modelling to personalised treatment
+strategies. Crit Rev Oncol/Hematol. 2026;220:105171. h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 /
+j . c r i t r e v o n c . 2 0 2 6 . 1 0 5 1 7 1 .
+51. Morley J, Machado CCV, Burr C, Cowls J, Joshi I, Taddeo M, et al. The ethics of
+AI in healthcare: a mapping review. Soc Sci Med. 2020;260:113172. h t t p s : / / d o i
+. o r g / 1 0 . 1 0 1 6 / j . s o c s c i m e d . 2 0 2 0 . 1 1 3 1 7 2 .
+52. Singh V, Cheng S, Kwan AC, Ebinger J. United States Food and drug Administration regulation of clinical software in the era of artificial intelligence and
+machine learning. Mayo Clinic Proc: Digit Health. 2025;3(3):100231. h t t p s : / / d o
+i . o r g / 1 0 . 1 0 1 6 / j . m c p d i g . 2 0 2 5 . 1 0 0 2 3 1 .
+53. Sendak MP , Gao M, Brajer N, Balu S. Presenting machine learning model
+information to clinical end users with model facts labels. NPJ Digit Med.
+2020;3(1):41. https:/ /doi.or g/10.10 38/s 41746-020-0253-3.
+54. Koch LM, Baumgartner CF, Berens P . Distribution shift detection for the
+postmarket surveillance of medical AI algorithms: a retrospective simulation
+study. NPJ Digit Med. 2024;7(1):173. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / s 4 1 7 4 6 - 0 2 4 - 0 1 0 8
+5 - w .
+55. Abdul Razak MS, Nirmala CR, Sreenivasa BR, Lahza H, Lahza HFM. A survey on
+detecting healthcare concept drift in AI/ML models from a finance perspective. J Healthc Inf Res. 2025;9(4):312–35. h t t p s : / / d o i . o r g / 1 0 . 1 0 0 7 / s 4 1 6 6 6 - 0 2
+5 - 0 0 4 8 2 - w .
+56. Arun S, Grosheva M, Kosenko M, Robertus JL, Blyuss O, Gabe R, et al. Systematic scoping review of external validation studies of AI pathology models for
+lung cancer diagnosis. NPJ Precis Onc. 2025;9(1):100366. h t t p s : / / d o i . o r g / 1 0 . 1 0
+3 8 / s 4 1 6 9 8 - 0 2 5 - 0 0 9 4 0 - 7 .
+57. Seyyed-Kalantari L, Zhang H, McDermott MBA, Chen IY, Ghassemi M. Underdiagnosis bias of artificial intelligence algorithms applied to chest radiographs in under-served patient populations. Nat Med. 2021;27(12):2176–82.
+https:/ /doi.or g/10.10 38/s 41591-021-01595-0.
+58. Obermeyer Z, Powers B, Vogeli C, Mullainathan S. Dissecting racial bias
+in an algorithm used to manage the health of populations. Science.
+2019;366(6464):447–53. https:/ /doi.or g/10.11 26/s cience.aax2342.
+59. Finlayson SG, Subbaswamy A, Singh K, Bowers J, Kupke A, Zittrain J, et
+al. The clinician and dataset shift in artificial intelligence. N Engl J Med.
+2021;385(3):283–86. https:/ /doi.or g/10.10 56/N EJMc2104626.
+60. de Vries CF, Lip G, Staff RT, Dymiter JA, Tse B, Ng A, et al. Prospective evaluation of artificial intelligence integration into breast cancer screening in
+multiple workflow settings: the GEMINI study. Nat Commun. 2024;15:6834.
+https:/ /doi.or g/10.10 38/s 41467-024-51152-7.
+61. Topol EJ. High-performance medicine: the convergence of human and
+artificial intelligence. Nat Med. 2019;25(1):44–56. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / s 4 1
+5 9 1 - 0 1 8 - 0 3 0 0 - 7 .
+62. Panch T, Szolovits P , Atun R. Artificial intelligence, machine learning and
+health systems. J Global Health. 2018;8(2):020303. h t t p s : / / d o i . o r g / 1 0 . 7 1 8 9 / j o g
+h . 0 8 . 0 2 0 3 0 3 .
+63. World Health Organization. WHO guideline: recommendations on digital
+interventions for health system strengthening. 2019. Available from: h t t p s : / / i r
+i s . w h o . i n t / s e r v e r / a p i / c o r e / b i t s t r e a m s / c 3 c 5 3 f 3 0 - 2 3 c c - 4 8 d 0 - a 3 b 5 - c 0 5 d d d 7 f 5 3
+4 9 / c o n t e n t . Geneva: World Health Organization.
+64. Elmarakeby HA, Hwang J, Arafeh R, Crowdis J, Gang S, Liu D, et al. Biologically informed deep neural network for prostate cancer discovery. Nature.
+2021;598(7880):348–52. https:/ /doi.or g/10.10 38/s 41586-021-03922-4.
+65. Hartman E, Scott AM, Karlsson C, Mohanty T, Vaara ST, Linder A, et al.
+Interpreting biologically informed neural networks for enhanced proteomic
+biomarker discovery and pathway analysis. Nat Commun. 2023;14(1):5359.
+https:/ /doi.or g/10.10 38/s 41467-023-41146-4.
+66. Famuyiwa SO, Ahmad S, Fakola EG, Olusola AJ, Adesida SA, Obagunle FO, et
+al. Comprehensive computational studies of naturally occurring kuguacins as
+antidiabetic agents by targeting visfatin. Chem Afr. 2023;6(3):1415–27. https:/
+/doi.or g/10.10 07/s 42250-023-00604-8.
+67. Gretton A, Borgwardt KM, Rasch MJ, Scholkopf B, Smola A. A kernel twosample test. J Mach Learn Res. 2012;13(1):723–73.
+68. Heusel M, Ramsauer H, Unterthiner T, Nessler B, Hochreiter S. Gans trained
+by a two time-scale update rule converge to a local Nash equilibrium. Adv
+Neural Inf Process Syst. 2017;30:6626–37. h t t p s : / / d o i . o r g / 1 0 . 4 8 5 5 0 / a r X i v . 1 7 0 6 .
+0 8 5 0 0 .
+69. Esteban C, Hyland SL, Ratsch G. Real-valued (medical) time series generation
+with recurrent conditional GANs. arXiv: 1706.02633 [Preprint]. 2017. h t t p s : / / d
+o i . o r g / 1 0 . 4 8 5 5 0 / a r X i v . 1 7 0 6 . 0 2 6 3 3 .
+70. Treppner M, Salas-Bastos A, Hess M, Lenz S, Vogel T, Binder H. Synthetic single
+cell RNA sequencing data from small pilot studies using deep generative
+models. Sci Rep. 2021;11(1):9403. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / s 4 1 5 9 8 - 0 2 1 - 8 8 8 7
+5 - 4 .
+71. Giuffre M, Shung DL. Harnessing the power of synthetic data in healthcare:
+innovation, application, and privacy. NPJ Digit Med. 2023;6(1):186. h t t p s : / / d o i .
+o r g / 1 0 . 1 0 3 8 / s 4 1 7 4 6 - 0 2 3 - 0 0 9 2 7 - 3 .
+72. Buyse M, Sargent DJ, Grothey A, Matheson A, de Gramont A. Biomarkers and
+surrogate end points—the challenge of statistical validation. Nat Rev Clin
+Oncol. 2010;7(6):309–17. https:/ /doi.or g/10.10 38/n rclinonc.2010.43.
+73. Du Y, Jamasb AR, Guo J, Fu T, Harris C, Wang Y, et al. Machine learning-aided
+generative molecular design. Nat Mach Intell. 2024;6(6):589–604. h t t p s : / / d o i .
+o r g / 1 0 . 1 0 3 8 / s 4 2 2 5 6 - 0 2 4 - 0 0 8 4 3 - 5 .
+74. Martinez-Outschoorn UE, Sotgia F, Lisanti MP . Caveolae and signalling in
+cancer. Nat Rev Cancer. 2015;15(4):225–37. https:/ /doi.or g/10.10 38/n rc3915.
+75. Sisk BA, Bereitschaft C, Enloe M, Schulz G, Mack J, DuBois J. Oncology clinicians’ perspectives on online patient portal use in pediatric and adolescent
+cancer. JCO Clin Cancer Inf. 2023;7(7):e2300124. h t t p s : / / d o i . o r g / 1 0 . 1 2 0 0 / C C I . 2
+3 . 0 0 1 2 4 .
+76. Somashekhar SP , Sepúlveda MJ, Puglielli S, Norden AD, Shortliffe EH, Rohit
+Kumar C, et al. IBM Watson for oncology and breast cancer treatment recommendations: agreement with an expert multidisciplinary tumor board. Ann
+Oncol. 2018;29(2):418–23. https:/ /doi.or g/10.10 93/a nnonc/mdx781.
+77. Tupasela A, Di Nucci E. Concordance as evidence in the Watson for oncology
+decision-support system. AI Soc. 2020;35(4):811–18. h t t p s : / / d o i . o r g / 1 0 . 1 0 0 7 / s
+0 0 1 4 6 - 0 2 0 - 0 0 9 4 5 - 9 .
+78. Zhou N, Zhang CT, Lv HY, Hao CX, Li TJ, Zhu JJ, et al. Concordance study
+between IBM Watson for oncology and clinical practice for patients with
+cancer in China. Oncologist. 2019;24(6):812–19. h t t p s : / / d o i . o r g / 1 0 . 1 6 3 4 / t h e o
+n c o l o g i s t . 2 0 1 8 - 0 2 5 5 .
+79. Normand R, Du W, Briller M, Gaujoux R, Starosvetsky E, Ziv-Kenet A, et al.
+Found in translation: a machine learning model for mouse-to-human inference. Nat Methods. 2018;15(12):1067–73. h t t p s : / / d o i . o r g / 1 0 . 1 0 3 8 / s 4 1 5 9 2 - 0 1
+8 - 0 2 1 4 - 9 .
+80. Tarashansky AJ, Musser JM, Khariton M, Li P , Arendt D, Quake SR, et al. Mapping single-cell atlases throughout Metazoa unravels cell type evolution.
+Elife. 2021;10:e66747. https:/ /doi.or g/10.75 54/e Life.66747.
+81. Satyam R, Ahmad S, Raza K. Comparative genomic assessment of members
+of genus tenacibaculum: an exploratory study. Mol Genet Genomics.
+2023;298(5):979–93. https:/ /doi.or g/10.10 07/s 00438-023-02031-3.
+82. Scott Kruse C, Karem P , Shifflett K, Vegi L, Ravi K, Brooks M. Evaluating barriers
+to adopting telemedicine worldwide: a systematic review. J Telemed Telecare.
+2018;24(1):4–12. https:/ /doi.or g/10.11 77/1 357633X16674087.
+83. Yu Y, Mai Y, Zheng Y, Shi L. Assessing and mitigating batch effects in largescale omics studies. Genome Biol. 2024;25(1):bbae567. h t t p s : / / d o i . o r g / 1 0 . 1 1 8
+6 / s 1 3 0 5 9 - 0 2 4 - 0 3 4 0 1 - 9 .
+84. Wiens J, Saria S, Sendak M, Ghassemi M, Liu VX VX, F, et al. Do no harm:
+a roadmap for responsible machine learning for healthcare. Nat Med.
+2019;25(9):1337–40. https:/ /doi.or g/10.10 38/s 41591-019-0548-6.
+85. Strickland E. IBM Watson, heal thyself: how IBM overpromised and underdelivered on AI healthcare. IEEE Spectr. 2019;56(4):24–31. h t t p s : / / d o i . o r g / 1 0 . 1 1 0
+9 / M S P E C . 2 0 1 9 . 8 6 7 8 5 1 3 .
+86. Wong A, Otles E, Donnelly JP , Krumm A, McCullough J, DeTroyer-Cooley O, et
+al. External validation of a widely implemented proprietary sepsis prediction
+model in hospitalized patients. JAMA Intern Med. 2021;181(8):1065–70.
+https:/ /doi.or g/10.10 01/j amainternmed.2021.2626.
+87. Mandel JC, Kreda DA, Mandl KD, Kohane IS, Ramoni RB. SMART on FHIR: a
+standards-based, interoperable apps platform for electronic health records. J
+Am Med Inf Assoc. 2016;23(5):899–908. h t t p s : / / d o i . o r g / 1 0 . 1 0 9 3 / j a m i a / o c v 1 8 9
+.
+
+
+======================================================================
+PAGE 25
+======================================================================
+
+Page 25 of 25
+88. Lehne M, Sass J, Essenwanger A, Schepers J, Thun S. Why digital medicine
+depends on interoperability. NPJ Digit Med. 2019;2(1):79. h t t p s : / / d o i . o r g / 1 0 . 1
+0 3 8 / s 4 1 7 4 6 - 0 1 9 - 0 1 5 8 - 1 .
+89. Esteva A, Robicquet A, Ramsundar B, Kuleshov V, DePristo M, Chou K, et al. A
+guide to deep learning in healthcare. Nat Med. 2019;25(1):24–29. h t t p s : / / d o i .
+o r g / 1 0 . 1 0 3 8 / s 4 1 5 9 1 - 0 1 8 - 0 3 1 6 - z .
+90. Benjamens S, Dhunnoo P , Meskó B. The state of artificial intelligence-based
+FDA-approved medical devices and algorithms: an online database. NPJ Digit
+Med. 2020;3(1):118. https:/ /doi.or g/10.10 38/s 41746-020-00324-0.
+91. Amann J, Blasimme A, Vayena E, Frey D, Madai VI. Explainability for artificial
+intelligence in healthcare: a multidisciplinary perspective. BMC Med Inf Decis
+Mak. 2020;20(1):310. https:/ /doi.or g/10.11 86/s 12911-020-01332-6.
+92. Mallath MK, Taylor DG, Badwe RA, Rath GK, Shanta V, Pramesh CS, et al. The
+growing burden of cancer in India: epidemiology and social context. The
+Lancet Oncol. 2014;15(6):e205–12. h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / S 1 4 7 0 - 2 0 4 5 ( 1 4 ) 7 0
+1 1 5 - 9 .
+93. Rajkomar A, Dean J, Kohane I. Machine learning in medicine. N Engl J Med.
+2019;380(14):1347–58. https:/ /doi.or g/10.10 56/N EJMra1814259.
+94. Reddy S, Winter JS, Padmanabhan S. Artificial intelligence in healthcare:
+opportunities and challenges. J Med Syst. 2020;44(8):141. h t t p s : / / d o i . o r g / 1 0 . 1
+0 0 7 / s 1 0 9 1 6 - 0 2 0 - 0 1 5 9 8 - 3 .
+95. Yang Q, Liu Y, Chen T, Tong Y. Federated machine learning: concept and
+applications. ACM Trans Intell Syst Technol. 2019;10(2):1–19. h t t p s : / / d o i . o r g / 1
+0 . 1 1 4 5 / 3 2 9 8 9 8 1 .
+96. Rieke N, Hancox J, Li W, Milletari F, Roth HR, Albarqouni S, et al. The future of
+digital health with federated learning. NPJ Digit Med. 2020;3(1):119. h t t p s : / / d
+o i . o r g / 1 0 . 1 0 3 8 / s 4 1 7 4 6 - 0 2 0 - 0 0 3 2 3 - 1 .
+97. Pati S, Baid U, Edwards B, Sheller M, Wang SH, Reina GA, et al. Federated
+learning enables big data for rare cancer boundary detection. Nat Commun.
+2022;13(1):7346. https:/ /doi.or g/10.10 38/s 41467-022-33407-5.
+98. Bansal R, Collison S, Krishnan L, Aggarwal B, Vidyasagar M, Kakileti ST, et al.
+A prospective evaluation of breast thermography enhanced by a novel
+machine learning technique for screening breast abnormalities in a general
+population of women presenting to a secondary care hospital. Front Artif
+Intell. 2023;5:512. https:/ /doi.or g/10.33 89/f rai.2022.1050803.
+99. Kedia S, Rahman IU, Kaushal A, Mahizhvannan E, Jain RS, Radhakrishna R.
+Clinical validation of an indigenous micro-vibration vital parameter monitor
+Dozee VS. Proceedings of the IEEE European Biomedical Engineering Conference (EBEC). 2024. p. 114–19. https:/ /doi.or g/10.11 09/E BEC.2024.10423912.
+100. Dikshit R, Gupta PC, Ramasundarahettige C, Gajalakshmi V, Aleksandrowicz
+L, Badwe R, et al. Cancer mortality in India: a nationally representative survey.
+Lancet. 2012;379(9828):1807–16. h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / S 0 1 4 0 - 6 7 3 6 ( 1 2 ) 6 0 3
+5 8 - 4 .
+101. Finlayson SG, Bowers JD, Ito J, Zittrain JL, Beam AL, Kohane IS. Adversarial
+attacks on medical machine learning. Science. 2019;363(6433):1287–89.
+https:/ /doi.or g/10.11 26/s cience.aaw4399.
+102. Bellamy RK, Dey K, Hind M, Hoffman SC, Houde S, Kannan K, et al. AI fairness
+360: an extensible toolkit for detecting and mitigating algorithmic bias. IBM J
+Res Dev. 2019;63(4/5):4:1–4:15. https:/ /doi.or g/10.11 47/J RD.2019.2942287.
+103. Government of India. Ministry of Health and Family Welfare. Medical Devices
+Rules, 2017 under the Drugs and Cosmetics Act, 1940 [Internet]. New Delhi:
+Ministry of Health and Family Welfare; 2017 [cited 2026 Jun 22]. Available
+from: https://cdsco.gov.in/.
+104. US Food and Drug Administration. Marketing submission recommendations
+for a predetermined change control plan for artificial intelligence-enabled
+device software functions: final guidance for industry and FDA staff. 2024.
+Available from: h t t p s : / / w w w . f d a . g o v / r e g u l a t o r y - i n f o r m a t i o n / s e a r c h - f d a - g u i d
+a n c e - d o c u m e n t s . Silver Spring (MD): FDA.
+105. European Parliament and Council. Regulation (EU) 2024/1689 laying down
+harmonised rules on artificial intelligence (artificial intelligence act). Off J Eur
+Union. 2024;L1689:1–144.
+106. Ministry of Health and Family Welfare, Government of India. Medical devices
+Rules. New Delhi: gazette of India, extraordinary, part II, section 3, sub-section
+(i); 31 January 2017. Available from: 2017. https://cdsco.gov.in.
+107. Liu X, Cruz Rivera S, Moher D, Calvert MJ, Denniston AK, Ashrafian H, et
+al. Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension. Lancet Digit Health.
+2020;2(10):e537–48. https:/ /doi.or g/10.10 16/S 2589-7500(20)30218-1.
+108. Vasey B, Nagendran M, Campbell B, Clifton DA, Collins GS, Denaxas S, et al.
+Reporting guideline for the early stage clinical evaluation of decision support
+systems driven by artificial intelligence: DECIDE-AI. BMJ. 2022;377:e070904.
+https: //d oi. or g/10 .11 36/b mj-2022-070904.
+Publisher’s Note
+Springer Nature remains neutral with regard to jurisdictional claims in
+published maps and institutional affiliations.

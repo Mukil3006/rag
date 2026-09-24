@@ -1,0 +1,333 @@
+========================================================================
+SLM-RAG VERIFICATION PIPELINE
+========================================================================
+MODE: C
+QUESTION: What are the components of a RAG system?
+TIMESTAMP: 2026-09-21T10:39:30.736227+00:00
+
+RETRIEVED CANDIDATES
+DOC06_P07_PAR01_CH01 | RAG_Implementation_Guide(No.4).pdf | page 7 | similarity 0.624793
+DOC06_P03_PAR01_CH01 | RAG_Implementation_Guide(No.4).pdf | page 3 | similarity 0.624630
+DOC06_P03_PAR01_CH02 | RAG_Implementation_Guide(No.4).pdf | page 3 | similarity 0.612706
+DOC08_P02_PAR01_CH02 | RAG_Survey(No.1).pdf | page 2 | similarity 0.609884
+DOC06_P22_PAR01_CH01 | RAG_Implementation_Guide(No.4).pdf | page 22 | similarity 0.607298
+DOC05_P06_PAR01_CH01 | RAG_Enterprise_Basics(No.3).pdf | page 6 | similarity 0.605775
+DOC08_P04_PAR01_CH01 | RAG_Survey(No.1).pdf | page 4 | similarity 0.600115
+DOC06_P25_PAR01_CH02 | RAG_Implementation_Guide(No.4).pdf | page 25 | similarity 0.596038
+DOC06_P26_PAR01_CH02 | RAG_Implementation_Guide(No.4).pdf | page 26 | similarity 0.593833
+DOC06_P04_PAR01_CH02 | RAG_Implementation_Guide(No.4).pdf | page 4 | similarity 0.590767
+Retrieval query variants: ["What are the components of a RAG system?"]
+
+RERANKED EVIDENCE
+DOC06_P22_PAR01_CH01 | reranker 5.713980674743652
+© Infinitive All Rights Reserved 22 Continuous Improvement & Maintenance CHAPTER 7 Regular testing is essential to maintain the performance and reliability of RAG (Retrieval Augmented Generation) systems. This involves a comprehensive approach that includes unit tests, integration tests, load tests, and user acceptance tests. Regular Monitoring and T esting Conducting Regular Testing for Ongoing Performance in RAG Systems Unit Testing: focuses on individual components of the RAG system, such as the retrieval module and the generation module. Each component is tested in isolation to ensure it functions correctly. This involves creating test cases for different functionalities and edge cases to verify the accuracy and efficiency of the modules. Popular tools for unit testing include PyT est for Python and JUnit for Java. Integration Testing: Integration testing examines how different components of the RAG system work together. This type of testing ensures that the retrieval and generation modules integrate seamlessly,
+DOC06_P04_PAR01_CH02 | reranker 5.435788154602051
+optimizes the search query for better results, and fine-tuning of embedding models, which are specialized models that understand the nuances of the language used in the specific domain. The retrieved pieces of information are then ranked and filtered to ensure that only the most pertinent data is used in generating the final response. This retrieval mechanism, therefore, acts as a sophisticated search engine within the RAG system, providing a solid foundation for generating high-quality, context-aware responses. © Infinitive All Rights Reserved 4 Components of RAG Systems Retrieval Mechanism In a Retrieval-Augmented Generation (RAG) system, the generation mechanism takes the relevant information retrieved and crafts a coherent and contextually accurate response. This process begins with a language model, which is an AI trained on vast amounts of text data to understand and generate human-like language. The model uses the information retrieved by the system to generate a response that is not
+DOC06_P07_PAR01_CH01 | reranker 5.357791423797607
+Building a Retrieval-Augmented Generation (RAG) solution involves various components, each playing a critical role in the overall system. Here is a detailed list of these components, along with descriptions, their necessity, and vendor examples: A repository of structured (databases) and unstructured (text documents) data that the system can search to find relevant information. Knowledge Base Elasticsearch (Elastic), Weaviate (Semi-T echnologies) © Infinitive All Rights Reserved 7 Organizes and stores data to make it quickly retrievable. Indexing is crucial for efficient search and retrieval operations. Indexing Engine Elasticsearch (Elastic), Algolia The process of searching the knowledge base to find relevant information based on a query. It involves techniques like vector search and keyword search. Retrieval Mechanism / Vector Database Elasticsearch (Elastic), Pinecone An advanced AI model that generates human-like text based on the retrieved information. It ensures that the responses are coherent and contextually accurate. Language Model (LLM) OpenAI (GPT-4), Hugging
+DOC08_P02_PAR01_CH02 | reranker 5.238526344299316
+intricately collaborate to form a cohesive and effective RAG framework. • We have summarized the current assessment methods of RAG, covering 26 tasks, nearly 50 datasets, outlining the evaluation objectives and metrics, as well as the current evaluation benchmarks and tools. Additionally, we anticipate future directions for RAG, emphasizing potential enhancements to tackle current challenges. The paper unfolds as follows: Section II introduces the main concept and current paradigms of RAG. The following three sections explore core components—“Retrieval”, “Generation” and “Augmentation”, respectively. Section III focuses on optimization methods in retrieval,including indexing, query and embedding optimization. Section IV concentrates on postretrieval process and LLM fine-tuning in generation. Section V analyzes the three augmentation processes. Section VI focuses on RAG’s downstream tasks and evaluation system. Section VII mainly discusses the challenges that RAG currently faces and its future development directions. At last, the paper concludes in Section VIII. II. O VERVIEW OF
+DOC06_P25_PAR01_CH02 | reranker 4.565264701843262
+dynamically allocate resources based on demand. 3. Microservices Architecture: Design the system using a microservices architecture to allow independent scaling of different components. Response Time and Latency Challenge: Ensuring the RAG system responds quickly and efficiently, especially under high traffic conditions, is critical for user satisfaction. 1. Caching Mechanisms: Implement caching strategies to store frequently accessed data and reduce retrieval time. 2. Efficient Algorithms: Use optimized algorithms and models for both retrieval and generation to enhance performance. 3. Hardware Acceleration: Deploy hardware accelerators like GPUs and TPUs to speed up computations. Common Challenges in Building, Implementing, and Running RAG Applications © Infinitive All Rights Reserved 25
+
+SLM VERIFICATION
+
+DOC06_P22_PAR01_CH01 | RAG_Implementation_Guide(No.4).pdf | page 22
+Inspection question: What are the components of a RAG system?
+CHILD: {"verdict": "PARTIAL", "confidence": 0.75, "reason": "The source mentions unit and integration testing, which relate to testing components, but does not explicitly list the components of a RAG system (e.g., retrieval module, generation module, or other structural parts) as a complete set.", "contradictions": [], "needs_parent_context": true, "supporting_claims": ["Regular Monitoring and T esting Conducting Regular Testing for Ongoing Performance in RAG Systems Unit Testing: focuses on individual components of the RAG system, such as the retrieval module and the generation module.", "Integration Testing: Integration testing examines how different components of the RAG system work together."]}
+PARENT EXPANSION: True
+PARENT: {"verdict": "INSUFFICIENT", "confidence": 0.15, "reason": "The source sentences discuss testing methodologies and tools for RAG systems but do not identify or describe the components of a RAG system (such as retrieval modules, generation modules, or other structural parts).", "contradictions": [], "needs_parent_context": false, "supporting_claims": []}
+VERDICT: INSUFFICIENT | CONFIDENCE: 0.15
+REASON: The source sentences discuss testing methodologies and tools for RAG systems but do not identify or describe the components of a RAG system (such as retrieval modules, generation modules, or other structural parts).
+
+DOC06_P04_PAR01_CH02 | RAG_Implementation_Guide(No.4).pdf | page 4
+Inspection question: What are the components of a RAG system?
+CHILD: {"verdict": "PARTIAL", "confidence": 0.75, "reason": "The source mentions the retrieval mechanism and generation mechanism as key parts of a RAG system, and describes how information is retrieved and used to generate responses, but does not explicitly list all components of a RAG system as a完整", "contradictions": [], "needs_parent_context": true, "supporting_claims": ["This retrieval mechanism, therefore, acts as a sophisticated search engine within the RAG system, providing a solid foundation for generating high-quality, context-aware responses. © Infinitive All Rights Reserved 4 Components of RAG Systems Retrieval Mechanism In a Retrieval-Augmented Generation (RAG) system, the generation mechanism takes the relevant information retrieved and crafts a coherent and contextually accurate response.", "This process begins with a language model, which is an AI trained on vast amounts of text data to understand and generate human-like language.", "The retrieved pieces of information are then ranked and filtered to ensure that only the most pertinent data is used in generating the final response."]}
+PARENT EXPANSION: True
+PARENT: {"verdict": "PARTIAL", "confidence": 0.75, "reason": "The passage describes the retrieval mechanism and generation mechanism as key components of a RAG system, but does not explicitly list or define all components in a structured or comprehensive way. While retrieval and generation are clearly", "contradictions": [], "needs_parent_context": true, "supporting_claims": ["CHAPTER 1 In a Retrieval-Augmented Generation (RAG) system, the retrieval mechanism plays a crucial role in finding and selecting relevant information from a large database to inform the generation of responses.", "When a query is received, the system first breaks down the input into smaller, manageable chunks.", "It then searches through its indexed database to find the most relevant pieces of information."]}
+VERDICT: PARTIAL | CONFIDENCE: 0.75
+REASON: The passage describes the retrieval mechanism and generation mechanism as key components of a RAG system, but does not explicitly list or define all components in a structured or comprehensive way. While retrieval and generation are clearly
+
+DOC06_P07_PAR01_CH01 | RAG_Implementation_Guide(No.4).pdf | page 7
+Inspection question: What are the components of a RAG system?
+CHILD: {"verdict": "PARTIAL", "confidence": 0.75, "reason": "The source lists data repository, indexing, and retrieval mechanism as key components, but does not explicitly name or describe the full set of components of a RAG system, such as the language model or query processing, which are essential.", "contradictions": [], "needs_parent_context": false, "supporting_claims": ["Here is a detailed list of these components, along with descriptions, their necessity, and vendor examples: A repository of structured (databases) and unstructured (text documents) data that the system can search to find relevant information.", "Knowledge Base Elasticsearch (Elastic), Weaviate (Semi-T echnologies) © Infinitive All Rights Reserved 7 Organizes and stores data to make it quickly retrievable.", "Indexing is crucial for efficient search and retrieval operations."]}
+PARENT EXPANSION: False
+VERDICT: PARTIAL | CONFIDENCE: 0.75
+REASON: The source lists data repository, indexing, and retrieval mechanism as key components, but does not explicitly name or describe the full set of components of a RAG system, such as the language model or query processing, which are essential.
+
+DOC08_P02_PAR01_CH02 | RAG_Survey(No.1).pdf | page 2
+Inspection question: What are the components of a RAG system?
+CHILD: {"verdict": "PARTIAL", "confidence": 0.75, "reason": "The source explicitly mentions the three core components of a RAG system—'Retrieval', 'Generation', and 'Augmentation'—but does not detail their individual components or subparts, which are required to fully answer the question.", "contradictions": [], "needs_parent_context": true, "supporting_claims": ["The following three sections explore core components—“Retrieval”, “Generation” and “Augmentation”, respectively."]}
+PARENT EXPANSION: True
+PARENT: {"verdict": "SUPPORTED", "confidence": 0.95, "reason": "The source explicitly identifies the central technologies of RAG as 'Retrieval', 'Generation', and 'Augmentation', and structures the discussion around these three components.", "contradictions": [], "needs_parent_context": false, "supporting_claims": ["This review contextualizes the broader scope of RAG research within the landscape of LLMs. • We identify and discuss the central technologies integral to the RAG process, specifically focusing on the aspects of “Retrieval”, “Generation” and “Augmentation”, and delve into their synergies, elucidating how these components intricately collaborate to form a cohesive and effective RAG framework. • We have summarized the current assessment methods of RAG, covering 26 tasks, nearly 50 datasets, outlining the evaluation objectives and metrics, as well as the current evaluation benchmarks and tools.", "The following three sections explore core components—“Retrieval”, “Generation” and “Augmentation”, respectively.", "Section III focuses on optimization methods in retrieval,including indexing, query and embedding optimization."]}
+VERDICT: SUPPORTED | CONFIDENCE: 0.95
+REASON: The source explicitly identifies the central technologies of RAG as 'Retrieval', 'Generation', and 'Augmentation', and structures the discussion around these three components.
+
+DOC06_P25_PAR01_CH02 | RAG_Implementation_Guide(No.4).pdf | page 25
+Inspection question: What are the components of a RAG system?
+CHILD: {"verdict": "INSUFFICIENT", "confidence": 0.15, "reason": "No source sentence explicitly lists or describes the components of a RAG system.", "contradictions": [], "needs_parent_context": false, "supporting_claims": []}
+PARENT EXPANSION: False
+VERDICT: INSUFFICIENT | CONFIDENCE: 0.15
+REASON: No source sentence explicitly lists or describes the components of a RAG system.
+
+CROSS-EVIDENCE INSPECTION
+{
+  "conflicts": [],
+  "reason": "No incompatible assertions.",
+  "verification_question": "What are the components of a RAG system?",
+  "comparison_scope": false,
+  "verified_source_count": 2
+}
+
+EVIDENCE GATE
+Status: SUPPORTED
+Partial evidence: DOC06_P04_PAR01_CH02; missing information must not be inferred.
+Partial evidence: DOC06_P07_PAR01_CH01; missing information must not be inferred.
+Blocked: DOC06_P22_PAR01_CH01, DOC06_P25_PAR01_CH02
+
+FINAL VERIFIED EVIDENCE
+[DOC06_P04_PAR01_CH02] RAG_Implementation_Guide(No.4).pdf page 4
+CHAPTER 1 In a Retrieval-Augmented Generation (RAG) system, the retrieval mechanism plays a crucial role in finding and selecting relevant information from a large database to inform the generation of responses.
+When a query is received, the system first breaks down the input into smaller, manageable chunks.
+It then searches through its indexed database to find the most relevant pieces of information.
+[DOC06_P07_PAR01_CH01] RAG_Implementation_Guide(No.4).pdf page 7
+Here is a detailed list of these components, along with descriptions, their necessity, and vendor examples: A repository of structured (databases) and unstructured (text documents) data that the system can search to find relevant information.
+Knowledge Base Elasticsearch (Elastic), Weaviate (Semi-T echnologies) © Infinitive All Rights Reserved 7 Organizes and stores data to make it quickly retrievable.
+Indexing is crucial for efficient search and retrieval operations.
+[DOC08_P02_PAR01_CH02] RAG_Survey(No.1).pdf page 2
+This review contextualizes the broader scope of RAG research within the landscape of LLMs. • We identify and discuss the central technologies integral to the RAG process, specifically focusing on the aspects of “Retrieval”, “Generation” and “Augmentation”, and delve into their synergies, elucidating how these components intricately collaborate to form a cohesive and effective RAG framework. • We have summarized the current assessment methods of RAG, covering 26 tasks, nearly 50 datasets, outlining the evaluation objectives and metrics, as well as the current evaluation benchmarks and tools.
+The following three sections explore core components—“Retrieval”, “Generation” and “Augmentation”, respectively.
+Section III focuses on optimization methods in retrieval,including indexing, query and embedding optimization.
+
+FINAL LLM ANSWER
+Provider: local
+The components of a RAG system are "Retrieval", "Generation", and "Augmentation", as identified in the RAG_Survey(No.1).pdf source. Retrieval involves finding relevant information from a database, Generation produces responses using language models, and Augmentation integrates retrieved data into the generation process. Indexing, query processing, and embedding optimization support retrieval. Evidence from RAG_Implementation_Guide(No.4).pdf partially mentions retrieval and indexing but does not fully list all components.
+
+TIMINGS: {"retrieval_seconds": 20.31085829999938, "reranking_seconds": 1.3019427999970503, "verification_seconds": 11.523862100002589, "generation_seconds": 1.4971714000057545, "total_stage_seconds": 34.633834600004775}
+========================================================================
+
+========================================================================
+SLM-RAG VERIFICATION PIPELINE
+========================================================================
+MODE: C
+QUESTION: What was the commercial paper issuance value?
+TIMESTAMP: 2026-09-21T10:39:39.713522+00:00
+
+RETRIEVED CANDIDATES
+DOC03_P28_PAR01_CH01 | Finance_data(No.8).pdf | page 28 | similarity 0.435386
+DOC09_P01_PAR01_CH01 | Synthetic_Contradictory_Finance(No.9).pdf | page 1 | similarity 0.431848
+DOC09_P02_PAR01_CH01 | Synthetic_Contradictory_Finance(No.9).pdf | page 2 | similarity 0.419833
+DOC03_P24_PAR01_CH03 | Finance_data(No.8).pdf | page 24 | similarity 0.418907
+DOC03_P24_PAR01_CH04 | Finance_data(No.8).pdf | page 24 | similarity 0.414223
+DOC03_P13_PAR01_CH02 | Finance_data(No.8).pdf | page 13 | similarity 0.412098
+DOC03_P29_PAR01_CH03 | Finance_data(No.8).pdf | page 29 | similarity 0.385539
+DOC03_P27_PAR01_CH04 | Finance_data(No.8).pdf | page 27 | similarity 0.382851
+DOC03_P29_PAR01_CH01 | Finance_data(No.8).pdf | page 29 | similarity 0.380464
+DOC03_P24_PAR02_CH01 | Finance_data(No.8).pdf | page 24 | similarity 0.378184
+Retrieval query variants: ["What was the commercial paper issuance value?"]
+
+RERANKED EVIDENCE
+DOC09_P02_PAR01_CH01 | reranker 1.7462983131408691
+4. Test Questions 1. What was the average daily money market volume during FY 2025–26? 2. What was the total commercial paper issuance during FY 2025–26? 3. How much was spent through Q4 open market operation purchases? 4. Does this memorandum agree with the other financial report in the collection? 5. Which information is irrelevant to financial market analysis? 6. Is the complete Q3 average daily money market volume available? 5. Expected SLM Verification Labels Situation Expected action Values conflict with the original report CONTRADICTION → retrieve independent evidence Q3 value is missing PARTIAL / UNCERTAIN → do not guess Wellness campaign is retrieved for a finance query IRRELEVANT → remove Evidence comes only from this file Mark as synthetic test evidence Evaluation note: Keep this document marked as synthetic/adversarial in your metadata. Do not present its altered figures as real-world facts.
+DOC09_P01_PAR01_CH01 | reranker 0.4174697697162628
+Synthetic Financial Market Test Memorandum IMPORTANT: This is a deliberately modified fictional document for testing RAG + SLM contradiction detection. It is not an official RBI or government document and must not be used for real financial decisions. Document ID: SYN-FIN-TEST-01 Version: 2.0 (adversarial test version) 1. Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2. Deliberately Incomplete Information The memorandum discusses quarterly liquidity conditions but does not provide the complete Q3 average daily money market volume. The system should classify this as PARTIAL or UNCERTAIN and should not invent a value. 3. Irrelevant Information The institution conducted an employee wellness campaign involving 420
+DOC03_P27_PAR01_CH04 | reranker -2.930950403213501
+the WACR movements (Chart II.5.1a). II.5.4 For the longer tenor money market instruments, following the overnight trends, yields softened for 3-month treasury bills (T-bills), certificates of deposit (CDs) and commercial papers (CPs) during H1:2025-26. However, in H2, CD rates remained elevated owing to higher issuances by banks to meet funding requirements in the face of higher offtake in credit. CP rates also followed an upward trend in H2 (Chart II.5.1b). II.5.5 The average daily volume
+DOC03_P29_PAR01_CH01 | reranker -6.276118755340576
+26, as higher rates led to a shift towards bank borrowings. Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year. Government Securities Market II.5.9 During Q1:2025-26, domestic G-sec yield curve steepened as short and medium-term yields traded with a softening bias while long-term yields traded range bound amid monetary policy easing and liquidity infusion measures undertaken by the Reserve Bank. Open market operation (OMO) purchase auctions for an aggregate amount of ₹2.39 lakh crore were conducted during the quarter. However, yields hardened after the monetary policy stance was changed to ‘neutral’ in June 2025, as further rate cut expectations faded (Chart II.5.4). II.5.10 G-sec yields hardened during Q2:2025- 26 after a better-than-expected Q1:2025-26 GDP data amid fiscal concerns emanating from the implementation of higher US tariffs and GST rationalisation. However, the upside in yields was capped as oversupply related concerns
+DOC03_P28_PAR01_CH01 | reranker -6.956768035888672
+the average share of triparty repo and market repo at around 67 per cent and 30 per cent, respectively. The share of call money market increased marginally to 3 per cent during the year (Chart II.5.2). II.5.7 In the longer-term segments, the average daily spread of CD rates and CP rates over T-bill rates trended downwards until September 2025, while they increased afterwards (Chart II.5.3). In the primary market, the CD issuances increased to ₹5.3 lakh crore in Q4:2025-26 from ₹2.3 lakh crore in Q1. Total CD issuances aggregated ₹13.5 lakh crore in 2025-26 as against total issuances of ₹11.9 lakh crore in the previous year. II.5.8 As the liquidity remained largely in surplus and interest rates favourable, new issuances of CPs depicted a steady trend during H1:2025-26. However, CP issuances declined in H2:2025- &KDUW,, 0RQH\0DUNHW5DWHV7UDFNHG3ROLF\5HSR5DWH D2YHUQLJKW5DWHVDQG3ROLF\&RUULGRU E0RQWK5DWHVDQG3ROLF\5HSR5DWH 5%,)%,/&&,/)WUDFDQG5%,VWDIIHVWLPDWHV :$&5 7ULSDUW\UHSRUDWH 0DUNHWUHSRUDWH 6')UDWH 5HSRUDWH 06)UDWH PRQWK&'UDWH GD\7ELOOUDWH PRQWK&3UDWH 5HSRUDWH 
+
+SLM VERIFICATION
+
+DOC09_P02_PAR01_CH01 | Synthetic_Contradictory_Finance(No.9).pdf | page 2
+Inspection question: What was the commercial paper issuance value?
+CHILD: {"verdict": "INSUFFICIENT", "confidence": 0.95, "reason": "No sentence provides the commercial paper issuance value; the source only mentions total commercial paper issuance during FY 2025–26 as a question, not the value.", "contradictions": [], "needs_parent_context": false, "supporting_claims": [], "excluded_instruction_sentence_ids": ["S14"]}
+PARENT EXPANSION: False
+VERDICT: INSUFFICIENT | CONFIDENCE: 0.95
+REASON: No sentence provides the commercial paper issuance value; the source only mentions total commercial paper issuance during FY 2025–26 as a question, not the value.
+
+DOC09_P01_PAR01_CH01 | Synthetic_Contradictory_Finance(No.9).pdf | page 1
+Inspection question: What was the commercial paper issuance value?
+CHILD: {"verdict": "SUPPORTED", "confidence": 0.95, "reason": "The sentence explicitly states that commercial paper issuances were ■18.2 lakh crore FY 2025–26, directly answering the question.", "contradictions": [], "needs_parent_context": false, "supporting_claims": ["Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2."], "excluded_instruction_sentence_ids": ["S5"]}
+PARENT EXPANSION: False
+VERDICT: CONTRADICTORY | CONFIDENCE: 0.95
+REASON: The sentence explicitly states that commercial paper issuances were ■18.2 lakh crore FY 2025–26, directly answering the question.
+
+DOC03_P27_PAR01_CH04 | Finance_data(No.8).pdf | page 27
+Inspection question: What was the commercial paper issuance value?
+CHILD: {"verdict": "INSUFFICIENT", "confidence": 0.95, "reason": "No sentence provides the commercial paper issuance value directly or indirectly.", "contradictions": [], "needs_parent_context": false, "supporting_claims": []}
+PARENT EXPANSION: False
+VERDICT: INSUFFICIENT | CONFIDENCE: 0.95
+REASON: No sentence provides the commercial paper issuance value directly or indirectly.
+
+DOC03_P29_PAR01_CH01 | Finance_data(No.8).pdf | page 29
+Inspection question: What was the commercial paper issuance value?
+CHILD: {"verdict": "SUPPORTED", "confidence": 0.95, "reason": "Sentence S1 explicitly states the total issuances of commercial paper (CPs) during 2025-26 were ₹16.9 lakh crore, which directly answers the question about commercial paper issuance value.", "contradictions": [], "needs_parent_context": false, "supporting_claims": ["Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year."]}
+PARENT EXPANSION: False
+VERDICT: CONTRADICTORY | CONFIDENCE: 0.95
+REASON: Sentence S1 explicitly states the total issuances of commercial paper (CPs) during 2025-26 were ₹16.9 lakh crore, which directly answers the question about commercial paper issuance value.
+
+DOC03_P28_PAR01_CH01 | Finance_data(No.8).pdf | page 28
+Inspection question: What was the commercial paper issuance value?
+CHILD: {"verdict": "INSUFFICIENT", "confidence": 0.0, "reason": "No sentence mentions the commercial paper issuance value directly or indirectly.", "contradictions": [], "needs_parent_context": false, "supporting_claims": []}
+PARENT EXPANSION: False
+VERDICT: INSUFFICIENT | CONFIDENCE: 0.0
+REASON: No sentence mentions the commercial paper issuance value directly or indirectly.
+
+CROSS-EVIDENCE INSPECTION
+{
+  "conflicts": [
+    {
+      "left_id": "DOC09_P01_PAR01_CH01",
+      "right_id": "DOC03_P29_PAR01_CH01",
+      "left_quote": "Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2.",
+      "right_quote": "Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year.",
+      "reason": "One states commercial paper issuance as ₹18.2 lakh crore, the other as ₹16.9 lakh crore for FY 2025–26.",
+      "confidence": 0.95
+    }
+  ],
+  "reason": "Detected 1 conflicting assertion pair(s); both grounded claims are retained.",
+  "model_reason": "No incompatible assertions.",
+  "verification_question": "What was the commercial paper issuance value?",
+  "comparison_scope": false,
+  "verified_source_count": 2
+}
+
+EVIDENCE GATE
+Status: CONTRADICTORY
+Sources disagree. Report both claims with citations; do not choose a winner.
+Blocked: DOC09_P02_PAR01_CH01, DOC03_P27_PAR01_CH04, DOC03_P28_PAR01_CH01
+
+FINAL VERIFIED EVIDENCE
+[DOC09_P01_PAR01_CH01] Synthetic_Contradictory_Finance(No.9).pdf page 1
+Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2.
+[DOC03_P29_PAR01_CH01] Finance_data(No.8).pdf page 29
+Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year.
+
+FINAL LLM ANSWER
+Provider: local
+Sources disagree on the commercial paper issuance value. One states ₹18.2 lakh crore FY 2025–26 (Synthetic_Contradictory_Finance(No.9).pdf, chunk DOC09_P01_PAR01_CH01). The other states ₹16.9 lakh crore during 2025–26 (Finance_data(No.8).pdf, chunk DOC03_P29_PAR01_CH01).
+
+Conflict record (verifier):
+Sources disagree: [DOC09_P01_PAR01_CH01] Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2. | [DOC03_P29_PAR01_CH01] Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year.
+
+TIMINGS: {"retrieval_seconds": 0.19402270000136923, "reranking_seconds": 1.0199589999974705, "verification_seconds": 6.353672899997036, "generation_seconds": 1.359194299999217, "total_stage_seconds": 8.926848899995093}
+========================================================================
+
+========================================================================
+SLM-RAG VERIFICATION PIPELINE
+========================================================================
+MODE: C
+QUESTION: Does the synthetic memorandum agree with the original financial report about commercial paper issuance?
+TIMESTAMP: 2026-09-21T10:39:50.418334+00:00
+
+RETRIEVED CANDIDATES
+DOC09_P01_PAR01_CH01 | Synthetic_Contradictory_Finance(No.9).pdf | page 1 | similarity 0.638878
+DOC09_P02_PAR01_CH01 | Synthetic_Contradictory_Finance(No.9).pdf | page 2 | similarity 0.571750
+DOC09_P02_PAR01_CH02 | Synthetic_Contradictory_Finance(No.9).pdf | page 2 | similarity 0.528539
+DOC01_P14_PAR01_CH03 | Cancer_AI_ML(No.7).pdf | page 14 | similarity 0.475718
+DOC01_P25_PAR03_CH02 | Cancer_AI_ML(No.7).pdf | page 25 | similarity 0.430713
+DOC03_P19_PAR01_CH03 | Finance_data(No.8).pdf | page 19 | similarity 0.428245
+DOC03_P26_PAR01_CH01 | Finance_data(No.8).pdf | page 26 | similarity 0.427445
+DOC03_P32_PAR01_CH01 | Finance_data(No.8).pdf | page 32 | similarity 0.424367
+DOC01_P24_PAR04_CH01 | Cancer_AI_ML(No.7).pdf | page 24 | similarity 0.423438
+DOC03_P25_PAR01_CH01 | Finance_data(No.8).pdf | page 25 | similarity 0.422220
+DOC03_P28_PAR01_CH01 | Finance_data(No.8).pdf | page 28 | similarity 0.449627
+DOC03_P31_PAR01_CH03 | Finance_data(No.8).pdf | page 31 | similarity 0.413634
+DOC03_P29_PAR01_CH01 | Finance_data(No.8).pdf | page 29 | similarity 0.409751
+DOC03_P06_PAR01_CH03 | Finance_data(No.8).pdf | page 6 | similarity 0.409687
+DOC03_P15_PAR01_CH02 | Finance_data(No.8).pdf | page 15 | similarity 0.408813
+DOC03_P29_PAR01_CH03 | Finance_data(No.8).pdf | page 29 | similarity 0.407339
+DOC03_P06_PAR01_CH02 | Finance_data(No.8).pdf | page 6 | similarity 0.406799
+DOC03_P28_PAR01_CH02 | Finance_data(No.8).pdf | page 28 | similarity 0.402892
+Retrieval query variants: ["Does the synthetic memorandum agree with the original financial report about commercial paper issuance?", "What was the reported commercial paper issuance?"]
+
+RERANKED EVIDENCE
+DOC09_P02_PAR01_CH01 | reranker 2.010904550552368
+4. Test Questions 1. What was the average daily money market volume during FY 2025–26? 2. What was the total commercial paper issuance during FY 2025–26? 3. How much was spent through Q4 open market operation purchases? 4. Does this memorandum agree with the other financial report in the collection? 5. Which information is irrelevant to financial market analysis? 6. Is the complete Q3 average daily money market volume available? 5. Expected SLM Verification Labels Situation Expected action Values conflict with the original report CONTRADICTION → retrieve independent evidence Q3 value is missing PARTIAL / UNCERTAIN → do not guess Wellness campaign is retrieved for a finance query IRRELEVANT → remove Evidence comes only from this file Mark as synthetic test evidence Evaluation note: Keep this document marked as synthetic/adversarial in your metadata. Do not present its altered figures as real-world facts.
+DOC09_P01_PAR01_CH01 | reranker -2.0547242164611816
+Synthetic Financial Market Test Memorandum IMPORTANT: This is a deliberately modified fictional document for testing RAG + SLM contradiction detection. It is not an official RBI or government document and must not be used for real financial decisions. Document ID: SYN-FIN-TEST-01 Version: 2.0 (adversarial test version) 1. Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2. Deliberately Incomplete Information The memorandum discusses quarterly liquidity conditions but does not provide the complete Q3 average daily money market volume. The system should classify this as PARTIAL or UNCERTAIN and should not invent a value. 3. Irrelevant Information The institution conducted an employee wellness campaign involving 420
+DOC03_P28_PAR01_CH02 | reranker -7.581014633178711
+trend during H1:2025-26. However, CP issuances declined in H2:2025- &KDUW,, 0RQH\0DUNHW5DWHV7UDFNHG3ROLF\5HSR5DWH D2YHUQLJKW5DWHVDQG3ROLF\&RUULGRU E0RQWK5DWHVDQG3ROLF\5HSR5DWH 5%,)%,/&&,/)WUDFDQG5%,VWDIIHVWLPDWHV :$&5 7ULSDUW\UHSRUDWH 0DUNHWUHSRUDWH 6')UDWH 5HSRUDWH 06)UDWH PRQWK&'UDWH GD\7ELOOUDWH PRQWK&3UDWH 5HSRUDWH              $SU $SU 0D\ 0D\ -XQ -XQ -XO -XO $XJ $XJ 6HS 6HS 2FW 2FW 2FW 1RY 1RY 'HF 'HF -DQ -DQ )HE )HE 0DU 0DU               $SU $SU 0D\ 0D\ -XQ -XQ -XO -XO $XJ $XJ 6HS 6HS 2FW 2FW 2FW 1RY 1RY 'HF 'HF -DQ -DQ )HE )HE 0DU 0DU &KDUW,, &ROODWHUDOLVHG6HJPHQWV'RPLQDWH 0RQH\0DUNHW &&,/DQG5%,VWDIIHVWLPDWHV                                     &DOO1RWLFH 0DUNHWUHSR 7ULSDUW\UHSR )%,/&RJHQFLVDQG5%,VWDIIHVWLPDWHV &KDUW,, &3DQG&'5DWH6SUHDGV,QFUHDVHGLQ + ȋ Ȍ
+DOC03_P26_PAR01_CH01 | reranker -7.684663772583008
+II.4.12 Against the backdrop of deposit growth lagging credit expansion, the total flow of financial resources to the commercial sector increased to ₹47.0 lakh crore during 2025-26 from ₹36.2 lakh crore a year ago, supported by credit from both banks and non-bank sources (Appendix Table 5). The increase in flow from non-bank sources was mainly driven by corporate bond issuances and foreign direct investment to India. As on March 31, 2026, total outstanding credit to the commercial management (AUM) of debt mutual funds increased by 5.3 per cent and the AUM of equity mutual funds expanded by 32.4 per cent (Chart 1). Against this backdrop, the question arises whether bank time deposits and mutual funds (debt and equity) instruments act as complements (substitutes) and what role the state of liquidity conditions plays in determining investor preferences. This question is examined for the sample period 2013-14 to 2024-25 using monthly data,
+DOC03_P29_PAR01_CH01 | reranker -8.760106086730957
+26, as higher rates led to a shift towards bank borrowings. Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year. Government Securities Market II.5.9 During Q1:2025-26, domestic G-sec yield curve steepened as short and medium-term yields traded with a softening bias while long-term yields traded range bound amid monetary policy easing and liquidity infusion measures undertaken by the Reserve Bank. Open market operation (OMO) purchase auctions for an aggregate amount of ₹2.39 lakh crore were conducted during the quarter. However, yields hardened after the monetary policy stance was changed to ‘neutral’ in June 2025, as further rate cut expectations faded (Chart II.5.4). II.5.10 G-sec yields hardened during Q2:2025- 26 after a better-than-expected Q1:2025-26 GDP data amid fiscal concerns emanating from the implementation of higher US tariffs and GST rationalisation. However, the upside in yields was capped as oversupply related concerns
+
+SLM VERIFICATION
+
+DOC09_P02_PAR01_CH01 | Synthetic_Contradictory_Finance(No.9).pdf | page 2
+Inspection question: What was the reported commercial paper issuance?
+CHILD: {"verdict": "INSUFFICIENT", "confidence": 0.95, "reason": "No sentence in the provided source material mentions commercial paper issuance or reports on it.", "contradictions": [], "needs_parent_context": false, "supporting_claims": [], "excluded_instruction_sentence_ids": ["S14"]}
+PARENT EXPANSION: False
+VERDICT: INSUFFICIENT | CONFIDENCE: 0.95
+REASON: No sentence in the provided source material mentions commercial paper issuance or reports on it.
+
+DOC09_P01_PAR01_CH01 | Synthetic_Contradictory_Finance(No.9).pdf | page 1
+Inspection question: What was the reported commercial paper issuance?
+CHILD: {"verdict": "SUPPORTED", "confidence": 0.95, "reason": "The source explicitly states 'Commercial paper issuances ■18.2 lakh crore FY 2025–26' in the provided text.", "contradictions": [], "needs_parent_context": false, "supporting_claims": ["Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2."], "excluded_instruction_sentence_ids": ["S5"]}
+PARENT EXPANSION: False
+VERDICT: CONTRADICTORY | CONFIDENCE: 0.95
+REASON: The source explicitly states 'Commercial paper issuances ■18.2 lakh crore FY 2025–26' in the provided text.
+
+DOC03_P28_PAR01_CH02 | Finance_data(No.8).pdf | page 28
+Inspection question: What was the reported commercial paper issuance?
+CHILD: {"verdict": "INSUFFICIENT", "confidence": 0.15, "reason": "The source does not contain any explicit mention of commercial paper (CP) issuance amounts or reported values.", "contradictions": [], "needs_parent_context": false, "supporting_claims": []}
+PARENT EXPANSION: False
+VERDICT: INSUFFICIENT | CONFIDENCE: 0.15
+REASON: The source does not contain any explicit mention of commercial paper (CP) issuance amounts or reported values.
+
+DOC03_P26_PAR01_CH01 | Finance_data(No.8).pdf | page 26
+Inspection question: What was the reported commercial paper issuance?
+CHILD: {"verdict": "INSUFFICIENT", "confidence": 0.0, "reason": "No sentence mentions commercial paper issuance or any related financial instrument or amount.", "contradictions": [], "needs_parent_context": false, "supporting_claims": []}
+PARENT EXPANSION: False
+VERDICT: INSUFFICIENT | CONFIDENCE: 0.0
+REASON: No sentence mentions commercial paper issuance or any related financial instrument or amount.
+
+DOC03_P29_PAR01_CH01 | Finance_data(No.8).pdf | page 29
+Inspection question: What was the reported commercial paper issuance?
+CHILD: {"verdict": "SUPPORTED", "confidence": 0.95, "reason": "Sentence S1 explicitly states the total issuances of commercial paper (CPs) increased to ₹16.9 lakh crore during 2025-26.", "contradictions": [], "needs_parent_context": false, "supporting_claims": ["Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year."]}
+PARENT EXPANSION: False
+VERDICT: CONTRADICTORY | CONFIDENCE: 0.95
+REASON: Sentence S1 explicitly states the total issuances of commercial paper (CPs) increased to ₹16.9 lakh crore during 2025-26.
+
+CROSS-EVIDENCE INSPECTION
+{
+  "conflicts": [
+    {
+      "left_id": "DOC09_P01_PAR01_CH01",
+      "right_id": "DOC03_P29_PAR01_CH01",
+      "left_quote": "Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2.",
+      "right_quote": "Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year.",
+      "reason": "One states 18.2 lakh crore, the other states 16.9 lakh crore for commercial paper issuance in FY 2025–26.",
+      "confidence": 0.95
+    }
+  ],
+  "reason": "Detected 1 conflicting assertion pair(s); both grounded claims are retained.",
+  "model_reason": "The two claims provide different figures for commercial paper issuance in the same fiscal year, directly contradicting each other.",
+  "verification_question": "What was the reported commercial paper issuance?",
+  "comparison_scope": true,
+  "verified_source_count": 2
+}
+
+EVIDENCE GATE
+Status: CONTRADICTORY
+Sources disagree. Report both claims with citations; do not choose a winner.
+Blocked: DOC09_P02_PAR01_CH01, DOC03_P28_PAR01_CH02, DOC03_P26_PAR01_CH01
+
+FINAL VERIFIED EVIDENCE
+[DOC09_P01_PAR01_CH01] Synthetic_Contradictory_Finance(No.9).pdf page 1
+Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2.
+[DOC03_P29_PAR01_CH01] Finance_data(No.8).pdf page 29
+Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year.
+
+FINAL LLM ANSWER
+Provider: local
+The sources disagree on commercial paper issuance for FY 2025–26. The synthetic memorandum states "18.2 lakh crore" (DOC09_P01_PAR01_CH01). The original financial report states "16.9 lakh crore" (DOC03_P29_PAR01_CH01). This contradiction is explicitly noted in the verification conflict.
+
+Conflict record (verifier):
+Sources disagree: [DOC09_P01_PAR01_CH01] Modified Financial Indicators Indicator Modified value Period Average daily money market volume ■6.9 lakh crore FY 2025–26 Commercial paper issuances ■18.2 lakh crore FY 2025–26 Corporate bond market turnover ■7.8 thousand crore FY 2025–26 Q4 OMO purchases ■4.15 lakh crore Q4 FY 2025–26 Q4 OMO purchases through auctions ■3.0 lakh crore Q4 FY 2025–26 2. | [DOC03_P29_PAR01_CH01] Total issuances of CPs increased to ₹16.9 lakh crore during 2025-26 from ₹15.7 lakh crore in the previous year.
+
+TIMINGS: {"retrieval_seconds": 0.45034089999535354, "reranking_seconds": 1.5029155000011087, "verification_seconds": 7.135233099994366, "generation_seconds": 1.5262742999984766, "total_stage_seconds": 10.614763799989305}
+========================================================================

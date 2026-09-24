@@ -1,0 +1,3208 @@
+
+
+======================================================================
+PAGE 1
+======================================================================
+
+ECONOMIC REVIEWII
+II.1.1 The global economic growth sustained at
+3.41 per cent in 2025, despite trade and geopolitical
+uncertainties, aided by investment in technology,
+fiscal and monetary support, and accommodative
+financial conditions. Global inflation cooled down
+to 4.1 2 per cent from 5.8 per cent a year ago,
+although high services costs persist. While trade
+volumes recovered to 5.1 3 per cent from 3.6 per
+cent on account of front loading and technology
+exports, fiscal outlook weakened. Market volatility
+persisted due to geopolitical risks and valuation
+concerns but surged towards the end of March
+2026 following the outbreak of West Asia conflict.
+The US dollar after persistent weakness in 2025,
+began to exhibit strength with escalation in
+geopolitical risk in 2026. Further, sovereign bond
+yields that softened broadly in 2025, witnessed
+upward pressure in the current year over energy
+prices-driven inflation concerns induced by the
+conflict in West Asia.
+II.1.2 Despite heightened global uncertainties,
+the Indian economy remained strong on the
+back of steady private consumption and robust
+investment on the demand side, and buoyant
+services alongside improving industrial activity
+on the supply side. Headline inflation moderated
+further during 2025-26 on account of sharp
+contraction in food prices supported by robust
+agricultural production and softened global
+commodity prices. However, core inflation faced
+upward pressures driven by precious metals.
+Equity markets witnessed bi-directional
+movements in 2025-26, as supportive monetary
+and fiscal policy measures improved sentiment
+while negative global cues from geopolitical and
+tariff uncertainties, and artificial intelligencerelated concerns weighed on risk appetite. During
+2025-26, the central government continued its
+fiscal consolidation and emphasis on capital
+expenditure, even as its total expenditure was
+contained within the budgeted target. States also
+prioritised capital expenditure while containing
+revenue expenditure, thereby improving the
+quality of expenditure. A modest current account
+deficit and adequate forex reserves imparted
+resilience to the external sector amid subdued
+capital flows during the year.
+The Indian economy remained robust in 2025-26 on the back of steady domestic demand and buoyant services
+sector , amidst persisting global uncertainties. Headline inflation moderated, led by deflation in food and strong
+favourable base effect. Deposit and credit exhibited double digit growth. The central government continued its
+fiscal consolidation, with an emphasis on capital spending. The external sector remained resilient despite elevated
+global trade uncertainties. The current account deficit remained well within its sustainable level and forex
+reserves stood at an adequate level, thus supporting macroeconomic and financial stability.
+1,2,3
+World Economic Outlook, April 2026, International Monetary Fund (IMF).
+
+
+======================================================================
+PAGE 2
+======================================================================
+
+II.1.3 Against this backdrop, the rest of the
+chapter is structured into six sections. An analysis
+of the real economy is presented in section 2
+followed by that of inflation and its drivers in section
+3. The developments in monetary aggregates
+and financial markets are presented in sections 4
+and 5, respectively. The evolution of government
+finances (centre and states) is discussed in section
+6, and external sector dynamics are covered in
+section 7.
+II.2 THE REAL ECONOMY
+II.2.1 The Indian economy remained on a
+strong and steady growth path, notwithstanding
+the heightened external shocks in 2025-26,
+particularly following the imposition of higher
+US tariffs in April 2025. India continued to be
+the fastest growing large economy, supported
+by robust macroeconomic fundamentals and
+proactive policy measures. Economic activity was
+bolstered by steady growth in consumption and
+investment on the demand side, and a buoyant
+services sector and improvement in industrial
+activity on the supply side.
+Aggregate Demand
+II.2.2 Aggregate demand – measured by gross
+domestic product (GDP) at constant prices – grew
+by 7.6 per cent in 2025-26 from 7.1 per cent a
+year ago (Table II.2.1 and Appendix Table 1). 4
+Growth in GDP was anchored by domestic drivers
+– private final consumption expenditure and fixed
+investment (Chart II.2.1 and Appendix Table 2).
+II.2.3 The imposition of steep tariffs by the US
+on its trading partners initially raised concerns
+about a possible drag on the external sector
+and overall GDP growth. However, the adverse
+spillovers remained contained, with net exports
+exerting only a marginal drag of 0.1 percentage
+points in 2025-26.
+Consumption
+II.2.4 During 2025-26, private final consumption
+expenditure – the mainstay of aggregate demand
+– grew by 7.7 per cent, strengthening from 5.8
+Table II.2.1. Real GDP Growth
+Component 2023-24 2024-25 2025-26
+I. Total Consumption
+Expenditure 4.9 5.9 7.5
+Private 5.8 5.8 7.7
+Government 0.6 6.5 6.6
+II. Gross Capital Formation 8.7 6.1 6.5
+Gross Fixed Capital Formation 7.3 6.4 7.1
+Change in Stocks 116.9 1.7 10.4
+Valuables -9.3 1.9 -15.8
+III. Net Exports
+Exports 0.7 6.6 6.5
+Imports -1.0 5.3 6.4
+IV. GDP 7.2 7.1 7.6
+Source: NSO.
+4 Refer to footnote 3 of Chapter I of this Report.
+Chart II.2.1: Weighted Contribution to GDP Growth
+(Percentage points)
+Note: Others include change in stocks, valuables and statistical
+discrepancies.
+Source: NSO.
+Private final consumption expenditure
+Gross fixed capital formation
+GDP (y-o-y growth, per cent)
+7.6
+Net exports
+
+
+======================================================================
+PAGE 3
+======================================================================
+
+per cent a year ago. The growth momentum
+was buoyed by steady rural consumption and
+improvement in urban demand, which may be
+partly attributable to the income tax cuts and
+goods and services tax (GST) rationalisation. 5
+remained steady at 6.6 per cent.
+Investment and Saving
+II.2.5 The gross domestic investment rate,
+measured by the ratio of gross capital formation
+(GCF) to GDP at current prices, remained broadly
+stable at 34.3 per cent in 2024-25. 6 Gross fixed
+capital formation – a primary component of GCF
+– expanded at a robust pace of 7.1 per cent in
+2025-26 (6.4 per cent a year ago), as reflected
+in the sustained performance of its key coincident
+indicators (Chart II.2.2). Government-led capital
+expenditure continued to play a counter-cyclical
+role, helping to crowd in private investment. India’s
+sovereign credit rating upgrade in August 2025
+further reinforced investor confidence. Corporate
+earnings also improved during the year. 7 While
+corporate sales growth was subdued at the start
+of 2025-26, it picked up by Q3 amid strengthening
+demand.
+II.2.6 Gross domestic savings rose to 34.2
+per cent of gross national disposable income
+(GNDI) in 2024-25 from 32.3 per cent in 2023-24.
+The net household financial saving increased
+to 7.0 per cent of GNDI in 2024-25 from 5.8 per
+cent a year earlier, as the decline in household
+financial liabilities more than offset the moderation
+in gross financial saving (Appendix Table 3). Gross
+household financial saving moderated to 11.8 per
+cent of GNDI in 2024-25 from 12.1 per cent in
+2023-24, while household financial liabilities fell
+sharply to 4.8 per cent of GNDI in 2024-25 from
+6.4 per cent in the previous year. Instrumentwise, household financial saving is dominated by
+deposits, followed by provident and pension funds,
+insurance, with a gradual increase in investment
+in shares and debentures (Table II.2.2).
+II.2.7 The saving-investment gap narrowed
+during 2024-25, with the household sector
+remaining the primary net supplier of funds with its
+surplus funds rising to 7.8 per cent of GDP in 2024-
+25 from 6.4 per cent in 2023-24 (Chart II.2.3). The
+resource gap of private corporations narrowed
+amid higher savings and lower investment, while
+fiscal consolidation reduced general government
+dissaving to 4.6 per cent of GDP from 5.3 per cent
+of GDP in the preceding year. The narrowing of
+5 Several high frequency indicators such as growth in tractor and passenger vehicle sales, declining rural and urban unemployment rates,
+higher kharif output and steady personal loan growth helped to sustain demand throughout the year.
+6 The gross domestic investment rate reported here is based on the commodity flow (asset-based) approach.
+7 During Q1 to Q3:2025-26, average operating profits of private non-financial sector increased steadily to 9.4 per cent from 5.7 per cent
+during the corresponding period of last year.
+Chart II.2.2: Indicators of Fixed Investment Demand
+Sources: Joint Plant Committee, Office of Economic Adviser, NSO, and
+Directorate General of Commercial Intelligence and Statistics (DGCI&S).
+Import of capital goods Finished steel consumption
+Cement production
+12.5
+10.4
+7.9
+Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4
+
+
+======================================================================
+PAGE 4
+======================================================================
+
+the savings-investment gap at the economy-wide
+level indicates a reduced dependence on external
+capital and vulnerability to external shocks.
+Aggregate Supply
+II.2.8 Aggregate supply – measured by real
+gross value added (GVA) at basic prices –
+expanded by 7.7 per cent in 2025-26 (7.3 per cent
+a year ago). GVA growth was driven by a buoyant
+services sector and a marked improvement in
+industrial activity, despite some moderation in the
+agricultural sector (Table II.2.3).
+II.2.9 Agriculture and allied sector growth
+moderated in 2025-26, reflecting weather-related
+disruptions in kharif crops, although favourable
+rabi conditions provided some support. The above
+normal8 south-west monsoon (Chart II.2.4.a)
+helped replenish reservoir levels to all-time high
+(Chart II.2.4.b).9,10 Due to higher reservoir levels11
+Table II.2.2: Financial Saving of Household Sector
+(Per cent of GNDI)
+Item 2015-16 2016-17 2017-18 2018-19 2019-20 2020-21 2021-22 2022-23 2023-24 2024-25
+A. Gross Financial Saving 10.7 10.4 11.9 11.8 11.4 15.2 10.9 11.2 12.1 11.8
+of which:
+1. Currency 1.4 -2.1 2.8 1.4 1.4 1.9 1.1 - - -
+2. Deposits 4.6 6.3 3.0 4.2 4.3 6.2 3.5 - - -
+3. Shares and Debentures 0.2 1.1 1.0 0.9 0.5 0.5 0.9 - - -
+4. Claims on Government 0.5 0.7 0.9 1.1 1.3 1.3 1.1 - - -
+5. Insurance Funds 1.9 2.3 2.0 2.0 1.7 2.8 2.0 - - -
+6. Provident and Pension Funds 2.1 2.1 2.1 2.1 2.2 2.5 2.3 - - -
+B. Financial Liabilities 2.7 3.0 4.3 4.0 3.8 3.7 3.8 6.0 6.4 4.8
+C. Net Financial Saving (A-B) 7.9 7.3 7.5 7.8 7.6 11.6 7.2 5.2 5.8 7.0
+GNDI: Gross National Disposable Income. -: Not available.
+Notes: 1. Figures may not add up to total due to rounding off of the numbers.
+2. Data from 2022-23 onwards are as per the revised base year 2022-23.
+Note: Investment rate is based on the flow-of-funds (financing-based)
+approach.
+Chart II.2.3: Narrowing Saving Investment Gap
+Public sector
+Private corporates
+Households
+Saving rate (RHS)
+Investment rate (RHS)
+-9
+2022-232 023-24 2024-25
+8 As per India Meteorological Department (IMD), normal rainfall range is 96-104 per cent of long-period average (LPA).
+9 Monsoon set in over Kerala on May 24, 2025, arriving eight days ahead of its normal onset date (June 1), marking the earliest arrival
+since 2009.
+10 Reservoir levels reached 91.4 per cent of the full capacity on October 9, 2025.
+11 Reservoir levels at 47 per cent of the full capacity as on March 27, 2026, were higher by 10.5 per cent over previous year and 21.0 per
+cent over 10-year average.
+
+
+======================================================================
+PAGE 5
+======================================================================
+
+and above normal post-monsoon rainfall 12, rabi
+sowing ended with higher area than last year. 13
+Also, the sowing for summer (zaid) season has
+been progressing well.
+II.2.10 As per the second advance estimates
+(SAE), total foodgrains (kharif and rabi) production
+is estimated at a record level in 2025-26. This year
+is marked with the record production of kharif rice,
+wheat, maize, kharif groundnut, rapeseed and
+mustard and sugarcane (Table II.2.4).
+II.2.11 As per the first advance estimates,
+the production of horticultural crops during
+2025-26 increased to a record level, mainly driven
+by banana, tomato and plantation crops14.
+II.2.12 The government announced an increase
+in minimum support prices 15 for major kharif and
+rabi crops, ensuring a minimum return of 50 per
+cent over the cost of production. 16 The wheat
+Table II.2.3: Real GVA Growth
+Sector 2023-24 2024-25 2025-26
+I. Agriculture, Livestock,
+Forestry and Fishing
+2.6 4.2 2.4
+II. Industry 11.3 8.7 9.5
+II.1 Mining and Quarrying 2.4 11.7 4.1
+II.2 Manufacturing 12.7 9.3 11.5
+II.3 Electricity, Gas, Water
+Supply and Other Utility
+Services
+10.7 2.9 1.5
+III. Services 7.4 7.8 8.7
+III.1 Construction 9.9 7.3 7.1
+III.2 Trade, Hotels, Transport,
+Communication and
+Services Related to
+Broadcasting, Storage
+10.1 6.6 10.1
+III.3 Financial, Real Estate, IT,
+Professional Services and
+Ownership of Dwellings
+5.5 10.0 9.9
+III.4 Public Administration,
+Defence and Other
+Services
+6.8 5.0 5.8
+IV. GVA at Basic Prices 7.2 7.3 7.7
+Chart II.2.4: Rainfall and Reservoir Levels
+LPA: Long-period average.
+Sources: India Meteorological Department (IMD) and Central Water Commission (CWC), GoI.
+a. South-West Monsoon (Spatial)
+(Per cent departure from LPA)
+b. Reservoir Level
+(Per cent of full reservoir level)
+2024 2025
+10 8
+East &
+north
+east
+India
+North
+west
+India
+Central
+India
+South
+peninsula
+All India
+10-year average Weekly status
+12 The post-monsoon rainfall in 2025 (October 1 - December 31) was 11 per cent above its LPA.
+13 The final area sown under rabi crops (as on January 30, 2026) was 2.4 per cent higher than last year. Acreage under all major crops has
+been higher than last year.
+14 The production of horticultural crops during 2025-26 is placed at 3,708 lakh tonne which is marginally higher (0.03 per cent) than the final
+estimates of 2024-25.
+15 The increase was in the range of 1.0-13.9 per cent for kharif marketing season 2025-26 and 4.0-10.1 per cent for rabi marketing season
+2026-27.
+16 Actual paid out cost plus value of family labour (A2+FL).
+
+
+======================================================================
+PAGE 6
+======================================================================
+
+Table II.2.4: Agricultural Crop Production
+2025-26*
+(Lakh tonne)
+Crops 2024-25
+Final
+Estimate
+SAE
+2025-26 SAE
+Variation over
+2024-25 Final
+Estimate
+1. Foodgrains 3,386.3 3,486.6 3.0
+Rice 1,389.0 1,406.5 1.3
+Wheat 1,179.5 1,202.1 1.9
+Coarse Cereals 588.2 639.3 8.7
+Pulses 229.7 238.7 3.9
+Tur 36.2 34.6 -4.7
+Gram 111.1 117.9 6.1
+Lentil 16.5 17.3 4.8
+Urad 18.9 17.1 -9.5
+Moong 18.7 20.7 10.4
+2. Oilseeds 416.6 410.0 -1.6
+3. Sugarcane (Cane) 4,546.1 5,002.0 10.0
+4. Cotton # 297.2 290.9 -2.1
+5. Jute & Mesta ## 88.0 83.4 -5.2
+*: Kharif and Rabi crops (excluding summer crops).
+#: Lakh bales of 170 kg each.
+##: Lakh bales of 180 kg each.
+Source: Ministry of Agriculture and Farmers Welfare, GoI.
+procurement in rabi marketing season 2025-26
+has been at a four-year high and rice procurement
+in kharif marketing season 2025-26 has also been
+robust.
+II.2.13 As at end-March 2026, the overall public
+stock of foodgrains held by Food Corporation of
+India is more than four times the buffer requirement,
+mainly due to high stock of rice (Chart II.2.5). 17
+The government has allotted 52 lakh tonne of
+rice from the excess stock for ethanol blending.
+Similarly, the export restrictions for wheat and
+wheat products have been partially relaxed. 18
+Going forward, the likelihood of El Niño19 during
+the upcoming kharif season needs to be closely
+monitored.
+Industrial Sector
+II.2.14 Industrial sector GVA growth surged to
+9.5 per cent in 2025-26. Manufacturing activity,
+which accounts for 80 per cent of the industrial
+sector, picked up in 2025-26 as reflected in higher
+Chart II.2.5: Comfortable Monthly Position of Stock and Buffer Norm
+Source: Food Corporation of India, Ministry of Consumer Affairs, Food and Public Distribution, GoI.
+a. Rice
+(Lakh tonne)
+b. Wheat
+(Lakh tonne)
+Stock Buffer norm Stock Buffer norm
+Nov-21
+Jul-22
+Nov-22
+Nov-21
+Jul-22
+Nov-22
+17 The total stock stood at 939 lakh tonne with the rice stock of 721.2 lakh tonne (5.3 times the buffer norms) and wheat stock at 217.9 lakh
+tonne (2.9 times the buffer requirement).
+18 ‘Government approves wheat export and allows additional wheat product and sugar export’, Press Information Bureau (PIB),
+February 13, 2026.
+19 As per National Oceanic and Atmospheric Administration (NOAA), in May-July 2026, El Niño is likely to emerge (82 per cent chance) and
+persist through at least the end of 2026.
+
+
+======================================================================
+PAGE 7
+======================================================================
+
+sales growth and profitability in H1:2025-26
+(Chart II.2.6).
+II.2.15 Industrial output, as measured by the
+index of industrial production (IIP), moderated
+during H1:2025-26 due to mining and electricity
+(Chart II.2.7a). In H2:2025-26, IIP recovered
+with a rebound in mining activity and further
+strengthening of the manufacturing sector. Overall,
+the manufacturing sector posted strong growth
+with 16 of 23 industry groups recording expansion
+in 2025-26. As per use-based classification, all
+categories of industries recorded growth (Chart
+II.2.7b).
+II.2.16 Renewable energy (including large hydro),
+which accounts for nearly one fourth of power
+generation, grew by 18.4 per cent y-o-y in 2025-
+26 (Chart II.2.8). By end-March 2026, India’s nonfossil energy capacity reached 283 gigawatt (53.2
+per cent of the total installed power capacity),
+enabling India to meet its COP26 target of 50
+per cent non-fossil capacity well ahead of 2030. 20
+Investments have shifted towards renewables,
+with most new project spending concentrated in
+this sector away from conventional capacity.
+II.2.17 After remaining subdued during
+H1:2025-26, both capacity utilisation and private
+capex showed early signs of revival, indicating
+improving business confidence and upbeat
+demand conditions in the second half of the year.
+Chart II.2.6: Organised Manufacturing Firms
+Note: Total sample size is 1,799 companies.
+Source: Centre for Monitoring Indian Economy (CMIE) Industry Outlook.
+Net sales Interest expenses
+Input costs Net profit (RHS)
+11.6
+12.9
+11.9
+-90
+Chart II.2.7: Index of Industrial Production
+Note: Figures for March 2026 are quick estimates.
+a. Sectoral Growth
+b. Use-Based Classification - Growth
+Mining Manufacturing Electricity IIP
+7.0
+6.3
+4.1 4.0
+H1 H2 H1 H2 H1 H2 H1 H2
+2022-23 2023-242 024-25 2025-26 Primary goods Capital goods
+Intermediate goods Infrastructure/Construction goods
+Consumer durables Consumer non-durables
+2022-232 023-24
+8.3
+9.8
+5.9
+0.1
+2024-252 025-26
+20 Non-fossil energy comprises renewable energy (including large hydro) and nuclear energy.
+
+
+======================================================================
+PAGE 8
+======================================================================
+
+Manufacturing capacity utilisation increased
+to 75.6 per cent in Q3:2025-26, expanding for
+the second successive quarter, supported by
+sequential growth in new orders and stable
+inventory levels (Chart II.2.9).
+II.2.18 Private sector net fixed asset growth
+recovered in 2025-26, with growth rising to 11.5 per
+cent in H1:2025-26, driven by telecommunications,
+metals, construction, and automobiles. The
+production linked incentive (PLI) scheme gave a
+fillip to private sector investment with the scheme
+attracting an actual investment of over ₹2.2 lakh
+crore, leading to incremental production/sales of
+over ₹20.4 lakh crore and employment generation
+of over 14.4 lakh as at end-December 2025.21
+Services Sector
+II.2.19 Services sector growth strengthened to
+8.7 per cent in 2025-26, on the back of broadbased expansion across trade, transport and
+Chart II.2.8: Renewable Power Generation
+(Thousand GWh, left scale; Per cent, right scale)
+GWh: Gigawatt hour.
+Source: Central Electricity Authority.
+Renewable power generation
+Renewable share in total power generation (RHS)
+Jun-22
+Sep-22
+Dec-22
+Chart II.2.9: Manufacturing Capacity Utilisation
+Source: Order Books, Inventories and Capacity Utilisation Survey
+(OBICUS), RBI.
+75.6
+Sep-21
+Dec-21
+Jun-22
+Sep-22
+Dec-22
+hotels and restaurants; and financial, real estate
+and professional services. High frequency
+indicators of services sector reflected a mixed
+picture in 2025-26. In H2:2025-26, following
+GST 2.0 reforms, commercial vehicle sales and
+vehicle registrations surged. Other indicators
+such as retail automobile sales (passenger
+vehicle, tractor, two-wheeler and three-wheeler),
+domestic air cargo, port cargo, railway freight
+traffic, foreign tourist arrivals, and GST E-way
+bills intra-state also improved as compared to
+H2:2024-25. While air passenger traffic and toll
+collection (value) moderated, hotel occupancy
+indicator showed contraction during the same
+period (Table II.2.5).
+II.2.20 India’s construction sector showed
+mixed trends in 2025-26 with moderating steel
+consumption and improving cement production
+as compared to 2024-25 (Table II.2.5). During
+Q3:2025-26, housing launches accelerated,
+21 ‘PLI scheme with ₹1.9 lakh crore outlay drives strong industry participation across 14 strategic sectors’, PIB, February 20, 2026.
+
+
+======================================================================
+PAGE 9
+======================================================================
+
+supported by GST-led cost reductions while
+sales declined after registering modest growth
+22 Time in months it would take to sell the current inventory.
+in the previous quarter. Sales adjusted inventory
+overhang22, after stabilising in recent quarters,
+Table II.2.5: High Frequency Indicators - Growth Rate
+Indicators 2024-25 2025-26
+Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4
+Domestic Air Passenger Traffic 5.6 7.3 11.4 12.0 5.3 -1.9 1.7 0.6
+Transport
+Commercial Vehicle Sales 3.7 -10.6 1.3 1.8 -0.6 8.4 21.8 19.0
+Vahan Total Registration 10.1 3.1 11.7 0.7 5.2 2.0 19.9 23.4
+Toll Collection-Volume 5.6 7.6 9.8 15.1 16.2 10.7 2.6 -4.9
+Toll Collection-Value 9.5 10.3 12.7 17.2 19.7 17.5 12.2 6.7
+International Air Passenger Traffic 14.2 10.3 10.0 8.6 7.0 6.8 7.6 -2.5
+Domestic Air Cargo 7.1 7.7 4.6 3.5 6.6 4.9 6.8 12.5
+International Air Cargo 18.4 21.8 15.0 1.5 4.7 3.6 7.3 5.7
+Railways Freight Traffic: Freight Originating* 5.1 -0.4 1.5 0.1 2.4 4.0 3.2 2.9
+Port Cargo 3.9 6.2 -1.6 7.9 5.6 5.9 13.0 4.3
+Domestic Trade
+GST E-Way Bill 16.0 16.8 16.9 19.4 20.5 23.1 19.4 15.7
+GST E-Way Bill Intra-State 17.5 17.0 13.8 19.5 20.9 25.9 23.7 19.3
+GST E-Way Bill Inter-State 13.2 16.5 23.0 19.1 19.7 18.0 11.5 9.2
+GST Revenue 10.2 9.2 8.7 10.7 12.4 8.4 4.8 7.7
+Construction
+Steel Consumption 15.3 12.1 8.1 11.6 7.9 8.8 4.6 10.4
+Cement Production 0.5 3.2 8.7 12.4 8.1 7.3 11.2 8.2
+Tourism and Hospitality
+Hotel Occupancy Rate -2.4 2.1 1.8 1.2 1.4 -2.0 0.8 -3.6
+Foreign Tourist Arrivals* 5.5 1.6 -0.3 -10.0 -18.3 -10.8 -1.4 5.2
+PMI
+Services PMI 60.5 59.6 58.7 58.0 59.3 61.4 58.9 58.0
+Services Future Outlook 63.2 62.2 63.8 62.2 59.4 60.1 57.1 62.8
+Composite PMI 61.0 59.9 59.0 58.7 60.0 61.8 59.3 58.1
+Composite Future Outlook 63.8 62.3 63.6 63.1 60.6 60.4 57.6 62.0
+Contraction Expansion
+PMI: Purchasing Managers' Index.
+*: Data for Q4:2025-26 are up to January 2026.
+Note: All PMI values are reported in index form (>50: Expansion; <50: Contraction; and =50: No change).
+Sources: Airports Authority of India; Federation of Automobile Dealers Associations (FADA); Society of Indian Automobile Manufacturers
+(SIAM); National Payments Corporation of India; Vahan Registration Portal; Ministry of Railways, GoI; Indian Ports Association; Goods and
+Services Tax Network (GSTN); Joint Plant Committee, Office of Economic Adviser, GoI; HVS Anarock, and Ministry of Tourism, GoI and S&P
+Global.
+
+
+======================================================================
+PAGE 10
+======================================================================
+
+inched up in Q3:2025-26, but remained below the
+two-year pre-COVID-19 average of 32 months
+(Chart II.2.10).
+II.2.21 The services sector composite index
+(SSCI)23, which monitors activity in construction,
+trade, transport, and financial services, and serves
+as a coincident indicator of GVA growth in the
+services sector [excluding public administration,
+defence, and other services (PADO)], moderated
+in March 2026, after showing a sequential
+improvement in the preceeding three quarters.
+The moderation in SSCI is driven by weak growth
+in trade and transport indicators in Q4:2025-26
+(Chart II.2.11).
+Employment
+II.2.22 Employment conditions remained steady
+in 2025. According to the annual periodic
+labour force survey (PLFS) report for January-
+Chart II.2.11: Growth in Services Sector
+(Excluding PADO) and SSCI
+(Per cent, y-o-y, left scale; SSCI, right scale)
+0.40
+0.45
+0.50
+0.55
+0.600.62
+0.65
+0.70
+GVA growth in services excluding PADO SSCI (RHS)
+Chart II.2.10: Residential Housing Sector
+(Months, left scale; y-o-y, per cent, right scale)
+Source: Housing.com.
+Sales adjusted inventory overhang Sales growth (RHS)
+Launches growth (RHS)
+27.6
+Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q1 Q2 Q3
+2023-24 2024-25 2025-26
+23 SSCI is constructed by extracting and combining high-frequency data from key indicators across three major sub-sectors of the services
+sector, viz., construction; trade, hotels, transport, communication and broadcasting services; and financial, real estate and professional
+services. These indicators are combined using a dynamic factor model to generate the final index.
+24 All PLFS indicators are in the usual status (principal status+subsidiary status) and for persons aged 15 years and above.
+December 2025, the labour force participation
+rate (LFPR), worker population ratio (WPR),
+and the unemployment rate (UR) showed
+marginal decline (Chart II.2.12a). 24 LFPR and
+WPR moderated in rural areas, whereas urban
+LFPR remain unchanged and WPR increased
+(Chart II.2.12b). The share of regular wage/
+salaried and casual labour increased, while the
+share of self-employed declined in total employed
+(Chart II.2.12c).
+II.2.23 Recently enacted labour reforms are
+expected to improve labour market flexibility
+and reduce compliance burden while ensuring
+universal social security coverage, statutory
+minimum wages, and enhanced health and
+safety provisions, thereby encouraging formal
+job creation, worker well-being and enterprise
+expansion.
+
+
+======================================================================
+PAGE 11
+======================================================================
+
+II.2.24 India’s economic activity exhibited
+marked resilience in 2025-26, driven by a steady
+momentum in private consumption, uptick in fixed
+investment, strong performance of manufacturing
+activity and upbeat performance in services.
+Moreover, the recently concluded India-EU free
+trade agreement (FTA), along with discussions on
+the India-US trade deal and several other trade
+agreements are expected to support exports
+over the medium-term. However, moderation
+in agricultural and allied sector activity due to
+weather-related events, coupled with global
+Chart II.2.12: Labour Market Indicators – PLFS
+a. All India
+b. Rural, Urban
+c. Category of Employment
+59.3
+57.4
+3.2
+3.2
+3.8
+2022 2023 2024 2025
+Labour force participation rate Worker population ratio
+Unemployment rate (RHS)
+62.8
+52.2
+4.8
+20222 0232 0242 025
+LFPR (Rural) LFPR (Urban)
+UR (Rural) [RHS] UR (Urban) [RHS]
+56.6 58.2 57.5 56.2
+20.9 21.5 22.4 23.6
+22.5 20.3 20.0 20.2
+2022 2023 2024 2025
+Self-employed Regular salaried Casual labour
+headwinds such as persistent geopolitical
+tensions, uncertain trade environment and
+volatility in financial markets continue to pose
+downside risks to growth outlook.
+II.3 PRICE SITUATION
+II.3.1 Inflation dynamics during 2025-26
+was characterised by a sustained period of
+moderation, marking a distinct break from the
+previous years. Headline inflation moderated to
+2.1 per cent during 2025-26, aided by deflation
+in food and strong favourable base effect (Chart
+II.3.1)25. Rationalisation and simplification of GST
+rates in September 2025 also helped limit price
+25 MoSPI has released the CPI base 2024=100 series since January 2025, with a linking factor of 0.53 for headline inflation. However, due
+to changes in methodology, sample size and collection techniques, the new series is not strictly comparable to the old series. In this section
+therefore, discussion about CPI inflation till December 2025 pertains to the CPI series with base 2012=100, and for subsequent months as
+per the base 2024=100.
+
+
+======================================================================
+PAGE 12
+======================================================================
+
+pressures across several goods and services.
+Core inflation, i.e., Consumer Price Index (CPI)
+excluding food and fuel, on the other hand, faced
+upward pressures emanating from precious
+metals. Towards the end of the year, however, as
+the conflict in West Asia broke out, the increase
+in domestic liquefied petroleum gas (LPG)
+prices pushed up inflation in the fuel and light
+component.
+II.3.2 On February 12, 2026, the Ministry
+of Statistics and Programme Implementation
+(MoSPI), Government of India (GoI), released a
+new CPI series with base year 2024=100. The
+revised structure follows the United Nation’s
+Classification of Individual Consumption
+According to Purpose (COICOP) 2018, with
+the weights being derived from the Household
+Consumption Expenditure Survey (HCES) 2023-
+24. Under the new structure, the erstwhile six
+groups as per the CPI base year 2012=100 have
+now been reconstituted into 12 divisions. Notably,
+the weight of ‘food and beverages’ declined
+from 45.9 per cent to 36.8 per cent in the new
+series, reflecting evolving consumption patterns
+of consumers towards more non-food items, as
+well as a reclassification of prepared meals to
+a new division ‘restaurants and accommodation
+services’. Additionally, ‘housing’ and ‘fuel and light’
+groups have been clubbed together into ‘housing,
+water, electricity, gas and other fuels division’,
+whereas ‘transport and communication’ group has
+been segregated into ‘transport’ and ‘information
+and communication’ divisions (Table II.3.1).
+II.3.3 While average inflation moderated sharply,
+volatility, as measured by standard deviation,
+increased marginally in 2025-26 as inflation
+ranged from 0.3 to 3.4 per cent (Table II.3.2). The
+intra-year distribution of inflation exhibited a slight
+negative skewness indicating a slightly longer tail
+towards lower inflation outcomes.
+Constituents of CPI Infation
+Food
+II.3.4 Prices of food and beverages contracted
+by 0.8 per cent in 2025-26 (April-December 2025),
+year-on-year (y-o-y), as compared to an increase
+of 7.6 per cent in the corresponding period of the
+preceding year. In Q4:2025-26, inflation in food
+Chart II.3.1: Headline Inflation Trends
+a. Inflation across Major Components
+b. Movements in Headline Inflation
+(Per cent, left scale; y-o-y, right scale)
+Notes: 1. Inflation is calculated using the old CPI series (base 2012=100) till December 2025 and subsequently, the current series (base 2024=100) is used. The vertical dashed
+line indicates the break between the old and current CPI series, as the inflation data are not strictly comparable across the two series.
+2. In CPI 2024=100 (2012=100), category-wise weights in CPI-combined are as follows: Food and beverages: 36.8 (45.9), Fuel and light: 10.2 (6.8), Excluding food and
+fuel: 53.0 (47.3).
+3. Fuel and light in the current series (2024=100) represents two categories, viz., ‘electricity, gas and other fuels’; and ‘fuels and lubricants for personal transport
+equipment’ which includes ‘petrol’, ‘diesel’, and ‘other natural gas (CNG)’. For details, refer to Box IV.2 in Monetary Policy Report, April 2026.
+Sources: National Statistics Office (NSO); and RBI staff estimates.
+Food and beverages
+CPI-Headline
+Lower tolerance level
+Fuel and light
+Excluding food and fuel
+Upper tolerance level
+M-o-M change Base effect CPI-Headline (RHS)
+
+
+======================================================================
+PAGE 13
+======================================================================
+
+and beverages averaged higher at 3.1 per cent
+(CPI 2024=100). In October 2025, CPI food and
+beverages recorded the steepest deflation in the
+CPI series at 3.7 per cent (y-o-y) before inching up
+to 1.8 per cent deflation in December. The secular
+decline in inflation from a peak of 9.7 per cent in
+October 2024 was primarily driven by muted price
+pressures in vegetables, pulses and cereals, and
+a strong favourable base effect (Chart II.3.2).
+Favourable supply-side factors, i.e., comfortable
+foodgrain stocks stemming from higher domestic
+and steady wholesale market arrivals, supportive
+trade policies, proactive supply management by
+the government, and largely conducive weather
+Table II.3.1: Change in CPI Weighting Structure
+S. No. Divisions CPI
+2024 = 100
+S. No. Groups CPI
+2012 = 100
+1 Food and beverages 36.8 1 Food and beverages 45.9
+2 Pan, tobacco and intoxicants 3.0 2 Pan, tobacco and intoxicants 2.4
+3 Clothing and footwear 6.4 3 Clothing and footwear 6.5
+4 Housing, water, electricity, gas and other fuels 17.7 4 Housing 10.1
+5 Furnishings, household equipment and routine household
+maintenance
+4.5 5 Fuel and light 6.8
+6 Education services 3.3 6 Miscellaneous 28.3
+7 Health 6.1 of which:
+8 Information and communication 3.6 6.1 Household goods and services 3.8
+9 Transport 8.8 6.2 Health 5.9
+10 Recreation, sport and culture 1.5 6.3 Transport and communication 8.6
+11 Personal care, social protection and miscellaneous goods
+and services
+5.0 6.4 Recreation and amusement 1.7
+12 Restaurants and accommodation services 3.3 6.5 Education 4.5
+6.6 Personal care and effects 3.9
+Total 100 Total 100
+Note: Each CPI series follows the classification that it was published with, and the weighting structure across similar categories are not strictly
+comparable.
+Table II.3.2: CPI Headline Inflation – Key Summary Statistics
+2016-17 2017-18 2018-19 2019-20 2020-21 2021-22 2022-23 2023-24 2024-25 2025-26
+Mean 4.5 3.6 3.4 4.8 6.2 5.5 6.7 5.4 4.6 2.1
+Standard deviation 1.0 1.2 1.1 1.8 1.1 0.9 0.7 0.9 0.9 1.0
+Skewness 0.2 -0.2 0.1 0.5 -0.7 -0.1 -0.1 1.5 0.0 -0.3
+Kurtosis -1.6 -1.0 -1.5 -1.4 -0.7 -1.0 -0.6 1.6 -1.2 -1.0
+Median 4.3 3.4 3.5 4.3 6.5 5.6 6.7 5.1 4.8 2.1
+Maximum 6.1 5.2 4.9 7.6 7.6 7.0 7.8 7.4 6.2 3.4
+Minimum 3.2 1.5 2.0 3.0 4.1 4.2 5.7 4.3 3.3 0.3
+Notes: 1. Skewness and kurtosis are unit-free. Annual inflation is the average of the monthly inflation rates during the year and therefore, may
+vary from the annual inflation calculated from the average index for the year.
+2. Monthly inflation rates pertain to the old CPI series (base 2012=100) till December 2025, subsequently, to the current series (base
+2024=100).
+
+
+======================================================================
+PAGE 14
+======================================================================
+
+conditions contributed to moderation in food
+inflation.
+II.3.5 Vegetables experienced an unusually low
+and delayed summer price build-up following an
+extended period of winter price easing, in contrast
+to seasonal and historical patterns. Vegetable
+prices recorded a 19.4 per cent (y-o-y) decline
+during April-December 2025, followed by a pickup of 0.8 per cent Q4:2025-26 (Chart II.3.3a).
+II.3.6 Tomato, onion and potato (TOP) prices
+remained benign throughout the year. A low
+summer build-up in prices was followed by a
+sharp decline in September-October 2025 as
+production and market availability remained
+robust. A deflation of 31.3 per cent during the first
+three quarters and 12 per cent during Q4:2025-26
+was recorded in this category, particularly driven
+by onion, on account of steady arrivals from higher
+production in 2024-25 (26.7 per cent over 2023-
+24), lower exports and supply-side measures
+including targeted retail sales from government’s
+buffer stocks (Chart 11.3.3b). Prices of vegetables
+excluding TOP also recorded a contraction of 11.4
+Chart II.3.2: Moderation in Food Inflation in Recent Period
+*: Includes egg, milk and products and meat and fish.
+#: Includes sugar, confectionery and desserts; ready-made food and other food products; beverages; and services for processing primary goods for food.
+Note: Inflation is calculated using the old CPI series (base 2012=100) till December 2025, and subsequently, the current series (base 2024=100) is used. The
+Cereals and products Animal proteins* Oils and fats Vegetables
+Pulses and products Fruits Others# Food and beverages (y-o-y, per cent)
+Chart II.3.3: Seasonality in CPI- Vegetables Prices
+a. CPI-Vegetables - Cumulative Momentum
+b. Drivers of Vegetable Inflation
+Notes: 1. In chart b, inflation is calculated using the old CPI series (base 2012=100) till December 2025, and subsequently, the current series (base 2024=100) is used. The
+2. In CPI 2024=100 (2012=100), category-wise weights in CPI-vegetables are as follows: Potato: 14.8 (16.3), Onion: 13.8 (10.7), Tomato: 9.7 (9.5), and Other
+vegetables: 61.6 (63.5).
+Average (2011 to 2016) Average (2017 to 2023)
+2024-25 2025-26 (2024=100)
+8.1
+10.7
+-2.4
+Apr
+May
+Jun
+Jul
+Aug
+Sep
+Oct
+Nov
+Dec
+Jan
+Feb
+Mar
+Other vegetables
+TomatoOnionPotato
+Vegetables (y-o-y, per cent)
+
+
+======================================================================
+PAGE 15
+======================================================================
+
+per cent in April-December 2025 (y-o-y) followed
+by an increase of 8 per cent (y-o-y) in Q4:2025-
+26, largely due to unfavourable base effects.
+II.3.7 Pulses, the primary source of plant-based
+protein, recorded deflation of 13 per cent during
+the first three quarters against a 11.4 per cent
+price increase in the previous year, followed by
+deflation of 7.9 per cent in Q4:2025-26. Inflation
+in pulses moderated sequentially for 17 months
+till October 2025 amidst higher availability from
+robust production in 2024-25 (5.9 per cent higher
+over 2023-24), large imports of key pulses
+(yellow peas, arhar and urad), stock disclosure
+requirements and retail sales of Bharat Dal by the
+central government26 (Chart II.3.4).
+II.3.8 Cereals recorded a modest price increase
+of 2.4 per cent during April-December 2025 as
+compared to 7.6 per cent in the previous year,
+driven by a broad-based decline in prices of
+rice, wheat and other cereals and products. In
+Q4:2025-26, cereals prices contracted by 0.2
+per cent driven by wheat (Chart II.3.5). Wheat
+26 In April 2024, GoI directed all states and union territories to enforce weekly stock disclosure and verification for five major pulses - tur, urad,
+chana, masur and moong - and imported yellow peas by all stockholding entities.
+recorded deflation after 50 months in December
+2025 led by record production (higher by 4.1
+per cent in 2024-25), comfortable buffer stocks
+(1.7 times the norm as on March 16, 2026), and
+continued export restrictions till February 2026.
+Record rice production (higher by 9 per cent in
+2024-25) and high buffer stocks (9.7 times the
+norm as on March 16, 2026) kept rice inflation
+subdued.
+II.3.9 Unlike overall benign food inflation
+through the year driven by the staples, ‘fruits’ and
+‘oils and fats’ witnessed upside price pressures.
+Decline in coconut production by 5 per cent due
+to higher temperature and unseasonal rains in
+2024-25 led to higher coconut prices, leading to
+an average fruit inflation of 10.6 per cent during
+April-December 2025 and 7.9 per cent during Q4.
+Oils and fats inflation remained in double-digits
+for 12 consecutive months till October 2025 and
+recorded a 15 per cent increase in prices (y-o-y)
+in 2025-26 (April-December) from 1.9 per cent
+during the corresponding period a year ago,
+followed by a 7.3 per cent increase in prices
+Chart II.3.4: CPI-Pulses Deflation Led by Arhar
+*: Includes moong, masur, peas and other pulses products.
+Notes: 1. Inflation is calculated using the old CPI series (base 2012=100) till December 2025, and subsequently, the current series (base 2024=100) is used. The
+2. In CPI 2024=100 (2012=100), category-wise weights in CPI-pulses and products are as follows: Arhar: 32.4 (33.4), Gram and products: 19.9 (13.3),
+Urad: 11.2 (11.5), and Others: 36.4 (41.8).
+Arhar Gram and products Urad Others* Pulses and products (y-o-y, per cent)
+-3.9
+
+
+======================================================================
+PAGE 16
+======================================================================
+
+(y-o-y) in Q4:2025-26. This was due to higher
+international palm oil prices on account of higher
+bio-diesel mandates in key producer countries.
+Furthermore, a domestic production shortfall in
+2024-25 led to price pressures in mustard oil,
+which recorded a 41-month high inflation of 24.2
+per cent in August 2025. Production shortfall in
+soybean during the 2025-26 kharif season may
+pose some upside risks despite higher rabi output
+of mustard and rapeseed (as per second advance
+estimates of 2025-26). Prices of fats like ghee
+and butter remained largely stable through the
+year and recorded a decline in October 2025 due
+to reduced GST rates on retail prices.
+II.3.10 Among other food items, prices of
+spices remained in deflation for 18 consecutive
+months till December 2025, driven primarily by
+jeera (cumin) and dry chillies. Inflation in animal
+proteins was subdued in 2025-26 as weather
+conditions remained favourable for cattle and
+poultry, although prices picked up in meat and
+fish during January-March 2026.
+*: Includes rice products like chira, muri, wheat products like maida, suji, coarse cereals, bread, chocolates, biscuits, cake, noodles, etc.
+2. In CPI 2024=100 (2012=100), category-wise weights in CPI-cereals and products are as follows: Rice: 34.2 (49.1), Wheat: 12.9 (28.3), and Others: 52.9 (22.6).
+Chart II.3.5: CPI-Cereals Inflation Remained Low
+Rice Wheat Others* Cereals and products (y-o-y, per cent)
+Fuel
+II.3.11 Fuel inflation increased to 2.4 per cent
+during April-December 2025 from a deflation of 3.2
+per cent during the corresponding period a year
+ago, due to a price hike of ₹50 per LPG cylinder
+in April 2025. Consequently, the fuel group’s
+contribution to headline inflation increased to 8.8
+per cent in April-December 2025 from (-) 4.3 per
+cent a year ago (Chart II.3.6). In March 2026,
+inflation in fuel rose to 0.9 per cent from 0.1 per
+cent in January and February each, on account of
+₹60 hike per LPG cylinder in March 2026.
+Core Inflation (Inflation Excluding Food and
+Fuel)27
+II.3.12 Core inflation remained range bound,
+averaging 4.3 per cent during April-December
+2025, compared with 3.4 per cent in the
+corresponding period a year ago (Appendix
+Table 4). Under the revised series (2024=100),
+core inflation remained broadly stable at 3.7
+27 In the CPI 2012=100 series, CPI excluding food and fuel was estimated by excluding ‘Food and Beverages’ and ‘Fuel and Light’ groups
+from CPI-headline. In the CPI 2024=100 series, ‘Fuel and Light’ represents two categories, viz., ‘electricity, gas and other fuels’; and ‘fuels
+and lubricants for personal transport equipment’ which includes ‘petrol’, ‘diesel’, and ‘other natural gas (CNG)’.
+
+
+======================================================================
+PAGE 17
+======================================================================
+
+per cent during January to March 2026. The
+persistence in core inflation was largely driven
+by elevated inflation in ‘personal care and effects’
+including gold and silver precious metals, which
+accounted for nearly half of the core inflation in
+the second half of 2025-26 (Chart II.3.7).
+II.3.13 The rise in inflation in personal care
+and effects was primarily driven by a surge
+in prices of precious metals – gold and silver,
+reflecting heightened global safe-haven
+demand amid geopolitical uncertainty and the
+evolving global monetary policy trajectory and
+expectations. Excluding gold and silver, core
+inflation moderated in the second half of 2025-26
+supported by GST rationalisation measures-led
+price corrections, particularly in motor vehicles
+and related components (Chart II.3.8). Inflation in
+clothing and footwear fell to 2.2 per cent during
+April to December 2025, from 2.7 per cent in
+the corresponding period a year ago, reflecting
+lower domestic and international cotton prices
+and subdued export demand for textiles and
+wearing apparel. Inflation in household goods
+*: Includes kerosene public distribution system (PDS) and kerosene from other sources.
+**: Includes diesel (excl. conveyance), coal, charcoal, and coke until December 2025 based on the old base (2012=100) while it includes coal, charcoal, petrol, diesel, CNG,
+biogas and gobar gas for January-March 2026 based on the revised base (2024=100).
+2. In CPI 2024=100 (2012=100), category-wise weights in CPI-fuel are as follows: Electricity: 43.4 (33.0), LPG: 37.0 (18.8), Kerosene: 0.2 (8.0), Firewood and chips:
+16.3 (30.2), Dung cake: 2.7 (6.5), and Others: 0.4 (3.5).
+Sources: NSO; Petroleum Planning and Analysis Cell (PPAC); Bloomberg; and RBI staff estimates.
+Chart II.3.6: Fuel Inflation Led by LPG
+Electricity LPG (excl. conveyance) Kerosene* Firewood and chips
+Dung cake Others** Fuel and light (y-o-y, per cent)
+2. The group ‘Personal care and effects’ in CPI 2012=100 series has been renamed as ‘Personal care, social protection and miscellaneous goods and services’ division
+in CPI 2024=100 series.
+Chart II.3.7: CPI Excluding Food and Fuel Inflation Led by Personal Care
+Personal care and effects Others Excluding food and fuel (per cent)
+
+
+======================================================================
+PAGE 18
+======================================================================
+
+and services, health, and education remained
+broadly stable during 2025-26.
+Other Indicators of Inflation
+II.3.14 From a sectoral perspective, inflation
+measured by the CPI for industrial workers (CPI-
+IW) moderated to 3.1 per cent during 2025-26
+from 3.4 per cent a year ago, driven by lower food
+inflation. The base of CPI-agricultural labourers/
+rural labourers (AL/RL) series was revised in July
+2025, from 1986-87 to 2019=100. The revised
+CPI basket based on Household Consumption
+Expenditure Survey (2011-12) shows significant
+reduction in the weight of food and non-alcoholic
+beverages group and a sharp increase in the
+miscellaneous group, indicating changes in the
+consumption pattern of rural households 28.
+II.3.15 Wholesale price index (WPI) inflation
+moderated to 0.7 per cent during 2025-26 from
+2.3 per cent a year ago, majorly due to deflation in
+Notes: 1. Inflation is calculated using the old CPI series (base 2012=100) till
+December 2025, and subsequently, the current series (base 2024=100)
+is used. The vertical dashed line indicates the break between the old and
+current CPI series, as the inflation data are not strictly comparable
+across the two series.
+2. In CPI 2024=100 (2012=100), category-wise weights are as follows:
+CPI-core: 53.0 (47.3), and CPI-core excluding gold & silver: 52.1 (46.1).
+Sources: MoSPI; and RBI staff estimates.
+Chart II.3.8: CPI Core Excluding Gold and
+Silver Remained Benign
+CPI-core inflation CPI-core excluding gold and silver
+primary articles and fuel and power. WPI primary
+articles (weight of 22.6 per cent) experienced a
+deflation of 1.1 per cent during 2025-26 from
+an inflation of 5.2 per cent a year ago, driven
+by favourable supply and weather conditions.
+Furthermore, fuel and power deflation deepened
+to 2.9 per cent during 2025-26 from 1.3 per cent
+a year ago, mirroring the easing of global energy
+prices. Inflation in manufactured products (weight
+of 64.2 per cent) increased to 2.3 per cent during
+2025-26 from 1.7 per cent a year ago, led by
+manufacture of chemical, fabricated metal, paper
+and food products. Reflecting the overall decline
+in inflation, the gross domestic product (GDP)
+deflator-based inflation decreased to 0.9 per cent
+during April-December 2025 from 2.5 per cent in
+the corresponding period of the previous year 29.
+Although there have been periods of divergence
+between WPI and CPI in the past, the two have
+moved in tandem in the recent period (Chart II.3.9).
+Note: The CPI Inflation is calculated using the old CPI series (base 2012=100) till
+December 2025, and subsequently, the current series (base 2024=100) is used.
+The vertical dashed line indicates the break between the old and current CPI
+series, as the inflation data are not strictly comparable across the two series.
+Sources: MoSPI; and Office of the Economic Adviser, Ministry of Commerce and
+Industry.
+Chart II.3.9: Trends in CPI and WPI Inflation
+CPI WPI
+28 The weight of food and non-alcoholic beverages group reduced to 57.9 per cent from 69.2 per cent earlier in the CPI-AL series. Their
+weight in CPI-RL series was reduced to 56.6 per cent from 66.8 per cent. In the new base 2019=100, the average inflation of CPI-AL and RL
+series during May 2025 to March 2026 stands at 1.0 per cent and 1.1 per cent, respectively.
+29 GDP deflator-based inflation estimates are based on GDP data 2022-23 series.
+
+
+======================================================================
+PAGE 19
+======================================================================
+
+II.3.16 Minimum support prices (MSPs) in 2025-
+26 were increased in the range of 1.0-13.9 per
+cent for the kharif crops and 4.0-10.1 per cent for
+the rabi crops. Ragi witnessed the maximum MSP
+increase among the kharif crops while safflower
+recorded the highest increase among the rabi
+crops.
+II.3.17 Headline inflation remained benign
+during 2025-26 on account of robust foodgrains
+production, softened global commodity prices
+— particularly food and energy — and supply
+management measures undertaken by the
+government. Towards the end of the financial year,
+some price pressures started emerging due to
+outbreak of West Asia conflict. Looking ahead, the
+challenges on account of uncertainties emanating
+from prolonged geopolitical conflicts, rising
+energy prices, input costs, currency fluctuations,
+evolving trade policies and weather conditions —
+especially possibility of El Niño and below normal
+monsoon — warrant continuous vigil and careful
+monitoring of the evolving dynamics.
+II.4 MONEY AND CREDIT30
+II.4.1 The Reserve Bank’s balance sheet
+expanded during the year, primarily driven by
+revaluation gains arising from elevated gold prices
+and rupee depreciation. Currency in circulation
+(CiC) grew in double digits, contributing to higher
+growth in reserve money (RM) adjusted for the
+first-round impact of changes in the cash reserve
+ratio (CRR) 31. Bank credit growth remained
+subdued in the first half amidst increased reliance
+on non-bank channels for financing commercial
+sector. As the year progressed, credit growth
+gained significant momentum across sectors,
+outpacing deposit growth during H2:2025-26.
+II.4.2 Reserve money represents the stock of
+monetary liabilities in the central bank’s balance
+sheet (Chart II.4.1). Risk buffers and revaluation
+accounts [forming the bulk of net non-monetary
+liabilities (NNML)], along with surplus liquidity
+placed by banks with the Reserve Bank under
+the reverse repos/standing deposit facility (SDF)
+are the other major components of the balance
+sheet. As at end-March 2026, the Reserve Bank’s
+balance sheet size stood at 26.4 per cent of GDP32
+(23.7 per cent a year ago).
+30 With effect from December 15, 2025, definition of last reporting fortnight has been changed to the last day of the month under the Banking
+Laws (Amendment) Act, 2025. Accordingly, in this Section, growth and other ratios from December 2025 onwards are based on end-of-month
+data for the current year while data for the corresponding month of the previous year pertain to the last Friday/last reporting fortnight (as per
+old definition) as the case may be.
+31 CRR was reduced by 100 basis points (bps) to 3.0 per cent of net demand and time liabilities (NDTL) in a staggered manner during the
+year. The reduction was carried out in four equal tranches of 25 bps each with effect from the fortnights beginning September 6, October 4,
+November 1 and November 29, 2025.
+32 GDP figures from 2022-23 onwards are based on the new series (2022-23 base year).
+Chart II.4.1: Reserve Bank's Balance Sheet -
+Components (Liabilities) [end-March]
+(Per cent of balance sheet size, left scale; per cent of GDP, right scale)
+NNML: Comprise capital, reserves, contingency fund, asset development
+fund, currency and gold revaluation account, investment revaluation
+account and foreign exchange forward contracts valuation account, RBI
+employee provident fund account and IMF quota subscriptions and other
+payments minus other assets.
+61.4
+62.6
+69.1
+66.2
+64.1
+56.1
+26.4
+Net non-monetary liabilities (NNML)
+Reverse repos/SDF
+Balance sheet as per cent of GDP (RHS)
+
+
+======================================================================
+PAGE 20
+======================================================================
+
+II.4.3 Adjusted for the first-round impact of
+change in CRR, the RM 33 growth accelerated
+to 10.8 per cent in 2025-26 from 5.8 per cent a
+year ago (Chart II.4.2 and Appendix Table 4).
+CiC - the major constituent of RM with a share of
+81.4 per cent - expanded at 11.4 per cent during
+2025-26 from 5.8 per cent a year ago, driven by
+higher cash withdrawal resulting from welfare
+measures taken by several state governments
+(viz., compensation for crop damage and
+direct benefit transfers), higher consumptiondriven cash withdrawals after recent GST and
+income tax rate cuts alongside increased cash
+demand amidst easing interest rates and rising
+prices of precious metals. Growth in bankers’
+deposits with the Reserve Bank (15.8 per cent
+share in RM), i.e., balances maintained by
+banks to meet their CRR requirements and
+settlement obligations, declined by 18.2 per cent
+during the year, reflecting the reduction in CRR by
+100 bps.
+II.4.4 The currency-GDP ratio increased
+marginally alongside rising usage of digital
+payments. Retail digital payments grew by 15.1
+per cent in value terms and 26.9 per cent in
+volume terms during 2025-26 (Chart II.4.3).
+II.4.5 On the sources side (assets), RM
+comprises net domestic assets (NDA) 34 and net
+foreign assets (NFA) 35 of the Reserve Bank.
+During 2025-26, NFA expanded by ₹8.2 lakh
+crore, driven by expansion in both FCA and
+gold. Although net sales to authorised dealers
+were higher than a year ago, FCA expanded on
+account of revaluation gains. The share of gold in
+NFA increased to 17.2 per cent as at end-March
+Chart II.4.2: RM - Components (Liabilities)
+(Growth, per cent)
+Reserve money adjusted for CRR
+Bankers' deposits with the RBI (RHS)
+Currency in circulation (RHS)
+Chart II.4.3: Currency in Circulation and
+Digital Payments
+(Volume in thousand crore, left scale; per cent, right scale)
+Sources: GoI and RBI staff estimates.
+Retail digital payments CiC/GDP (RHS)
+33 Comprises currency in circulation, bankers’ deposits with the Reserve Bank and ‘other’ deposits with the Reserve Bank, on the liabilities
+side.
+34 Comprises net Reserve Bank credit to banks, government and commercial sector (mainly primary dealers).
+35 Consists of gold and foreign currency assets (FCA). FCA includes special drawing rights (SDRs) transferred from the Government of India
+(GoI). The remaining SDR holdings with the GoI and reserve tranche position (RTP) in the IMF, which represents India’s quota contribution
+to the IMF in foreign currency, are not a part of the Reserve Bank’s balance sheet.
+
+
+======================================================================
+PAGE 21
+======================================================================
+
+2026 from 12.0 per cent a year ago, mainly due
+to revaluation gains from increase in gold prices.
+The Reserve Bank’s net credit to the government
+expanded during the year owing to the liquidity
+injection through purchase of G-secs via open
+market operations (Chart II.4.4).
+Money Supply
+II.4.6 Money supply - in terms of broad money
+(M3) - mainly consists of currency with the public
+(CwP) and aggregate deposits (AD) of banks
+on the components side (liabilities). M 3 recorded
+a growth of 13.0 per cent as on March 31,
+2026 as compared with 9.4 per cent a year ago
+(Chart II.4.5). On the components side, expansion
+in M 3 was driven by AD, its largest constituent
+(86.6 per cent share) with sustained growth in
+time deposits (10.6 per cent vis-à-vis 9.8 per
+cent a year ago), notwithstanding considerable
+moderation in interest rates. Demand deposits
+remained volatile, largely mirroring the variations
+in currency with the public, which grew by 11.4
+Chart II.4.4: Reserve Money - Sources (Assets)
+a. NDA and NFA - Reserve Bank
+(Per cent of RM)
+b. NDA and NFA: Variation
+(/uni20B9 lakh crore)
+c. NDA Components: Variation
+(/uni20B9 lakh crore)
+d. NFA Components: Variation
+(/uni20B9 lakh crore)
+-25
+NFA NDA
+NDA NFA NFA adjusted for valuation
+-2.5-4
+RBI's net credit
+to government
+RBI's net credit to banks
+and commercial sector
+2020-21 2021-22 2022-23
+2023-24 2024-25 2025-26 FCA Gold
+II.4.5: Money Supply (M3) Components - Growth
+Currency with the public Aggregate deposits
+Money supply Nominal GDP
+
+
+======================================================================
+PAGE 22
+======================================================================
+
+per cent in 2025-26 vis-à-vis 5.9 per cent in the
+previous year.
+II.4.7 On the sources side (assets), expansion
+in M 3 was mainly driven by bank credit to the
+commercial sector (the largest constituent of
+M3), which grew by 15.7 per cent in 2025-26 as
+compared with 10.8 per cent during the
+previous year (Chart II.4.6). Net bank credit to
+government increased by 9.1 per cent in 2025-26
+(10.5 per cent a year ago), owing to purchases of
+G-secs by the Reserve Bank. Accordingly, excess
+holdings of statutory liquidity ratio (SLR) securities36
+of scheduled commercial banks (SCBs) declined
+to 8.2 per cent of NDTL as on March 31, 2026 (10.3
+per cent a year ago). The net foreign assets of the
+banking sector increased, mirroring the expansion
+in NFA of the Reserve Bank’s balance sheet during
+the year.
+Key Monetary Ratios
+II.4.8 Transaction velocity of money, i.e., the ratio
+of nominal GDP to M 3, declined during 2025-26
+with greater financial deepening and monetisation
+of the economy. Currency-deposit ratio moderated
+further from 15.4 per cent as on March 21, 2025
+to 14.9 per cent as on March 31, 2026, reflecting,
+inter alia, an increasing shift in public preference
+towards digital modes of payments. The reservedeposit ratio declined during the year due to
+reduction in CRR (Chart II.4.7a). The combined
+36 Excess holdings of SLR securities provide collateral buffers to banks for availing funds under the liquidity adjustment facility (LAF) and are
+also a component of the liquidity coverage ratio (LCR).
+Chart II.4.6: Money Supply Sources - Growth
+Net bank credit to government
+Bank credit to commercial sector
+Net foreign assets of the banking sector
+Source: RBI staff estimates.
+a. Behavioural Ratios Underlying Money Multiplier
+b. Money Velocity and Money Multiplier
+(Ratio)
+Chart II.4.7: Monetary Ratios
+2.5
+4.5
+Currency-Deposit ratio
+Reserve-Deposit ratio (RHS)
+CRR (RHS)
+4.5
+6.0
+Q4:2020-21
+Q1:2021-22
+Q2:2021-22
+Q3:2021-22
+Q4:2021-22
+Q1:2022-23
+Q2:2022-23
+Q3:2022-23
+Q4:2022-23
+Q1:2023-24
+Q2:2023-24
+Q3:2023-24
+Q4:2023-24
+Q1:2024-25
+Q2:2024-25
+Q3:2024-25
+Q4:2024-25
+Q1:2025-26
+Q2:2025-26
+Q3:2025-26
+Q4:2025-26
+Money velocity (RHS)Money multiplier
+Money multiplier adjusted for reverse repo
+
+
+======================================================================
+PAGE 23
+======================================================================
+
+impact of moderation in both currency-deposit
+ratio and reserve-deposit ratio resulted in an
+improvement in the money multiplier to 6.1 as on
+March 31, 2026 from 5.7 a year ago (Chart II.4.7b).
+Credit
+II.4.9 Double digit growth in bank credit was
+sustained during 2025-26, led by services and
+retail sectors (Chart II.4.8a). Public sector banks
+a. SCBs' Credit Growth
+b. Share in Total SCBs' Credit
+Chart II.4.8: Bank Group-wise Credit
+Public sector banks Private sector banks
+Foreign banks Scheduled commercial banks
+40.0 56.6
+Public sector banks Private sector banks
+Foreign banks
+(PSBs) registered higher credit growth than that
+of private sector banks (PVBs) for the second
+consecutive year resulting in rise in PSBs’ share
+in total credit (Chart II.4.8b).
+II.4.10 Key sectors witnessed an uptick in credit
+growth with overall non-food credit 37 growth
+at 15.9 per cent as at end-March 2026 (Chart
+II.4.9). Industrial credit continued to expand at
+a. Non-food Credit Growth
+b. Share in Incremental Non-food Credit
+Chart II.4.9: Uptick in SCBs’ Non-food Credit Growth
+15.9
+15.7
+15.0
+19.0
+16.2
+Non-food credit Agriculture and allied activities
+Industry Services Personal loans
+33.533.420.612.4
+Personal loans Services Industry
+37 Non-food credit data are based on fortnightly Section 42 return and covers all SCBs. Sectoral non-food credit data are based on sectorwise and industry-wise bank credit (SIBC) return, which covers 41 select banks accounting for about 95 per cent of total non-food credit
+extended by all SCBs. Please refer to footnote 1 of this Section.
+
+
+======================================================================
+PAGE 24
+======================================================================
+
+a robust pace since May 2025, on the back of
+sturdier credit growth in micro, small and medium
+enterprises (MSMEs). Industrial sub-segments
+such as ‘infrastructure’, ‘all engineering’, ‘basic
+metal and metal product’, ‘chemical and chemical
+products’, and ‘petroleum, coal products and
+nuclear fuels’ marked resilient y-o-y growth.
+Services sector credit sustained robust doubledigit growth, largely supported by healthy credit
+growth in ‘trade’, ‘commercial real estate’, and
+sharp resumption of credit to NBFCs 38 since
+October 2025. Personal loans continued to remain
+the major driver of overall non-food credit growth.
+Housing loans, which account for nearly half of
+the personal loans, recorded healthy growth
+and segments such as vehicle loans and loans
+against gold jewellery showed buoyant growth
+(Table II.4.1).
+Table II.4.1: Sectoral Credit Growth - SCBs
+Sector 2024-25# 2025-26
+Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar
+1 2 3 4 5 6 7 8 9 10 11 12 13 14
+Non-food Credit 10.9 10.2 8.8 9.3 9.9 9.9 10.2 11.1 11.4 14.4 14.4 14.3 15.9
+I. Agriculture & Allied Activities 10.4 9.2 7.5 6.8 7.3 7.6 9.0 8.9 8.7 12.1 11.4 12.3 15.7
+II. Industry
+(Micro & Small, Medium and Large)
+8.2 7.0 5.3 6.3 6.5 7.0 7.8 10.0 9.6 12.8 12.1 13.5 15.0
+II.1. Micro & Small 8.9 9.2 13.7 19.2 20.9 20.8 22.0 25.9 24.6 30.4 31.2 30.4 33.1
+II.2. Medium 18.5 18.1 16.9 13.2 15.0 13.3 14.5 17.6 15.7 20.4 22.3 21.0 21.7
+II.3. Large 6.9 5.0 1.5 2.0 1.6 2.4 3.0 4.6 4.6 6.9 5.5 7.8 8.9
+II.3.1 Infrastructure 2.8 0.3 -1.3 0.8 3.4 3.5 5.0 4.6 4.3 7.2 6.4 7.9 9.5
+II.3.2 Basic Metal & Metal
+Product
+12.8 14.3 10.6 11.0 9.5 8.9 9.1 13.1 11.8 14.2 13.8 15.2 19.4
+II.3.3 Chemicals & Chemical
+Products
+7.4 6.0 4.7 6.3 5.5 6.7 8.3 12.2 11.1 14.8 15.1 19.1 14.9
+II.3.4 Textiles 8.3 8.5 6.8 8.6 6.0 6.4 7.1 9.1 8.1 11.8 10.0 8.2 8.9
+II.3.5 All Engineering 22.0 21.7 20.4 22.1 23.0 19.8 22.4 25.1 22.6 30.4 35.9 36.0 32.2
+II.3.6 Food Processing 5.1 6.5 7.8 8.1 5.2 6.1 7.7 10.2 6.5 11.7 9.6 10.2 14.0
+III. Services 12.0 10.1 8.4 8.8 10.2 10.3 9.8 13.0 11.7 15.4 15.5 16.3 19.0
+III.1. Trade 15.6 13.9 10.4 10.7 12.8 12.3 11.7 13.8 14.2 17.5 16.1 14.4 16.2
+III.2. Commercial Real Estate 13.7 17.3 14.8 14.9 15.7 13.2 15.5 14.1 12.6 15.4 16.2 17.4 19.9
+III.3. NBFCs 7.4 4.5 1.0 3.1 3.0 3.7 3.9 10.9 9.5 15.1 17.8 20.9 26.3
+IV. Personal Loans 11.7 11.9 11.1 11.7 11.9 11.9 11.8 14.0 12.8 14.6 14.9 15.2 16.2
+IV.1. Consumer Durables -1.0 -1.0 -3.7 -2.8 -5.8 -5.8 -6.1 1.0 -5.9 -5.1 -4.0 -9.8 -5.3
+IV.2. Housing 10.7 9.8 9.0 9.6 9.6 9.7 10.1 11.0 9.9 11.1 11.1 11.0 11.5
+IV.3. Credit Card Outstanding 10.6 10.6 8.5 7.2 5.6 4.4 3.7 7.7 2.4 1.0 1.5 1.7 3.5
+IV.4. Vehicle Loans 8.6 8.8 8.7 9.2 8.9 8.7 7.3 12.5 12.4 16.7 17.1 17.1 18.6
+IV.5. Loans against Gold Jewellery 121.1 138.0 132.7 140.9 136.4 130.2 125.6 128.5 125.3 126.1 128.8 127.9 123.1
+IV.6. Other Personal Loans 7.5 8.5 7.2 7.1 7.6 7.6 7.4 9.9 8.9 11.5 11.6 12.1 13.0
+#: March 2025 over March 2024.
+Note: Data are provisional.
+38 Risk weight for bank credit to NBFCs was increased by additional 25 percentage points in November 2023, which was later restored to the
+earlier position with effect from April 2025.
+
+
+======================================================================
+PAGE 25
+======================================================================
+
+bridge the funding gap, banks took recourse to
+sizeable issuances of certificates of deposit 39. In
+this context of sustained funding pressures, the
+evolving dynamics between bank deposits and
+alternate savings instruments such as mutual
+funds have been examined (Box II.4.1).
+II.4.11 SCBs’ deposit growth broadly remained
+below that of credit growth during 2025-26.
+Although deposit growth showed some
+improvement in recent months, the wedge
+between deposit and credit growth persisted
+(Chart II.4.10). Consequently, the incremental
+credit-deposit ratio remained elevated. To
+Chart II.4.10: SCBs’ Deposits and Credit
+c. SCBs' Incremental Credit-Deposit Ratio
+(/uni20B9 lakh crore, left scale; ratio, right scale)
+a. Aggregate Deposits and Credit Growth - Wedge
+(Per cent, left scale; percentage points, right scale)
+b. Credit Growth (Y-o-Y)
+(Percentage points, left scale; per cent, right scale)
+Incrementalc redit-deposit ratio (RHS)Incrementald eposit Incrementalc redit
+Wedge (RHS)Aggregate deposits Credit
+Momentum effect Base effect Credit growth( RHS)
+-22
+-18
+0.5
+0.7
+39 See Section 5 of Chapter II for details.
+Box II.4.1
+Bank Time Deposits and Mutual Fund Flows Dynamics — A Comparative Analysis
+Time deposits with banks and mutual funds serve as
+important channels for mobilising domestic savings for
+investment to support economic activity. While time
+deposits with banks are regarded as safe and capitalprotected instruments, the debt mutual funds provide
+market-linked returns from fixed-income securities and the
+(Contd...)
+equity mutual funds may offer long-term capital gains with
+higher market risk. Recent evidence suggests that mutual
+funds have emerged as a major alternative investment
+avenue in India (Gupta et al., 2025). For instance, during
+2020-21 to 2024-25, on an average, outstanding bank time
+deposits grew by 10.7 per cent, while the assets under
+
+
+======================================================================
+PAGE 26
+======================================================================
+
+II.4.12 Against the backdrop of deposit growth
+lagging credit expansion, the total flow of financial
+resources to the commercial sector increased to
+₹47.0 lakh crore during 2025-26 from ₹36.2 lakh
+crore a year ago, supported by credit from both
+banks and non-bank sources (Appendix Table 5).
+The increase in flow from non-bank sources was
+mainly driven by corporate bond issuances and
+foreign direct investment to India. As on March 31,
+2026, total outstanding credit to the commercial
+management (AUM) of debt mutual funds increased by 5.3
+per cent and the AUM of equity mutual funds expanded by
+32.4 per cent (Chart 1).
+Against this backdrop, the question arises whether
+bank time deposits and mutual funds (debt and equity)
+instruments act as complements (substitutes) and what
+role the state of liquidity conditions plays in determining
+investor preferences. This question is examined for the
+sample period 2013-14 to 2024-25 using monthly data,
+applying empirical methodology akin to Im et al. (2025).
+Growth in debt and equity mutual funds AUM is explained
+by growth in outstanding bank time deposits, controlling
+for relative returns, and lags for growth in gold prices, BSE
+Sensex returns, 3-month treasury yields, India VIX (i.e.,
+volatility index), growth in outstanding small savings, and
+growth in index of industrial production.
+The analysis indicates that bank time deposits and
+debt mutual funds act as complementary avenues in
+both surplus and deficit liquidity regimes. One plausible
+explanation for this complementarity is that within India’s
+bank-centric and evolving debt market, bank time deposits
+and debt mutual funds predominantly serve distinct
+investor segments. This structural segmentation minimises
+direct competition between the two instruments, fostering
+concurrent allocation rather than substitution. The analysis
+finds no statistically significant relationship between bank
+time deposits and equity mutual fund flows.
+References:
+1. Gupta, M., Kumar, S., Borad, A., Seet, S. K. & Kedia,
+P. (2025), ‘Equity Mutual Funds: Transforming India’s
+Savings Landscape’, RBI Monthly Bulletin, August,
+79(8), 81-94.
+2. Im, J., Li, Y., & Wang, A. (2025), ‘What Drives the
+Substitution between Bank Deposits and Money
+Market Funds?’, FEDS Notes (November), Board of
+Governors of the Federal Reserve System.
+Chart 1: Growth in Bank Time Deposits and Investments in Mutual Funds
+(Per cent, left scale; /uni20B9 lakh crore, right scale)
+LAF: Liquidity Adjustment Facility.
+Sources: RBI, SEBI, CEIC and RBI staff calculations.
+Apr-2013
+Aug-2013
+Jan-2014
+Jun-2014
+Nov-2014
+Apr-2015
+Sep-2015
+Feb-2016
+Jul-2016
+Dec-2016
+May-2017
+Oct-2017
+Mar-2018
+Aug-2018
+Jan-2019
+Jun-2019
+Nov-2019
+Apr-2020
+Sep-2020
+Feb-2021
+Jul-2021
+Dec-2021
+May-2022
+Oct-2022
+Mar-2023
+Aug-2023
+Jan-2024
+Jun-2024
+Nov-2024
+Mar-2025
+Net LAF (RHS) Debt mutual funds Equity mutual funds Bank time deposits
+sector grew by 15.0 per cent (y-o-y), with nonbank sources registering a growth of 13.3 per cent
+(y-o-y).
+II.4.13 During the year, the currency-GDP ratio
+increased with currency demand remaining at
+elevated levels. Amidst persistent wedge between
+deposit and credit growth, bank credit expanded
+in double digits and was largely broad-based, led
+by services and retail sectors.
+
+
+======================================================================
+PAGE 27
+======================================================================
+
+40 Coefficient of variation is measured as a ratio of standard deviation to the mean.
+41 Call money, triparty repo and market repo of both overnight and term segments, excluding Saturdays.
+42 Effective July 1 and August 1, 2025, the trading hours for the call money market, and triparty repo and market repo were extended to 7 pm
+and 4 pm, respectively.
+II.5 FINANCIAL MARKETS
+II.5.1 Global financial markets remained
+volatile in 2025-26 amidst concerns emanating
+from surging fiscal deficit, debt repayment,
+varied growth-inflation outcomes and trade tariff
+impositions. Notwithstanding global headwinds,
+After declining in the first quarter, sovereign
+bond yields hardened amidst oversupply of state
+government securities, delay in signing of India-
+US trade deal, and surge in crude oil prices due
+to tensions in the Middle East. Corporate bond
+yields exhibited a hardening bias, accompanied
+by a broadening of spreads, amidst divergent
+corporate earnings performance. Indian equity
+markets remained volatile during the year,
+navigating global uncertainties while buoyed by
+stronger-than-expected gross domestic product
+(GDP) growth and supportive fiscal and monetary
+policies. The Indian Rupee (INR) traded with a
+depreciating bias amidst escalating geopolitical
+tensions and portfolio investment outflows.
+Money Market
+II.5.2 During 2025-26, money market rates
+moved in tandem with the policy repo rate and
+the evolving liquidity conditions. The weighted
+average call rate (WACR) moved in line with the
+repo rate, and its average spread over the repo
+rate was (-) 7 bps during 2025-26 as against 6 bps
+during 2024-25. Volatility in the WACR measured
+by coefficient of variation 40 increased to 4.8 per
+cent in 2025-26 from 2.2 per cent in the previous
+year.
+II.5.3 During April to early July 2025, due
+to large surplus liquidity, the WACR hovered
+around the standing deposit facility (SDF) rate,
+floor of the policy corridor. Since mid-July 2025,
+following Reserve Bank’s absorption of liquidity
+through variable rate reverse repo (VRRR)
+auctions, the WACR increased and traded closer
+to the policy repo rate. However, the WACR
+moved near marginal standing facility (MSF) rate,
+ceiling of the policy corridor during mid-December
+2025 to January 2026 amidst moderation in
+liquidity surplus. The WACR eased in February,
+while remaining elevated at end-March
+following the seasonal effect. The collateralised
+market segments – triparty repo and market repo
+– followed the WACR movements (Chart II.5.1a).
+II.5.4 For the longer tenor money market
+instruments, following the overnight trends,
+yields softened for 3-month treasury bills (T-bills),
+certificates of deposit (CDs) and commercial
+papers (CPs) during H1:2025-26. However, in
+H2, CD rates remained elevated owing to higher
+issuances by banks to meet funding requirements
+in the face of higher offtake in credit. CP rates also
+followed an upward trend in H2 (Chart II.5.1b).
+II.5.5 The average daily volume in the money
+market41 increased by 16 per cent to ₹6.4 lakh
+crore during 2025-26 from ₹5.5 lakh crore in the
+previous year. The quarterly volumes in the call
+money market mostly depicted an increasing
+trend since Q2, which could partly be attributed to
+the extension of market timings. 42
+II.5.6 Money market continued to be dominated
+by the collateralised segments in 2025-26, with
+
+
+======================================================================
+PAGE 28
+======================================================================
+
+the average share of triparty repo and market
+repo at around 67 per cent and 30 per cent,
+respectively. The share of call money market
+increased marginally to 3 per cent during the year
+(Chart II.5.2).
+II.5.7 In the longer-term segments, the average
+daily spread of CD rates and CP rates over T-bill
+rates trended downwards until September 2025,
+while they increased afterwards (Chart II.5.3). In
+the primary market, the CD issuances increased
+to ₹5.3 lakh crore in Q4:2025-26 from ₹2.3 lakh
+crore in Q1. Total CD issuances aggregated ₹13.5
+lakh crore in 2025-26 as against total issuances
+of ₹11.9 lakh crore in the previous year.
+II.5.8 As the liquidity remained largely in surplus
+and interest rates favourable, new issuances of
+CPs depicted a steady trend during H1:2025-26.
+However, CP issuances declined in H2:2025-
+&KDUW,,
+0RQH\0DUNHW5DWHV7UDFNHG3ROLF\5HSR5DWH
+D2YHUQLJKW5DWHVDQG3ROLF\&RUULGRU
+E0RQWK5DWHVDQG3ROLF\5HSR5DWH
+5%,)%,/&&,/)WUDFDQG5%,VWDIIHVWLPDWHV
+:$&5 7ULSDUW\UHSRUDWH 0DUNHWUHSRUDWH
+6')UDWH 5HSRUDWH 06)UDWH
+PRQWK&'UDWH
+GD\7ELOOUDWH
+PRQWK&3UDWH 5HSRUDWH
+
+
+
+
+
+
+
+
+
+
+
+
+
+$SU
+$SU
+0D\
+0D\
+-XQ
+-XQ
+-XO
+-XO
+$XJ
+$XJ
+6HS
+6HS
+2FW
+2FW
+2FW
+1RY
+1RY
+'HF
+'HF
+-DQ
+-DQ
+)HE
+)HE
+0DU
+0DU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$SU
+$SU
+0D\
+0D\
+-XQ
+-XQ
+-XO
+-XO
+$XJ
+$XJ
+6HS
+6HS
+2FW
+2FW
+2FW
+1RY
+1RY
+'HF
+'HF
+-DQ
+-DQ
+)HE
+)HE
+0DU
+0DU
+&KDUW,,
+&ROODWHUDOLVHG6HJPHQWV'RPLQDWH
+0RQH\0DUNHW
+&&,/DQG5%,VWDIIHVWLPDWHV
+           
+           
+         
+ 
+&DOO1RWLFH 0DUNHWUHSR 7ULSDUW\UHSR
+)%,/&RJHQFLVDQG5%,VWDIIHVWLPDWHV
+&KDUW,,
+&3DQG&'5DWH6SUHDGV,QFUHDVHGLQ
++
+ȋ Ȍ
+6SUHDGRI&'UDWHRYHU
+GD\7ELOOUDWH
+6SUHDGRI0&3
+1%)&
+UDWHRYHU
+GD\7ELOOUDWH
+6SUHDGRI0&3
+1RQ1%)&
+UDWHRYHU
+GD\7ELOOUDWH
+$SU
+$SU
+0D\
+0D\
+-XQ
+-XQ
+-XO
+-XO
+$XJ
+$XJ
+6HS
+6HS
+2FW
+2FW
+2FW
+1RY
+1RY
+'HF
+'HF
+-DQ
+-DQ
+)HE
+)HE
+0DU
+0DU
+
+
+======================================================================
+PAGE 29
+======================================================================
+
+26, as higher rates led to a shift towards bank
+borrowings. Total issuances of CPs increased to
+₹16.9 lakh crore during 2025-26 from ₹15.7 lakh
+crore in the previous year.
+Government Securities Market
+II.5.9 During Q1:2025-26, domestic G-sec yield
+curve steepened as short and medium-term yields
+traded with a softening bias while long-term yields
+traded range bound amid monetary policy easing
+and liquidity infusion measures undertaken by the
+Reserve Bank. Open market operation (OMO)
+purchase auctions for an aggregate amount
+of ₹2.39 lakh crore were conducted during the
+quarter. However, yields hardened after the
+monetary policy stance was changed to ‘neutral’
+in June 2025, as further rate cut expectations
+faded (Chart II.5.4).
+II.5.10 G-sec yields hardened during Q2:2025-
+26 after a better-than-expected Q1:2025-26
+GDP data amid fiscal concerns emanating from
+the implementation of higher US tariffs and GST
+rationalisation. However, the upside in yields was
+capped as oversupply related concerns ebbed
+after clarity emerged that revenue loss on account
+of goods and services tax (GST) rationalisation
+would be limited and government’s market
+borrowings for H2:2025-26 remained largely on
+expected lines.
+II.5.11 During Q3:2025-26, yields exhibited
+two-way movements as better-than-expected
+Q2:2025-26 GDP data and reduced expectations
+of further easing post 25-bps rate cut in the
+December 2025 monetary policy committee
+meeting43 provided an upward bias. However,
+the Reserve Bank’s liquidity injection measures
+helped ameliorate this upward pressure on
+yields. OMO purchases for an aggregate amount
+of ₹1.81 lakh crore were conducted during the
+quarter, of which ₹1.50 lakh crore were through
+auctions.
+II.5.12 During Q4:2025-26, yields traded with
+a hardening bias amidst higher-than-expected
+gross market borrowings announced in the
+Union Budget 2026-27 and a sharp increase in
+crude oil prices following the escalation of the
+Middle East conflict. On the final trading session of
+2025-26, the 10-year generic G-sec yield crossed
+the 7 per cent mark for the first time since July
+2024. OMO purchases for an aggregate amount
+of ₹4.57 lakh crore were conducted during the
+quarter, of which ₹3.5 lakh crore were through
+auctions.
+II.5.13 With the introduction of the fully accessible
+route (FAR)44 with effect from April 1, 2020, foreign
+43 Details relating to monetary policy operations are covered in Chapter III of this Report.
+44 Under FAR, certain categories of central government securities are open fully for non-resident investors without any restrictions, apart from
+being available to domestic investors as well.
+&KDUW,,
+\HDU*HQHULF*6HF<LHOG
+
+
+
+
+
+
+
+
+
+======================================================================
+PAGE 30
+======================================================================
+
+portfolio investors (FPIs) have three channels of
+investment - the general route 45; the voluntary
+retention route (VRR); and fully accessible route
+(FAR) [Table II.5.1]. In aggregate, FPIs invested
+₹16.1 thousand crore in debt instruments in
+Corporate Bond Market
+II.5.14 Although corporate bond yields declined
+during 2025-26, they exhibited a hardening bias
+(Table II.5.2).
+II.5.15 The spread on AAA-rated 3-year corporate
+bond yields over G-sec yields of corresponding
+maturity inched up during 2025-26 amidst mixed
+corporate earnings results. The average daily
+secondary market turnover in the corporate bond
+market increased to ₹7.1 thousand crore during
+2025-26 from ₹6.2 thousand crore during the
+previous year (Chart II.5.5).
+II.5.16 Primary issuances of listed corporate
+bonds on domestic stock exchanges declined
+to ₹9.1 lakh crore during 2025-26 from ₹9.9
+lakh crore during the previous year, along with
+a moderation in mobilisation through overseas
+Table II.5.1: FPI Investment in Debt Instruments (End-March)
+(Amount in ₹ thousand crore)
+Route/
+Channel of
+Investment
+2024 2025 2026
+Limit FPI
+Holding*
+Utilisation
+(per cent
+of Limit)
+Limit FPI
+Holding*
+Utilisation
+(per cent
+of Limit)
+Limit FPI
+Holding*
+Utilisation
+(per cent
+of Limit)
+1 2 3 4 5 6 7 8 9 10
+General Route^ 1,172.6 187.1 16.0 1,295.3 187.2 14.5 1,470.7 186.6 12.7
+VRR^ 250.0 175.4 70.1 250.0 205.2 82.1 250.0 188.8 75.5
+FAR# 3,866.2 173.8 4.5 4,337.0 306.2 7.1 4,751.2 313.3 6.6
+^: Includes central government securities (G-secs), state government securities (SGSs) and corporate bonds.
+#: Available only for the specified securities included under the route.
+*: For VRR, it indicates investment limit allotted to FPIs.
+Sources: CCIL and NSDL.
+Table II.5.2: Corporate Bond Yields*
+Entity March
+March
+Change
+(bps)
+1 2 3 4 (=3-2)
+(i) PSUs, FIs and Banks 7.48 7.33 -15
+(ii) NBFCs 7.70 7.53 -17
+(iii) Corporates 7.62 7.36 -26
+*: AAA-rated 3-year bonds.
+Note: Yields are computed as monthly averages.
+Source: FIMMDA.
+45 Erstwhile medium-term framework (MTF).
+6(%,DQG),00'$
+&KDUW,,
+7XUQRYHUDQG$$$UDWHG<HDU<LHOG
+6SUHDGLQ&RUSRUDWH%RQG0DUNHW
+ǡ
+Ǣǡ
+7XUQRYHULQFRUSRUDWHERQGV
+6SUHDGRI368V),VDQGEDQNV
+6SUHDGRI1%)&V
+6SUHDGRIFRUSRUDWHV
+$SU
+0D\
+-XQ
+-XO
+$XJ
+6HS
+2FW
+1RY
+'HF
+-DQ
+)HE
+0DU
+0DU
+
+
+======================================================================
+PAGE 31
+======================================================================
+
+issuances. Private placements remained the
+preferred channel, accounting for 99 per cent of
+total resources mobilised through the domestic
+bond market. Investments by FPIs in corporate
+bonds increased during the year. However,
+the utilisation of the approved limits by FPIs
+decreased to 15.0 per cent as at end-March 2026
+from 15.8 per cent a year ago on account of an
+increase in absolute limits.
+Equity Market
+II.5.17 In 2025-26, Indian equity market witnessed
+bi-directional movements. It increased in the first
+half of the year amidst supportive monetary and
+fiscal policy measures, while it declined in the
+second half as escalation in geopolitical tensions
+in the Middle East and artificial intelligence (AI)
+related concerns weighed on investor sentiment.
+Overall, the BSE Sensex declined by 7.1 per
+cent to close at 71,948 at end-March 2026
+(Chart II.5.6). Resource mobilisation in the
+primary markets through public and rights issues,
+preferential allotments and qualified institutional
+placements (QIPs) remained strong.
+II.5.18 In Q1:2025-26, Indian equity markets
+witnessed two-way movements driven by
+unfavourable factors such as tariff announcements
+by the US, escalation of India-Pakistan conflict
+and geopolitical tensions in the Middle East,
+while investor sentiment was bolstered by a
+record surplus transfer by the Reserve Bank to
+the Government of India and the front loading
+of monetary policy easing by the Reserve Bank
+in June, among others. In Q2, markets declined
+as negative cues from elevated tariff uncertainty
+and hike in H1B visa fees by the US outweighed
+improved investor sentiment surrounding India’s
+sovereign rating upgrade by a major global credit
+rating agency, the announcement of GST reforms
+and the release of strong macroeconomic
+data. In Q3, markets gained amidst optimism
+surrounding corporate earnings results for Q2
+and positive global cues from policy rate cut
+by the US Federal Reserve and increasing
+investments in technology including AI. Markets
+declined in Q4 as renewed tariff uncertainties,
+escalation in geopolitical tensions in the
+Middle East and persistent AI related concerns
+outweighed improved sentiment surrounding
+
+
+&KDUW,,
+(TXLW\0DUNHW
+D0RYHPHQWVLQ%6(6HQVH[DQG1LIW\
+Ȍ
+E5HWXUQVRQ*OREDO(TXLW\,QGLFHVGXULQJ
+%6(16(DQG%ORRPEHUJ
+%6(6HQVH[ 1LIW\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0DU 
+
+
+
+
+
+
+
+      
+,QGLD
+)UDQFH
+*HUPDQ\
++RQJ.RQJ
+,QGRQHVLD
+0DOD\VLD
+&KLQD
+8.
+7KDLODQG
+0H[LFR
+-DSDQ
+%UD]LO
+6RXWK$IULFD
+
+
+======================================================================
+PAGE 32
+======================================================================
+
+announcement of India-EU trade deal, and
+higher GDP growth projections for 2025-26 and
+Q1 and Q2 of 2026-27 in the monetary policy
+statements.
+II.5.19 Overall, BSE 150 Midcap decreased
+marginally by 1.0 per cent while BSE 250
+SmallCap decreased by 6.5 per cent in
+2025-26. Performance of sectoral indices was
+mixed during this period (Chart II.5.7a). FPIs
+made net sales of ₹2.7 lakh crore in the domestic
+equity market during 2025-26 as against net
+sales of ₹2.6 lakh crore during the previous year.
+Domestic institutional investors (DIIs) made
+net purchases of ₹8.5 lakh crore in 2025-26 as
+against ₹6.1 lakh crore during the previous year
+(Chart II.5.7b).
+Primary Market Resource Mobilisation
+II.5.20 In the primary segment of the equity
+market, resource mobilisation through QIPs
+and preferential allotments stood at ₹2.2 lakh
+crore during 2025-26, same as the previous
+year. Resource mobilisation through initial public
+offers (IPOs), follow-on public offers (FPOs) and
+rights issues increased to ₹2.3 lakh crore during
+2025-26 from ₹2.1 lakh crore during the previous
+year (Chart II.5.8a). FPIs were net purchasers
+in the primary market during the year. Average
+monthly contribution to mutual funds through the
+systematic investment plan (SIP) route increased
+to ₹29.1 thousand crore in 2025-26 from ₹24.1
+thousand crore during the previous year (Chart
+II.5.8b).
+Foreign Exchange Market
+II.5.21 The INR traded with a depreciating bias
+during 2025-26 and closed lower by 9.9 per cent.
+During H1:2025-26, INR gained initially amidst
+softening in the US dollar index and suspension
+of reciprocal tariffs by the US, touching the year’s
+high of ₹83.75 per USD on May 2, 2025. It,
+however, came under pressure later amidst flaring
+up of border tensions, tariff related concerns and
+FPI outflows in the equity segment. The INR
+closed H1 at ₹88.79 per USD, lower by 3.8 per
+cent (Chart II.5.9).
+II.5.22 During H2:2025-26, after trading range
+bound initially, the INR came under pressure later
+amidst multiple headwinds including continued
+trade related uncertainties and widening
+&KDUW,,
+%URDGHU0DUNHWVDQG,QVWLWXWLRQDO)ORZV
+D5HWXUQVRQ%6(6HFWRUDO,QGLFHV
+E1HW,QYHVWPHQWLQ(TXLW\E\,QVWLWXWLRQDO,QYHVWRUV
+ȋൈȌ
+6(%,16'/DQG%ORRPEHUJ
+)RUHLJQSRUWIROLRLQYHVWRUV 'RPHVWLFLQVWLWXWLRQDOLQYHVWRUV
+
+
+
+
+
+
+
+
+
+0DU
+
+
+
+
+
+
+
+
+
+
+
+
+     
+5HDOW\
+,7
+)0&*
+%DQNH[
+)LQDQFLDOVHUYLFHV
+&RQVXPHUGXUDEOHV
+8WLOLWLHV
+3RZHU
+,QGXVWULDOV
+2LODQGJDV
+&RPPXQLFDWLRQ
+&DSLWDOJRRGV
+(QHUJ\
+$XWR
+0HWDO
+
+
+======================================================================
+PAGE 33
+======================================================================
+
+merchandise trade deficit among others.
+INR pared some of its losses amid positive
+developments on the trade front during February.
+However, it witnessed a renewed bout of pressure
+in March amid worsening risk sentiments due to
+the outbreak of conflict in the Middle East and
+consequent surge in crude oil prices. FPI outflows
+and strengthening in the dollar index also weighed
+on the INR. For H2:2025-26, the INR closed lower
+by 6.4 per cent at ₹94.83 per USD.
+II.5.23 During 2025-26, the forward premia traded
+range bound till November 2025 largely tracking
+interest rate differential. However, they rose
+during December 2025 and remained elevated
+thereafter amid escalation in geopolitical tensions.
+The 40-currency nominal effective exchange rate
+(NEER) and real effective exchange rate (REER)
+depreciated (y-o-y) by 6.9 per cent and 7.5 per
+cent, respectively, during 2025-26.
+II.5.24 During 2025-26, Indian financial markets
+demonstrated resilience and orderly movements
+despite volatility in global financial markets.
+Overnight money market rates largely remained
+aligned with the policy repo rate and the evolving
+liquidity conditions. G-sec yields softened during
+Q1 but later hardened amid fiscal concerns,
+rising crude oil prices and lower expectations of
+further easing post-December 2025 rate cut. The
+INR witnessed depreciating bias in the latter half
+of the year due to trade related uncertainty and
+portfolio equity outflows. Indian equity markets
+are expected to be driven by evolving geopolitical
+developments, global financial market volatitlity
+and foreign portfolio investment flows.
+&KDUW,,
+5HVRXUFH0RELOLVDWLRQ
+D5HVRXUFH0RELOLVDWLRQLQ(TXLW\0DUNHWV
+ȋൈ
+Ȍ
+E$YHUDJH0RQWKO\6,3&RQWULEXWLRQLQ0XWXDO)XQGV
+Ȍ
+6(%,DQG$0),
+,32V)32VDQGULJKWV 4,3VDQGSUHIHUHQWLDODOORWPHQWV
+
+ 
+
+
+
+
+,1586' 86GROODULQGH[
+%UHQWFUXGHRLOSULFH 06&,(0FXUUHQF\LQGH[
+&KDUW,,
+0RYHPHQWLQ5XSHH86'ROODU
+&UXGH2LO3ULFHDQG(0&XUUHQF\,QGH[
+ǡ
+͸Ͷ͸ͻεͷͶͶǡ
+Ǣ
+ǡ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+======================================================================
+PAGE 34
+======================================================================
+
+46 In this Chapter, fiscal indicators (as per cent of GDP) of the central government, the state governments and the general government are
+calculated using the GDP series (2011-12 base year).
+II.6 GOVERNMENT FINANCES
+II.6.1 The Union Government reaffirmed its
+commitment to fiscal discipline by reducing the
+gross fiscal deficit (GFD)46 to below 4.5 per cent of
+GDP in 2025-26 (RE), as announced in the Union
+Budget for 2021-22, and setting it at 4.3 per cent
+in 2026-27(BE). The Centre’s debt-to-GDP ratio
+is budgeted to decline to 55.6 per cent in 2026-27
+from 56.1 per cent in 2025-26 (RE).
+Central Government Finances in 2025-26
+II.6.2 The Central Government contained its
+GFD at 4.4 per cent of GDP in 2025-26 (RE), lower
+than 4.8 per cent in 2024-25. During 2025-26, the
+fiscal consolidation was attributable to higher-thanbudgeted non-tax revenue and rationalisation of
+expenditure (Table II.6.1 and Chart II.6.1).
+II.6.3 Revenue expenditure rose by 7.4 per cent
+in 2025-26 (RE) over 2024-25, primarily driven by
+elevated interest payments and major subsidies.
+Table II.6.1: Central Government’s Fiscal Performance
+(Amount in ₹ lakh crore)
+Item 2021-22 2022-23 2023-24 2024-25 2025-26
+(RE)
+2026-27
+(BE)
+1 2 3 4 5 6 7
+I. Non-Debt Total Receipts 22.1 24.6 27.9 30.8 34.1 36.5
+(9.4) (9.1) (9.3) (9.3) (9.5) (9.3)
+II. Gross Tax Revenue 27.1 30.5 34.7 38.0 40.8 44.0
+(11.5) (11.4) (11.5) (11.5) (11.4) (11.2)
+(a) Direct Tax 14.1 16.6 19.6 22.2 24.2 27.0
+(6.0) (6.2) (6.5) (6.7) (6.8) (6.9)
+(b) Indirect Tax 13.0 13.9 15.1 15.7 16.6 17.1
+(5.5) (5.2) (5.0) (4.8) (4.6) (4.3)
+III. Net Tax Revenue 18.0 21.0 23.3 25.0 26.7 28.7
+(7.6) (7.8) (7.7) (7.6) (7.5) (7.3)
+IV. Non-Tax Revenue 3.7 2.9 4.0 5.4 6.7 6.7
+(1.5) (1.1) (1.3) (1.6) (1.9) (1.7)
+V. Non-Debt Capital Receipts 0.4 0.7 0.6 0.4 0.6 1.2
+(0.2) (0.3) (0.2) (0.1) (0.2) (0.3)
+VI. Total Expenditure 37.9 41.9 44.4 46.5 49.6 53.5
+(16.1) (15.6) (14.8) (14.1) (13.9) (13.6)
+VII. Revenue Expenditure 32.0 34.5 34.9 36.0 38.7 41.3
+(13.6) (12.8) (11.6) (10.9) (10.8) (10.5)
+VIII. Capital Expenditure 5.9 7.4 9.5 10.5 11.0 12.2
+(2.5) (2.8) (3.2) (3.2) (3.1) (3.1)
+IX. Revenue Deficit 10.3 10.7 7.7 5.6 5.3 5.9
+(4.4) (4.0) (2.5) (1.7) (1.5) (1.5)
+X. Gross Fiscal Deficit 15.8 17.4 16.5 15.7 15.6 17.0
+(6.7) (6.5) (5.5) (4.8) (4.4) (4.3)
+Note: Figures in parentheses are as per cent of GDP.
+Source: Union Budget documents.
+
+
+======================================================================
+PAGE 35
+======================================================================
+
+The expenditure on major subsidies exceeded
+its budgeted amount by ₹46,327 crore, mainly
+attributable to higher food and fertiliser subsidies.
+II.6.4 Capital expenditure in 2025-26 (RE)
+remained at 3.1 per cent of GDP, in line with
+the budget estimates, despite undershooting
+by ₹25,335 crore. Effective capital expenditure
+remained broadly unchanged in 2025-26 (RE)
+[3.9 per cent of GDP] as in 2024-25 (4.0 per cent
+of GDP).
+II.6.5 In 2025-26 (RE), gross tax revenue
+expanded by 7.4 per cent, largely driven by
+accelerated growth in revenue from corporation
+tax, and double-digit growth in excise duty and
+customs. It stood at 11.4 per cent of GDP, broadly
+in line with 2024-25 (Chart II.6.2).
+II.6.6 Net tax revenue increased by 7.0 per
+cent in 2025-26 (RE). Non-tax revenue recorded
+robust growth of 24.4 per cent in 2025-26 (RE),
+exceeding its budget estimates by ₹84,662 crore.
+Non-debt capital receipts recovered strongly
+in 2025-26 (RE) [growth of 53.1 per cent], after
+contracting in 2024-25. Overall, total non-debt
+receipts grew by 10.7 per cent in 2025-26 (RE).
+Central Government Finances in 2026-27
+II.6.7 The Central Government has been
+consistently reducing the GFD as per cent of
+GDP since it reached its peak in 2020-21 (9.2 per
+cent of GDP) [Table II.6.1 and Appendix Table 6].
+With GFD for 2026-27 budgeted at 4.3 per cent
+of GDP, the fiscal consolidation witnessed in the
+post-pandemic period is expected to continue.
+II.6.8 Capital expenditure is budgeted to grow
+by 11.5 per cent in 2026-27. Revenue expenditure
+to capital outlay (RECO) ratio and revenue deficit,
+as per cent of GFD, broadly exhibited a declining
+trend in recent years, indicating an improvement
+in quality of public expenditure (Chart II.6.3).
+47 GST Newsletter, GST Council Secretariat, December 2025, and Press Information Bureau (PIB), September 3, 2025.
+&KDUW,,
+&RQWULEXWLRQWR)LVFDO&RQVROLGDWLRQLQ
+5(YLVjYLV%(
+%XGJHW(VWLPDWHV5(
+5HYLVHG(VWLPDWHV
+ 1HJDWLYH FRQWULEXWLRQ GHQRWHV GHFOLQH LQ UHFHLSWV RU LQFUHDVH LQ
+H[SHQGLWXUH RU D GRZQZDUG UHYLVLRQ LQ *'3 IURP %( WR 5( DV WKHVH
+FRQWULEXWHWRVOLSSDJHIURPWKHEXGJHWHGILVFDOGHILFLW&RQYHUVHO\SRVLWLYH
+FRQWULEXWLRQGHQRWHVKLJKHUUHFHLSWVRUORZHUH[SHQGLWXUHIURP%(WR5(
+DVWKHVHFRQWULEXWHWRDWWDLQPHQWRIEXGJHWHGILVFDOGHILFLWWDUJHW
+
+
+
+
+
+
+
+
+
+
+
+1HWWD[
+UHYHQXH
+1RQWD[
+UHYHQXH
+1RQGHEW
+FDSLWDOUHFHLSWV
+5HYHQXH
+H[SHQGLWXUH
+&DSLWDO
+H[SHQGLWXUH
+'XHWRUHYLVLRQ
+LQ*'3
+&KDUW,,
+3HUIRUPDQFHRI0DMRU7D[HV
+*RRGVDQG6HUYLFHV7D[
+*67
+LVWKHVXPRI&HQWUDO*67,QWHJUDWHG
+*67 DQG *67 FRPSHQVDWLRQ FHVV *67 FRPSHQVDWLRQ FHVV KDV EHHQ
+GLVFRQWLQXHGE\WKH&HQWUHVLQFH)HEUXDU\
+
+
+
+
+
+&RUSRUDWLRQ
+WD[
+,QFRPHWD[
+*67
+&XVWRPVGXW\
+8QLRQH[FLVH
+GXW\
+  
+
+
+======================================================================
+PAGE 36
+======================================================================
+
+II.6.9 Gross tax revenue is budgeted to decline
+marginally to 11.2 per cent of GDP in 2026-27.
+Indirect taxes are budgeted lower at 4.3 per cent
+of GDP in 2026-27, partly due to discontinuation
+of GST compensation cess (Chart II.6.4).
+II.6.10 Gross market borrowings for 2026-27
+are budgeted at ₹17.2 lakh crore, higher than
+₹14.6 lakh crore in 2025-26 (RE). Net market
+borrowings stand at ₹11.7 lakh crore (3.0 per cent
+of GDP) for 2026-27 (BE) [Chart II.6.5a]. Market
+borrowings, and small savings continue to be the
+major sources of financing GFD (Chart II.6.5b).
+State Finances in 2025-26
+II.6.11 For 2025-26, states had budgeted a
+GFD of 3.3 per cent of GDP (Table II.6.2). As per
+provisional accounts data of 22 states, during
+April-February 2025-26, states’ GFD as a share
+of the budget estimates rose to 77.1 per cent
+&KDUW,,
+4XDOLW\RI([SHQGLWXUH
+ǡ
+Ǣǡ
+5HYHQXHGHILFLWDVSHUFHQWRIJURVVILVFDOGHILFLW
+5(&2
+&KDUW,,7UHQGVLQ7D[5HYHQXH&HQWUH
+
+
+
+*URVVWD[UHYHQXH 'LUHFWWD[ ,QGLUHFWWD[
+*URVVDQGQHWPDUNHWERUURZLQJVDUHH[FOXVLYHRIVZLWFKLQJRSHUDWLRQVDQGEX\EDFNRIVHFXULWLHVDFURVV\HDUV
+D0DUNHW%RUURZLQJVDQG*)'
+E6RXUFHVRI*)')LQDQFLQJ
+Ȍ
+&KDUW,,0DUNHW%RUURZLQJVDQG*)')LQDQFLQJ
+
+
+
+1HWPDUNHWERUURZLQJV
+*URVVPDUNHWERUURZLQJV
+*)'
+
+ 
+
+ 
+
+ 
+ 
+2WKHUV
+'UDZGRZQRIFDVKEDODQFHV
+([WHUQDODVVLVWDQFH
+6HFXULWLHVDJDLQVWVPDOOVDYLQJV
+'HSRVLWVDQGDGYDQFHV
+1HWWUHDVXU\ELOOV
+1HWPDUNHWERUURZLQJV
+
+
+======================================================================
+PAGE 37
+======================================================================
+
+Table II.6.2: Fiscal Position of States/UTs
+(Amount in ₹lakh crore)
+Item 2021-22 2022-23 2023-24 2024-25 (RE) 2025-26 (BE)
+I. Non-debt Receipts 32.5 36.6 39.5 46.0 51.8
+(13.8) (13.6) (13.1) (14.0) (14.5)
+II. Revenue Receipts 32.3 36.5 39.3 45.8 51.3
+(13.7) (13.6) (13.0) (13.9) (14.4)
+III. Non-debt Capital Receipts 0.2 0.1 0.2 0.2 0.5
+(0.1) (0.04) (0.1) (0.1) (0.1)
+IV. Revenue Expenditure 33.3 37.1 40.2 47.7 52.1
+(14.1) (13.8) (13.4) (14.4) (14.6)
+V. Capital Expenditure 5.8 6.7 8.1 9.9 11.4
+(2.4) (2.5) (2.7) (3.0) (3.2)
+a. Capital Outlay 5.3 6.0 7.5 9.1 10.6
+(2.3) (2.2) (2.5) (2.7) (3.0)
+b. Loans and Advances by States 0.4 0.7 0.6 0.8 0.8
+(0.2) (0.3) (0.2) (0.3) (0.2)
+VI. Total Expenditure 39.1 43.8 48.3 57.7 63.6
+(16.5) (16.3) (16.0) (17.4) (17.8)
+VII. Fiscal Deficit 6.5 7.2 8.8 11.6 11.8
+(2.8) (2.7) (2.9) (3.5) (3.3)
+VIII. Revenue Deficit 1.0 0.6 0.9 1.9 0.8
+(0.4) (0.2) (0.3) (0.6) (0.2)
+IX. Primary Deficit 2.3 2.6 3.7 6.0 5.5
+(1.0) (1.0) (1.2) (1.8) (1.5)
+Note: Figures in parentheses are per cent of GDP.
+Source: Budget documents of State governments.
+from 64.3 per cent a year ago. This uptick reflects
+subdued revenue performance, driven primarily
+by a slowdown in states’ GST (SGST) collection
+and contraction in grants from the Centre.
+Revenue expenditure grew at a slower pace than
+a year ago, while capital expenditure recorded
+strong growth during the same period.
+State Finances in 2026-27
+II.6.12 As per information available for 24 states/
+UTs for 2026-27, their consolidated GFD-GSDP
+ratio is budgeted at 3.0 per cent (Table II.6.3).
+The gross transfers to states have been budgeted
+to increase by 12.2 per cent in 2026-27 (BE),
+largely on account of transfers under centrally
+sponsored schemes and special assistance to
+states for capital investment. The scheme of 50-
+year interest free loans for capital expenditure to
+states would be continued in 2026-27, with total
+Table II.6.3: State Government Finances
+2026-27*: Key Deficit Indicators
+(Per cent of GSDP)
+Item 2024-25 2025-26 (RE) 2026-27 (BE)
+Revenue Deficit 0.3 0.4 -0.1
+Gross Fiscal Deficit 3.0 3.5 3.0
+Primary Deficit 1.5 1.9 1.4
+*: Data pertain to 24 states that have presented their final budgets
+for 2026-27.
+Note: Negative in deficit indicators denote surplus.
+Source: Budget documents of state governments.
+
+
+======================================================================
+PAGE 38
+======================================================================
+
+outlay of ₹2 lakh crore - an increase of 33.3 per
+cent over 2025-26 (RE) levels.
+II.6.13 The Sixteenth Finance Commission (FC-
+XVI) report for 2026-27 to 2030-31 has ensured
+continuity in Centre-State fiscal relations while
+reinforcing incentives for performance and fiscal
+discipline. It retains states’ share at 41 per cent in
+the divisible tax pool.
+II.6.14 The FC-XVI has moderately rebalanced
+the horizontal devolution formula while preserving
+its equity-focused core (Table II.6.4). Greater
+emphasis has been placed on population, while
+the weights assigned to area, income distance and
+demographic performance have been trimmed.
+While the weight assigned to forest cover has
+been retained, the tax effort criterion has been
+removed. The Commission has introduced a new
+criterion, states’ contribution to GDP with a weight
+of 10 per cent, reflecting India’s growth ambitions
+and the need to recognise states’ role in driving
+national economic performance.
+Table II.6.4: Horizontal Devolution Criteria
+(Per cent to total)
+Dimension Criteria FC -XIII FC -XIV FC -XV FC-XVI
+(2010-11 to
+2014-15)
+(2015-16 to
+2019-20)
+(2020-21 to
+2025-26)
+(2026-27 to
+2030-31)
+Need and Cost
+Disability
+Population 25 27.5 15 17.5
+Area 10 15 15 10
+Forest Cover - 7.5 10 10
+Equity
+Income Distance/Per Capita GSDP Distance - 50 45 42.5
+Fiscal Capacity 47.5 - - -
+Performance
+Tax effort - - 2.5 -
+Fiscal Discipline 17.5 - - -
+Demographic Performance - - 12.5 10
+Contribution to GDP - - - 10
+-: Not applicable.
+Note: For FC-XIII, the population criterion was based on 1971 census data. For FC-XIV, 17.5 per cent weight was assigned to 1971 census
+data and 10 per cent weight to 2011 census data. From FC-XV onwards, the population criterion is based on 2011 census data.
+Source: Finance Commission Reports.
+II.6.15 Post-devolution, revenue deficit grants
+have been discontinued to promote fiscal
+discipline and sustainable state budgets
+The Commission concluded that existing
+revenue deficits largely reflect gaps in revenue
+mobilisation and expenditure management. It,
+therefore, emphasised that continued gap-filling
+transfers weaken fiscal adjustment incentives,
+as expectations of central support can dilute
+efforts to enhance own revenues and rationalise
+spending.
+General Government Finances
+II.6.16 The general government’s GFD moderated
+from 7.8 per cent of GDP in 2024-25 (RE) to 7.2
+per cent in 2025-26 (BE). The debt-to-GDP ratio
+is budgeted for a marginal uptick to 81.9 per
+cent in 2025-26 (BE), partly attributable to higher
+states liabilities. External liabilities remain low at
+2.5 per cent of GDP in 2025-26 (BE), implying
+limited exchange rate risk (Chart II.6.6a).
+
+
+======================================================================
+PAGE 39
+======================================================================
+
+II.6.17 The general government’s reduction in
+GFD was supported by increase in tax revenues
+at 19.1 per cent of GDP in 2025-26 (BE)
+from 18.4 per cent in the previous year. However,
+ratio of total expenditure to GDP remained the
+same at 29.6 per cent in both years. Capital
+expenditure is budgeted higher at 5.8 per cent of
+GDP in 2025-26 (BE) [5.6 per cent in 2024-25]
+(Chart II.6.6b).
+II.6.18 The Union Budget 2026-27 continued
+with the post-pandemic fiscal consolidation path,
+which augurs well for medium-term growth. The
+GFD is budgeted at 4.3 per cent of GDP in 2026-
+27, down from 4.4 per cent of GDP in 2025-26
+(RE). Notably, the thrust on capital expenditure
+is maintained, which is budgeted to grow at 11.5
+per cent in 2026-27. The Sixteenth Finance
+Commission has ensured continuity in Centre-
+State fiscal relations with a renewed emphasis
+on performance-linked incentives and long-term
+fiscal responsibility.
+8QLRQ%XGJHWGRFXPHQWVDQG5%,
+D'HEWDQG'HILFLW,QGLFDWRUV
+E7UHQGVLQ7D[5HYHQXHDQG([SHQGLWXUH
+&KDUW,,
+*HQHUDO*RYHUQPHQW·V)LVFDO,QGLFDWRUV
+
+
+([WHUQDOGHEW ,QWHUQDOGHEW
+*URVVILVFDOGHILFLW
+
+
+7D[UHYHQXH
+&DSLWDOH[SHQGLWXUH
+7RWDOH[SHQGLWXUH
+II.7 EXTERNAL SECTOR
+II.7.1 Amidst heightened global policy
+uncertainty and geopolitical tensions, India’s
+external sector remained broadly resilient due
+to efforts towards diversification of exports, a
+sustained surplus in services trade and steady
+inward remittances. With net capital flows falling
+short of current account deficit (CAD), foreign
+exchange reserves declined on a balance of
+payments (BoP) basis during April-December
+Global Economic Conditions
+II.7.2 Global GDP growth increased marginally
+to 3.4 per cent in 2025 (Chart II.7.1a). Global
+inflation eased, thus prompting major central
+banks to cut policy rates. With contained
+inflationary pressures and stable demand, global
+trade volume (goods and services) rose by 5.1
+per cent in 2025 (3.6 per cent in 2024) [Chart
+II.7.1b]. In 2026, however, with the ongoing West
+Asia conflict, global GDP growth is expected
+to weaken to 3.1 per cent 48. The conflict-led
+disruptions in critical trade routes and the
+48 World Economic Outlook, April 2026, International Monetary Fund (IMF).
+
+
+======================================================================
+PAGE 40
+======================================================================
+
+continuing global trade policy uncertainties have
+clouded the outlook for global merchandise trade
+going forward. A slower growth in transportation
+and travel segments under services trade is also
+expected. Consequently, global trade volume
+growth could decline in 2026.
+II.7.3 Emerging market economies (EMEs)
+recorded robust net portfolio inflows during
+2025-26, supported by the debt segment. Net
+outflows were recorded in the equity segment
+owing to persistent global uncertainty exacerbated
+by conflict in West Asia (Chart II.7.2a). Global
+foreign direct investment (FDI) rose in 2025, with
+net inflows to developed economies increasing
+by 43 per cent, driven by Europe and financial
+hubs49 (Chart II.7.2b). In contrast, net FDI inflows
+to developing economies declined by 2 per cent
+in 2025.
+*: Goods and services.
+Source: WEO, April 2026, IMF.
+a. Global GDP Growth Forecasts (IMF) [Successive Revisions]
+b. Global Trade Growth Forecasts (IMF) [Successive Revisions]
+Chart II.7.1: Real GDP and World Trade* Volume Growth
+Average growth (2000-2019) Average growth (2000-2019)
+5.2
+-2.7
+6.6
+Apr-26
+Actuals/estimates Forecasts for 2026
+12.7
+-8.4
+10.9
+5.7
+3.6 5.1
+2.5 1.9 2.3 2.6 2.8
+Apr-26
+Actuals/estimates Forecasts for 2026
+Sources: Institute of International Finance; and UNCTAD.
+a. Portfolio Investment Flows to EMEs
+b. Global FDI Inflows
+Chart II.7.2: Portfolio Investment Flows to EMEs and Global FDI Trends
+Developing economies Developed economies
+Global FDIDebt Equity Total
+728 877
+-66.2
+-80
+49 Global Investment Trends Monitor, January 2026, United Nations Conference on Trade and Development (UNCTAD).
+
+
+======================================================================
+PAGE 41
+======================================================================
+
+Merchandise Trade
+II.7.4 Despite tariff related uncertainty, India’s
+merchandise exports and imports (in value terms)
+expanded at higher pace in 2025-26 than in 2024-
+25 (Table II.7.1).
+II.7.5 The expansion in merchandise exports in
+2025-26 was led by growth in electronic goods;
+engineering goods; meat, dairy and poultry
+products; marine products; and mica, coal and
+other ores, minerals including processed minerals
+while petroleum products; gems and jewellery;
+rice; plastic and linoleum; and cotton and
+handloom products witnessed a contraction
+(Chart II.7.3).
+II.7.6 Among India’s top export commodities,
+exports of electronic goods recorded fastest
+growth, though lower than last year. This growth
+was largely driven by exports of mobile phones,
+which constitute around 61 per cent of electronic
+goods exports and were exempted from the tariffs
+imposed by the US (Chart II.7.4).
+Table II.7.1: India’s Merchandise Trade
+Value in US$ Billion Growth Rate
+2022-
+2023-
+2024-
+2025-
+2022-
+2023-
+2024-
+2025-
+Exports
+Q1 121.0 103.9 114.0 111.6 26.6 -14.1 9.8 -2.2
+Q2 110.7 107.2 99.6 107.9 7.8 -3.2 -7.0 8.3
+Q3 104.6 105.6 108.7 110.2 -2.1 1.0 3.0 1.4
+Q4 114.8 120.4 115.3 112.0 -1.9 4.9 -4.3 -2.8
+Annual 451.1 437.1 437.7 441.7 6.9 -3.1 0.1 0.9
+Imports
+Q1 183.5 159.7 172.2 180.3 44.5 -13.0 7.8 4.7
+Q2 189.0 169.4 186.7 196.0 28.1 -10.4 10.2 5.0
+Q3 176.1 174.7 187.5 204.2 5.4 -0.8 7.3 8.9
+Q4 167.3 170.2 173.9 194.5 -2.5 1.7 2.2 11.9
+Annual 716.0 674.0 720.2 775.0 16.8 -5.9 6.9 7.6
+Trade Balance
+Q1 -62.6 -55.8 -58.1 -68.7
+Q2 -78.3 -62.2 -87.1 -88.0
+Q3 -71.5 -69.1 -78.7 -94.0
+Q4 -52.6 -49.7 -58.6 -82.5
+Annual -264.9 -236.9 -282.5 -333.2
+Note: Quarterly figures may not add up to annual figures due to
+rounding off of numbers.
+Chart II.7.4: Electronic Goods Exports
+Witnessed Robust Growth
+Mobile phones Rest of electronic goods
+11.1
+15.6
+24.1
+29.4
+12.4
+13.5
+14.4
+18.6
+2022-232 023-242 024-25 2025-26
+Chart II.7.3: Relative Contribution of Major
+Sectors to Export Growth (2025-26 over 2024-25)
+0.26
+0.23
+0.15
+-0.15
+-0.21
+Electronic goods (24.4)
+Engineering goods (4.9)
+Meat, dairy and poultry products (21.9)
+Marine products (13.9)
+Mica, coal and other ores, minerals
+including processed minerals (13.0)
+Cotton yarn/fabs./made-ups,
+handloom products, etc. (-3.9)
+Plastic and linoleum (-7.1)
+Rice (-7.5)
+Gems and jewellery (-5.4)
+Petroleum products (-15.1)
+
+
+======================================================================
+PAGE 42
+======================================================================
+
+II.7.7 Growth in India’s merchandise exports
+to the US moderated during 2025-26 due to the
+heightened tariffs. The positive growth in exports
+to the US during April-August 2025 was driven by
+front-loading in anticipation of higher tariffs, along
+with rise in exports in the sectors exempted from
+the tariffs imposed by the US. Thereafter, barring
+November 2025, exports to the US witnessed
+contraction since September 2025. In a major
+trade reconfiguration, China became the largest
+trading partner of India overtaking the US in
+II.7.8 The expansion in merchandise imports
+in 2025-26 was led by electronic goods, gold,
+and machinery, electrical and non-electrical.
+Petroleum, crude and products; coal, coke and
+briquettes; pulses; iron and steel; and organic
+and inorganic chemicals contributed negatively to
+import growth (Chart II.7.5).
+II.7.9 Despite an increase in the volume, the
+value of petroleum, oil and lubricants imports
+(22.4 per cent of total merchandise imports during
+2025-26) declined in 2025-26 due to contraction
+in oil prices (Chart II.7.6a). The share of Russia
+and Iraq in India’s crude oil imports declined
+during the year, while that of Saudi Arabia, the
+UAE and the US increased (Chart II.7.6b).
+II.7.10 Value of gold imports increased in 2025-
+26, with the effect of contraction in gold import
+volume offset by higher international prices
+(Chart II.7.7).
+II.7.11 Merchandise trade deficit widened in 2025-
+26, with oil deficit remaining the largest contributor
+(Chart II.7.8a). Among the major trading partners,
+Chart II.7.5: Relative Contribution of Major Sectors to
+Import Growth (2025-26 over 2024-25)
+(Percentage point)
+Note: Figures in parentheses are growth rate of respective commodities.
+Electronic goods (17.7)
+Gold (24.1)
+Machinery, electrical and
+non-electrical (15.3)
+Silver (149.6)
+Fertilisers, crude and
+manufactured (60.7)
+Organic and inorganic
+chemicals (-1.8)
+Iron and steel (-5.1)
+Pulses (-34.8)
+Coal, coke and briquettes,
+etc. (-10.3)
+Petroleum, crude and
+products (-6.4)
+1.9
+-0.2
+-0.3
+-1.6
+a. POL Imports
+(US$ billion, left scale; Million tonnes, right scale)
+b. Major Sources of Crude Oil Imports
+(Share in per cent)
+Chart II.7.6: Petroleum, Oil and Lubricants (POL)
+37.4
+19.9
+13.8
+9.0
+32.7
+18.1
+13.9
+10.5
+5.3
+Volume (RHS)Value
+2024-25 2025-26
+Russia Iraq Saudi
+Arabia
+UAE US
+
+
+======================================================================
+PAGE 43
+======================================================================
+
+trade deficit with China and Switzerland widened,
+while trade surplus improved with respect to
+Spain in 2025-26 (Chart II.7.8b).
+II.7.12 As of April 2026, India has signed 24
+trade agreements. Accelerating the trade
+diversification efforts with new trade alliances,
+India signed a Comprehensive Economic and
+Trade Agreement (CETA) with the United
+Kingdom on July 24, 2025, Comprehensive
+Economic and Partnership Agreement (CEPA)
+with Oman on December 18, 2025 and India-
+New Zealand Free Trade Agreement (FTA)
+on April 27, 2026. These agreements are yet
+to be enforced. The FTA negotiations with
+the European Union were also concluded
+on January 27, 2026.
+Invisibles
+II.7.13 Receipts from India’s trade in invisibles
+- consisting of cross-border transactions in
+services, income, and transfers - remained
+buoyant during 2025-26 (up to December 2025).
+Net services exports grew strongly by 15.3 per
+cent (y-o-y) during April-December 2025, driven
+by software and business services (accounting
+for 77.8 per cent of services exports) [Chart
+II.7.9]. Amongst other key services, transportation
+receipts contracted by 7.3 per cent (y-o-y), largely
+due to a decline in sea freight 50. Travel services
+Chart II.7.7: Gold Imports
+(US$ billion, left scale; tonne, right scale)
+Value Volume (RHS)
+Note: A positive ∆ export/∆ import implies higher exports/imports and vice versa.
+Chart II.7.8: India’s Merchandise Trade Deficit Widened
+a. Total Trade Balance and Oil Trade Balance
+b. Sources of Change in India's Trade Balance
+(2025-26 over 2024-25)
+-333.2-350
+-300
+-250
+-200
+-150
+-100
+Trade balanc e Oil trade balanc e ∆ Trade balance∆ E xport ∆ I mport
+US
+Netherlands
+Bangladesh
+Nepal
+Spain
+Iraq
+Switzerlan d
+UAE
+Russi a
+China
+Trade surplu sT rade defici t
+Improvement in Trade Balance:
+Higher exports/lower import s
+Deterioration in Trade Balance :
+Lower exports/higher import s
+-122.4
+-120.0
+50 In the post-pandemic period (2021-22 to 2024-25), the share of sea transport averaged around 66.0 per cent in total transportation
+services exports for India. Within sea transport, the share of sea freight receipts stood at around 71.0 per cent. The contraction in sea freight
+during April-December 2025 was on account of continued global trade policy uncertainties and geopolitical tensions.
+
+
+======================================================================
+PAGE 44
+======================================================================
+
+exports also contracted, reflecting a fall in foreign
+tourist arrivals during the period. Going forward,
+robust global IT spending, as projected by
+Gartner51, bodes well for India’s software services
+exports.
+II.7.14 Private transfer receipts, mainly
+representing remittances by Indians working
+overseas, posted a robust growth of 10.1 per cent
+(y-o-y) during April-December 2025 (16.2 per
+cent during April-December 2024). The average
+cost of sending US$ 200 as remittance to India
+stood at 5.3 per cent in Q3:2025, same as a year
+ago, below the global average cost of 6.4 per
+cent, but still above the sustainable development
+goal (SDG) target of 3 per cent by 2030.
+II.7.15 Net outgo in the primary income account52
+stood at US$ 37.2 billion during April-December
+2025, higher than US$ 36.5 billion during April-
+December 2024. This reflects the rise in payment
+of dividends and reinvested earnings owing to
+inward FDI during the same period.
+II.7.16 The buoyancy in net services receipts
+and workers’ remittances largely offset the
+expansion in merchandise trade deficit, thus
+containing CAD at US$ 30.2 billion (1.1 per
+cent of GDP) during April-December 2025 as
+compared with US$ 36.7 billion (1.3 per cent of
+GDP) during the corresponding period a year ago
+(Chart II.7.10).
+External Financing
+II.7.17 The global environment for international
+investment remained challenging. Against this
+backdrop, net capital flows during April-December
+2025 moderated (y-o-y) and fell short of CAD,
+leading to a depletion of foreign exchange
+reserves by US$ 30.8 billion on a BoP basis
+(excluding valuation effects) during the period
+(Chart II.7.11 and Appendix Table 7).
+51 'Gartner Forecasts Worldwide IT Spending to Grow 13.5 per cent in 2026, Totaling $6.31 Trillion', Press Release, Gartner Inc., April 22, 2026.
+52 Income on cross-border investments and compensation of employees that domestic resident entities earn from/pay to the rest of the world.
+Chart II.7.9: Composition of India's Services Exports
+*: Includes insurance services and communication services, among others.
+Travel Transportation
+Software services
+Business services Financial services
+Others*
+Total services
+111.2
+Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q1 Q2 Q3
+2021-22 2022-23 2023-242 024-25 2025-26
+Chart II.7.10: Current Account Balance Supported by
+Services and Transfers
+Trade deficit Services Transfers
+Income CAB
+-0.9
+-1.2
+-2.1
+-0.7
+
+
+======================================================================
+PAGE 45
+======================================================================
+
+II.7.18 Within capital flows, FDI stood higher,
+both on gross and net basis, during 2025-26
+(Table II.7.2). Globally, India ranked second
+in terms of greenfield FDI announcements
+during 2025-26, after the US, according to fDi
+Markets53.
+Chart II.7.11: Financing of Current Account Deficit
+FDI FPI
+ECBs Trade credit
+Banking capital Others
+Increase (-)/decrease (+) in reserves CAB
+II.7.19 Services sector accounted for the major
+share of FDI equity flows into India during 2025-
+26, followed by manufacturing. 54 Major source
+countries, viz., Singapore, the US, Mauritius,
+Japan, the Netherlands and the UAE contributed
+about four-fifths of the flows. Outward FDI by India
+also increased during this period, with Singapore,
+the US, the UAE and Mauritius being the major
+destinations. Financial, insurance and business
+services; manufacturing; and wholesale/retail
+trade, restaurants and hotels were the main
+sectors for India’s outward FDI.
+II.7.20 During 2025-26, foreign portfolio
+investment (FPI) registered net outflows of US$
+16.5 billion driven by the equity segment (Table
+II.7.2). In March 2026 alone, net FPI outflows
+were to the tune of US$ 13.1 billion, triggered by
+the outbreak of the West Asia conflict on February
+28, 2026. The debt segment witnessed modest
+inflows in 2025-26 of US$ 2.1 billion, reflecting
+preference for safer assets amidst uncertain
+Table II.7.2: Capital Flows
+Item 2022-23 2023-24 2024-25 2025-26
+1 2 3 4 5
+1. Net FDI (1.1 - 1.2) 28.0 10.2 1.0 7.7
+1.1 Net Inward FDI (1.1.1 - 1.1.2) 42.0 26.8 29.1 40.9
+1.1.1 Gross Inflows 71.4 71.3 80.6 94.5
+1.1.2 Repatriation/Disinvestment 29.3 44.5 51.5 53.6
+1.2 Net Outward FDI 14.0 16.7 28.2 33.3
+2. Net FPI to India -4.8 44.6 3.3 -16.5
+3. Net ECB to India -4.1 3.5 18.5 12.0
+4. Non-Resident Deposits 9.0 14.7 16.2 14.4
+4.1 Non-Resident External (Rupee) Account 2.5 4.2 4.7 7.9
+4.2 Non-Resident Ordinary Account 4.0 4.2 4.4 5.5
+4.3 Foreign Currency Non-Resident (B) Account 2.4 6.4 7.1 0.9
+Note: Data for net FPI to India in column 5 is sourced from NSDL. FPI data for previous financial years are based on BoP.
+Sources: RBI; and NSDL.
+53 fDi Markets is the leading online database tracking greenfield FDI in real-time across all markets and sectors globally since 2003.
+54 Services sector, comprising computer, financial, communication and business services, accounted for around 44 per cent in total FDI
+equity flows during 2025-26 as compared with an average share of 38 per cent during 2021-22 to 2024-25.
+
+
+======================================================================
+PAGE 46
+======================================================================
+
+global environment. Equity sell-offs were largely
+contributed by information technology, financial
+services and fast-moving consumer goods
+sectors. Inflows were primarily recorded in capital
+goods, metals and mining, and telecommunication
+sectors.
+II.7.21 During 2025-26, net ECB inflows to India
+moderated from a year ago. Besides on-lending/
+sub-lending, ECBs were used for refinancing of
+earlier ECBs, import of capital goods and new
+projects. Net inflows under non-resident deposits
+also moderated during 2025-26 from a year ago,
+due to a decline in net inflows under FCNR(B)
+deposits.
+Key Vulnerability Indicators
+II.7.22 India’s key external sector vulnerability
+indicators, such as the external debt to GDP
+ratio, debt service ratio and net IIP to GDP ratio,
+remained contained at end-December 2025
+55 As at end-March 2026, the import cover for goods and services was around nine months.
+Table II.7.3: External Vulnerability Indicators (End-March)
+(Per cent, unless indicated otherwise)
+Indicator 2013 2023 2024 2025 End-Dec 2025
+1. External Debt to GDP Ratio# 22.4 19.6 19.2 19.8 20.4
+2. Ratio of Short-term Debt (Original Maturity) to Total Debt 23.6 20.6 19.1 18.3 19.7
+3. Ratio of Short-term Debt (Residual Maturity) to Total Debt 42.1 44.0 43.4 41.2 43.2
+4. Ratio of Concessional Debt to Total Debt 11.1 8.2 7.4 6.9 7.0
+5. Ratio of Reserves to Total Debt 71.3 92.7 96.6 90.8 89.8
+6. Ratio of Short-term Debt (Original Maturity) to Reserves 33.1 22.2 19.7 20.1 21.9
+7. Ratio of Short-term Debt (Residual Maturity) to Reserves 59.0 47.4 44.9 45.4 48.1
+8. Reserve Cover of Imports (in Months)* 7.0 9.6 11.3 11.0 10.8
+9. Debt Service Ratio (Debt Service to Current Receipts)@ 5.9 5.3 6.7 6.6 5.8
+10. External Debt (US$ billion) 409.4 623.9 668.9 736.4 765.5
+11. Net International Investment Position (NIIP) [US$ billion] -326.7 -367.0 -361.3 -329.1 -260.5
+12. NIIP/GDP Ratio -17.8 -11.6 -10.5 -9.0 -7.1
+13. CAB/GDP Ratio@ -4.8 -2.1 -0.7 -0.6 -1.1
+#: Ratios from 2023 onwards are based on new series of GDP estimates with base year 2022-23.
+*: Based on merchandise imports of latest four quarters, published in BoP statistics.
+@: Figures corresponding to column 6 pertains to April-December 2025.
+Sources: RBI and Government of India.
+(Table II.7.3). Robust foreign exchange reserves
+provided a strong buffer for mitigating external
+risks and spillovers. Reserves provided a cover of
+around 11 months of merchandise imports 55 (on
+BoP basis), while reserves to total external debt
+stood at around 90 per cent at end-December
+II.7.23 Despite a widening merchandise trade
+deficit, India’s external sector vulnerability
+remained low during 2025-26, supported by
+sustained growth in services exports and private
+transfer receipts. Although net capital flows fell
+short of external financing requirements with
+portfolio flows exhibiting net outflows, strong
+buffers in the form of ample foreign exchange
+reserves and modest external debt liabilities
+continued to impart strength to the external
+sector, contributing to overall macroeconomic and
+financial stability.
